@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEYVATDLE</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}">
+  </head>
+  <body>
+    <script src="{{ url_for('static',filename='classic-mode.js') }}"></script>
+    <h1>TEYVATDLE</h1>
+    <span id="show_character_data"></span>
+    <h1>Guess character</h1>
+    <input type="text" id="guess" placeholder="Enter character">
+    <button onclick="submitGuess('Amber')">Submit</button>
+  </body>
+</html>
