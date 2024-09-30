@@ -1,23 +1,21 @@
-character_dictionary = { 
-    "Amber" : 1, 
-    "Qiqi": 2, 
-    "Kaeya" : 3,
+const answer = "Amber"
+var character_data = null
+
+window.onload = async function() {
+    const res = await fetch("/static/data/classicModeInfo.json");
+    character_data = await res.json();
 };
 
-async function getCharacter(id){
-    const characterResponse = await fetch(`https://gsi.fly.dev/characters/${id}`);
-    const json = await characterResponse.json();
-    console.log(json)
-}
-
 async function submitGuess(answer){
-    guess = document.getElementById("guess");
+    guess = document.getElementById("guess").value;
 
-    if (character_dictionary[guess] != answer) {
-        console.log("try again!")
-    }
-    else {
-        console.log("NICE")
+    for (var i = 0; i < character_data.length; i++){
+        var current_character = character_data[i];
+        console.log(current_character["name"])
+        if (current_character["name"] == guess){
+            console.log("CORRECT")
+            break;
+        }
     }
 }
-
+ 
