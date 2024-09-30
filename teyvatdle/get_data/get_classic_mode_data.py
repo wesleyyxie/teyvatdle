@@ -23,7 +23,7 @@ def main():
 
     character_data = fetch_character_data(api_url)
     # Write all character data to a JSON file
-    output_file = "./teyvatdle/data/classicModeInfo.json"
+    output_file = "./teyvatdle/static/data/classicModeInfo.json"
     write_json_file(output_file, character_data)
 
 
