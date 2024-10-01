@@ -3,13 +3,13 @@ import random
 import os
 
 
-def get_random_character(file_name="classicModeInfo.json"):
+def get_random_character():
     # Ensure the file is in the 'data' directory within the script's directory
     current_directory = os.path.dirname(os.path.abspath(__file__))
     data_directory = os.path.join(
-        current_directory, "static", "data"
+        current_directory, "..", "static", "data"
     )  # Adjust the path to the data folder
-    file_path = os.path.join(data_directory, file_name)
+    file_path = os.path.join(data_directory, "classicModeInfo.json")
 
     # Read the JSON file
     if os.path.exists(file_path):  # Check if the file exists
@@ -29,7 +29,7 @@ def get_random_character(file_name="classicModeInfo.json"):
     return None
 
 
-def main():
+def get_classic_answer():
     random_character = (
         get_random_character()
     )  # Call the function to get a random character
@@ -46,11 +46,11 @@ def main():
             "release": random_character.get("release"),
             # maybe stars?
         }
-
-        print(json.dumps(character_info, indent=4))
+        print(character_info)
+        return character_info
     else:
         print("No characters found in the JSON file.")  # Debug
 
 
 if __name__ == "__main__":
-    main()
+    get_classic_answer()
