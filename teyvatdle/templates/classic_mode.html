@@ -1,0 +1,8 @@
+{% block gamemode %}
+<script src="{{ url_for('static',filename='classic-mode.js') }}"></script>
+<h1>CLASSIC MODE</h1>
+<span id="show_character_data"></span>
+<h1>Guess character</h1>
+<input type="text" id="guess" placeholder="Enter character">
+<button onclick="submitGuess('Amber')">Submit</button>
+{% endblock %}
