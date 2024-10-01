@@ -12,9 +12,21 @@ def fetch_character_data(api_url):
 def write_json_file(file_path, content):
     # Check if the content is empty before writing
     with open(file_path, "w") as json_file:
-        json.dump(
-            content, json_file, indent=4
-        )  # Write content as JSON with indentation
+        content_new_arr = []
+        for character in content:
+            character_info = {
+                "name": character.get("name"),
+                "title": character.get("title"),
+                "vision": character.get("vision"),
+                "weapon": character.get("weapon"),
+                "gender": character.get("gender"),
+                "nation": character.get("nation"),
+                "affiliation": character.get("affiliation"),
+                "release": character.get("release"),
+                # maybe stars?
+            }
+            content_new_arr.append(character_info)
+        json.dump(content_new_arr, json_file, indent=4)
         print(f"Data written to {file_path} successfully.")  # Confirmation message
 
 

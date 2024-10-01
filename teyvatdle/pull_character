@@ -43,6 +43,8 @@ def main():
             "gender": random_character.get("gender"),
             "nation": random_character.get("nation"),
             "affiliation": random_character.get("affiliation"),
+            "release": random_character.get("release"),
+            # maybe stars?
         }
 
         print(json.dumps(character_info, indent=4))
