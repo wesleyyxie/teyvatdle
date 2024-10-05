@@ -2,7 +2,7 @@ var characters_info_data = null
 var answerData = null
 
 window.onload = async function() {
-    const answer_res = await fetch("/classic_answer");
+    const answer_res = await fetch("/static/answers/classic/todays_answer.json");
     answerData = await answer_res.json();
     console.log(answerData);
 
