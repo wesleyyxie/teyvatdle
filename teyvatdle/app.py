@@ -1,15 +1,16 @@
 from flask import Flask, render_template, jsonify
-from get_answers.classic_mode_answer import get_classic_answer
+from apscheduler.schedulers.background import BackgroundScheduler
+
+from get_answers.update_classic_answer import update_classic_answer
 
 app = Flask(__name__)
 
-todays_answers = get_classic_answer()
-print(todays_answers)
+# IF DEBUG MODE IS ON, IT WILL TRIGGER THE SCHEDULER AGAIN
+# scheduler = BackgroundScheduler()
+# scheduler.add_job(func=update_classic_answer, trigger="interval", minutes=1)
+# scheduler.start()
 
-
-@app.route("/classic_answer")
-def classic_answer():
-    return jsonify(todays_answers)
+update_classic_answer()
 
 
 @app.route("/spy")
@@ -38,4 +39,4 @@ def hello_world():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
