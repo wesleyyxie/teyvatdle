@@ -59,6 +59,16 @@ function placeIcon(iconElement, guessData){
     iconElement.style.backgroundSize = '75px 75px'
     iconElement.style.backgroundPosition = 'center';
     iconElement.style.backgroundRepeat = 'no-repeat';
+
+    // Add white outline and shadow
+    iconElement.style.outline = "1px solid white";  // White outline
+    iconElement.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.5)";  // Shadow effect
+    iconElement.style.boxShadow = "inset 0px 4px 6px rgba(0, 0, 0, 0.5)";  // Internal shadow
+
+    // Center icon
+    iconElement.style.display = "flex";
+    iconElement.style.alignItems = "center";  // Vertically center
+    iconElement.style.justifyContent = "center";  // Horizontally center
 }
 
 async function submitGuess(){
