@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block gamemode %}
-<script src="{{ url_for('static',filename='classic-mode.js') }}"></script>
+<script src="{{ url_for('static',filename='/scripts/classic-mode.js') }}"></script>
 <div class="flex flex-col justify-center items-center gap-y-[10px]">
     <div class="flex justify-center items-center mt-[20px] h-[100px] w-[200px] bg-dialogue-grey">
         <span class="text-white">
@@ -12,10 +12,9 @@
         <input class="p-[10px]"type="text" id="guess" placeholder="Enter character">
         <button class="p-[10px] text-white bg-gray-600" onclick="submitGuess()">Submit</button>
     </div>
-    <span id="result">result</span>
     <div id="hints_container" class="flex text-white font-bold flex-row gap-x-[25px]">
         <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_name">
-            <span>Character</span>
+            Character
         </div>
         <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_gender">
             Gender
@@ -33,5 +32,9 @@
             Release
         </div>
     </div>
+    <div id="results">
+        
+    </div>
+
 </div>
 {% endblock %}

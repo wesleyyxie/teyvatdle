@@ -9,7 +9,7 @@
   </head>
   <body class="flex flex-row justify-center h-screen m-0">
     <div class="w-full absolute -z-999 relative bg-no-repeat bg-background bg-cover h-screen overflow-hidden filter brightness-50"></div>
-    <div class="flex absolute z-1 flex-col justify-center h-[500px] pt-[50px]">
+    <div class="flex absolute z-1 flex-col h-[500px] pt-[50px] top-[50px] overflow-y-visible">
       <img src="{{url_for('static', filename='/images/site_logo.png')}}" class="aspect-[475/157]">
       {% block gamemode %}{% endblock %}
     </div>
