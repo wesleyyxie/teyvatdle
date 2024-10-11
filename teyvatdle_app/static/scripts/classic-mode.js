@@ -45,7 +45,7 @@ function checkGuess(category, guessData, row) {
 }
 function placeIcon(iconElement, guessData){
     console.log("now placing icon")
-    iconElement.style.backgroundImage = `url(https://genshin.jmp.blue/characters/${guessData["name"].toLowerCase().replace(' ', '-')}/icon-big)`
+    iconElement.style.backgroundImage = `url(https://genshin.jmp.blue/characters/${guessData["id"].toLowerCase().replace(' ', '-')}/icon-big)`
     iconElement.style.backgroundSize = '75px 75px'
     iconElement.style.backgroundPosition = 'center';
     iconElement.style.backgroundRepeat = 'no-repeat';
