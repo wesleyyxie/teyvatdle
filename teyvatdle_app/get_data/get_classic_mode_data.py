@@ -14,18 +14,20 @@ def write_json_file(file_path, content):
     with open(file_path, "w") as json_file:
         content_new_arr = []
         for character in content:
-            character_info = {
-                "name": character.get("name"),
-                "title": character.get("title"),
-                "vision": character.get("vision"),
-                "weapon": character.get("weapon"),
-                "gender": character.get("gender"),
-                "nation": character.get("nation"),
-                "affiliation": character.get("affiliation"),
-                "release": character.get("release"),
-                # maybe stars?
-            }
-            content_new_arr.append(character_info)
+            if "Traveler" not in character.get("name"):
+                character_info = {
+                    "name": character.get("name"),
+                    "title": character.get("title"),
+                    "vision": character.get("vision"),
+                    "weapon": character.get("weapon"),
+                    "gender": character.get("gender"),
+                    "nation": character.get("nation"),
+                    "affiliation": character.get("affiliation"),
+                    "release": character.get("release"),
+                    "id": character.get("id"),
+                    # maybe stars?
+                }
+                content_new_arr.append(character_info)
         json.dump(content_new_arr, json_file, indent=4)
         print(f"Data written to {file_path} successfully.")  # Confirmation message
 
@@ -35,7 +37,7 @@ def main():
 
     character_data = fetch_character_data(api_url)
     # Write all character data to a JSON file
-    output_file = "./teyvatdle/static/data/classicModeInfo.json"
+    output_file = "./teyvatdle_app/static/data/classicModeInfo.json"
     write_json_file(output_file, character_data)
 
 

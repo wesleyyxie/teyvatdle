@@ -108,5 +108,45 @@
         "nation": "Inazuma",
         "affiliation": "Yashiro Commission",
         "release": "2021-07-21"
+    },
+    {
+        "name": "Kuki Shinobu",
+        "title": "Mender of Tribulations",
+        "vision": "Electro",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Arataki Gang",
+        "release": "2022-06-21"
+    },
+    {
+        "name": "Ningguang",
+        "title": "Eclipsing Star",
+        "vision": "Geo",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Liyue Qixing",
+        "release": "2020-09-28"
+    },
+    {
+        "name": "Yae Miko",
+        "title": "Astute Amusement",
+        "vision": "Electro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Grand Narukami Shrine",
+        "release": "2022-02-16"
+    },
+    {
+        "name": "Beidou",
+        "title": "Uncrowned Lord of the Ocean",
+        "vision": "Electro",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "The Crux",
+        "release": "2020-09-28"
     }
 ]
