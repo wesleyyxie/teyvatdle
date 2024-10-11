@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TEYVATDLE</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='/css/output.css')}}">
+  </head>
+  <body class="flex flex-row justify-center h-screen m-0">
+    <div class="w-full absolute -z-999 relative bg-no-repeat bg-background bg-cover h-screen overflow-hidden filter brightness-50"></div>
+    <div class="flex absolute z-1 flex-col justify-center h-[500px] pt-[50px]">
+      <img src="{{url_for('static', filename='/images/site_logo.png')}}" class="aspect-[475/157]">
+      {% block gamemode %}{% endblock %}
+    </div>
+  </body>
+</html>

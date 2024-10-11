@@ -3,8 +3,9 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 from get_answers.update_classic_answer import update_classic_answer
 
-app = Flask(__name__)
+import os
 
+app = Flask(__name__)
 # IF DEBUG MODE IS ON, IT WILL TRIGGER THE SCHEDULER AGAIN
 # scheduler = BackgroundScheduler()
 # scheduler.add_job(func=update_classic_answer, trigger="interval", minutes=1)
@@ -39,4 +40,4 @@ def hello_world():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
