@@ -42,6 +42,25 @@ function checkGuess(category, guessData, row) {
     else {
         result_element.style = "background-color: red"
     }
+
+    // Add white outline and shadow
+    result_element.style.outline = "1px solid white";  // White outline
+    result_element.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.5)";  // Shadow effect
+    result_element.style.boxShadow = "inset 0px 4px 6px rgba(0, 0, 0, 0.5)";  // Internal shadow
+
+    // Center text
+    result_element.style.display = "flex";
+    result_element.style.alignItems = "center";  // Vertically center
+    result_element.style.justifyContent = "center";  // Horizontally center
+    result_element.style.textAlign = "center";  // Centers text if its multi-lined 
+    
+}
+function placeIcon(iconElement, guessData){
+    console.log("now placing icon")
+    iconElement.style.backgroundImage = `url(https://genshin.jmp.blue/characters/${guessData["id"].toLowerCase().replace(' ', '-')}/icon-big)`
+    iconElement.style.backgroundSize = '75px 75px'
+    iconElement.style.backgroundPosition = 'center';
+    iconElement.style.backgroundRepeat = 'no-repeat';
 }
 function placeIcon(iconElement, guessData){
     console.log("now placing icon")
