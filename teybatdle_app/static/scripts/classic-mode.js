@@ -76,4 +76,6 @@ async function submitGuess(){
     checkGuess("release", guessData, row)
     console.log(row)
     resultsContainer.prepend(row)
+
+    document.getElementById("guess").value = "";  //Removes all user input in text box
 }
