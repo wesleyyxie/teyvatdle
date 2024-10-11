@@ -566,6 +566,10 @@ video {
   position: relative;
 }
 
+.top-\[50px\] {
+  top: 50px;
+}
+
 .m-0 {
   margin: 0px;
 }
@@ -594,8 +598,8 @@ video {
   height: 100px;
 }
 
-.h-\[600px\] {
-  height: 600px;
+.h-\[500px\] {
+  height: 500px;
 }
 
 .h-\[75px\] {
@@ -647,6 +651,10 @@ video {
   overflow: hidden;
 }
 
+.overflow-y-visible {
+  overflow-y: visible;
+}
+
 .border-b-4 {
   border-bottom-width: 4px;
 }
@@ -670,6 +678,10 @@ video {
 
 .p-\[10px\] {
   padding: 10px;
+}
+
+.pb-\[10px\] {
+  padding-bottom: 10px;
 }
 
 .pt-\[50px\] {
