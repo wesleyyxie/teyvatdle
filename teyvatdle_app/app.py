@@ -8,7 +8,7 @@ import os
 app = Flask(__name__)
 # IF DEBUG MODE IS ON, IT WILL TRIGGER THE SCHEDULER AGAIN
 # scheduler = BackgroundScheduler()
-# scheduler.add_job(func=update_classic_answer, trigger="interval", minutes=1)
+# scheduler.add_job(func=update_classic_answer, trigger=”cron”, hour = 0, minute = 0)
 # scheduler.start()
 
 update_classic_answer()
