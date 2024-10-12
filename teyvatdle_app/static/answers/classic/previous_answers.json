@@ -456,5 +456,126 @@
         "affiliation": "Haravatat",
         "release": "2022-12-07",
         "id": "faruzan"
+    },
+    {
+        "name": "Baizhu",
+        "title": "Beyond Mortality",
+        "vision": "Dendro",
+        "weapon": "Catalyst",
+        "gender": "Male",
+        "nation": "Liyue",
+        "affiliation": "Bubu Pharmacy",
+        "release": "2023-05-02",
+        "id": "baizhu"
+    },
+    {
+        "name": "Sethos",
+        "title": "Wisdom's Measure",
+        "vision": "Electro",
+        "weapon": "Bow",
+        "gender": "Male",
+        "nation": "Sumeru",
+        "affiliation": "Temple of Silence",
+        "release": "2024-06-05",
+        "id": "sethos"
+    },
+    {
+        "name": "Navia",
+        "title": "Helm of the Radiant Rose",
+        "vision": "Geo",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "Spina di Rosula",
+        "release": "2023-12-20",
+        "id": "navia"
+    },
+    {
+        "name": "Kaeya",
+        "title": "Frostwind Swordsman",
+        "vision": "Cryo",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020-09-28",
+        "id": "kaeya"
+    },
+    {
+        "name": "Tighnari",
+        "title": "Verdant Strider",
+        "vision": "Dendro",
+        "weapon": "Bow",
+        "gender": "Male",
+        "nation": "Sumeru",
+        "affiliation": "Gandharva Ville",
+        "release": "2022-08-24",
+        "id": "tighnari"
+    },
+    {
+        "name": "Mika",
+        "title": "Coordinates of Clear Frost",
+        "vision": "Cryo",
+        "weapon": "Polearm",
+        "gender": "Male",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2023-03-21",
+        "id": "mika"
+    },
+    {
+        "name": "Amber",
+        "title": "Gliding Champion",
+        "vision": "Pyro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020-09-28",
+        "id": "amber"
+    },
+    {
+        "name": "Furina",
+        "title": "Endless Solo of Solitude",
+        "vision": "Hydro",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "Court of Fontaine",
+        "release": "2023",
+        "id": "furina"
+    },
+    {
+        "name": "Yoimiya",
+        "title": "Frolicking Flames",
+        "vision": "Pyro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Naganohara Fireworks",
+        "release": "2021",
+        "id": "yoimiya"
+    },
+    {
+        "name": "Bennett",
+        "title": "Trial by Fire",
+        "vision": "Pyro",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Mondstadt",
+        "affiliation": "Adventurers' Guild",
+        "release": "2020",
+        "id": "bennett"
+    },
+    {
+        "name": "Amber",
+        "title": "Gliding Champion",
+        "vision": "Pyro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "amber"
     }
 ]
