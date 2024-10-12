@@ -1,16 +1,6 @@
 var characters_info_data = null
 var answerData = null
 
-window.onload = async function() {
-    const answer_res = await fetch("/static/answers/classic/todays_answer.json");
-    answerData = await answer_res.json();
-    console.log(answerData);
-
-    const character_info_res = await fetch("/static/data/classicModeInfo.json");
-    characters_info_data = await character_info_res.json();
-    console.log(characters_info_data)
-};
-
 function createBlankRow(){
     categories = ['image', 'gender', 'vision', 'weapon', 'nation', 'release']
     rowContainer = document.createElement('div')
@@ -77,3 +67,22 @@ async function submitGuess(){
 
     document.getElementById("guess").value = "";  //Removes all user input in text box
 }
+
+function checkSubmit(e) {
+    if(e && e.keyCode == 13) {
+       document.getElementById('submit').click()
+    }
+ }
+
+window.onload = async function() {
+    const answer_res = await fetch("/static/answers/classic/todays_answer.json");
+    answerData = await answer_res.json();
+    console.log(answerData);
+    const character_info_res = await fetch("/static/data/classicModeInfo.json");
+    characters_info_data = await character_info_res.json();
+    console.log(characters_info_data)
+
+    document.getElementById('guess').focus();
+    document.addEventListener("keyup", checkSubmit)
+
+};
