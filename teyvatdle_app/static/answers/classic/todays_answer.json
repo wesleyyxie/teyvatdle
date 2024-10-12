@@ -1,11 +1,11 @@
 {
-    "name": "Faruzan",
-    "title": "Enigmatic Machinist",
-    "vision": "Anemo",
+    "name": "Amber",
+    "title": "Gliding Champion",
+    "vision": "Pyro",
     "weapon": "Bow",
     "gender": "Female",
-    "nation": "Sumeru",
-    "affiliation": "Haravatat",
-    "release": "2022-12-07",
-    "id": "faruzan"
+    "nation": "Mondstadt",
+    "affiliation": "Knights of Favonius",
+    "release": "2020",
+    "id": "amber"
 }

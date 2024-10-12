@@ -7,8 +7,8 @@
         "gender": "Male",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
-        "release": "2020-12-23",
-        "id": "Albedo"
+        "release": "2020",
+        "id": "albedo"
     },
     {
         "name": "Alhaitham",
@@ -18,7 +18,7 @@
         "gender": "Male",
         "nation": "Sumeru",
         "affiliation": "Sumeru Akademiya",
-        "release": "2023-01-18",
+        "release": "2023",
         "id": "alhaitham"
     },
     {
@@ -29,7 +29,7 @@
         "gender": "Female",
         "nation": "Unknown",
         "affiliation": "Wandering Heroine",
-        "release": "2021-10-13",
+        "release": "2021",
         "id": "aloy"
     },
     {
@@ -40,7 +40,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "amber"
     },
     {
@@ -51,7 +51,7 @@
         "gender": "Male",
         "nation": "Inazuma",
         "affiliation": "Arataki Gang Oni",
-        "release": "2021-12-14",
+        "release": "2021",
         "id": "arataki-itto"
     },
     {
@@ -62,7 +62,7 @@
         "gender": "Female",
         "nation": "Snezhnaya",
         "affiliation": "Fatui",
-        "release": "2024-04-24",
+        "release": "2024",
         "id": "arlecchino"
     },
     {
@@ -73,7 +73,7 @@
         "gender": "Female",
         "nation": "Inazuma",
         "affiliation": "Yashiro Commission",
-        "release": "2021-07-21",
+        "release": "2021",
         "id": "ayaka"
     },
     {
@@ -84,7 +84,7 @@
         "gender": "Male",
         "nation": "Inazuma",
         "affiliation": "Yashiro Commission",
-        "release": "2022-03-30",
+        "release": "2022",
         "id": "ayato"
     },
     {
@@ -95,7 +95,7 @@
         "gender": "Male",
         "nation": "Liyue",
         "affiliation": "Bubu Pharmacy",
-        "release": "2023-05-02",
+        "release": "2023",
         "id": "baizhu"
     },
     {
@@ -106,7 +106,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Church of Favonius",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "barbara"
     },
     {
@@ -117,7 +117,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "The Crux",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "beidou"
     },
     {
@@ -128,7 +128,7 @@
         "gender": "Male",
         "nation": "Mondstadt",
         "affiliation": "Adventurers' Guild",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "bennett"
     },
     {
@@ -139,8 +139,8 @@
         "gender": "Female",
         "nation": "Sumeru",
         "affiliation": "Aaru Village",
-        "release": "2022-09-28",
-        "id": "candace"
+        "release": "2022",
+        "id": "Candace"
     },
     {
         "name": "Charlotte",
@@ -150,8 +150,8 @@
         "gender": "Female",
         "nation": "Fontaine",
         "affiliation": "The Steambird",
-        "release": "2023-11-08",
-        "id": "Charlotte"
+        "release": "2023",
+        "id": "charlotte"
     },
     {
         "name": "Chevreuse",
@@ -161,7 +161,7 @@
         "gender": "Female",
         "nation": "Fontaine",
         "affiliation": "Special Security and Surveillance Patrol",
-        "release": "2024-01-09",
+        "release": "2024",
         "id": "chevreuse"
     },
     {
@@ -172,7 +172,7 @@
         "gender": "Female",
         "nation": "Inazuma",
         "affiliation": "Chioriya Boutique",
-        "release": "2024-03-13",
+        "release": "2024",
         "id": "chiori"
     },
     {
@@ -183,7 +183,7 @@
         "gender": "Male",
         "nation": "Liyue",
         "affiliation": "Liyue Harbor",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "chongyun"
     },
     {
@@ -194,7 +194,7 @@
         "gender": "Female",
         "nation": "Fontaine",
         "affiliation": "Trial Court",
-        "release": "2024-06-05",
+        "release": "2024",
         "id": "clorinde"
     },
     {
@@ -205,7 +205,7 @@
         "gender": "Female",
         "nation": "Sumeru",
         "affiliation": "Avidya Forest Ranger Trainee",
-        "release": "2022-08-24",
+        "release": "2022",
         "id": "collei"
     },
     {
@@ -216,7 +216,7 @@
         "gender": "Male",
         "nation": "Sumeru",
         "affiliation": "Temple of Silence",
-        "release": "2022-09-28",
+        "release": "2022",
         "id": "cyno"
     },
     {
@@ -227,7 +227,7 @@
         "gender": "Female",
         "nation": "Sumeru",
         "affiliation": "The Eremites",
-        "release": "2023-03-01",
+        "release": "2023",
         "id": "dehya"
     },
     {
@@ -238,7 +238,7 @@
         "gender": "Male",
         "nation": "Mondstadt",
         "affiliation": "Dawn Winery",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "diluc"
     },
     {
@@ -249,7 +249,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "The Cat's Tail",
-        "release": "2020-11-11",
+        "release": "2020",
         "id": "diona"
     },
     {
@@ -260,7 +260,7 @@
         "gender": "Female",
         "nation": "Sumeru",
         "affiliation": "Sumeru Merchant",
-        "release": "2022-09-09",
+        "release": "2022",
         "id": "dori"
     },
     {
@@ -271,7 +271,7 @@
         "gender": "Female",
         "nation": "Fontaine",
         "affiliation": "Court of Fontaine",
-        "release": "2022-08-06",
+        "release": "2022",
         "id": "emilie"
     },
     {
@@ -282,7 +282,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
-        "release": "2021-05-18",
+        "release": "2021",
         "id": "eula"
     },
     {
@@ -293,7 +293,7 @@
         "gender": "Female",
         "nation": "Sumeru",
         "affiliation": "Haravatat",
-        "release": "2022-12-07",
+        "release": "2022",
         "id": "faruzan"
     },
     {
@@ -304,7 +304,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Adventurers' Guild",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "fischl"
     },
     {
@@ -315,7 +315,7 @@
         "gender": "Male",
         "nation": "Fontaine",
         "affiliation": "Hotel Bouffes d'ete",
-        "release": "2023-09-06",
+        "release": "2023",
         "id": "freminet"
     },
     {
@@ -326,7 +326,7 @@
         "gender": "Female",
         "nation": "Fontaine",
         "affiliation": "Court of Fontaine",
-        "release": "2023-11-08",
+        "release": "2023",
         "id": "furina"
     },
     {
@@ -337,7 +337,7 @@
         "gender": "Male",
         "nation": "Liyue",
         "affiliation": "Sword and Strongbox Secure Transport Agency",
-        "release": "2024-01-31",
+        "release": "2024",
         "id": "gaming"
     },
     {
@@ -348,7 +348,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Yuehai Pavilion",
-        "release": "2021-01-12",
+        "release": "2021",
         "id": "ganyu"
     },
     {
@@ -359,7 +359,7 @@
         "gender": "Male",
         "nation": "Inazuma",
         "affiliation": "Watatsumi Island",
-        "release": "2021-12-14",
+        "release": "2021",
         "id": "gorou"
     },
     {
@@ -370,7 +370,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Wangsheng Funeral Parlor",
-        "release": "2021-03-02",
+        "release": "2021",
         "id": "hu-tao"
     },
     {
@@ -381,7 +381,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "jean"
     },
     {
@@ -392,8 +392,8 @@
         "gender": "Female",
         "nation": "Natlan",
         "affiliation": "Nanatzcayan",
-        "release": "2024-08-28",
-        "id": "kachina"
+        "release": "2024",
+        "id": "Kachina"
     },
     {
         "name": "Kaeya",
@@ -403,7 +403,7 @@
         "gender": "Male",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "kaeya"
     },
     {
@@ -414,7 +414,7 @@
         "gender": "Male",
         "nation": "Sumeru",
         "affiliation": "Independent Design Studio",
-        "release": "2023-05-02",
+        "release": "2023",
         "id": "kaveh"
     },
     {
@@ -425,8 +425,8 @@
         "gender": "Male",
         "nation": "Inazuma",
         "affiliation": "The Crux",
-        "release": "2021-06-29",
-        "id": "Kazuha"
+        "release": "2021",
+        "id": "kazuha"
     },
     {
         "name": "Keqing",
@@ -436,7 +436,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Liyue Qixing",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "keqing"
     },
     {
@@ -447,8 +447,8 @@
         "gender": "Male",
         "nation": "Natlan",
         "affiliation": "Scions of the Canopy",
-        "release": "2024-09-18",
-        "id": "Kinich"
+        "release": "2024",
+        "id": "kinich"
     },
     {
         "name": "Kirara",
@@ -458,7 +458,7 @@
         "gender": "Female",
         "nation": "Inazuma",
         "affiliation": "Komaniya Express",
-        "release": "2023-05-24",
+        "release": "2023",
         "id": "kirara"
     },
     {
@@ -469,7 +469,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
-        "release": "2020-10-20",
+        "release": "2020",
         "id": "klee"
     },
     {
@@ -480,7 +480,7 @@
         "gender": "Female",
         "nation": "Inazuma",
         "affiliation": "Watatsumi Island",
-        "release": "2021-09-21",
+        "release": "2021",
         "id": "kokomi"
     },
     {
@@ -491,7 +491,7 @@
         "gender": "Female",
         "nation": "Inazuma",
         "affiliation": "Arataki Gang",
-        "release": "2022-06-21",
+        "release": "2022",
         "id": "kuki-shinobu"
     },
     {
@@ -502,8 +502,8 @@
         "gender": "Female",
         "nation": "Sumeru",
         "affiliation": "Sumeru Akademiya",
-        "release": "2022-11-02",
-        "id": "layla"
+        "release": "2022",
+        "id": "Layla"
     },
     {
         "name": "Lisa",
@@ -513,7 +513,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "lisa"
     },
     {
@@ -524,8 +524,8 @@
         "gender": "Female",
         "nation": "Fontaine",
         "affiliation": "Hotel Bouffes d'ete",
-        "release": "2023-08-16",
-        "id": "lynette"
+        "release": "2023",
+        "id": "Lynette"
     },
     {
         "name": "Lyney",
@@ -535,8 +535,8 @@
         "gender": "Male",
         "nation": "Fontaine",
         "affiliation": "Hotel Bouffes d'ete",
-        "release": "2023-08-16",
-        "id": "lyney"
+        "release": "2023",
+        "id": "Lyney"
     },
     {
         "name": "Mika",
@@ -546,7 +546,7 @@
         "gender": "Male",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
-        "release": "2023-03-21",
+        "release": "2023",
         "id": "mika"
     },
     {
@@ -557,8 +557,8 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Mondstadt",
-        "release": "2020-09-28",
-        "id": "mona"
+        "release": "2020",
+        "id": "Mona"
     },
     {
         "name": "Mualani",
@@ -568,7 +568,7 @@
         "gender": "Female",
         "nation": "Natlan",
         "affiliation": "Meztli",
-        "release": "2024-08-28",
+        "release": "2024",
         "id": "mualani"
     },
     {
@@ -579,7 +579,7 @@
         "gender": "Female",
         "nation": "Sumeru",
         "affiliation": "Sumeru City",
-        "release": "2022-11-02",
+        "release": "2022",
         "id": "nahida"
     },
     {
@@ -590,7 +590,7 @@
         "gender": "Female",
         "nation": "Fontaine",
         "affiliation": "Spina di Rosula",
-        "release": "2023-12-20",
+        "release": "2023",
         "id": "navia"
     },
     {
@@ -601,7 +601,7 @@
         "gender": "Male",
         "nation": "Fontaine",
         "affiliation": "Court of Fontaine",
-        "release": "2023-09-27",
+        "release": "2023",
         "id": "Neuvillette"
     },
     {
@@ -612,7 +612,7 @@
         "gender": "Female",
         "nation": "Sumeru",
         "affiliation": "Zubayr Theater",
-        "release": "2022-10-14",
+        "release": "2022",
         "id": "nilou"
     },
     {
@@ -623,8 +623,8 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Liyue Qixing",
-        "release": "2020-09-28",
-        "id": "ningguang"
+        "release": "2020",
+        "id": "Ningguang"
     },
     {
         "name": "Noelle",
@@ -634,7 +634,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "noelle"
     },
     {
@@ -645,7 +645,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Bubu Pharmacy",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "qiqi"
     },
     {
@@ -656,7 +656,7 @@
         "gender": "Female",
         "nation": "Inazuma",
         "affiliation": "Inazuma City",
-        "release": "2021-09-01",
+        "release": "2021",
         "id": "raiden"
     },
     {
@@ -667,7 +667,7 @@
         "gender": "Male",
         "nation": "Mondstadt",
         "affiliation": "Wolvendom",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "razor"
     },
     {
@@ -678,7 +678,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Church of Favonius",
-        "release": "2021-04-06",
+        "release": "2021",
         "id": "rosaria"
     },
     {
@@ -689,7 +689,7 @@
         "gender": "Female",
         "nation": "Inazuma",
         "affiliation": "Tenryou Commission",
-        "release": "2021-09-01",
+        "release": "2021",
         "id": "sara"
     },
     {
@@ -700,7 +700,7 @@
         "gender": "Female",
         "nation": "Inazuma",
         "affiliation": "Shuumatsuban",
-        "release": "2021-08-10",
+        "release": "2021",
         "id": "sayu"
     },
     {
@@ -711,7 +711,7 @@
         "gender": "Male",
         "nation": "Sumeru",
         "affiliation": "Temple of Silence",
-        "release": "2024-06-05",
+        "release": "2024",
         "id": "sethos"
     },
     {
@@ -722,7 +722,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Liyue Harbor",
-        "release": "2022-01-05",
+        "release": "2022",
         "id": "shenhe"
     },
     {
@@ -733,7 +733,7 @@
         "gender": "Male",
         "nation": "Inazuma",
         "affiliation": "Tenryou Commission",
-        "release": "2022-07-13",
+        "release": "2022",
         "id": "shikanoin-heizou"
     },
     {
@@ -744,8 +744,8 @@
         "gender": "Female",
         "nation": "Fontaine",
         "affiliation": "Fortress of Meropide",
-        "release": "2024-06-25",
-        "id": "sigewinne"
+        "release": "2024",
+        "id": "Sigewinne"
     },
     {
         "name": "Sucrose",
@@ -755,7 +755,7 @@
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "sucrose"
     },
     {
@@ -766,7 +766,7 @@
         "gender": "Male",
         "nation": "Snezhnaya",
         "affiliation": "Fatui",
-        "release": "2020-11-11",
+        "release": "2020",
         "id": "tartaglia"
     },
     {
@@ -777,7 +777,7 @@
         "gender": "Male",
         "nation": "Mondstadt",
         "affiliation": "Yashiro Commission Kamisato Clan",
-        "release": "2021-11-02",
+        "release": "2021",
         "id": "thoma"
     },
     {
@@ -788,7 +788,7 @@
         "gender": "Male",
         "nation": "Sumeru",
         "affiliation": "Gandharva Ville",
-        "release": "2022-08-24",
+        "release": "2022",
         "id": "tighnari"
     },
     {
@@ -799,7 +799,7 @@
         "gender": "Male",
         "nation": "Mondstadt",
         "affiliation": "Mondstadt",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "venti"
     },
     {
@@ -810,7 +810,7 @@
         "gender": "Male",
         "nation": "Sumeru",
         "affiliation": "None",
-        "release": "2022-12-07",
+        "release": "2022",
         "id": "wanderer"
     },
     {
@@ -821,7 +821,7 @@
         "gender": "Male",
         "nation": "Fontaine",
         "affiliation": "Fortress of Meropide",
-        "release": "2023-10-17",
+        "release": "2023",
         "id": "wriothesley"
     },
     {
@@ -832,7 +832,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Wanmin Restaurant",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "xiangling"
     },
     {
@@ -843,7 +843,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Mt. Aocang",
-        "release": "2024-01-31",
+        "release": "2024",
         "id": "xianyun"
     },
     {
@@ -854,7 +854,7 @@
         "gender": "Male",
         "nation": "Liyue",
         "affiliation": "Liyue Adeptus",
-        "release": "2021-02-03",
+        "release": "2021",
         "id": "xiao"
     },
     {
@@ -865,7 +865,7 @@
         "gender": "Male",
         "nation": "Liyue",
         "affiliation": "Feiyun Commerce Guild",
-        "release": "2020-09-28",
+        "release": "2020",
         "id": "xingqiu"
     },
     {
@@ -876,8 +876,8 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Liyue Harbor",
-        "release": "2020-12-01",
-        "id": "xinyan"
+        "release": "2020",
+        "id": "Xinyan"
     },
     {
         "name": "Yae Miko",
@@ -887,7 +887,7 @@
         "gender": "Female",
         "nation": "Inazuma",
         "affiliation": "Grand Narukami Shrine",
-        "release": "2022-02-16",
+        "release": "2022",
         "id": "yae-miko"
     },
     {
@@ -898,7 +898,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Liyue Harbor Adepti",
-        "release": "2021-04-28",
+        "release": "2021",
         "id": "yanfei"
     },
     {
@@ -909,7 +909,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Streetward Rambler's Abode",
-        "release": "2023-01-18",
+        "release": "2023",
         "id": "yaoyao"
     },
     {
@@ -920,7 +920,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Yanshang Teahouse",
-        "release": "2022-05-31",
+        "release": "2022",
         "id": "yelan"
     },
     {
@@ -931,7 +931,7 @@
         "gender": "Female",
         "nation": "Inazuma",
         "affiliation": "Naganohara Fireworks",
-        "release": "2021-08-10",
+        "release": "2021",
         "id": "yoimiya"
     },
     {
@@ -942,7 +942,7 @@
         "gender": "Female",
         "nation": "Liyue",
         "affiliation": "Yun-Han Opera Troupe",
-        "release": "2022-01-05",
+        "release": "2022",
         "id": "yun-jin"
     },
     {
@@ -953,7 +953,7 @@
         "gender": "Male",
         "nation": "Liyue",
         "affiliation": "Liyue Harbor",
-        "release": "2020-12-01",
+        "release": "2020",
         "id": "zhongli"
     }
 ]

@@ -1,24 +1,21 @@
 var characters_info_data = null
 var answerData = null
 
+// Creates a blank row for the hints
 function createBlankRow(){
     categories = ['image', 'gender', 'vision', 'weapon', 'nation', 'release']
     rowContainer = document.createElement('div')
-    rowContainer.classList.add("flex", "text-white", "font-bold", "flex-row", "gap-x-[25px]",  "pb-[10px]")
+    rowContainer.classList.add("flex", "text-white", "font-bold", "text-[13px]", "flex-row", "gap-x-[12px]",  "pb-[10px]")
     for (i = 0; i < categories.length; i++) {
         categoryDiv = document.createElement('div')
         categoryDiv.classList.add("flex", "w-[75px]", "h-[75px]", "items-center", "justify-center", "text-center", "border", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]")
         categoryDiv.id = 'guess_' + categories[i]
         rowContainer.appendChild(categoryDiv)
-    }
-    console.log(rowContainer)
+    }   
     return rowContainer
 }
 
-function test(row){
-    console.log(row.querySelector("#guess_gender"))
-    row.querySelector("#guess_gender").innerText = "hi"
-}
+// Checks whether or not the guess was correct or not and changes boxes accordingly
 function checkGuess(category, guessData, row) {
     console.log("now checking " + category)
     result_element = row.querySelector("#guess_" + category)
@@ -26,23 +23,32 @@ function checkGuess(category, guessData, row) {
 
     if (guessData[category] == answerData[category]){
         result_element.style = "background-color: green"
+        return true;
     }
     else {
         result_element.style = "background-color: red"
+        return false
     }
 }
+
+// Places the character icon
 function placeIcon(iconElement, guessData){
     console.log("now placing icon")
-    iconElement.style.backgroundImage = `url(https://genshin.jmp.blue/characters/${guessData["id"].toLowerCase().replace(' ', '-')}/icon-big)`
+    console.log(guessData["id"])
+    iconElement.style.backgroundImage = `url('/static/images/character_icons/${guessData["id"].toLowerCase()}.png')`
     iconElement.style.backgroundSize = '75px 75px'
     iconElement.style.backgroundPosition = 'center';
     iconElement.style.backgroundRepeat = 'no-repeat';
 }
 
-async function submitGuess(){
-    let guess = document.getElementById("guess").value;
+// submits the guess
+function submitGuess(){
+    let inputElement = document.getElementById("guess");
+    let guess = inputElement.value
     let resultsContainer = document.getElementById('results')
     let guessData = null
+    let categories = ["gender", "vision", "weapon", "nation", "release"]
+    let gameOver = true
 
     row = createBlankRow()
 
@@ -55,17 +61,19 @@ async function submitGuess(){
         }
     }
 
-    //test(row)
     placeIcon(row.querySelector('#guess_image'), guessData)
-    checkGuess("gender", guessData, row)
-    checkGuess("vision", guessData, row)
-    checkGuess("weapon", guessData, row)
-    checkGuess("nation", guessData, row)
-    checkGuess("release", guessData, row)
-    console.log(row)
+    for (i = 0; i < categories.length; i++) {
+        if (!(checkGuess(categories[i], guessData, row))) {
+            gameOver = false
+        }
+    }
     resultsContainer.prepend(row)
+    if (gameOver) {
+        document.getElementById("submit").disabled = true
+        inputElement.disabled = true    
+    }
+    inputElement.value = "";  //Removes all user input in text box
 
-    document.getElementById("guess").value = "";  //Removes all user input in text box
 }
 
 function checkSubmit(e) {
@@ -74,15 +82,16 @@ function checkSubmit(e) {
     }
  }
 
+
+
 window.onload = async function() {
     const answer_res = await fetch("/static/answers/classic/todays_answer.json");
     answerData = await answer_res.json();
     console.log(answerData);
     const character_info_res = await fetch("/static/data/classicModeInfo.json");
     characters_info_data = await character_info_res.json();
-    console.log(characters_info_data)
+    console.log(characters_info_data);
 
     document.getElementById('guess').focus();
-    document.addEventListener("keyup", checkSubmit)
-
+    document.addEventListener("keyup", checkSubmit);
 };
