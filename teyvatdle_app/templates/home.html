@@ -1,13 +1,19 @@
 {% extends "base.html" %}
 {% block gamemode %}
-<div class="w-40px flex flex-col">
-    <div class="pt-[50px]">
-        <a href="/classic">
-            <img src="{{url_for('static', filename='/images/classic_button.png')}}" class="aspect-[580/116] hover:scale-button">
+<div class="flex-col ">
+    <div class="pt-[50px] flex flex-col gap-y-[12px]">
+        <a class="flex justify-center" href="/classic">
+            <img src="{{url_for('static', filename='/images/classic_button.png')}}" class="aspect-[580/116] h-[90px] hover:scale-button">
         </a>
-        <img src="{{url_for('static', filename='/images/voiceline_button.png')}}" class="aspect-[580/116] hover:scale-button">
-        <img src="{{url_for('static', filename='/images/ability_button.png')}}" class="aspect-[580/116] hover:scale-button">
-        <img src="{{url_for('static', filename='/images/spy_button.png')}}" class="aspect-[580/116] hover:scale-button">
+        <a class="flex justify-center" href="/voiceline">
+            <img src="{{url_for('static', filename='/images/voiceline_button.png')}}" class="aspect-[580/116] h-[90px] hover:scale-button">
+        </a>
+        <a class="flex justify-center" href="/ability">
+            <img src="{{url_for('static', filename='/images/ability_button.png')}}" class="aspect-[580/116] h-[90px] hover:scale-button">
+        </a>
+        <a class="flex justify-center" href="/spy">
+            <img src="{{url_for('static', filename='/images/spy_button.png')}}" class="aspect-[580/116] h-[90px] hover:scale-button">
+        </a>
     </div>
 </div>
 {% endblock %}
