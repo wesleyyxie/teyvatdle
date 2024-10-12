@@ -412,5 +412,27 @@
         "affiliation": "Wanmin Restaurant",
         "release": "2020-09-28",
         "id": "xiangling"
+    },
+    {
+        "name": "Raiden Shogun",
+        "title": "Plane of Euthymia",
+        "vision": "Electro",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Inazuma City",
+        "release": "2021-09-01",
+        "id": "raiden"
+    },
+    {
+        "name": "Collei",
+        "title": "Sprout of Rebirth",
+        "vision": "Dendro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Sumeru",
+        "affiliation": "Avidya Forest Ranger Trainee",
+        "release": "2022-08-24",
+        "id": "collei"
     }
 ]

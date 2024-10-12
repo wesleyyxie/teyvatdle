@@ -1,11 +1,11 @@
 {
-    "name": "Xiangling",
-    "title": "Exquisite Delicacy",
-    "vision": "Pyro",
-    "weapon": "Polearm",
+    "name": "Collei",
+    "title": "Sprout of Rebirth",
+    "vision": "Dendro",
+    "weapon": "Bow",
     "gender": "Female",
-    "nation": "Liyue",
-    "affiliation": "Wanmin Restaurant",
-    "release": "2020-09-28",
-    "id": "xiangling"
+    "nation": "Sumeru",
+    "affiliation": "Avidya Forest Ranger Trainee",
+    "release": "2022-08-24",
+    "id": "collei"
 }
