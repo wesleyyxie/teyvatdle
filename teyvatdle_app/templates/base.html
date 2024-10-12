@@ -6,6 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>TEYVATDLE</title>
     <link rel="stylesheet" href="{{url_for('static', filename='/css/output.css')}}">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              'background': "url('../static/images/background.jpg')",
+            }
+          },
+        },
+      }
+    </script>
   </head>
   <body class="flex flex-row justify-center h-screen m-0">
     <div class="w-full absolute -z-999 relative bg-no-repeat bg-background bg-cover h-screen overflow-hidden filter brightness-50"></div>
