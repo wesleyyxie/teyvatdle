@@ -17,7 +17,7 @@ function createBlankRow(){
     rowContainer.classList.add("flex", "text-white", "font-bold", "flex-row", "gap-x-[25px]",  "pb-[10px]")
     for (i = 0; i < categories.length; i++) {
         categoryDiv = document.createElement('div')
-        categoryDiv.classList.add("flex", "w-[75px]", "h-[75px]")
+        categoryDiv.classList.add("flex", "w-[75px]", "h-[75px]", "items-center", "justify-center", "text-center", "border", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]")
         categoryDiv.id = 'guess_' + categories[i]
         rowContainer.appendChild(categoryDiv)
     }
@@ -32,8 +32,6 @@ function test(row){
 function checkGuess(category, guessData, row) {
     console.log("now checking " + category)
     result_element = row.querySelector("#guess_" + category)
-    
-    
     result_element.innerText = guessData[category]
 
     if (guessData[category] == answerData[category]){
@@ -42,16 +40,6 @@ function checkGuess(category, guessData, row) {
     else {
         result_element.style = "background-color: red"
     }
-    // Add white outline and shadow
-    result_element.style.outline = "1px solid white";  // White outline
-    result_element.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.5)";  // Shadow effect
-    result_element.style.boxShadow = "inset 0px 4px 6px rgba(0, 0, 0, 0.5)";  // Internal shadow
-
-    // Center text
-    result_element.style.display = "flex";
-    result_element.style.alignItems = "center";  // Vertically center
-    result_element.style.justifyContent = "center";  // Horizontally center 
-    result_element.style.textAlign = "center";  // Centers text if its multi-lined 
 }
 function placeIcon(iconElement, guessData){
     console.log("now placing icon")
@@ -59,16 +47,6 @@ function placeIcon(iconElement, guessData){
     iconElement.style.backgroundSize = '75px 75px'
     iconElement.style.backgroundPosition = 'center';
     iconElement.style.backgroundRepeat = 'no-repeat';
-
-    // Add white outline and shadow
-    iconElement.style.outline = "1px solid white";  // White outline
-    iconElement.style.boxShadow = "0px 4px 6px rgba(0, 0, 0, 0.5)";  // Shadow effect
-    iconElement.style.boxShadow = "inset 0px 4px 6px rgba(0, 0, 0, 0.5)";  // Internal shadow
-
-    // Center icon
-    iconElement.style.display = "flex";
-    iconElement.style.alignItems = "center";  // Vertically center
-    iconElement.style.justifyContent = "center";  // Horizontally center
 }
 
 async function submitGuess(){

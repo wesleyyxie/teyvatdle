@@ -655,8 +655,17 @@ video {
   overflow-y: visible;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-b-4 {
   border-bottom-width: 4px;
+}
+
+.border-white {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
 .bg-gray-600 {
@@ -688,6 +697,10 @@ video {
   padding-top: 50px;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -697,6 +710,18 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.shadow-\[0_4px_6px_rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
+  --tw-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  --tw-shadow-colored: 0 4px 6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-\[inset_0_4px_6px_rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
+  --tw-shadow: inset 0 4px 6px rgba(0,0,0,0.5);
+  --tw-shadow-colored: inset 0 4px 6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .brightness-50 {
   --tw-brightness: brightness(.5);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -704,13 +729,4 @@ video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-/* When user cursor hovers over button, enlarges the button */
-.hover\:scale-button {
-  transition: transform 0.3s ease-in-out; 
-}
-
-.hover\:scale-button:hover {
-  transform: scale(1.05); /* Changes how big you want the image to be enlarged */
 }

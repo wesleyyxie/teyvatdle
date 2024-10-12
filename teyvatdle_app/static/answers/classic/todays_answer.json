@@ -1,10 +1,11 @@
 {
-    "name": "Beidou",
-    "title": "Uncrowned Lord of the Ocean",
-    "vision": "Electro",
-    "weapon": "Claymore",
+    "name": "Xiangling",
+    "title": "Exquisite Delicacy",
+    "vision": "Pyro",
+    "weapon": "Polearm",
     "gender": "Female",
     "nation": "Liyue",
-    "affiliation": "The Crux",
-    "release": "2020-09-28"
+    "affiliation": "Wanmin Restaurant",
+    "release": "2020-09-28",
+    "id": "xiangling"
 }
