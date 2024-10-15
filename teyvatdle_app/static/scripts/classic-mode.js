@@ -73,7 +73,7 @@ function submitGuess(e){
         document.getElementById("submit").disabled = true
         inputElement.disabled = true    
     }
-    let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value);
+    let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
     console.log(index)
     window.arr.splice(index, 1)[0];
     console.log(window.arr)
