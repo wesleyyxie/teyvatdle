@@ -53,7 +53,7 @@ function submitGuess(e){
 
     row = createBlankRow()
 
-    for (i = 0; i < charactersInfoData.length; i++){
+    for (i = 0; i < charactersInfoData.length; i++) {
         let currentCharacter = charactersInfoData[i];
         console.log(currentCharacter["name"])
         if (currentCharacter["name"].toLowerCase() == guess.toLowerCase()){
@@ -61,24 +61,24 @@ function submitGuess(e){
             break;
         }
     }
-
-    placeIcon(row.querySelector('#guess_image'), guessData)
-    for (i = 0; i < categories.length; i++) {
-        if (!(checkGuess(categories[i], guessData, row))) {
-            gameOver = false
+    if (guessData) {
+        placeIcon(row.querySelector('#guess_image'), guessData)
+        for (i = 0; i < categories.length; i++) {
+            if (!(checkGuess(categories[i], guessData, row))) {
+                gameOver = false
+            }
         }
+        resultsContainer.prepend(row)
+        if (gameOver) {
+            document.getElementById("submit").disabled = true
+            inputElement.disabled = true    
+        }
+        let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
+        window.arr.splice(index, 1)[0];
+        inputElement.value = "";  //Removes all user input in text box
+        inputElement.focus();
     }
-    resultsContainer.prepend(row)
-    if (gameOver) {
-        document.getElementById("submit").disabled = true
-        inputElement.disabled = true    
-    }
-    let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
-    console.log(index)
-    window.arr.splice(index, 1)[0];
-    console.log(window.arr)
-    inputElement.value = "";  //Removes all user input in text box
-    inputElement.focus();
+
 
 }
 

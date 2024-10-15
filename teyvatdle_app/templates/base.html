@@ -19,8 +19,10 @@
       }
     </script>
   </head>
-  <body class="flex flex-row justify-center h-screen m-0">
-    <div class="w-full absolute -z-999 relative bg-no-repeat bg-background bg-cover h-screen overflow-hidden filter brightness-50"></div>
+  <body class="flex flex-row justify-center h-screen m-0 bg-black">
+    <div class="w-full absolute -z-999 relative bg-no-repeat bg-background bg-cover h-screen overflow-hidden filter brightness-75 from-current to-black">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/0 to-black/100 pointer-events-none"></div>
+    </div>
     <div class="flex absolute z-1 flex-col h-[500px] pt-[50px] top-[50px] overflow-y-visible">
       <a class="flex justify-center hover:scale-button" href="/">
         <img src="{{url_for('static', filename='/images/site_logo.png')}}" class="aspect-[475/157]">
