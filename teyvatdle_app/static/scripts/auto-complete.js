@@ -12,7 +12,7 @@ function autocomplete(inp, arr) {
         /*create a DIV element that will contain the items (values):*/
         a = document.createElement("DIV");
         a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items bg-white z-99 absolute w-[300px]");
+        a.setAttribute("class", "autocomplete-items bg-white z-99 absolute w-[300px] max-h-[300px] overflow-y-scroll");
         /*append the DIV element as a child of the autocomplete container:*/
         this.parentNode.appendChild(a);
         /*for each item in the array...*/
@@ -100,9 +100,8 @@ function autocomplete(inp, arr) {
           e.preventDefault();
           if (currentFocus > -1) {
             /*and simulate a click on the "active" item:*/
-            if (x) {
-                x[currentFocus].click();
-                
+            if (x.length > 0) {
+                x[currentFocus].click();   
             }
           }
         }

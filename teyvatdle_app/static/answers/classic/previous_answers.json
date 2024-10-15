@@ -665,5 +665,27 @@
         "affiliation": "Arataki Gang Oni",
         "release": "2021",
         "id": "arataki-itto"
+    },
+    {
+        "name": "Candace",
+        "title": "Golden Vow",
+        "vision": "Hydro",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Sumeru",
+        "affiliation": "Aaru Village",
+        "release": "2022",
+        "id": "Candace"
+    },
+    {
+        "name": "Sucrose",
+        "title": "Harmless Sweetie",
+        "vision": "Anemo",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "sucrose"
     }
 ]
