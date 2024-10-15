@@ -577,5 +577,93 @@
         "affiliation": "Knights of Favonius",
         "release": "2020",
         "id": "amber"
+    },
+    {
+        "name": "Mika",
+        "title": "Coordinates of Clear Frost",
+        "vision": "Cryo",
+        "weapon": "Polearm",
+        "gender": "Male",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2023",
+        "id": "mika"
+    },
+    {
+        "name": "Kachina",
+        "title": "Mottled Gold Yet Unsmelted",
+        "vision": "Geo",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Natlan",
+        "affiliation": "Nanatzcayan",
+        "release": "2024",
+        "id": "Kachina"
+    },
+    {
+        "name": "Mualani",
+        "title": "Splish-Splash Wavechaser",
+        "vision": "Hydro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Natlan",
+        "affiliation": "Meztli",
+        "release": "2024",
+        "id": "mualani"
+    },
+    {
+        "name": "Zhongli",
+        "title": "Vago Mundo",
+        "vision": "Geo",
+        "weapon": "Polearm",
+        "gender": "Male",
+        "nation": "Liyue",
+        "affiliation": "Liyue Harbor",
+        "release": "2020",
+        "id": "zhongli"
+    },
+    {
+        "name": "Lisa",
+        "title": "Witch of Purple Rose",
+        "vision": "Electro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "lisa"
+    },
+    {
+        "name": "Chevreuse",
+        "title": "Executor of Justice",
+        "vision": "Pyro",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "Special Security and Surveillance Patrol",
+        "release": "2024",
+        "id": "chevreuse"
+    },
+    {
+        "name": "Yaoyao",
+        "title": "Burgeoning Grace",
+        "vision": "Dendro",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Streetward Rambler's Abode",
+        "release": "2023",
+        "id": "yaoyao"
+    },
+    {
+        "name": "Arataki Itto",
+        "title": "Hanamizaka Heroics",
+        "vision": "Geo",
+        "weapon": "Claymore",
+        "gender": "Male",
+        "nation": "Inazuma",
+        "affiliation": "Arataki Gang Oni",
+        "release": "2021",
+        "id": "arataki-itto"
     }
 ]

@@ -714,6 +714,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.autocomplete-active {
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
+}
+
 .shadow-\[0_4px_6px_rgba\(0\2c 0\2c 0\2c 0\.5\)\] {
   --tw-shadow: 0 4px 6px rgba(0,0,0,0.5);
   --tw-shadow-colored: 0 4px 6px var(--tw-shadow-color);
