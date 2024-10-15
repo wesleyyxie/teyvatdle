@@ -1,4 +1,4 @@
-var characters_info_data = null
+var charactersInfoData = null
 var answerData = null
 
 // Creates a blank row for the hints
@@ -42,7 +42,8 @@ function placeIcon(iconElement, guessData){
 }
 
 // submits the guess
-function submitGuess(){
+function submitGuess(e){
+    e.preventDefault();
     let inputElement = document.getElementById("guess");
     let guess = inputElement.value
     let resultsContainer = document.getElementById('results')
@@ -52,11 +53,11 @@ function submitGuess(){
 
     row = createBlankRow()
 
-    for (var i = 0; i < characters_info_data.length; i++){
-        var current_character = characters_info_data[i];
-        console.log(current_character["name"])
-        if (current_character["name"].toLowerCase() == guess.toLowerCase()){
-            guessData = current_character
+    for (i = 0; i < charactersInfoData.length; i++){
+        let currentCharacter = charactersInfoData[i];
+        console.log(currentCharacter["name"])
+        if (currentCharacter["name"].toLowerCase() == guess.toLowerCase()){
+            guessData = currentCharacter
             break;
         }
     }
@@ -72,26 +73,33 @@ function submitGuess(){
         document.getElementById("submit").disabled = true
         inputElement.disabled = true    
     }
+    let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value);
+    console.log(index)
+    window.arr.splice(index, 1)[0];
+    console.log(window.arr)
     inputElement.value = "";  //Removes all user input in text box
+    inputElement.focus();
 
 }
 
+// submit on enter
 function checkSubmit(e) {
     if(e && e.keyCode == 13) {
        document.getElementById('submit').click()
     }
- }
+}
 
-
-
-window.onload = async function() {
-    const answer_res = await fetch("/static/answers/classic/todays_answer.json");
-    answerData = await answer_res.json();
+window.addEventListener('load', async function() {
+    const answerRes = await fetch("/static/answers/classic/todays_answer.json");
+    answerData = await answerRes.json();
     console.log(answerData);
-    const character_info_res = await fetch("/static/data/classicModeInfo.json");
-    characters_info_data = await character_info_res.json();
-    console.log(characters_info_data);
+    const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
+    charactersInfoData = await characterInfoRes.json();
 
+
+    console.log(charactersInfoData);
+    
     document.getElementById('guess').focus();
     document.addEventListener("keyup", checkSubmit);
-};
+    document.getElementById("guess-form").addEventListener("submit", submitGuess)
+});

@@ -1,11 +1,11 @@
 {
-    "name": "Amber",
-    "title": "Gliding Champion",
-    "vision": "Pyro",
-    "weapon": "Bow",
-    "gender": "Female",
-    "nation": "Mondstadt",
-    "affiliation": "Knights of Favonius",
-    "release": "2020",
-    "id": "amber"
+    "name": "Arataki Itto",
+    "title": "Hanamizaka Heroics",
+    "vision": "Geo",
+    "weapon": "Claymore",
+    "gender": "Male",
+    "nation": "Inazuma",
+    "affiliation": "Arataki Gang Oni",
+    "release": "2021",
+    "id": "arataki-itto"
 }
