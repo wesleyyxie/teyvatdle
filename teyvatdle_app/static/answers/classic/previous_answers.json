@@ -687,5 +687,27 @@
         "affiliation": "Knights of Favonius",
         "release": "2020",
         "id": "sucrose"
+    },
+    {
+        "name": "Jean",
+        "title": "Dandelion Knight",
+        "vision": "Anemo",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "jean"
+    },
+    {
+        "name": "Sayu",
+        "title": "Mujina Ninja",
+        "vision": "Anemo",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Shuumatsuban",
+        "release": "2021",
+        "id": "sayu"
     }
 ]

@@ -17,17 +17,18 @@ function createBlankRow(){
 }
 
 // Checks whether or not the guess was correct or not and changes boxes accordingly
-function checkGuess(category, guessData, row) {
+function checkGuess(category, guessData, row, i) {
     console.log("now checking " + category)
     result_element = row.querySelector("#guess_" + category)
     result_element.innerText = guessData[category]
-
-    if (guessData[category] == answerData[category]){
-        result_element.style = "background-color: green"
+    result_element.style.animationDelay = `${0.4 * i}s`
+    
+    if (guessData[category] == answerData[category]){   
+        result_element.classList.add('fade-to-green')
         return true;
     }
     else {
-        result_element.style = "background-color: red"
+        result_element.classList.add('fade-to-red')
         return false
     }
 }
@@ -65,8 +66,9 @@ function submitGuess(e){
     }
     if (guessData) {
         placeIcon(row.querySelector('#guess_image'), guessData)
+
         for (i = 0; i < categories.length; i++) {
-            if (!(checkGuess(categories[i], guessData, row))) {
+            if (!(checkGuess(categories[i], guessData, row, i))) {
                 gameOver = false
             }
         }

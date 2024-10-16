@@ -1,11 +1,11 @@
 {
-    "name": "Sucrose",
-    "title": "Harmless Sweetie",
+    "name": "Sayu",
+    "title": "Mujina Ninja",
     "vision": "Anemo",
-    "weapon": "Catalyst",
+    "weapon": "Claymore",
     "gender": "Female",
-    "nation": "Mondstadt",
-    "affiliation": "Knights of Favonius",
-    "release": "2020",
-    "id": "sucrose"
+    "nation": "Inazuma",
+    "affiliation": "Shuumatsuban",
+    "release": "2021",
+    "id": "sayu"
 }
