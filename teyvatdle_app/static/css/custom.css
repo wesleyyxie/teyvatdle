@@ -1,0 +1,26 @@
+.autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }
+
+  @keyframes fadeToGreen {
+    0% {
+        background-color: transparent; /* Starting color */
+    }
+    100% {
+        background-color: green; /* End color */
+    }
+}
+
+  .fade-to-green { animation: fadeToGreen 0.5s forwards; }
+
+  @keyframes fadeToRed {
+    0% {
+        background-color: transparent; /* Starting color */
+    }
+    100% {
+        background-color: rgb(255, 0, 0); /* End color */
+    }
+}
+
+  .fade-to-red { animation: fadeToRed 0.5s forwards; }
