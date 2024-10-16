@@ -97,10 +97,10 @@ function displayCongratulatoryMessage(tries) {
         message = `Congrats! You guessed it in ${tries} tries!`;
     }
 
+    setTimeout(() => {
     congratsMessageElement.innerText = message;
     congratsMessageElement.classList.remove("hidden");
-    congratsMessageElement.classList.add("text-white", "bg-green-600", "p-4", "mt-4", "rounded");
-    setTimeout(() => {
+    congratsMessageElement.classList.add("text-white", "bg-green-800", "border-4", "border-green-600", "p-4", "mt-4", "rounded");
         congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }, 2200);
 }
