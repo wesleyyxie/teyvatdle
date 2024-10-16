@@ -43,45 +43,43 @@ function placeIcon(iconElement, guessData){
     iconElement.style.backgroundRepeat = 'no-repeat';
 }
 
-// submits the guess
-function submitGuess(e){
+function submitGuess(e) {
     e.preventDefault();
     let inputElement = document.getElementById("guess");
-    let guess = inputElement.value
-    let resultsContainer = document.getElementById('results')
-    let guessData = null
-    let categories = ["gender", "vision", "weapon", "nation", "release"]
-    let gameOver = true
+    let guess = inputElement.value;
+    let resultsContainer = document.getElementById('results');
+    let guessData = null;
+    let categories = ["gender", "vision", "weapon", "nation", "release"];
+    let gameOver = true;
 
-    row = createBlankRow()
-    tries++;
+    row = createBlankRow();
+    tries++; // Increment tries count
 
-    for (i = 0; i < charactersInfoData.length; i++) {
+    for (let i = 0; i < charactersInfoData.length; i++) {
         let currentCharacter = charactersInfoData[i];
-        console.log(currentCharacter["name"])
-        if (currentCharacter["name"].toLowerCase() == guess.toLowerCase()){
-            guessData = currentCharacter
+        console.log(currentCharacter["name"]);
+        if (currentCharacter["name"].toLowerCase() == guess.toLowerCase()) {
+            guessData = currentCharacter;
             break;
         }
     }
     if (guessData) {
-        placeIcon(row.querySelector('#guess_image'), guessData)
+        placeIcon(row.querySelector('#guess_image'), guessData);
 
-        for (i = 0; i < categories.length; i++) {
+        for (let i = 0; i < categories.length; i++) {
             if (!(checkGuess(categories[i], guessData, row, i))) {
-                gameOver = false
+                gameOver = false;
             }
         }
-        resultsContainer.prepend(row)
+        resultsContainer.prepend(row);
         if (gameOver) {
-            displayCongratulatoryMessage();
-            document.getElementById("submit").disabled = true
-            inputElement.disabled = true
-            displayCongratulatoryMessage(tries);     
+            displayCongratulatoryMessage(tries); // Call to display message
+            document.getElementById("submit").disabled = true;
+            inputElement.disabled = true;
         }
         let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
         window.arr.splice(index, 1)[0];
-        inputElement.value = "";  //Removes all user input in text box
+        inputElement.value = "";  // Remove all user input in text box
         inputElement.focus();
     }
 }
@@ -89,20 +87,27 @@ function submitGuess(e){
 // Congrats message 
 function displayCongratulatoryMessage(tries) {
     const congratsMessageElement = document.getElementById("congrats_message");
+    congratsMessageElement.innerHTML = ""; 
     let message = "";
+    message = "Congrats!";
 
-    if (tries < 2) {
-        message = "Congrats! You guessed it in 1 try!";
-    } else {
-        message = `Congrats! You guessed it in ${tries} tries!`;
-    }
+    // Congrats text
+    const congratsText = document.createElement("div");
+    congratsText.innerText = message;
+    congratsText.classList.add("font-bold", "text-2xl"); // font size
+
+    // number of tries text
+    const triesText = document.createElement("div");
+    triesText.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
+    triesText.classList.add("text-lg"); // font size
 
     setTimeout(() => {
-    congratsMessageElement.innerText = message;
-    congratsMessageElement.classList.remove("hidden");
-    congratsMessageElement.classList.add("text-white", "bg-green-800", "border-4", "border-green-600", "p-4", "mt-4", "rounded");
+        congratsMessageElement.appendChild(congratsText);
+        congratsMessageElement.appendChild(triesText);
+        congratsMessageElement.classList.remove("hidden");
+        congratsMessageElement.classList.add("text-white", "bg-green-800", "border-4", "border-green-600", "p-4", "mt-4", "rounded");
         congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 2200);
+    }, 2200); // Delay
 }
 
 // submit on enter
