@@ -94,12 +94,12 @@ function displayCongratulatoryMessage(tries) {
     // Congrats text
     const congratsText = document.createElement("div");
     congratsText.innerText = message;
-    congratsText.classList.add("font-bold", "text-2xl"); // font size
+    congratsText.classList.add("font-bold", "text-2xl","text-center"); // font size
 
     // number of tries text
     const triesText = document.createElement("div");
     triesText.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
-    triesText.classList.add("text-lg"); // font size
+    triesText.classList.add("text-lg", "text-center"); // font size
 
     setTimeout(() => {
         congratsMessageElement.appendChild(congratsText);
