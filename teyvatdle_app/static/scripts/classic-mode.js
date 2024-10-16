@@ -1,5 +1,6 @@
 var charactersInfoData = null
 var answerData = null
+let tries = 0;
 
 // Creates a blank row for the hints
 function createBlankRow(){
@@ -52,6 +53,7 @@ function submitGuess(e){
     let gameOver = true
 
     row = createBlankRow()
+    tries++;
 
     for (i = 0; i < charactersInfoData.length; i++) {
         let currentCharacter = charactersInfoData[i];
@@ -70,16 +72,35 @@ function submitGuess(e){
         }
         resultsContainer.prepend(row)
         if (gameOver) {
+            displayCongratulatoryMessage();
             document.getElementById("submit").disabled = true
-            inputElement.disabled = true    
+            inputElement.disabled = true
+            displayCongratulatoryMessage(tries);     
         }
         let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
         window.arr.splice(index, 1)[0];
         inputElement.value = "";  //Removes all user input in text box
         inputElement.focus();
     }
+}
 
+// Congrats message 
+function displayCongratulatoryMessage(tries) {
+    const congratsMessageElement = document.getElementById("congrats_message");
+    let message = "";
 
+    if (tries < 2) {
+        message = "Congrats! You guessed it in 1 try!";
+    } else {
+        message = `Congrats! You guessed it in ${tries} tries!`;
+    }
+
+    congratsMessageElement.innerText = message;
+    congratsMessageElement.classList.remove("hidden");
+    congratsMessageElement.classList.add("text-white", "bg-green-600", "p-4", "mt-4", "rounded");
+    setTimeout(() => {
+        congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 100);
 }
 
 // submit on enter
