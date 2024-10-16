@@ -102,7 +102,7 @@ function displayCongratulatoryMessage(tries) {
     congratsMessageElement.classList.add("text-white", "bg-green-600", "p-4", "mt-4", "rounded");
     setTimeout(() => {
         congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 100);
+    }, 2000);
 }
 
 // submit on enter
