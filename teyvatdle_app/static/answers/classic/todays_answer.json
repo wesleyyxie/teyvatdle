@@ -1,11 +1,11 @@
 {
-    "name": "Sayu",
-    "title": "Mujina Ninja",
-    "vision": "Anemo",
-    "weapon": "Claymore",
+    "name": "Xiangling",
+    "title": "Exquisite Delicacy",
+    "vision": "Pyro",
+    "weapon": "Polearm",
     "gender": "Female",
-    "nation": "Inazuma",
-    "affiliation": "Shuumatsuban",
-    "release": "2021",
-    "id": "sayu"
+    "nation": "Liyue",
+    "affiliation": "Wanmin Restaurant",
+    "release": "2020",
+    "id": "xiangling"
 }

@@ -1,0 +1,2084 @@
+[
+    {
+        "name": "Albedo",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/46/VO_Albedo_Chat_-_Still_Life.ogg/revision/latest?cb=20201226205502",
+        "quote": "What a view... How about a quick break so I can sketch this beautiful scenery?",
+        "id": 0
+    },
+    {
+        "name": "Albedo",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2e/VO_Albedo_Chat_-_Investigation.ogg/revision/latest?cb=20201226205452",
+        "quote": "\"The truth of this world\"... *sigh* What could it be?",
+        "id": 1
+    },
+    {
+        "name": "Albedo",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/46/VO_Albedo_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112193154",
+        "quote": "This world holds many a rare treasure.",
+        "id": 2
+    },
+    {
+        "name": "Albedo",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d0/VO_Albedo_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112193156",
+        "quote": "If this treasure could talk...",
+        "id": 3
+    },
+    {
+        "name": "Alhaitham",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/67/VO_Alhaitham_Chat_-_Work.ogg/revision/latest?cb=20230119174958",
+        "quote": "The scribe's work is simple, which is exactly why I took the position.",
+        "id": 0
+    },
+    {
+        "name": "Alhaitham",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/VO_Alhaitham_When_It_Rains.ogg/revision/latest?cb=20230119174912",
+        "quote": "Going out on a rainy day is the worst.",
+        "id": 1
+    },
+    {
+        "name": "Alhaitham",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/VO_Alhaitham_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20230119175129",
+        "quote": "Don't let any of it roll away now.",
+        "id": 2
+    },
+    {
+        "name": "Alhaitham",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/VO_Alhaitham_Joining_Party_02.ogg/revision/latest?cb=20230119175034",
+        "quote": "Let's get down to business.",
+        "id": 3
+    },
+    {
+        "name": "Aloy",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/bc/VO_Aloy_Chat_-_Moving_Out.ogg/revision/latest?cb=20210902221824",
+        "quote": "Come on. Enough standing around, let's keep moving.",
+        "id": 0
+    },
+    {
+        "name": "Aloy",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e7/VO_Aloy_Chat_-_Help.ogg/revision/latest?cb=20210902221816",
+        "quote": "Let's get going. There are people who need our help.",
+        "id": 1
+    },
+    {
+        "name": "Aloy",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/VO_Aloy_Elemental_Skill_1_03.ogg/revision/latest?cb=20221112193254",
+        "quote": "Ever seen one of these?",
+        "id": 2
+    },
+    {
+        "name": "Aloy",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/VO_Aloy_Elemental_Burst_02.ogg/revision/latest?cb=20221112193245",
+        "quote": "This is a new one.",
+        "id": 3
+    },
+    {
+        "name": "Amber",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/81/VO_Amber_Chat_-_Longings.ogg/revision/latest?cb=20210225193104",
+        "quote": "Jean will be upset if she catches us lazing around like this.",
+        "id": 0
+    },
+    {
+        "name": "Amber",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3c/VO_Amber_Chat_-_New_Discoveries.ogg/revision/latest?cb=20210110172140",
+        "quote": "Hey, there's something strange over there... C'mon, let's take a look!",
+        "id": 1
+    },
+    {
+        "name": "Amber",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/03/VO_Amber_Elemental_Burst_01.ogg/revision/latest?cb=20221112193514",
+        "quote": "No one escapes my sights!",
+        "id": 2
+    },
+    {
+        "name": "Amber",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/VO_Amber_Sprint_Start_02.ogg/revision/latest?cb=20221112193710",
+        "quote": "Betcha can't keep up with me!",
+        "id": 3
+    },
+    {
+        "name": "Arataki Itto",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e3/VO_Arataki_Itto_Receiving_a_Gift_-_01.ogg/revision/latest?cb=20220514155723",
+        "quote": "Hahahahahahahaha! Mm, mm, mm! I haven't eaten somethin' this good in three whole years!",
+        "id": 0
+    },
+    {
+        "name": "Arataki Itto",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/89/VO_Arataki_Itto_Receiving_a_Gift_-_03.ogg/revision/latest?cb=20220514155721",
+        "quote": "Hey, are you sure you ain't trying to poison me!? Ah!",
+        "id": 1
+    },
+    {
+        "name": "Arataki Itto",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/64/VO_Arataki_Itto_Elemental_Burst_02.ogg/revision/latest?cb=20221112193802",
+        "quote": "Who wants some of this!",
+        "id": 2
+    },
+    {
+        "name": "Arataki Itto",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/df/VO_Arataki_Itto_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112193936",
+        "quote": "Alriiiight! New toys for the boys!",
+        "id": 3
+    },
+    {
+        "name": "Arlecchino",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c7/VO_Arlecchino_Chat_-_Eyes.ogg/revision/latest?cb=20240502205742",
+        "quote": "Staring into my eyes is ill-advised. I can't promise you'll like what you see...",
+        "id": 0
+    },
+    {
+        "name": "Arlecchino",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/6c/VO_Arlecchino_Chat_-_Tip-Off.ogg/revision/latest?cb=20240502205746",
+        "quote": "Something you wish to report? Go on. You have my undivided attention.",
+        "id": 1
+    },
+    {
+        "name": "Arlecchino",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/VO_Arlecchino_Elemental_Burst_01.ogg/revision/latest?cb=20240502205805",
+        "quote": "This is where you fall.",
+        "id": 2
+    },
+    {
+        "name": "Arlecchino",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/47/VO_Arlecchino_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20240502210013",
+        "quote": "What greater pleasure is there than the unexpected?",
+        "id": 3
+    },
+    {
+        "name": "Kamisato Ayaka",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/VO_Kamisato_Ayaka_Chat_-_Famous_Sword.ogg/revision/latest?cb=20210728005800",
+        "quote": "A blade embraces its duty as a jeweler cherishes their gems.",
+        "id": 0
+    },
+    {
+        "name": "Kamisato Ayaka",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/dc/VO_Kamisato_Ayaka_When_It_Rains.ogg/revision/latest?cb=20210728005902",
+        "quote": "Come with me, let us find shelter from the rain.",
+        "id": 1
+    },
+    {
+        "name": "Kamisato Ayaka",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/VO_Kamisato_Ayaka_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112204208",
+        "quote": "Collecting rare and exquisite treasures... Yes, this seems suitably sophisticated.",
+        "id": 2
+    },
+    {
+        "name": "Kamisato Ayaka",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/eb/VO_Kamisato_Ayaka_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112204211",
+        "quote": "Hehe... Today is a lucky day.",
+        "id": 3
+    },
+    {
+        "name": "Kamisato Ayato",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/VO_Kamisato_Ayato_Chat_-_Reel_Them_In.ogg/revision/latest?cb=20220330120530",
+        "quote": "Everything's in place, and they've taken the bait... Yes. Now to start reeling them in...",
+        "id": 0
+    },
+    {
+        "name": "Kamisato Ayato",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/VO_Kamisato_Ayato_When_It_Snows.ogg/revision/latest?cb=20220330120422",
+        "quote": "This view reminds me of another time it snowed... that was a long time ago.",
+        "id": 1
+    },
+    {
+        "name": "Kamisato Ayato",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/9/94/VO_Kamisato_Ayato_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112204439",
+        "quote": "All yours, should you have any use for them.",
+        "id": 2
+    },
+    {
+        "name": "Kamisato Ayato",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/6e/VO_Kamisato_Ayato_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112204442",
+        "quote": "Oh... so you collect these?",
+        "id": 3
+    },
+    {
+        "name": "Baizhu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/VO_Baizhu_Good_Night.ogg/revision/latest?cb=20230509230218",
+        "quote": "Ah, you're still awake. Haha, is that a yawn I see?",
+        "id": 0
+    },
+    {
+        "name": "Baizhu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/VO_Baizhu_Receiving_a_Gift_-_02.ogg/revision/latest?cb=20230509230401",
+        "quote": "Well done. You culinary skills have improved.",
+        "id": 1
+    },
+    {
+        "name": "Baizhu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/46/VO_Baizhu_Elemental_Skill_1_02.ogg/revision/latest?cb=20230509230150",
+        "quote": "A bitter pill to swallow.",
+        "id": 2
+    },
+    {
+        "name": "Baizhu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Baizhu_Elemental_Burst_03.ogg/revision/latest?cb=20230509230146",
+        "quote": "Taking a turn for the better.",
+        "id": 3
+    },
+    {
+        "name": "Barbara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/14/VO_Barbara_Chat_-_Sleepiness.ogg/revision/latest?cb=20210517234812",
+        "quote": "*yawn* All this standing around is making me so sleepy...",
+        "id": 0
+    },
+    {
+        "name": "Barbara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/VO_Barbara_Chat_-_Encouragement.ogg/revision/latest?cb=20210517234812",
+        "quote": "Everyone is working super hard, we should be too!",
+        "id": 1
+    },
+    {
+        "name": "Barbara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/VO_Barbara_Elemental_Burst_03.ogg/revision/latest?cb=20221112194040",
+        "quote": "Come on, we can do it!",
+        "id": 2
+    },
+    {
+        "name": "Barbara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/70/VO_Barbara_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112194208",
+        "quote": "This is the kind of surprise I could sing about.",
+        "id": 3
+    },
+    {
+        "name": "Beidou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/VO_Beidou_Chat_-_Sparring.ogg/revision/latest?cb=20210110185956",
+        "quote": "If you ever want to trade tactics, I'm always ready.",
+        "id": 0
+    },
+    {
+        "name": "Beidou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/VO_Beidou_Chat_-_Drinking.ogg/revision/latest?cb=20210110185954",
+        "quote": "Ah! A cold beer after a hard day's work... Nothing like it!",
+        "id": 1
+    },
+    {
+        "name": "Beidou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/VO_Beidou_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112194454",
+        "quote": "Huh, where've you been hiding?",
+        "id": 2
+    },
+    {
+        "name": "Beidou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/VO_Beidou_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112194457",
+        "quote": "Nice, I'm starting to lose count!",
+        "id": 3
+    },
+    {
+        "name": "Bennett",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/VO_Bennett_Chat_-_Treasures.ogg/revision/latest?cb=20210110192853",
+        "quote": "Let's go find some treasure!",
+        "id": 0
+    },
+    {
+        "name": "Bennett",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c8/VO_Bennett_Chat_-_Adventures.ogg/revision/latest?cb=20210110192848",
+        "quote": "No one's joined me on an adventure in ages. C'mon, let's go!",
+        "id": 1
+    },
+    {
+        "name": "Bennett",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2f/VO_Bennett_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112194726",
+        "quote": "Now that's what I call treasure!",
+        "id": 2
+    },
+    {
+        "name": "Bennett",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/ec/VO_Bennett_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112194729",
+        "quote": "Even better than I imagined! It's my lucky day!",
+        "id": 3
+    },
+    {
+        "name": "Candace",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/20/VO_Candace_When_It_Rains.ogg/revision/latest?cb=20220928123356",
+        "quote": "Stay warm, or you'll catch a cold.",
+        "id": 0
+    },
+    {
+        "name": "Candace",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/VO_Candace_When_Thunder_Strikes.ogg/revision/latest?cb=20220928123401",
+        "quote": "The thunder rumbles \u2014 does it scare you?",
+        "id": 1
+    },
+    {
+        "name": "Candace",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/cc/VO_Candace_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112195005",
+        "quote": "What do you think? Anything catch your eye?",
+        "id": 2
+    },
+    {
+        "name": "Candace",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/36/VO_Candace_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20221112195007",
+        "quote": "I hope you can find some use for these.",
+        "id": 3
+    },
+    {
+        "name": "Charlotte",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/VO_Charlotte_When_It_Rains.ogg/revision/latest?cb=20231111061702",
+        "quote": "Uh-oh, I better find a way to keep my Kamera dry!",
+        "id": 0
+    },
+    {
+        "name": "Charlotte",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/VO_Charlotte_When_It_Snows.ogg/revision/latest?cb=20231111061704",
+        "quote": "Brrr! My fingers are frozen stiff. I can barely manage to press the shutter button.",
+        "id": 1
+    },
+    {
+        "name": "Charlotte",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4f/VO_Charlotte_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20231111061641",
+        "quote": "I wish I could interview whoever left this stuff here.",
+        "id": 2
+    },
+    {
+        "name": "Charlotte",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/bd/VO_Charlotte_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20231111061643",
+        "quote": "I doubt anyone's still looking for these...",
+        "id": 3
+    },
+    {
+        "name": "Chevreuse",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/VO_Chevreuse_When_It_Rains.ogg/revision/latest?cb=20240109153328",
+        "quote": "Don't worry. My musket can still fire in the rain.",
+        "id": 0
+    },
+    {
+        "name": "Chevreuse",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/VO_Chevreuse_When_It_Snows.ogg/revision/latest?cb=20240109153330",
+        "quote": "...Hold! I need to service my musket before the mechanism freezes.",
+        "id": 1
+    },
+    {
+        "name": "Chevreuse",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1e/VO_Chevreuse_Elemental_Burst_03.ogg/revision/latest?cb=20240109153111",
+        "quote": "Hands where I can see them!",
+        "id": 2
+    },
+    {
+        "name": "Chevreuse",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/08/VO_Chevreuse_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20240109153307",
+        "quote": "Look what we have here.",
+        "id": 3
+    },
+    {
+        "name": "Chiori",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/61/VO_Chiori_When_Thunder_Strikes.ogg/revision/latest?cb=20240317055116",
+        "quote": "...This reminds me of home.",
+        "id": 0
+    },
+    {
+        "name": "Chiori",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/cd/VO_Chiori_In_the_Desert.ogg/revision/latest?cb=20240317055314",
+        "quote": "Hmm, just how can I market high fashion here...",
+        "id": 1
+    },
+    {
+        "name": "Chiori",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/VO_Chiori_Elemental_Burst_01.ogg/revision/latest?cb=20240317055216",
+        "quote": "I am the cutting edge of fashion.",
+        "id": 2
+    },
+    {
+        "name": "Chiori",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/44/VO_Chiori_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20240612003249",
+        "quote": "The handiwork is alright... though I've made much better myself.",
+        "id": 3
+    },
+    {
+        "name": "Chongyun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/27/VO_Chongyun_When_Thunder_Strikes.ogg/revision/latest?cb=20210110201658",
+        "quote": "Before the resounding thunder, evil must cower in fear.",
+        "id": 0
+    },
+    {
+        "name": "Chongyun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/db/VO_Chongyun_When_It_Snows.ogg/revision/latest?cb=20210110211146",
+        "quote": "Ah, this weather is delightful.",
+        "id": 1
+    },
+    {
+        "name": "Chongyun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/9/93/VO_Chongyun_Deploying_Wind_Glider_01.ogg/revision/latest?cb=20221112195042",
+        "quote": "I ride on wind and cloud alike.",
+        "id": 2
+    },
+    {
+        "name": "Chongyun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/fb/VO_Chongyun_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112195228",
+        "quote": "Hmm, objects like this may prove useful when purging evil spirits.",
+        "id": 3
+    },
+    {
+        "name": "Clorinde",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/18/VO_Clorinde_When_It_Rains.ogg/revision/latest?cb=20240612001729",
+        "quote": "Prey will usually rest on rainy days. But not the hunter.",
+        "id": 0
+    },
+    {
+        "name": "Clorinde",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a7/VO_Clorinde_After_the_Rain.ogg/revision/latest?cb=20240612001813",
+        "quote": "The battle between wind and rain appears to have reached its end.",
+        "id": 1
+    },
+    {
+        "name": "Clorinde",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/ed/VO_Clorinde_Elemental_Burst_03.ogg/revision/latest?cb=20240612001455",
+        "quote": "Where evil lurks, shoot on sight!",
+        "id": 2
+    },
+    {
+        "name": "Clorinde",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3b/VO_Clorinde_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20240612001706",
+        "quote": "A stroke of good luck. And a very welcome one.",
+        "id": 3
+    },
+    {
+        "name": "Collei",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e9/VO_Collei_Good_Morning.ogg/revision/latest?cb=20220828112038",
+        "quote": "Good morning! *yawn* Sorry, I was catching up on my studying again last night...",
+        "id": 0
+    },
+    {
+        "name": "Collei",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/63/VO_Collei_Receiving_a_Gift_-_01.ogg/revision/latest?cb=20220828112057",
+        "quote": "Mmm... It's delicious! Could you teach me?",
+        "id": 1
+    },
+    {
+        "name": "Collei",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8b/VO_Collei_Elemental_Burst_02.ogg/revision/latest?cb=20221112195321",
+        "quote": "Try this on for size!",
+        "id": 2
+    },
+    {
+        "name": "Collei",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/VO_Collei_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112195454",
+        "quote": "It's important to replenish your supplies often when you're out in the wild.",
+        "id": 3
+    },
+    {
+        "name": "Cyno",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/ac/VO_Cyno_Chat_-_Weighing_the_Heart.ogg/revision/latest?cb=20220928123437",
+        "quote": "Good deeds and bad... In the end, all will be placed upon the scales.",
+        "id": 0
+    },
+    {
+        "name": "Cyno",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/7b/VO_Cyno_When_Thunder_Strikes.ogg/revision/latest?cb=20220928123539",
+        "quote": "In some legends, thunderbolts are a form of judgment from the gods above.",
+        "id": 1
+    },
+    {
+        "name": "Cyno",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/VO_Cyno_Elemental_Burst_01.ogg/revision/latest?cb=20221112195540",
+        "quote": "Through me, justice is served!",
+        "id": 2
+    },
+    {
+        "name": "Cyno",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/VO_Cyno_Elemental_Burst_03.ogg/revision/latest?cb=20221112195545",
+        "quote": "Your sins weigh upon your soul.",
+        "id": 3
+    },
+    {
+        "name": "Dehya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a5/VO_Dehya_Chat_-_Mercenaries.ogg/revision/latest?cb=20230303003947",
+        "quote": "We mercs have one simple rule: Whoever pays the most is your new boss.",
+        "id": 0
+    },
+    {
+        "name": "Dehya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/ce/VO_Dehya_When_Thunder_Strikes.ogg/revision/latest?cb=20230303004254",
+        "quote": "Man, this thunder is loud. They won't hear us coming... or vice versa.",
+        "id": 1
+    },
+    {
+        "name": "Dehya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3e/VO_Dehya_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20230303004233",
+        "quote": "I could make a tidy sum selling some of this...",
+        "id": 2
+    },
+    {
+        "name": "Dehya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/ca/VO_Dehya_Low_HP_01.ogg/revision/latest?cb=20230303004200",
+        "quote": "Urgh... We've got ourselves a tough cookie!",
+        "id": 3
+    },
+    {
+        "name": "Diluc",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e4/VO_Diluc_Chat_-_Relax.ogg/revision/latest?cb=20210110215634",
+        "quote": "Guess we can rest a bit.",
+        "id": 0
+    },
+    {
+        "name": "Diluc",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/ef/VO_Diluc_Chat_-_Knights_of_Favonius.ogg/revision/latest?cb=20210110215633",
+        "quote": "You should really bring the Knights of Favonius with you next time.",
+        "id": 1
+    },
+    {
+        "name": "Diluc",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Diluc_Red_Dead_of_Night_Chat_-_Preparation.ogg/revision/latest?cb=20220713165008",
+        "quote": "We should prepare while we can, then make a preemptive strike against the enemy.",
+        "id": 2
+    },
+    {
+        "name": "Diluc",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2f/VO_Diluc_Red_Dead_of_Night_Chat_-_Planning.ogg/revision/latest?cb=20220713165012",
+        "quote": "Let's take a moment to rest and plan our next move.",
+        "id": 3
+    },
+    {
+        "name": "Diona",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/05/VO_Diona_Chat_-_Relax.ogg/revision/latest?cb=20210110224329",
+        "quote": "Ahhh... that stretch feels good.",
+        "id": 0
+    },
+    {
+        "name": "Diona",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4b/VO_Diona_Chat_-_Waiting.ogg/revision/latest?cb=20210110224332",
+        "quote": "I\u2014I wasn't waiting for you. I just happened to be resting!",
+        "id": 1
+    },
+    {
+        "name": "Diona",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/VO_Diona_Elemental_Skill_1_06.ogg/revision/latest?cb=20221112200142",
+        "quote": "Think you can bully me?!",
+        "id": 2
+    },
+    {
+        "name": "Diona",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4f/VO_Diona_Elemental_Burst_02.ogg/revision/latest?cb=20221112200127",
+        "quote": "Can't handle your drink? Hmph!",
+        "id": 3
+    },
+    {
+        "name": "Dori",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/00/VO_Dori_Chat_-_Money-Mad.ogg/revision/latest?cb=20220912154637",
+        "quote": "With enough Mora, you can afford to do anything \u2014 even take on the Akademiya.",
+        "id": 0
+    },
+    {
+        "name": "Dori",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8f/VO_Dori_When_Thunder_Strikes.ogg/revision/latest?cb=20220912155003",
+        "quote": "I bet even the caravans can't move under these conditions. I'm losing Mora here...",
+        "id": 1
+    },
+    {
+        "name": "Dori",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2f/VO_Dori_Ally_at_Low_HP_01.ogg/revision/latest?cb=20221112200345",
+        "quote": "I'll help for a price!",
+        "id": 2
+    },
+    {
+        "name": "Dori",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/VO_Dori_Ally_at_Low_HP_02.ogg/revision/latest?cb=20221112200348",
+        "quote": "You can't spend Mora dead, numbskull!",
+        "id": 3
+    },
+    {
+        "name": "Emilie",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/50/VO_Emilie_Chat_-_Inspiration.ogg/revision/latest?cb=20240806141807",
+        "quote": "Ah, now there's an idea... Just a moment, please. I need to jot this down.",
+        "id": 0
+    },
+    {
+        "name": "Emilie",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/VO_Emilie_Chat_-_Newspaper.ogg/revision/latest?cb=20240806141808",
+        "quote": "Would you mind coming with me to buy a copy of today's newspaper?",
+        "id": 1
+    },
+    {
+        "name": "Emilie",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4d/VO_Emilie_Elemental_Burst_02.ogg/revision/latest?cb=20240806141833",
+        "quote": "This'll brighten up the place.",
+        "id": 2
+    },
+    {
+        "name": "Emilie",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/VO_Emilie_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20240806142053",
+        "quote": "Hehe, do the spoils live up to your expectations?",
+        "id": 3
+    },
+    {
+        "name": "Eula",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/VO_Eula_Receiving_a_Gift_-_01.ogg/revision/latest?cb=20220514155845",
+        "quote": "Oh? Are you putting me to the test? Challenge accepted.",
+        "id": 0
+    },
+    {
+        "name": "Eula",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/0d/VO_Eula_Receiving_a_Gift_-_02.ogg/revision/latest?cb=20220514155847",
+        "quote": "Eh, not that great... How about you try it?",
+        "id": 1
+    },
+    {
+        "name": "Eula",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/48/VO_Eula_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112200823",
+        "quote": "What do we have here...",
+        "id": 2
+    },
+    {
+        "name": "Eula",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/VO_Eula_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112200825",
+        "quote": "I can put these to good use.",
+        "id": 3
+    },
+    {
+        "name": "Faruzan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/VO_Faruzan_When_Thunder_Strikes.ogg/revision/latest?cb=20221207193406",
+        "quote": "Whoa! W\u2014What? There's nothing wrong with being afraid of thunder even at an older age!",
+        "id": 0
+    },
+    {
+        "name": "Faruzan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f2/VO_Faruzan_When_It_Snows.ogg/revision/latest?cb=20221207193402",
+        "quote": "How beautiful... How awe-inspiring... Achoo! *sniffle* Yes, and very cold-inducing as well...",
+        "id": 1
+    },
+    {
+        "name": "Faruzan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/VO_Faruzan_Elemental_Skill_1_02.ogg/revision/latest?cb=20221207193127",
+        "quote": "Dare to mess with me?",
+        "id": 2
+    },
+    {
+        "name": "Faruzan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8d/VO_Faruzan_Elemental_Burst_02.ogg/revision/latest?cb=20221207193121",
+        "quote": "Have fun with this gift!",
+        "id": 3
+    },
+    {
+        "name": "Fischl",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/VO_Fischl_Chat_-_Whispers_of_Destiny.ogg/revision/latest?cb=20220216160334",
+        "quote": "I hear the voice of fate, speaking my name in humble supplication...",
+        "id": 0
+    },
+    {
+        "name": "Fischl",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/6f/VO_Fischl_Chat_-_Creation_of_the_World.ogg/revision/latest?cb=20220216160337",
+        "quote": "Hm-hm, may the glory of the Prinzessin bring light to this world.",
+        "id": 1
+    },
+    {
+        "name": "Fischl",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/fe/VO_Fischl_Elemental_Skill_1_04.ogg/revision/latest?cb=20221112200927",
+        "quote": "Oz: No rest for the wicked...",
+        "id": 2
+    },
+    {
+        "name": "Fischl",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d1/VO_Fischl_Elemental_Burst_01.ogg/revision/latest?cb=20221112200909",
+        "quote": "Wings of Darkness, come, sever the night from day!",
+        "id": 3
+    },
+    {
+        "name": "Freminet",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/VO_Freminet_When_It_Rains.ogg/revision/latest?cb=20230906185654",
+        "quote": "I always get so gloomy when it rains...",
+        "id": 0
+    },
+    {
+        "name": "Freminet",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/28/VO_Freminet_After_the_Rain.ogg/revision/latest?cb=20230906185346",
+        "quote": "The rain's stopped? Okay, that's good.",
+        "id": 1
+    },
+    {
+        "name": "Freminet",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d6/VO_Freminet_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20230906185632",
+        "quote": "If there's any scrap metal or parts you don't want, I'll take them.",
+        "id": 2
+    },
+    {
+        "name": "Freminet",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/5d/VO_Freminet_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20230906185633",
+        "quote": "There's a lot of treasure here.",
+        "id": 3
+    },
+    {
+        "name": "Furina",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/VO_Furina_Chat_-_Fun.ogg/revision/latest?cb=20231111061752",
+        "quote": "Boring... Isn't there anything else more interesting to do?",
+        "id": 0
+    },
+    {
+        "name": "Furina",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/VO_Furina_When_It_Rains.ogg/revision/latest?cb=20231111062059",
+        "quote": "It's pouring out here! Wait, the water levels aren't rising, are they?",
+        "id": 1
+    },
+    {
+        "name": "Furina",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/VO_Furina_Elemental_Burst_01.ogg/revision/latest?cb=20231111061814",
+        "quote": "Let the world come alive, hehe!",
+        "id": 2
+    },
+    {
+        "name": "Furina",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/32/VO_Furina_Elemental_Burst_03.ogg/revision/latest?cb=20231111061817",
+        "quote": "Let my name echo in song!",
+        "id": 3
+    },
+    {
+        "name": "Gaming",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/VO_Gaming_When_It_Rains.ogg/revision/latest?cb=20240131021450",
+        "quote": "Rain! Oh man, I hope I brought the laundry in!",
+        "id": 0
+    },
+    {
+        "name": "Gaming",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/VO_Gaming_When_It_Snows.ogg/revision/latest?cb=20240131021452",
+        "quote": "Ahhh... Eh? Why can't I catch any in my mouth?",
+        "id": 1
+    },
+    {
+        "name": "Gaming",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a3/VO_Gaming_Elemental_Burst_02.ogg/revision/latest?cb=20240131021221",
+        "quote": "Hop to it, Man Chai!",
+        "id": 2
+    },
+    {
+        "name": "Gaming",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2c/VO_Gaming_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20240131021424",
+        "quote": "Oh, cool! This stuff looks dope!",
+        "id": 3
+    },
+    {
+        "name": "Ganyu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/51/VO_Ganyu_Chat_-_Relaxed.ogg/revision/latest?cb=20210112193918",
+        "quote": "It's so nice to de-stress.",
+        "id": 0
+    },
+    {
+        "name": "Ganyu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2d/VO_Ganyu_Chat_-_Attentive.ogg/revision/latest?cb=20210112194034",
+        "quote": "If you lie on the grass, you can feel the heartbeat of the world.",
+        "id": 1
+    },
+    {
+        "name": "Ganyu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a0/VO_Ganyu_Elemental_Skill_1_03.ogg/revision/latest?cb=20221112201205",
+        "quote": "Born of ice and frost.",
+        "id": 2
+    },
+    {
+        "name": "Ganyu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/VO_Ganyu_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112201329",
+        "quote": "There's nothing wrong with reaping a reward every now and then.",
+        "id": 3
+    },
+    {
+        "name": "Gorou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/68/VO_Gorou_Chat_-_Tactics.ogg/revision/latest?cb=20211214133919",
+        "quote": "Keep your weapon at the ready. You never know what's around the corner...",
+        "id": 0
+    },
+    {
+        "name": "Gorou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/VO_Gorou_Chat_-_Training.ogg/revision/latest?cb=20211214133921",
+        "quote": "The fighting has ceased for now... Commence physical training!",
+        "id": 1
+    },
+    {
+        "name": "Gorou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3a/VO_Gorou_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112201555",
+        "quote": "The tide of battle is in our favor!",
+        "id": 2
+    },
+    {
+        "name": "Gorou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Gorou_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112201557",
+        "quote": "Let's distribute these among our forces.",
+        "id": 3
+    },
+    {
+        "name": "Hu Tao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3e/VO_Hu_Tao_Chat_-_Wangsheng_Funeral_Parlor.ogg/revision/latest?cb=20210303203530",
+        "quote": "Wanna come over for tea?",
+        "id": 0
+    },
+    {
+        "name": "Hu Tao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/02/VO_Hu_Tao_Chat_-_Customers.ogg/revision/latest?cb=20210303203530",
+        "quote": "One client, two clients, three clients!",
+        "id": 1
+    },
+    {
+        "name": "Hu Tao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/VO_Hu_Tao_Elemental_Burst_03.ogg/revision/latest?cb=20221112203101",
+        "quote": "Pyre, pyre, pants on fire!",
+        "id": 2
+    },
+    {
+        "name": "Hu Tao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/VO_Hu_Tao_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112203239",
+        "quote": "Oh, what a cute treasure coffin!",
+        "id": 3
+    },
+    {
+        "name": "Jean",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/VO_Jean_Chat_-_Operation.ogg/revision/latest?cb=20210112160802",
+        "quote": "It's time to move on, we shouldn't stay here.",
+        "id": 0
+    },
+    {
+        "name": "Jean",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4e/VO_Jean_Chat_-_Knights_of_Favonius.ogg/revision/latest?cb=20210112160800",
+        "quote": "I do hope the Knights of Favonius are all working hard...",
+        "id": 1
+    },
+    {
+        "name": "Jean",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/VO_Jean_Elemental_Burst_02.ogg/revision/latest?cb=20221112203321",
+        "quote": "I swear by my sword!",
+        "id": 2
+    },
+    {
+        "name": "Jean",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/9/95/VO_Jean_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112203457",
+        "quote": "Hmm, things are going a little too smoothly today...",
+        "id": 3
+    },
+    {
+        "name": "Kachina",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e0/VO_Kachina_When_Thunder_Strikes.ogg/revision/latest?cb=20240831132737",
+        "quote": "Aaah!! Um... I\u2014I'm not scared! I was just... caught off guard!",
+        "id": 0
+    },
+    {
+        "name": "Kachina",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/VO_Kachina_Good_Morning.ogg/revision/latest?cb=20240831132532",
+        "quote": "Good morning! I've already packed everything, so we can head out whenever!",
+        "id": 1
+    },
+    {
+        "name": "Kachina",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/VO_Kachina_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20240831132707",
+        "quote": "Whoa! Look at all these shiny rocks!",
+        "id": 2
+    },
+    {
+        "name": "Kachina",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/34/VO_Kachina_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20240831132711",
+        "quote": "Need help organizing the loot? I'm an expert!",
+        "id": 3
+    },
+    {
+        "name": "Kaeya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/47/VO_Kaeya_Chat_-_Nothing_to_Do.ogg/revision/latest?cb=20210111200701",
+        "quote": "I didn't know you were such a slacker.",
+        "id": 0
+    },
+    {
+        "name": "Kaeya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/0a/VO_Kaeya_Chat_-_Knights_of_Favonius.ogg/revision/latest?cb=20210111200656",
+        "quote": "Hehe, seems all the other knights already have their hands full.",
+        "id": 1
+    },
+    {
+        "name": "Kaeya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/70/VO_Kaeya_Elemental_Burst_03.ogg/revision/latest?cb=20221112203809",
+        "quote": "This moment will be frozen in time.",
+        "id": 2
+    },
+    {
+        "name": "Kaeya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/39/VO_Kaeya_Low_HP_01.ogg/revision/latest?cb=20221112203928",
+        "quote": "Time to fight back, I s'pose.",
+        "id": 3
+    },
+    {
+        "name": "Kaveh",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/VO_Kaveh_Chat_-_Beauty.ogg/revision/latest?cb=20230509232530",
+        "quote": "The ability to appreciate beauty is an important virtue.",
+        "id": 0
+    },
+    {
+        "name": "Kaveh",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/VO_Kaveh_When_It_Rains.ogg/revision/latest?cb=20230509232839",
+        "quote": "Huh? When did it start to rain? Oh no, I forgot to bring an umbrella...",
+        "id": 1
+    },
+    {
+        "name": "Kaveh",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b9/VO_Kaveh_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20230509232813",
+        "quote": "What a lucky find! Bet that's made your day?",
+        "id": 2
+    },
+    {
+        "name": "Kaveh",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b0/VO_Kaveh_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20230509232815",
+        "quote": "This is incredible! No, extraordinary!",
+        "id": 3
+    },
+    {
+        "name": "Kaedehara Kazuha",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f8/VO_Kaedehara_Kazuha_Chat_-_Nature.ogg/revision/latest?cb=20210629112622",
+        "quote": "This scenery is wonderful... Surely enough to convince anyone to become a wanderer.",
+        "id": 0
+    },
+    {
+        "name": "Kaedehara Kazuha",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/5d/VO_Kaedehara_Kazuha_When_Thunder_Strikes.ogg/revision/latest?cb=20210629113321",
+        "quote": "Compared to the storms I've encountered out at sea, this is really quite tame.",
+        "id": 1
+    },
+    {
+        "name": "Kaedehara Kazuha",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/VO_Kaedehara_Kazuha_Elemental_Burst_01.ogg/revision/latest?cb=20221112203541",
+        "quote": "Clouds hide... the bird's call!",
+        "id": 2
+    },
+    {
+        "name": "Kaedehara Kazuha",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/VO_Kaedehara_Kazuha_Elemental_Burst_02.ogg/revision/latest?cb=20221112203543",
+        "quote": "As one with wind and cloud.",
+        "id": 3
+    },
+    {
+        "name": "Keqing",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c6/VO_Keqing_Chat_-_Delays.ogg/revision/latest?cb=20210111202852",
+        "quote": "Come on. Enough procrastinating. Let's go.",
+        "id": 0
+    },
+    {
+        "name": "Keqing",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/VO_Keqing_Chat_-_Relax.ogg/revision/latest?cb=20210111202855",
+        "quote": "I'm all for work-life balance, but I think this is pushing it.",
+        "id": 1
+    },
+    {
+        "name": "Keqing",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/VO_Keqing_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112204714",
+        "quote": "Not bad, as far as treasure is concerned...",
+        "id": 2
+    },
+    {
+        "name": "Keqing",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/20/VO_Keqing_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20221112204716",
+        "quote": "That's everything, on to the next.",
+        "id": 3
+    },
+    {
+        "name": "Kinich",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/VO_Kinich_After_the_Rain.ogg/revision/latest?cb=20240918144527",
+        "quote": "Tch. The hems of my pants are still dripping...",
+        "id": 0
+    },
+    {
+        "name": "Kinich",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f3/VO_Kinich_When_the_Sun_Is_Out.ogg/revision/latest?cb=20240918144446",
+        "quote": "Ajaw: Bet you're jealous of my sunglasses now! And no, you can't borrow them.",
+        "id": 1
+    },
+    {
+        "name": "Kinich",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/VO_Kinich_Elemental_Skill_1_01.ogg/revision/latest?cb=20240918144452",
+        "quote": "Ajaw: Ten points for agility.",
+        "id": 2
+    },
+    {
+        "name": "Kinich",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4e/VO_Kinich_Elemental_Skill_1_02.ogg/revision/latest?cb=20240918144454",
+        "quote": "Ajaw: Are you running away!?",
+        "id": 3
+    },
+    {
+        "name": "Kirara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/VO_Kirara_Chat_-_Packages.ogg/revision/latest?cb=20230526230947",
+        "quote": "I wonder what's inside this package... No no no, no peeking at my customer's stuff...",
+        "id": 0
+    },
+    {
+        "name": "Kirara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/VO_Kirara_Chat_-_Work.ogg/revision/latest?cb=20230526230949",
+        "quote": "Whoa, the scenery here is wonderful. Hehe, I've landed the perfect job.",
+        "id": 1
+    },
+    {
+        "name": "Kirara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f7/VO_Kirara_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20230526231221",
+        "quote": "Wow! I've never seen half the stuff in here before!",
+        "id": 2
+    },
+    {
+        "name": "Kirara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/aa/VO_Kirara_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20230526231223",
+        "quote": "Did someone drop their package?",
+        "id": 3
+    },
+    {
+        "name": "Klee",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/69/VO_Klee_When_It_Rains.ogg/revision/latest?cb=20210111213453",
+        "quote": "Mwuhahaha, lucky all my new bombs are waterproof!",
+        "id": 0
+    },
+    {
+        "name": "Klee",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a8/VO_Klee_When_Thunder_Strikes.ogg/revision/latest?cb=20210111213456",
+        "quote": "What'd I blow up!? ...Oh wait, it's just thunder and lightning. Phew.",
+        "id": 1
+    },
+    {
+        "name": "Klee",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/VO_Klee_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112204941",
+        "quote": "More treasure, more treasure! Hee-hee...",
+        "id": 2
+    },
+    {
+        "name": "Klee",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/VO_Klee_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20221112204946",
+        "quote": "Maybe there's even more buried below...",
+        "id": 3
+    },
+    {
+        "name": "Sangonomiya Kokomi",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d8/VO_Sangonomiya_Kokomi_Chat_-_Preparation.ogg/revision/latest?cb=20210921133024",
+        "quote": "To survive hardship, you must prepare for hardship.",
+        "id": 0
+    },
+    {
+        "name": "Sangonomiya Kokomi",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/48/VO_Sangonomiya_Kokomi_When_It_Snows.ogg/revision/latest?cb=20210921133111",
+        "quote": "The snow... have you ever seen such beauty?",
+        "id": 1
+    },
+    {
+        "name": "Sangonomiya Kokomi",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/83/VO_Sangonomiya_Kokomi_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112211935",
+        "quote": "We should make the most of these supplies.",
+        "id": 2
+    },
+    {
+        "name": "Sangonomiya Kokomi",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/VO_Sangonomiya_Kokomi_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20221112211939",
+        "quote": "Mm... So this is the thrill of adventure...",
+        "id": 3
+    },
+    {
+        "name": "Kuki Shinobu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/03/VO_Kuki_Shinobu_When_It_Rains.ogg/revision/latest?cb=20220623124553",
+        "quote": "We don't need an umbrella, just pick up the pace.",
+        "id": 0
+    },
+    {
+        "name": "Kuki Shinobu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/VO_Kuki_Shinobu_When_Thunder_Strikes.ogg/revision/latest?cb=20220623124601",
+        "quote": "Be careful. No one wants to get struck by lightning.",
+        "id": 1
+    },
+    {
+        "name": "Kuki Shinobu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8a/VO_Kuki_Shinobu_Ally_at_Low_HP_02.ogg/revision/latest?cb=20221112212451",
+        "quote": "I'm qualified to handle this.",
+        "id": 2
+    },
+    {
+        "name": "Kuki Shinobu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e6/VO_Kuki_Shinobu_Fallen_02.ogg/revision/latest?cb=20221112212534",
+        "quote": "Take care of... the gang...",
+        "id": 3
+    },
+    {
+        "name": "Layla",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/VO_Layla_Chat_-_Gaze.ogg/revision/latest?cb=20221122184731",
+        "quote": "Even when we're not looking up at the stars, they're always there, watching over us.",
+        "id": 0
+    },
+    {
+        "name": "Layla",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b5/VO_Layla_Chat_-_Sleepwalking.ogg/revision/latest?cb=20221122184733",
+        "quote": "My legs are so sore... *sigh* Guess I must have been sleepwalking last night... again.",
+        "id": 1
+    },
+    {
+        "name": "Layla",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/54/VO_Layla_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221122184619",
+        "quote": "A little goes a long way.",
+        "id": 2
+    },
+    {
+        "name": "Layla",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c8/VO_Layla_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221122184621",
+        "quote": "Huh, glad I saw this. I almost didn't even notice it.",
+        "id": 3
+    },
+    {
+        "name": "Lisa",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/VO_Lisa_Chat_-_Afternoon_Tea.ogg/revision/latest?cb=20210111234253",
+        "quote": "It's nearly time for afternoon tea.",
+        "id": 0
+    },
+    {
+        "name": "Lisa",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/52/VO_Lisa_Chat_-_Better_to_Stay_In.ogg/revision/latest?cb=20210111234255",
+        "quote": "Today's no good for going out... Hmm... Did I say that yesterday as well?",
+        "id": 1
+    },
+    {
+        "name": "Lisa",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/VO_Lisa_Elemental_Skill_1_02.ogg/revision/latest?cb=20221112205411",
+        "quote": "You're in for a little shock.",
+        "id": 2
+    },
+    {
+        "name": "Lisa",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/68/VO_Lisa_Elemental_Skill_1_05.ogg/revision/latest?cb=20221112205418",
+        "quote": "You've been a naughty boy!",
+        "id": 3
+    },
+    {
+        "name": "Lynette",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/VO_Lynette_Chat_-_Drinking_Tea.ogg/revision/latest?cb=20230816024145",
+        "quote": "Tea is ready, now it's time for a short rest.",
+        "id": 0
+    },
+    {
+        "name": "Lynette",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e1/VO_Lynette_Chat_-_Older_Brother.ogg/revision/latest?cb=20230816024146",
+        "quote": "Seems Lyney is saying some strange things again... it's really worrying.",
+        "id": 1
+    },
+    {
+        "name": "Lynette",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/be/VO_Lynette_Ally_at_Low_HP_02.ogg/revision/latest?cb=20230816024517",
+        "quote": "Let me take the heat!",
+        "id": 2
+    },
+    {
+        "name": "Lynette",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/40/VO_Lynette_Fallen_01.ogg/revision/latest?cb=20230816024217",
+        "quote": "What detail... did I miss...",
+        "id": 3
+    },
+    {
+        "name": "Lyney",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/cd/VO_Lyney_After_the_Rain.ogg/revision/latest?cb=20230816023507",
+        "quote": "Great, the weather's clearing up! I wonder if there's someone up there performing magic too...",
+        "id": 0
+    },
+    {
+        "name": "Lyney",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4b/VO_Lyney_Receiving_a_Gift_-_01.ogg/revision/latest?cb=20230816023746",
+        "quote": "It's quite an honor to enjoy such wonderful food made by you.",
+        "id": 1
+    },
+    {
+        "name": "Lyney",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d8/VO_Lyney_Elemental_Burst_02.ogg/revision/latest?cb=20230816023540",
+        "quote": "Let's get this show on the road!",
+        "id": 2
+    },
+    {
+        "name": "Lyney",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d8/VO_Lyney_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20230816023742",
+        "quote": "Guess this'll go into my magic pocket!",
+        "id": 3
+    },
+    {
+        "name": "Mika",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/VO_Mika_Chat_-_Staying_on_Target.ogg/revision/latest?cb=20230325000053",
+        "quote": "We'd better stay battle ready... Our next mission could start at any time.",
+        "id": 0
+    },
+    {
+        "name": "Mika",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/fb/VO_Mika_Chat_-_Situation_Report.ogg/revision/latest?cb=20230325000051",
+        "quote": "Verifying our current position, measuring distance to target area... Alright, I've recorded the terrain conditions.",
+        "id": 1
+    },
+    {
+        "name": "Mika",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/VO_Mika_Elemental_Burst_02.ogg/revision/latest?cb=20230325000114",
+        "quote": "Leave the wounded to me!",
+        "id": 2
+    },
+    {
+        "name": "Mika",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/82/VO_Mika_Deploying_Wind_Glider_01.ogg/revision/latest?cb=20230325000107",
+        "quote": "I'll be the eyes above...",
+        "id": 3
+    },
+    {
+        "name": "Mona",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/VO_Mona_Chat_-_Astrology.ogg/revision/latest?cb=20210112103419",
+        "quote": "Divination is about precisely foretelling one's written destiny. Over-embellishing that fate only leads to misconception.",
+        "id": 0
+    },
+    {
+        "name": "Mona",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/40/VO_Mona_When_Thunder_Strikes.ogg/revision/latest?cb=20210112103351",
+        "quote": "Which of the starry skies do these thunderbolts fall from?",
+        "id": 1
+    },
+    {
+        "name": "Mona",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/78/VO_Mona_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112205811",
+        "quote": "We could do with some more fortune...",
+        "id": 2
+    },
+    {
+        "name": "Mona",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/VO_Mona_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112205813",
+        "quote": "This should cover food and rent for a while!",
+        "id": 3
+    },
+    {
+        "name": "Mualani",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/VO_Mualani_Chat_-_Unity.ogg/revision/latest?cb=20240831135142",
+        "quote": "You can only do so much on your own, but with a group, anything's possible!",
+        "id": 0
+    },
+    {
+        "name": "Mualani",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/07/VO_Mualani_When_It_Rains.ogg/revision/latest?cb=20240831135437",
+        "quote": "Woohoo! The slippery ground here is perfect for sliding around on a surfboard!",
+        "id": 1
+    },
+    {
+        "name": "Mualani",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/VO_Mualani_Elemental_Burst_03.ogg/revision/latest?cb=20240831135207",
+        "quote": "Check this out! Best of luck!",
+        "id": 2
+    },
+    {
+        "name": "Mualani",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/5e/VO_Mualani_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20240831135415",
+        "quote": "I told you today's our lucky day!",
+        "id": 3
+    },
+    {
+        "name": "Nahida",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/5a/VO_Nahida_When_It_Rains.ogg/revision/latest?cb=20221114125357",
+        "quote": "Quick, let's find shelter, or mushrooms will start growing on our heads.",
+        "id": 0
+    },
+    {
+        "name": "Nahida",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b2/VO_Nahida_When_the_Sun_Is_Out.ogg/revision/latest?cb=20221114125403",
+        "quote": "Ah, the weather is lovely and warm. Things are about to start getting lively again.",
+        "id": 1
+    },
+    {
+        "name": "Nahida",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d6/VO_Nahida_Elemental_Skill_1_03.ogg/revision/latest?cb=20221112205901",
+        "quote": "This might hurt a little.",
+        "id": 2
+    },
+    {
+        "name": "Nahida",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/70/VO_Nahida_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112210020",
+        "quote": "I wonder who this gift could be from.",
+        "id": 3
+    },
+    {
+        "name": "Navia",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/7f/VO_Navia_When_Thunder_Strikes.ogg/revision/latest?cb=20231221031747",
+        "quote": "Aaah! Ugh, I should have covered my ears when I saw the flash!",
+        "id": 0
+    },
+    {
+        "name": "Navia",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/VO_Navia_After_the_Rain.ogg/revision/latest?cb=20231221031820",
+        "quote": "Finally! The rain has stopped!",
+        "id": 1
+    },
+    {
+        "name": "Navia",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/VO_Navia_Elemental_Skill_1_05.ogg/revision/latest?cb=20231221031514",
+        "quote": "This one's got your name on it!",
+        "id": 2
+    },
+    {
+        "name": "Navia",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/9/9a/VO_Navia_Elemental_Burst_02.ogg/revision/latest?cb=20231221031503",
+        "quote": "A proper sendoff! From the Spina, with love.",
+        "id": 3
+    },
+    {
+        "name": "Neuvillette",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/60/VO_Neuvillette_When_It_Rains.ogg/revision/latest?cb=20231001184619",
+        "quote": "Ah, my apologies. This heavy rain must be quite an inconvenience for you.",
+        "id": 0
+    },
+    {
+        "name": "Neuvillette",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Neuvillette_Good_Morning.ogg/revision/latest?cb=20231001184745",
+        "quote": "Good morning. I hope you have a wonderful day.",
+        "id": 1
+    },
+    {
+        "name": "Neuvillette",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/12/VO_Neuvillette_Elemental_Burst_03.ogg/revision/latest?cb=20231001184717",
+        "quote": "Let the mighty be humbled.",
+        "id": 2
+    },
+    {
+        "name": "Neuvillette",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/38/VO_Neuvillette_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20231001184922",
+        "quote": "Abandoned property belongs to whoever finds it first. So it's legally yours now.",
+        "id": 3
+    },
+    {
+        "name": "Nilou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/50/VO_Nilou_Chat_-_Practice.ogg/revision/latest?cb=20221014195937",
+        "quote": "First get into position like this, then move like that... Yep, that's it.",
+        "id": 0
+    },
+    {
+        "name": "Nilou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/VO_Nilou_Chat_-_Rest.ogg/revision/latest?cb=20221014195939",
+        "quote": "Relaxing days like this are nice... Let's take it easy.",
+        "id": 1
+    },
+    {
+        "name": "Nilou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/67/VO_Nilou_Elemental_Burst_03.ogg/revision/latest?cb=20221112210107",
+        "quote": "This dance is for you.",
+        "id": 2
+    },
+    {
+        "name": "Nilou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/07/VO_Nilou_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112210241",
+        "quote": "Let me help you pack this up.",
+        "id": 3
+    },
+    {
+        "name": "Ningguang",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a1/VO_Ningguang_Chat_-_Trade_War.ogg/revision/latest?cb=20210112123154",
+        "quote": "In a trade war, the perfect hunter leaves no trace.",
+        "id": 0
+    },
+    {
+        "name": "Ningguang",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/VO_Ningguang_Chat_-_Investments.ogg/revision/latest?cb=20210112123153",
+        "quote": "We should look for a new investment. Mora doesn't grow on trees.",
+        "id": 1
+    },
+    {
+        "name": "Ningguang",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/be/VO_Ningguang_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112210504",
+        "quote": "We can't have treasure unaccounted for.",
+        "id": 2
+    },
+    {
+        "name": "Ningguang",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/VO_Ningguang_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20221112210506",
+        "quote": "Wealth... why settle for less than more?",
+        "id": 3
+    },
+    {
+        "name": "Noelle",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/13/VO_Noelle_Chat_-_Being_Reliable.ogg/revision/latest?cb=20210112155530",
+        "quote": "Whenever you need me, I'll be there.",
+        "id": 0
+    },
+    {
+        "name": "Noelle",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d4/VO_Noelle_When_Thunder_Strikes.ogg/revision/latest?cb=20210112155613",
+        "quote": "Please stay indoors until the storm passes. I will deal with any urgent outdoor business.",
+        "id": 1
+    },
+    {
+        "name": "Noelle",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/VO_Noelle_Elemental_Skill_1_02.ogg/revision/latest?cb=20221112210559",
+        "quote": "I must leave no stone unturned.",
+        "id": 2
+    },
+    {
+        "name": "Noelle",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/VO_Noelle_Elemental_Skill_1_03.ogg/revision/latest?cb=20221112210601",
+        "quote": "Leave it all to me.",
+        "id": 3
+    },
+    {
+        "name": "Qiqi",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/VO_Qiqi_Chat_-_Talking_to_Herself.ogg/revision/latest?cb=20210112184819",
+        "quote": "Hey, do you know what? Uhh... neither do I. I... already forgot.",
+        "id": 0
+    },
+    {
+        "name": "Qiqi",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d9/VO_Qiqi_Chat_-_Training.ogg/revision/latest?cb=20210112184822",
+        "quote": "One, two, three, four. Two, two, three, four...",
+        "id": 1
+    },
+    {
+        "name": "Qiqi",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/VO_Qiqi_Elemental_Burst_03.ogg/revision/latest?cb=20221112210823",
+        "quote": "Opening box of Adepti tricks.",
+        "id": 2
+    },
+    {
+        "name": "Qiqi",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e5/VO_Qiqi_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112210958",
+        "quote": "Treasure chests... hmm... do we like treasure chests?",
+        "id": 3
+    },
+    {
+        "name": "Raiden Shogun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/9/92/VO_Raiden_Shogun_Chat_-_Idleness.ogg/revision/latest?cb=20210902172716",
+        "quote": "Inactivity serves no purpose whatsoever. Hmph.",
+        "id": 0
+    },
+    {
+        "name": "Raiden Shogun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/VO_Raiden_Shogun_When_It_Rains.ogg/revision/latest?cb=20210902172751",
+        "quote": "Rainfall alone does not constitute a storm. Thunder is required.",
+        "id": 1
+    },
+    {
+        "name": "Raiden Shogun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/44/VO_Raiden_Ei_Receiving_a_Gift_-_01.ogg/revision/latest?cb=20220514160038",
+        "quote": "Delicious. I feel much better after that. Thank you.",
+        "id": 2
+    },
+    {
+        "name": "Raiden Shogun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/VO_Raiden_Ei_Receiving_a_Gift_-_02.ogg/revision/latest?cb=20220514160040",
+        "quote": "Doesn't look too bad, how did you make it?",
+        "id": 3
+    },
+    {
+        "name": "Razor",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/VO_Razor_Hello.ogg/revision/latest?cb=20210113105957",
+        "quote": "You smell... *sniff* nice! Let's hunt.",
+        "id": 0
+    },
+    {
+        "name": "Razor",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/bc/VO_Razor_Chat_-_Storm_Watch.ogg/revision/latest?cb=20210113110041",
+        "quote": "I keep watch. You leave, you call me.",
+        "id": 1
+    },
+    {
+        "name": "Razor",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Razor_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112211456",
+        "quote": "Empty chest... good for storage.",
+        "id": 2
+    },
+    {
+        "name": "Rosaria",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/6c/VO_Rosaria_Chat_-_Boredom.ogg/revision/latest?cb=20210513000500",
+        "quote": "Don't we have a job to do?",
+        "id": 0
+    },
+    {
+        "name": "Rosaria",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/20/VO_Rosaria_Chat_-_Overtime.ogg/revision/latest?cb=20210513000500",
+        "quote": "Everything is negotiable, except overtime.",
+        "id": 1
+    },
+    {
+        "name": "Rosaria",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3b/VO_Rosaria_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112211714",
+        "quote": "...Hm, there are a few interesting trinkets here.",
+        "id": 2
+    },
+    {
+        "name": "Rosaria",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c7/VO_Rosaria_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112211716",
+        "quote": "I suppose it wasn't too much trouble.",
+        "id": 3
+    },
+    {
+        "name": "Kujou Sara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/29/VO_Kujou_Sara_Chat_-_Target.ogg/revision/latest?cb=20210902224745",
+        "quote": "To strike your foe takes unity between mind, arrow, and bow.",
+        "id": 0
+    },
+    {
+        "name": "Kujou Sara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/0c/VO_Kujou_Sara_Chat_-_Eternity.ogg/revision/latest?cb=20210902224743",
+        "quote": "To manifest Eternity per the Almighty Shogun's will \u2014 that is what I aspire to.",
+        "id": 1
+    },
+    {
+        "name": "Kujou Sara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4c/VO_Kujou_Sara_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112205212",
+        "quote": "Excellent. These spoils will boost morale.",
+        "id": 2
+    },
+    {
+        "name": "Kujou Sara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/41/VO_Kujou_Sara_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112205214",
+        "quote": "Good. Leave nothing of value behind.",
+        "id": 3
+    },
+    {
+        "name": "Sayu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/VO_Sayu_Chat_-_Work.ogg/revision/latest?cb=20210810124802",
+        "quote": "Seems like I should have just stayed in bed today.",
+        "id": 0
+    },
+    {
+        "name": "Sayu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/VO_Sayu_Chat_-_Height.ogg/revision/latest?cb=20210810124800",
+        "quote": "Surely I should be due a growth spurt by now?",
+        "id": 1
+    },
+    {
+        "name": "Sayu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/62/VO_Sayu_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112212204",
+        "quote": "Looks kinda cozy in here... Nap time!",
+        "id": 2
+    },
+    {
+        "name": "Sayu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/45/VO_Sayu_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112212207",
+        "quote": "Mission accomplished! Can I go back and sleep now?",
+        "id": 3
+    },
+    {
+        "name": "Sethos",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/70/VO_Sethos_When_Thunder_Strikes.ogg/revision/latest?cb=20240612002030",
+        "quote": "No no no... Quick, let's get to lower ground!",
+        "id": 0
+    },
+    {
+        "name": "Sethos",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/VO_Sethos_When_It_Snows.ogg/revision/latest?cb=20240612002025",
+        "quote": "*shudder* ...Quick quick quick, let's pick up the pace! Jogging will warm us up!",
+        "id": 1
+    },
+    {
+        "name": "Sethos",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f1/VO_Sethos_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20240612002408",
+        "quote": "Hey, check this out. See anything you like?",
+        "id": 2
+    },
+    {
+        "name": "Sethos",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/65/VO_Sethos_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20240612002410",
+        "quote": "This is a nice surprise.",
+        "id": 3
+    },
+    {
+        "name": "Shenhe",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/46/VO_Shenhe_Chat_-_Motto.ogg/revision/latest?cb=20220107122828",
+        "quote": "Mind be purged, world be saved.",
+        "id": 0
+    },
+    {
+        "name": "Shenhe",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/VO_Shenhe_Good_Morning.ogg/revision/latest?cb=20220107122844",
+        "quote": "Good morning. The dew is very sweet today, would you like some?",
+        "id": 1
+    },
+    {
+        "name": "Shenhe",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/0c/VO_Shenhe_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112212434",
+        "quote": "So this is what the world considers to be \"treasure\"?",
+        "id": 2
+    },
+    {
+        "name": "Shenhe",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/VO_Shenhe_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112212437",
+        "quote": "Adepti treasures have special powers... Hmm, what about mortal ones?",
+        "id": 3
+    },
+    {
+        "name": "Shikanoin Heizou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/VO_Shikanoin_Heizou_Chat_-_Criminal_Cases.ogg/revision/latest?cb=20220714153110",
+        "quote": "There's something in the air... something that tells me a new case is brewing.",
+        "id": 0
+    },
+    {
+        "name": "Shikanoin Heizou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/VO_Shikanoin_Heizou_Chat_-_Intuition.ogg/revision/latest?cb=20220714153115",
+        "quote": "Huh, my intuition tells me that something very interesting is about to happen...",
+        "id": 1
+    },
+    {
+        "name": "Shikanoin Heizou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/5a/VO_Shikanoin_Heizou_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112201830",
+        "quote": "Oh, it's all coming out now!",
+        "id": 2
+    },
+    {
+        "name": "Shikanoin Heizou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/VO_Shikanoin_Heizou_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112201832",
+        "quote": "See? Just follow my intuition.",
+        "id": 3
+    },
+    {
+        "name": "Sigewinne",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Sigewinne_Chat_-_Stickers.ogg/revision/latest?cb=20240625205148",
+        "quote": "No... I didn't put a sticker on your back.",
+        "id": 0
+    },
+    {
+        "name": "Sigewinne",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/VO_Sigewinne_Chat_-_Concern.ogg/revision/latest?cb=20240625205146",
+        "quote": "Oh no! Did you bump into something? Well, if it hurts, just let me know.",
+        "id": 1
+    },
+    {
+        "name": "Sigewinne",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/cf/VO_Sigewinne_Elemental_Burst_01.ogg/revision/latest?cb=20240625204720",
+        "quote": "I swear, it's for medical research.",
+        "id": 2
+    },
+    {
+        "name": "Sigewinne",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/VO_Sigewinne_Elemental_Burst_02.ogg/revision/latest?cb=20240625204722",
+        "quote": "Don't be nervous! Just relax.",
+        "id": 3
+    },
+    {
+        "name": "Sucrose",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e4/VO_Sucrose_Chat_-_Curiosity.ogg/revision/latest?cb=20210113111743",
+        "quote": "What was that? Oh... it's gone. Can I go take a look?",
+        "id": 0
+    },
+    {
+        "name": "Sucrose",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Sucrose_Chat_-_Organization.ogg/revision/latest?cb=20210113111747",
+        "quote": "I just need a moment to quickly take down some notes.",
+        "id": 1
+    },
+    {
+        "name": "Sucrose",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/75/VO_Sucrose_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112212915",
+        "quote": "Chests appearing out of thin air... This needs research.",
+        "id": 2
+    },
+    {
+        "name": "Sucrose",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/5b/VO_Sucrose_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112212918",
+        "quote": "*sigh* If only I stumbled upon lab supplies as often.",
+        "id": 3
+    },
+    {
+        "name": "Tartaglia",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8f/VO_Tartaglia_Chat_-_Idleness.ogg/revision/latest?cb=20201220060407",
+        "quote": "You know, there are better ways to seek out our enemies than... well, standing here.",
+        "id": 0
+    },
+    {
+        "name": "Tartaglia",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/VO_Tartaglia_Chat_-_Test_of_Skills.ogg/revision/latest?cb=20201220060417",
+        "quote": "This place is pretty dead... By which I mean, there's nothing to kill.",
+        "id": 1
+    },
+    {
+        "name": "Tartaglia",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a4/VO_Tartaglia_Elemental_Burst_02.ogg/revision/latest?cb=20221112213003",
+        "quote": "You can run, but you can't hide!",
+        "id": 2
+    },
+    {
+        "name": "Tartaglia",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/VO_Tartaglia_Elemental_Burst_03.ogg/revision/latest?cb=20221112213005",
+        "quote": "Shouldn't let your guard down!",
+        "id": 3
+    },
+    {
+        "name": "Thoma",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/VO_Thoma_Chat_-_Thoma%27s_Treat.ogg/revision/latest?cb=20211102103727",
+        "quote": "Hey... how about we go for a nice meal some time? My treat, of course.",
+        "id": 0
+    },
+    {
+        "name": "Thoma",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/5d/VO_Thoma_When_the_Sun_Is_Out.ogg/revision/latest?cb=20211102103820",
+        "quote": "Lovely weather we're having! Will you join me for a walk?",
+        "id": 1
+    },
+    {
+        "name": "Thoma",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/81/VO_Thoma_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112213425",
+        "quote": "Mm! The fortune slip was right...",
+        "id": 2
+    },
+    {
+        "name": "Thoma",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2a/VO_Thoma_Low_HP_01.ogg/revision/latest?cb=20221112213409",
+        "quote": "Hey! What was that for?",
+        "id": 3
+    },
+    {
+        "name": "Tighnari",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/25/VO_Tighnari_Chat_-_Mistakes.ogg/revision/latest?cb=20230416124940",
+        "quote": "Don't be afraid to make mistakes. It's all part of the learning process.",
+        "id": 0
+    },
+    {
+        "name": "Tighnari",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/ba/VO_Tighnari_Chat_-_The_Value_of_Knowledge.ogg/revision/latest?cb=20230416124942",
+        "quote": "The value of knowledge cannot simply be quantified in monetary terms.",
+        "id": 1
+    },
+    {
+        "name": "Tighnari",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/VO_Tighnari_Elemental_Burst_02.ogg/revision/latest?cb=20230416125013",
+        "quote": "Let's nip that in the bud!",
+        "id": 2
+    },
+    {
+        "name": "Tighnari",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/74/VO_Tighnari_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20230416125253",
+        "quote": "Why is there a chest here?",
+        "id": 3
+    },
+    {
+        "name": "Venti",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/VO_Venti_Chat_-_Playing_the_Lyre.ogg/revision/latest?cb=20210113121113",
+        "quote": "Sure, I'll play you another tune, but it'll cost you an apple.",
+        "id": 0
+    },
+    {
+        "name": "Venti",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/ad/VO_Venti_When_It_Rains.ogg/revision/latest?cb=20210113121044",
+        "quote": "Let's go jumping in puddles and see who can make the biggest splash!",
+        "id": 1
+    },
+    {
+        "name": "Venti",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/VO_Venti_Elemental_Burst_01.ogg/revision/latest?cb=20221112213734",
+        "quote": "Think you can get away?",
+        "id": 2
+    },
+    {
+        "name": "Venti",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/25/VO_Venti_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112213917",
+        "quote": "*clears throat* Have you heard The Ballad of the Treasure Chest?",
+        "id": 3
+    },
+    {
+        "name": "Wanderer",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/00/VO_Wanderer_After_the_Rain.ogg/revision/latest?cb=20221207192643",
+        "quote": "You're so happy just to see the sun again? How childish.",
+        "id": 0
+    },
+    {
+        "name": "Wanderer",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/06/VO_Wanderer_When_the_Wind_Is_Blowing.ogg/revision/latest?cb=20221207193016",
+        "quote": "A simple breeze like this... Even you can conjure it, right?",
+        "id": 1
+    },
+    {
+        "name": "Wanderer",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/85/VO_Wanderer_Elemental_Burst_06.ogg/revision/latest?cb=20221207192725",
+        "quote": "You dare to gaze upon me!?",
+        "id": 2
+    },
+    {
+        "name": "Wanderer",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/VO_Wanderer_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221207192941",
+        "quote": "Hah, you even want this?",
+        "id": 3
+    },
+    {
+        "name": "Wriothesley",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/81/VO_Wriothesley_When_It_Snows.ogg/revision/latest?cb=20231017200729",
+        "quote": "Hmm... This is a different kind of cold than what I'm used to.",
+        "id": 0
+    },
+    {
+        "name": "Wriothesley",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e7/VO_Wriothesley_Good_Morning.ogg/revision/latest?cb=20231017200905",
+        "quote": "Morning. What do the papers have to say about today's weather forecast?",
+        "id": 1
+    },
+    {
+        "name": "Wriothesley",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/35/VO_Wriothesley_Elemental_Burst_02.ogg/revision/latest?cb=20231017200837",
+        "quote": "This could get a little chilly.",
+        "id": 2
+    },
+    {
+        "name": "Wriothesley",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/VO_Wriothesley_Elemental_Burst_03.ogg/revision/latest?cb=20231017200839",
+        "quote": "Stay cool and face your guilt!",
+        "id": 3
+    },
+    {
+        "name": "Xiangling",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/17/VO_Xiangling_Chat_-_Snacks.ogg/revision/latest?cb=20210113123312",
+        "quote": "Is there time for a quick snack? I'll whip one up in no time!",
+        "id": 0
+    },
+    {
+        "name": "Xiangling",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/VO_Xiangling_Chat_-_Looking_for_Food.ogg/revision/latest?cb=20210113123310",
+        "quote": "If there's nothing better to do, we could go foraging for ingredients...",
+        "id": 1
+    },
+    {
+        "name": "Xiangling",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d9/VO_Xiangling_Elemental_Skill_1_03.ogg/revision/latest?cb=20221112214021",
+        "quote": "Out of the frying pan, into the fire!",
+        "id": 2
+    },
+    {
+        "name": "Xiangling",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/fe/VO_Xiangling_Sprint_End_01.ogg/revision/latest?cb=20221112214151",
+        "quote": "Now I've got stomach cramps...",
+        "id": 3
+    },
+    {
+        "name": "Xianyun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/VO_Xianyun_When_Thunder_Strikes.ogg/revision/latest?cb=20240131022847",
+        "quote": "Ugh, what a dreadful racket...",
+        "id": 0
+    },
+    {
+        "name": "Xianyun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3b/VO_Xianyun_Good_Afternoon.ogg/revision/latest?cb=20240131022639",
+        "quote": "Hmm? Spare me that look, is it not your turn to prepare luncheon today?",
+        "id": 1
+    },
+    {
+        "name": "Xianyun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/0a/VO_Xianyun_Elemental_Burst_02.ogg/revision/latest?cb=20240131022614",
+        "quote": "Make way for the adeptus!",
+        "id": 2
+    },
+    {
+        "name": "Xianyun",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/ac/VO_Xianyun_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20240131022817",
+        "quote": "These could be salvaged for parts.",
+        "id": 3
+    },
+    {
+        "name": "Xiao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/00/VO_Xiao_Chat_-_Idleness.ogg/revision/latest?cb=20210209003226",
+        "quote": "Reduced to just standing around. How absurd.",
+        "id": 0
+    },
+    {
+        "name": "Xiao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/5a/VO_Xiao_Chat_-_Wandering_Spirits.ogg/revision/latest?cb=20210209003227",
+        "quote": "The damned will sooner die again than lay a hand on me.",
+        "id": 1
+    },
+    {
+        "name": "Xiao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/12/VO_Xiao_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112214409",
+        "quote": "If it's useful, I'll take it.",
+        "id": 2
+    },
+    {
+        "name": "Xiao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/60/VO_Xiao_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112214411",
+        "quote": "Why would anyone want... *sigh* Forget it, it's not my concern.",
+        "id": 3
+    },
+    {
+        "name": "Xingqiu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/0a/VO_Xingqiu_Chat_-_Night_of_Solitude.ogg/revision/latest?cb=20210111085105",
+        "quote": "'Twas on a deserted moonlit night that the hero approached the vile dragon's limpid lair...",
+        "id": 0
+    },
+    {
+        "name": "Xingqiu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/VO_Xingqiu_Chat_-_Literature.ogg/revision/latest?cb=20210111085106",
+        "quote": "I never embark on a journey without a good book to accompany me.",
+        "id": 1
+    },
+    {
+        "name": "Xingqiu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/VO_Xingqiu_Elemental_Burst_01.ogg/revision/latest?cb=20221112214448",
+        "quote": "Witness the power of Guhua!",
+        "id": 2
+    },
+    {
+        "name": "Xingqiu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/31/VO_Xingqiu_Elemental_Burst_02.ogg/revision/latest?cb=20221112214450",
+        "quote": "Let me weave you a verse.",
+        "id": 3
+    },
+    {
+        "name": "Xinyan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f4/VO_Xinyan_Chat_-_New_Song.ogg/revision/latest?cb=20210113130131",
+        "quote": "I just came up with an awesome new riff, wanna hear it?",
+        "id": 0
+    },
+    {
+        "name": "Xinyan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/VO_Xinyan_Chat_-_Look%21.ogg/revision/latest?cb=20210113130129",
+        "quote": "Whatever's going on over there... Looks pretty rock 'n' roll to me!",
+        "id": 1
+    },
+    {
+        "name": "Xinyan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/88/VO_Xinyan_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112214907",
+        "quote": "Time to celebrate! Ready? 1, 2, 3, 4...",
+        "id": 2
+    },
+    {
+        "name": "Xinyan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/05/VO_Xinyan_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20221112214911",
+        "quote": "Woohoo! Let me hear ya!",
+        "id": 3
+    },
+    {
+        "name": "Yae Miko",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/7a/VO_Yae_Miko_When_It_Rains.ogg/revision/latest?cb=20220216025818",
+        "quote": "If this rain keeps up, my fur will be dripping wet...",
+        "id": 0
+    },
+    {
+        "name": "Yae Miko",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8e/VO_Yae_Miko_When_Thunder_Strikes.ogg/revision/latest?cb=20220216025823",
+        "quote": "Many people dread the sound of thunder... To me, it sounds fondly familiar.",
+        "id": 1
+    },
+    {
+        "name": "Yae Miko",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/05/VO_Yae_Miko_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112215135",
+        "quote": "Well, what do we have here?",
+        "id": 2
+    },
+    {
+        "name": "Yae Miko",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/30/VO_Yae_Miko_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112215138",
+        "quote": "Don't tell me that's everything...",
+        "id": 3
+    },
+    {
+        "name": "Yanfei",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3a/VO_Yanfei_Chat_-_The_Law.ogg/revision/latest?cb=20210428183529",
+        "quote": "I'll remind you again: The law can be both a help and a hindrance.",
+        "id": 0
+    },
+    {
+        "name": "Yanfei",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/VO_Yanfei_Chat_-_Reading.ogg/revision/latest?cb=20210428183510",
+        "quote": "The case before us... is a strange and unprecedented one indeed.",
+        "id": 1
+    },
+    {
+        "name": "Yanfei",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/dd/VO_Yanfei_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112215355",
+        "quote": "Ooh, we can definitely write this off as \"incidental gains.\"",
+        "id": 2
+    },
+    {
+        "name": "Yanfei",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8f/VO_Yanfei_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20221112215359",
+        "quote": "Huh, let's appraise the value on this...",
+        "id": 3
+    },
+    {
+        "name": "Yaoyao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/bc/VO_Yaoyao_Chat_-_Join_In_the_Fun.ogg/revision/latest?cb=20230119182022",
+        "quote": "Ooh, what's happening over there? Can we take a sneaky peek, huh? Can we?",
+        "id": 0
+    },
+    {
+        "name": "Yaoyao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/da/VO_Yaoyao_When_the_Sun_Is_Out.ogg/revision/latest?cb=20230119182129",
+        "quote": "The weather's so nice. Let's go have a walk around the harbor!",
+        "id": 1
+    },
+    {
+        "name": "Yaoyao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/6d/VO_Yaoyao_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20230119182328",
+        "quote": "Pack everything up nice and carefully. Don't drop anything!",
+        "id": 2
+    },
+    {
+        "name": "Yaoyao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/VO_Yaoyao_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20230119182332",
+        "quote": "Wooow! These'll last us for days!",
+        "id": 3
+    },
+    {
+        "name": "Yelan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/42/VO_Yelan_Chat_-_Tip-Off.ogg/revision/latest?cb=20220531185408",
+        "quote": "I got a new letter from an informant. Looks like the situation has changed again.",
+        "id": 0
+    },
+    {
+        "name": "Yelan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/12/VO_Yelan_When_It_Snows.ogg/revision/latest?cb=20220531185455",
+        "quote": "It's getting a little cold... Time to bundle up.",
+        "id": 1
+    },
+    {
+        "name": "Yelan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/fc/VO_Yelan_Elemental_Burst_03.ogg/revision/latest?cb=20221112215448",
+        "quote": "Things are about to get dicey.",
+        "id": 2
+    },
+    {
+        "name": "Yelan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/14/VO_Yelan_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112215623",
+        "quote": "Treasure... one way to draw your target out of hiding.",
+        "id": 3
+    },
+    {
+        "name": "Yoimiya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/VO_Yoimiya_Chat_-_Fireworks.ogg/revision/latest?cb=20210810130543",
+        "quote": "Fireworks are for now, but friends are forever.",
+        "id": 0
+    },
+    {
+        "name": "Yoimiya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/47/VO_Yoimiya_Chat_-_Telling_Stories.ogg/revision/latest?cb=20210810130549",
+        "quote": "If we've got nothing else to do, why don't I tell you a story?",
+        "id": 1
+    },
+    {
+        "name": "Yoimiya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f9/VO_Yoimiya_Elemental_Skill_1_01.ogg/revision/latest?cb=20221112215714",
+        "quote": "Time for a light show!",
+        "id": 2
+    },
+    {
+        "name": "Yoimiya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/74/VO_Yoimiya_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112215846",
+        "quote": "Ooh! Will we find any firework materials in here?",
+        "id": 3
+    },
+    {
+        "name": "Yun Jin",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/11/VO_Yun_Jin_When_Thunder_Strikes.ogg/revision/latest?cb=20220107123936",
+        "quote": "*gasp* D\u2014Did you hear that? Whew, it really startled me.",
+        "id": 0
+    },
+    {
+        "name": "Yun Jin",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/60/VO_Yun_Jin_When_It_Snows.ogg/revision/latest?cb=20220107123932",
+        "quote": "(Translated) Fie! This cold shall be mine end!",
+        "id": 1
+    },
+    {
+        "name": "Yun Jin",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/7a/VO_Yun_Jin_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112220116",
+        "quote": "The troupe appreciates any donation.",
+        "id": 2
+    },
+    {
+        "name": "Yun Jin",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/VO_Yun_Jin_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112220118",
+        "quote": "Hmm... Anything the troupe could use on our journey?",
+        "id": 3
+    },
+    {
+        "name": "Zhongli",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/05/VO_Zhongli_Chat_-_Journeys.ogg/revision/latest?cb=20210113143704",
+        "quote": "Every journey has its final day. Don't rush.",
+        "id": 0
+    },
+    {
+        "name": "Zhongli",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2f/VO_Zhongli_Good_Morning.ogg/revision/latest?cb=20210113143721",
+        "quote": "I hope today too shall be prosperous.",
+        "id": 1
+    },
+    {
+        "name": "Zhongli",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/03/VO_Zhongli_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112220350",
+        "quote": "One man's stone is another man's gem...",
+        "id": 2
+    },
+    {
+        "name": "Zhongli",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d5/VO_Zhongli_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112220353",
+        "quote": "Unsolicited... and all the more valuable for it.",
+        "id": 3
+    }
+]
