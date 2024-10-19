@@ -104,7 +104,7 @@ function displayCongratulatoryMessage(tries) {
     modesHeader.innerText = "Other Modes";
     modesHeader.classList.add("font-bold", "text-xl", "text-center", "mt-4"); 
 
-    // Function to show tooltip
+    // show tooltip
     function showTooltip(button, text) {
         const tooltip = document.getElementById("tooltip");
         tooltip.innerText = text;
@@ -115,7 +115,7 @@ function displayCongratulatoryMessage(tries) {
         tooltip.classList.remove("hidden");
     }
 
-    // Function to hide tooltip
+    // hide tooltip
     function hideTooltip() {
         const tooltip = document.getElementById("tooltip");
         tooltip.classList.add("hidden");
@@ -160,7 +160,6 @@ function displayCongratulatoryMessage(tries) {
     buttonContainer.appendChild(abilityButton);
     buttonContainer.appendChild(spyButton);
 
-    // Append everything to the congrats message element
     setTimeout(() => {
         congratsMessageElement.appendChild(congratsText);
         congratsMessageElement.appendChild(triesText);
