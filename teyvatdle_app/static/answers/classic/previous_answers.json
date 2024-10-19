@@ -709,5 +709,49 @@
         "affiliation": "Shuumatsuban",
         "release": "2021",
         "id": "sayu"
+    },
+    {
+        "name": "Dehya",
+        "title": "Flame-Mane",
+        "vision": "Pyro",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Sumeru",
+        "affiliation": "The Eremites",
+        "release": "2023",
+        "id": "dehya"
+    },
+    {
+        "name": "Clorinde",
+        "title": "Candlebearer, Shadowhunter",
+        "vision": "Electro",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "Trial Court",
+        "release": "2024",
+        "id": "clorinde"
+    },
+    {
+        "name": "Kuki Shinobu",
+        "title": "Mender of Tribulations",
+        "vision": "Electro",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Arataki Gang",
+        "release": "2022",
+        "id": "kuki-shinobu"
+    },
+    {
+        "name": "Xiangling",
+        "title": "Exquisite Delicacy",
+        "vision": "Pyro",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Wanmin Restaurant",
+        "release": "2020",
+        "id": "xiangling"
     }
 ]
