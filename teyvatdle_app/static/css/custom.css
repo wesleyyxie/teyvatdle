@@ -24,7 +24,3 @@
 }
 
   .fade-to-red { animation: fadeToRed 0.5s forwards; }
-
-  .hidden {
-    display: none; /* Hides the tooltip */
-}
