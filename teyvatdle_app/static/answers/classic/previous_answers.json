@@ -753,5 +753,27 @@
         "affiliation": "Wanmin Restaurant",
         "release": "2020",
         "id": "xiangling"
+    },
+    {
+        "name": "Mona",
+        "title": "Astral Reflection",
+        "vision": "Hydro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Mondstadt",
+        "release": "2020",
+        "id": "Mona"
+    },
+    {
+        "name": "Rosaria",
+        "title": "Thorny Benevolence",
+        "vision": "Cryo",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Church of Favonius",
+        "release": "2021",
+        "id": "rosaria"
     }
 ]

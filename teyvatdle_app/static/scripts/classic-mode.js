@@ -109,26 +109,41 @@ function displayCongratulatoryMessage(tries) {
     buttonContainer.classList.add("flex", "gap-4", "justify-center", "mt-2"); // Adjust margin 
 
     // Voiceline Mode button
-    const voicelineButton = document.createElement("img");
-    voicelineButton.src = "/static/images/buttons/voiceline_1.png"; 
-    voicelineButton.alt = "Voiceline Mode";
-    voicelineButton.classList.add("w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
+    const voicelineButton = document.createElement("div");
+    voicelineButton.style.backgroundImage = `url("/static/images/buttons/voiceline_1.png")`;
+    voicelineButton.style.backgroundSize = "50px 50px"
+    voicelineButton.classList.add("gamemode-button", "w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
     voicelineButton.onclick = () => window.location.href = "voiceline";
+
+    const voicelineButtonLabel = document.createElement("span");
+    voicelineButtonLabel.classList.add("gamemode-label")
+    voicelineButtonLabel.innerText = "Voiceline Mode"
+    voicelineButton.appendChild(voicelineButtonLabel)
 
 
     // Ability Mode button
-    const abilityButton = document.createElement("img");
-    abilityButton.src = "/static/images/buttons/ability_1.png"; 
-    abilityButton.alt = "Ability Mode";
-    abilityButton.classList.add("w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
+    const abilityButton = document.createElement("div");
+    abilityButton.style.backgroundImage = `url("/static/images/buttons/ability_1.png")`; 
+    abilityButton.style.backgroundSize = "50px 50px"
+    abilityButton.classList.add("gamemode-button", "w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
     abilityButton.onclick = () => window.location.href = "ability";
 
+    const abilityButtonLabel = document.createElement("span");
+    abilityButtonLabel.classList.add("gamemode-label")
+    abilityButtonLabel.innerText = "Ability Mode"
+    abilityButton.appendChild(abilityButtonLabel)
+
     // Spy Mode button
-    const spyButton = document.createElement("img");
-    spyButton.src = "/static/images/buttons/spy_1.png"; 
-    spyButton.alt = "Spy Mode";
-    spyButton.classList.add("w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
+    const spyButton = document.createElement("div");
+    spyButton.style.backgroundImage = `url("/static/images/buttons/spy_1.png")`; 
+    spyButton.style.backgroundSize = "50px 50px"
+    spyButton.classList.add("gamemode-button", "w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
     spyButton.onclick = () => window.location.href = "spy";
+
+    const spyButtonLabel = document.createElement("span");
+    spyButtonLabel.classList.add("gamemode-label")
+    spyButtonLabel.innerText = "Spy Mode"
+    spyButton.appendChild(spyButtonLabel)
 
     buttonContainer.appendChild(voicelineButton);
     buttonContainer.appendChild(abilityButton);
