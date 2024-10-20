@@ -1,11 +1,11 @@
 {
-    "name": "Xiangling",
-    "title": "Exquisite Delicacy",
-    "vision": "Pyro",
+    "name": "Rosaria",
+    "title": "Thorny Benevolence",
+    "vision": "Cryo",
     "weapon": "Polearm",
     "gender": "Female",
-    "nation": "Liyue",
-    "affiliation": "Wanmin Restaurant",
-    "release": "2020",
-    "id": "xiangling"
+    "nation": "Mondstadt",
+    "affiliation": "Church of Favonius",
+    "release": "2021",
+    "id": "rosaria"
 }
