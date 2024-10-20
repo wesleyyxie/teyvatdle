@@ -104,23 +104,6 @@ function displayCongratulatoryMessage(tries) {
     modesHeader.innerText = "Other Modes";
     modesHeader.classList.add("font-bold", "text-xl", "text-center", "mt-4"); 
 
-    // show tooltip
-    function showTooltip(button, text) {
-        const tooltip = document.getElementById("tooltip");
-        tooltip.innerText = text;
-
-        const buttonRect = button.getBoundingClientRect(); // Get the button's position
-        tooltip.style.left = `${buttonRect.left + (buttonRect.width / 2) - (tooltip.offsetWidth / 2)}px`; // Center tooltip above button
-        tooltip.style.top = `${buttonRect.top - tooltip.offsetHeight - 5}px`; // Position above button with some space
-        tooltip.classList.remove("hidden");
-    }
-
-    // hide tooltip
-    function hideTooltip() {
-        const tooltip = document.getElementById("tooltip");
-        tooltip.classList.add("hidden");
-    }
-
     // Create button container
     const buttonContainer = document.createElement("div");
     buttonContainer.classList.add("flex", "gap-4", "justify-center", "mt-2"); // Adjust margin 
@@ -132,9 +115,6 @@ function displayCongratulatoryMessage(tries) {
     voicelineButton.classList.add("w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
     voicelineButton.onclick = () => window.location.href = "voiceline";
 
-    voicelineButton.addEventListener("mouseenter", () => showTooltip(voicelineButton, "Voiceline"));
-    voicelineButton.addEventListener("mouseleave", hideTooltip);
-
 
     // Ability Mode button
     const abilityButton = document.createElement("img");
@@ -143,18 +123,12 @@ function displayCongratulatoryMessage(tries) {
     abilityButton.classList.add("w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
     abilityButton.onclick = () => window.location.href = "ability";
 
-    abilityButton.addEventListener("mouseenter", () => showTooltip(abilityButton, "Ability"));
-    abilityButton.addEventListener("mouseleave", hideTooltip);
-
     // Spy Mode button
     const spyButton = document.createElement("img");
     spyButton.src = "/static/images/buttons/spy_1.png"; 
     spyButton.alt = "Spy Mode";
     spyButton.classList.add("w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
     spyButton.onclick = () => window.location.href = "spy";
-
-    spyButton.addEventListener("mouseenter", () => showTooltip(spyButton, "Spy"));
-    spyButton.addEventListener("mouseleave", hideTooltip);
 
     buttonContainer.appendChild(voicelineButton);
     buttonContainer.appendChild(abilityButton);
