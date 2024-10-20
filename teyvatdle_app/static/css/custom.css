@@ -40,6 +40,7 @@
     margin-left: -60px;
     opacity: 0;
     transition: opacity 0.3s;
+    border: 1px solid #fff;
   }
 
   .gamemode-label::after {
@@ -51,10 +52,10 @@
     border-width: 5px;
     border-style: solid;
     border-color: #555 transparent transparent transparent;
+    border-top-color: #fff;
   }
 
   .gamemode-button:hover .gamemode-label {
     visibility: visible;
     opacity: 1;
   }
-  
