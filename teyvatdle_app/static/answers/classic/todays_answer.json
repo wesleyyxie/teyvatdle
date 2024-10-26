@@ -1,11 +1,11 @@
 {
-    "name": "Ningguang",
-    "title": "Eclipsing Star",
-    "vision": "Geo",
-    "weapon": "Catalyst",
+    "name": "Yelan",
+    "title": "Valley Orchid",
+    "vision": "Hydro",
+    "weapon": "Bow",
     "gender": "Female",
     "nation": "Liyue",
-    "affiliation": "Liyue Qixing",
-    "release": "2020",
-    "id": "Ningguang"
+    "affiliation": "Yanshang Teahouse",
+    "release": "2022",
+    "id": "yelan"
 }

@@ -841,5 +841,27 @@
         "affiliation": "Liyue Qixing",
         "release": "2020",
         "id": "Ningguang"
+    },
+    {
+        "name": "Xingqiu",
+        "title": "Juvenile Galant",
+        "vision": "Hydro",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Liyue",
+        "affiliation": "Feiyun Commerce Guild",
+        "release": "2020",
+        "id": "xingqiu"
+    },
+    {
+        "name": "Yelan",
+        "title": "Valley Orchid",
+        "vision": "Hydro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Yanshang Teahouse",
+        "release": "2022",
+        "id": "yelan"
     }
 ]

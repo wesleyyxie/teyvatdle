@@ -11,11 +11,11 @@
     </div>
     <span id="show_character_data"></span>
     
-    <form autocomplete="off" class="flex w-[400px] relative inline-block"id="guess-form"> 
+    <form autocomplete="off" class="flex w-[300px] items-center relative inline-block"id="guess-form">
         <div class="autocomplete w-[300px]">
-            <input id="guess" class="w-[300px] p-[10px]" type="text" name="guess-character" placeholder="Character">
+            <input id="guess" style="background-image: url(&quot;/static/images/input.png&quot;); background-size: 300px 58px;" class="bg-transparent bg-no-repeat outline-none text-white w-[300px] pl-[25px] p-[18px]" type="text" name="guess-character" placeholder="Character">
         </div>
-        <input id="submit" class="bg-gray-600 h-[24px] ml-[10px]"type="submit">
+        <input id="submit" value='' style="background-image: url(&quot;/static/images/buttons/submit_button.png&quot;); background-size: 40px 40px;" class="absolute hover:brightness-110 right-[10px] bg-no-repeat bg-center bg-transparent aspect-[1] h-[40px] ml-[10px] cursor-pointer" type="submit">
     </form>
     <div id="hints_container" class="flex text-white font-bold flex-row gap-x-[12px]">
         <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_name">
