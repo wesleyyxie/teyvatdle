@@ -819,5 +819,27 @@
         "affiliation": "Bubu Pharmacy",
         "release": "2023",
         "id": "baizhu"
+    },
+    {
+        "name": "Kaveh",
+        "title": "Empyrean Reflection",
+        "vision": "Dendro",
+        "weapon": "Claymore",
+        "gender": "Male",
+        "nation": "Sumeru",
+        "affiliation": "Independent Design Studio",
+        "release": "2023",
+        "id": "kaveh"
+    },
+    {
+        "name": "Ningguang",
+        "title": "Eclipsing Star",
+        "vision": "Geo",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Liyue Qixing",
+        "release": "2020",
+        "id": "Ningguang"
     }
 ]

@@ -1,11 +1,11 @@
 {
-    "name": "Baizhu",
-    "title": "Beyond Mortality",
-    "vision": "Dendro",
+    "name": "Ningguang",
+    "title": "Eclipsing Star",
+    "vision": "Geo",
     "weapon": "Catalyst",
-    "gender": "Male",
+    "gender": "Female",
     "nation": "Liyue",
-    "affiliation": "Bubu Pharmacy",
-    "release": "2023",
-    "id": "baizhu"
+    "affiliation": "Liyue Qixing",
+    "release": "2020",
+    "id": "Ningguang"
 }
