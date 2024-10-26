@@ -40,20 +40,20 @@
     <div id="results">
         
     </div>
-    <div id="congrats_message" class="flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 rounded-lg">
+    <div id="congrats_message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 rounded-lg">
         <div class="font-bold text-3xl text-center">Congrats!</div>
         <div id="tried-text" class="text-lg text-center">"You guessed it in 1 try!"</div>
         <div class="font-bold text-xl text-center mt-4">Next Mode</div>
-        <div class="bg-no-repeat hover:scale-button cursor-pointer bg-center aspect-[173/50] w-[173px]" style="background-image: url(&quot;/static/images/buttons/voiceline_button_short.png&quot;); background-size: 173px 50px;"></div>
+        <div class="bg-no-repeat hover:scale-button cursor-pointer bg-center aspect-[173/50] w-[173px]" onclick="location.href='/voiceline'" style="background-image: url(&quot;/static/images/buttons/voiceline_button_short.png&quot;); background-size: 173px 50px;"></div>
         <div class="font-bold text-xl text-center mt-4">Other Modes</div>
         <div class="flex gap-4 justify-center mt-2">
-            <div class="gamemode-button bg-no-repeat w-[50px] h-[50px] cursor-pointer hover:scale-button" style="background-image: url(&quot;/static/images/buttons/voiceline_1.png&quot;); background-size: 50px 50px;">
+            <div class="gamemode-button bg-no-repeat w-[50px] h-[50px] cursor-pointer hover:scale-button" onclick="location.href='/voiceline'" style="background-image: url(&quot;/static/images/buttons/voiceline_1.png&quot;); background-size: 50px 50px;">
                 <span class="gamemode-label">Voiceline Mode</span>
             </div>
-            <div class="gamemode-button bg-no-repeat w-[50px] h-[50px] cursor-pointer hover:scale-button" style="background-image: url(&quot;/static/images/buttons/ability_1.png&quot;); background-size: 50px 50px;">
+            <div class="gamemode-button bg-no-repeat w-[50px] h-[50px] cursor-pointer hover:scale-button" onclick="location.href='/ability'" style="background-image: url(&quot;/static/images/buttons/ability_1.png&quot;); background-size: 50px 50px;">
                 <span class="gamemode-label">Ability Mode</span>
             </div>
-            <div class="gamemode-button bg-no-repeat  w-[50px] h-[50px] cursor-pointer hover:scale-button" style="background-image: url(&quot;/static/images/buttons/spy_1.png&quot;); background-size: 50px 50px;">
+            <div class="gamemode-button bg-no-repeat  w-[50px] h-[50px] cursor-pointer hover:scale-button" onclick="location.href='/spy'" style="background-image: url(&quot;/static/images/buttons/spy_1.png&quot;); background-size: 50px 50px;">
                 <span class="gamemode-label">Spy Mode</span>
             </div>
         </div>
