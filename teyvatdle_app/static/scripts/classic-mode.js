@@ -86,76 +86,10 @@ function submitGuess(e) {
 
 function displayCongratulatoryMessage(tries) {
     const congratsMessageElement = document.getElementById("congrats_message");
-    congratsMessageElement.innerHTML = ""; 
-    let message = "Congrats!";
-
-    // Congrats text
-    const congratsText = document.createElement("div");
-    congratsText.innerText = message;
-    congratsText.classList.add("font-bold", "text-3xl", "text-center"); // Increased font size
-
-    // Number of tries text
-    const triesText = document.createElement("div");
-    triesText.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
-    triesText.classList.add("text-lg", "text-center");
-
-    // Other Modes header
-    const modesHeader = document.createElement("div");
-    modesHeader.innerText = "Other Modes";
-    modesHeader.classList.add("font-bold", "text-xl", "text-center", "mt-4"); 
-
-    // Create button container
-    const buttonContainer = document.createElement("div");
-    buttonContainer.classList.add("flex", "gap-4", "justify-center", "mt-2"); // Adjust margin 
-
-    // Voiceline Mode button
-    const voicelineButton = document.createElement("div");
-    voicelineButton.style.backgroundImage = `url("/static/images/buttons/voiceline_1.png")`;
-    voicelineButton.style.backgroundSize = "50px 50px"
-    voicelineButton.classList.add("gamemode-button", "w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
-    voicelineButton.onclick = () => window.location.href = "voiceline";
-
-    const voicelineButtonLabel = document.createElement("span");
-    voicelineButtonLabel.classList.add("gamemode-label")
-    voicelineButtonLabel.innerText = "Voiceline Mode"
-    voicelineButton.appendChild(voicelineButtonLabel)
-
-
-    // Ability Mode button
-    const abilityButton = document.createElement("div");
-    abilityButton.style.backgroundImage = `url("/static/images/buttons/ability_1.png")`; 
-    abilityButton.style.backgroundSize = "50px 50px"
-    abilityButton.classList.add("gamemode-button", "w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
-    abilityButton.onclick = () => window.location.href = "ability";
-
-    const abilityButtonLabel = document.createElement("span");
-    abilityButtonLabel.classList.add("gamemode-label")
-    abilityButtonLabel.innerText = "Ability Mode"
-    abilityButton.appendChild(abilityButtonLabel)
-
-    // Spy Mode button
-    const spyButton = document.createElement("div");
-    spyButton.style.backgroundImage = `url("/static/images/buttons/spy_1.png")`; 
-    spyButton.style.backgroundSize = "50px 50px"
-    spyButton.classList.add("gamemode-button", "w-[50px]", "h-[50px]", "cursor-pointer", "hover:scale-button"); // Adjust size 
-    spyButton.onclick = () => window.location.href = "spy";
-
-    const spyButtonLabel = document.createElement("span");
-    spyButtonLabel.classList.add("gamemode-label")
-    spyButtonLabel.innerText = "Spy Mode"
-    spyButton.appendChild(spyButtonLabel)
-
-    buttonContainer.appendChild(voicelineButton);
-    buttonContainer.appendChild(abilityButton);
-    buttonContainer.appendChild(spyButton);
-
+    const triesTextElement = document.getElementById('tried-text')
+    triesTextElement.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
     setTimeout(() => {
-        congratsMessageElement.appendChild(congratsText);
-        congratsMessageElement.appendChild(triesText);
-        congratsMessageElement.appendChild(modesHeader); 
-        congratsMessageElement.appendChild(buttonContainer);
         congratsMessageElement.classList.remove("hidden");
-        congratsMessageElement.classList.add("text-white", "bg-green-800", "border-4", "border-green-600", "p-6", "mt-4", "rounded"); // Increased padding
         congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
     }, 2200); // Delay
 }

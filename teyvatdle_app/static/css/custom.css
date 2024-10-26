@@ -1,61 +1,59 @@
 .autocomplete-active {
-    background-color: DodgerBlue !important; 
-    color: #ffffff; 
-  }
-
-  @keyframes fadeToGreen {
-    0% {
-        background-color: transparent; /* Starting color */
-    }
-    100% {
-        background-color: green; /* End color */
-    }
+  background-color: DodgerBlue !important; 
+  color: #ffffff; 
 }
 
-  .fade-to-green { animation: fadeToGreen 0.5s forwards; }
-
-  @keyframes fadeToRed {
-    0% {
-        background-color: transparent; /* Starting color */
-    }
-    100% {
-        background-color: rgb(255, 0, 0); /* End color */
-    }
+@keyframes fadeToGreen {
+  0% {
+      background-color: transparent; /* Starting color */
+  }
+  100% {
+      background-color: green; /* End color */
+  }
 }
 
-  .fade-to-red { animation: fadeToRed 0.5s forwards; }
+.fade-to-green { animation: fadeToGreen 0.5s forwards; }
 
-  .gamemode-label {
-    visibility: hidden;
-    width: 120px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px 0;
-    position: absolute;
-    z-index: 1;
-    bottom: 125%;
-    left: 50%;
-    margin-left: -60px;
-    opacity: 0;
-    transition: opacity 0.3s;
-    border: 1px solid #fff;
+@keyframes fadeToRed {
+  0% {
+      background-color: transparent; /* Starting color */
   }
+  100% {
+      background-color: rgb(255, 0, 0); /* End color */
+  }
+}
 
-  .gamemode-label::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-    border-top-color: #fff;
-  }
+.fade-to-red { animation: fadeToRed 0.5s forwards; }
 
-  .gamemode-button:hover .gamemode-label {
-    visibility: visible;
-    opacity: 1;
-  }
+.gamemode-label {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.gamemode-label::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.gamemode-button:hover .gamemode-label {
+  visibility: visible;
+  opacity: 1;
+}
