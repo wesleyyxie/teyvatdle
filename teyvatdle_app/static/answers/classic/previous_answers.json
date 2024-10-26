@@ -775,5 +775,49 @@
         "affiliation": "Church of Favonius",
         "release": "2021",
         "id": "rosaria"
+    },
+    {
+        "name": "Beidou",
+        "title": "Uncrowned Lord of the Ocean",
+        "vision": "Electro",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "The Crux",
+        "release": "2020",
+        "id": "beidou"
+    },
+    {
+        "name": "Fischl",
+        "title": "Prinzessin der Verurteilung!",
+        "vision": "Electro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Adventurers' Guild",
+        "release": "2020",
+        "id": "fischl"
+    },
+    {
+        "name": "Kaeya",
+        "title": "Frostwind Swordsman",
+        "vision": "Cryo",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "kaeya"
+    },
+    {
+        "name": "Baizhu",
+        "title": "Beyond Mortality",
+        "vision": "Dendro",
+        "weapon": "Catalyst",
+        "gender": "Male",
+        "nation": "Liyue",
+        "affiliation": "Bubu Pharmacy",
+        "release": "2023",
+        "id": "baizhu"
     }
 ]

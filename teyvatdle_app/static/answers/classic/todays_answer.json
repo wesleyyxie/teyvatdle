@@ -1,11 +1,11 @@
 {
-    "name": "Rosaria",
-    "title": "Thorny Benevolence",
-    "vision": "Cryo",
-    "weapon": "Polearm",
-    "gender": "Female",
-    "nation": "Mondstadt",
-    "affiliation": "Church of Favonius",
-    "release": "2021",
-    "id": "rosaria"
+    "name": "Baizhu",
+    "title": "Beyond Mortality",
+    "vision": "Dendro",
+    "weapon": "Catalyst",
+    "gender": "Male",
+    "nation": "Liyue",
+    "affiliation": "Bubu Pharmacy",
+    "release": "2023",
+    "id": "baizhu"
 }
