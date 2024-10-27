@@ -1,0 +1,139 @@
+var charactersInfoData = null   
+var answerData = null
+let tries = 0;
+
+function createBlankRow() {
+    rowContainer = document.createElement('div');
+    rowContainer.classList.add("flex", "text-white", "font-bold", "text-[13px]", "flex-row", "gap-x-[12px]",  "pb-[10px]");
+    
+    // Create one box for the character icon and result (red or green)
+    categoryDiv = document.createElement('div');
+    categoryDiv.classList.add("flex", "w-[75px]", "h-[75px]", "items-center", "justify-center", "text-center", "border", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]");
+    categoryDiv.id = 'guess_result';  // Single box for the result
+    rowContainer.appendChild(categoryDiv);
+    
+    return rowContainer;
+}
+
+// Checks whether or not the guess was correct or not and changes boxes accordingly
+function checkGuess(guessData, row) {
+    const result_element = row.querySelector("#guess_result");
+
+    // Display the character icon in the result box
+    placeIcon(result_element, guessData);
+
+    // Check if the guessed character is correct
+    if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {   
+        result_element.classList.add('bg-green');  // Turn green if correct
+        return true;
+    } else {
+        result_element.classList.add('bg-red');  // Turn red if incorrect
+        return false;
+    }
+}
+
+// Places the character icon
+function placeIcon(iconElement, guessData) {
+    console.log("Now placing icon");
+    let imageName;
+
+    // If your images are named using character names
+    imageName = guessData["name"].toLowerCase().replace(/\s+/g, '-');
+    //imageName = guessData["id"];  
+
+    const imageUrl = `/static/images/character_icons/${imageName}.png`;
+    console.log("Image URL:", imageUrl);
+
+    iconElement.style.backgroundImage = `url('${imageUrl}')`;
+    iconElement.style.backgroundSize = '75px 75px';
+    iconElement.style.backgroundPosition = 'center';
+    iconElement.style.backgroundRepeat = 'no-repeat';
+}
+
+
+function submitGuess(e) {
+    e.preventDefault();  // Prevent form submission
+    let inputElement = document.getElementById("guess");
+    let guess = inputElement.value.trim();
+    let resultsContainer = document.getElementById('results');
+    let guessData = null;
+    let gameOver = false;
+
+    // Loop through the characters to find the guessed character
+    for (let i = 0; i < charactersInfoData.length; i++) {
+        let currentCharacter = charactersInfoData[i];
+        if (currentCharacter["name"].toLowerCase() === guess.toLowerCase()) {
+            guessData = currentCharacter;
+            break;
+        }
+    }
+
+    if (guessData) {
+        const row = createBlankRow();
+
+        if (checkGuess(guessData, row)) {
+            displayCongratulatoryMessage(tries);  
+            gameOver = true;
+        }
+        resultsContainer.prepend(row);
+        tries++;
+
+        if (gameOver) {
+            document.getElementById("submit").disabled = true;
+            inputElement.disabled = true;
+        }
+        inputElement.value = "";
+        inputElement.focus();
+        
+    } else {
+        alert("Character not found.");
+    }
+}
+
+function displayCongratulatoryMessage(tries) {
+    const congratsMessageElement = document.getElementById("congrats_message");
+    const triesTextElement = document.getElementById('tried-text')
+    triesTextElement.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
+    setTimeout(() => {
+        congratsMessageElement.classList.remove("hidden");
+        congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }, 2200); // Delay
+}
+
+// submit on enter
+function checkSubmit(e) {
+    if(e && e.keyCode == 13) {
+        e.preventDefault();
+        document.getElementById('submit').click()
+    }
+}
+
+window.addEventListener('load', async function() {
+    const answerRes = await fetch("/static/answers/voiceline/todays_answer.json");
+    answerData = await answerRes.json();  // Load today's answer
+    console.log(answerData);
+    
+    const characterInfoRes = await fetch("/static/data/voicelines.json");
+    charactersInfoData = await characterInfoRes.json();  // Load all character info
+    console.log(charactersInfoData);
+    
+    // Display today's answer quote from todays_answer.json
+    const randomQuoteElement = document.getElementById('random_quote');
+    randomQuoteElement.innerText = `"${answerData.quote}"`; 
+
+    document.getElementById('guess').focus();
+    document.addEventListener("keyup", checkSubmit);
+    document.getElementById("guess-form").addEventListener("submit", submitGuess);
+});
+
+// Get Quote
+
+function getRandomQuoteForCharacter(characterName) {
+    const filteredQuotes = charactersInfoData.filter(quote => quote.name.toLowerCase() === characterName.toLowerCase());
+    
+    if (filteredQuotes.length > 0) {
+        const randomIndex = Math.floor(Math.random() * filteredQuotes.length);
+        return filteredQuotes[randomIndex].quote;
+    }
+    return null;  
+}
