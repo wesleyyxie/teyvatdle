@@ -64,6 +64,7 @@ function submitGuess(e) {
     let resultsContainer = document.getElementById('results');
     let guessData = null;
     let gameOver = false;
+    tries++;
 
     // Loop through the characters to find the guessed character
     for (let i = 0; i < charactersInfoData.length; i++) {
@@ -82,7 +83,6 @@ function submitGuess(e) {
             gameOver = true;
         }
         resultsContainer.prepend(row);
-        tries++;
 
         if (gameOver) {
             document.getElementById("submit").disabled = true;
@@ -92,8 +92,6 @@ function submitGuess(e) {
         window.arr.splice(index, 1)[0];
         inputElement.value = "";
         inputElement.focus();
-    } else {
-        alert("Character not found.");
     }
 }
 
@@ -143,4 +141,9 @@ function getRandomQuoteForCharacter(characterName) {
         return filteredQuotes[randomIndex].quote;
     }
     return null;  
+}
+
+function playAudio() {
+    let audio = new Audio(`/static/data/voiceline_audios/${answerData.character_id}${answerData.id}.mp3`)
+    audio.play()
 }
