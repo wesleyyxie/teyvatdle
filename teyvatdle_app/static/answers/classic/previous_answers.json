@@ -863,5 +863,82 @@
         "affiliation": "Yanshang Teahouse",
         "release": "2022",
         "id": "yelan"
+    },
+    {
+        "name": "Dori",
+        "title": "Treasure of Dream Garden",
+        "vision": "Electro",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Sumeru",
+        "affiliation": "Sumeru Merchant",
+        "release": "2022",
+        "id": "dori"
+    },
+    {
+        "name": "Klee",
+        "title": "Fleeing Sunlight",
+        "vision": "Pyro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "klee"
+    },
+    {
+        "name": "Noelle",
+        "title": "Chivalric Blossom",
+        "vision": "Geo",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "noelle"
+    },
+    {
+        "name": "Kaedehara Kazuha",
+        "title": "Scarlet Leaves Pursue Wild Waves",
+        "vision": "Anemo",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Inazuma",
+        "affiliation": "The Crux",
+        "release": "2021",
+        "id": "kazuha"
+    },
+    {
+        "name": "Xinyan",
+        "title": "Blazing Riff",
+        "vision": "Pyro",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Liyue Harbor",
+        "release": "2020",
+        "id": "Xinyan"
+    },
+    {
+        "name": "Wanderer",
+        "title": "Eons Adrift",
+        "vision": "Anemo",
+        "weapon": "Catalyst",
+        "gender": "Male",
+        "nation": "Sumeru",
+        "affiliation": "None",
+        "release": "2022",
+        "id": "wanderer"
+    },
+    {
+        "name": "Kujou Sara",
+        "title": "Crowfeather Kaburaya",
+        "vision": "Electro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Tenryou Commission",
+        "release": "2021",
+        "id": "sara"
     }
 ]

@@ -1,11 +1,11 @@
 {
-    "name": "Yelan",
-    "title": "Valley Orchid",
-    "vision": "Hydro",
+    "name": "Kujou Sara",
+    "title": "Crowfeather Kaburaya",
+    "vision": "Electro",
     "weapon": "Bow",
     "gender": "Female",
-    "nation": "Liyue",
-    "affiliation": "Yanshang Teahouse",
-    "release": "2022",
-    "id": "yelan"
+    "nation": "Inazuma",
+    "affiliation": "Tenryou Commission",
+    "release": "2021",
+    "id": "sara"
 }

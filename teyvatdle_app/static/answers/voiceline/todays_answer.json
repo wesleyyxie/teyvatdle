@@ -1,6 +1,7 @@
 {
-    "name": "Xiangling",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/17/VO_Xiangling_Chat_-_Snacks.ogg/revision/latest?cb=20210113123312",
-    "quote": "Is there time for a quick snack? I'll whip one up in no time!",
-    "id": 0
+    "name": "Gaming",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/VO_Gaming_When_It_Snows.ogg/revision/latest?cb=20240131021452",
+    "quote": "Ahhh... Eh? Why can't I catch any in my mouth?",
+    "id": 1,
+    "character_id": "gaming"
 }
