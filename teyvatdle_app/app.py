@@ -2,6 +2,8 @@ from flask import Flask, render_template, jsonify
 from apscheduler.schedulers.background import BackgroundScheduler
 
 from get_answers.update_classic_answer import update_classic_answer
+from get_answers.update_voiceline_answer import update_voiceline_answer
+
 
 import os
 
@@ -12,6 +14,8 @@ app = Flask(__name__)
 # scheduler.start()
 
 update_classic_answer()
+update_voiceline_answer()
+
 
 
 @app.route("/spy")
