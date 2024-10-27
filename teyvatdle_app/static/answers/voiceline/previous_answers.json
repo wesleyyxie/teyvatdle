@@ -46,5 +46,37 @@
         "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/17/VO_Xiangling_Chat_-_Snacks.ogg/revision/latest?cb=20210113123312",
         "quote": "Is there time for a quick snack? I'll whip one up in no time!",
         "id": 0
+    },
+    {
+        "name": "Sayu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/VO_Sayu_Chat_-_Height.ogg/revision/latest?cb=20210810124800",
+        "quote": "Surely I should be due a growth spurt by now?",
+        "id": 1
+    },
+    {
+        "name": "Arlecchino",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c7/VO_Arlecchino_Chat_-_Eyes.ogg/revision/latest?cb=20240502205742",
+        "quote": "Staring into my eyes is ill-advised. I can't promise you'll like what you see...",
+        "id": 0
+    },
+    {
+        "name": "Layla",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c8/VO_Layla_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221122184621",
+        "quote": "Huh, glad I saw this. I almost didn't even notice it.",
+        "id": 3
+    },
+    {
+        "name": "Kachina",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a6/VO_Kachina_Good_Morning.ogg/revision/latest?cb=20240831132532",
+        "quote": "Good morning! I've already packed everything, so we can head out whenever!",
+        "id": 1,
+        "character_id": "Kachina"
+    },
+    {
+        "name": "Gaming",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/VO_Gaming_When_It_Snows.ogg/revision/latest?cb=20240131021452",
+        "quote": "Ahhh... Eh? Why can't I catch any in my mouth?",
+        "id": 1,
+        "character_id": "gaming"
     }
 ]

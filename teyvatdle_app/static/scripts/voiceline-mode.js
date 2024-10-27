@@ -4,11 +4,12 @@ let tries = 0;
 
 function createBlankRow() {
     rowContainer = document.createElement('div');
-    rowContainer.classList.add("flex", "text-white", "font-bold", "text-[13px]", "flex-row", "gap-x-[12px]",  "pb-[10px]");
+    rowContainer.classList.add("flex", "text-white", "font-bold", "text-[13px]", "flex-row", "gap-x-[12px]",  "mb-[10px]");
     
     // Create one box for the character icon and result (red or green)
     categoryDiv = document.createElement('div');
-    categoryDiv.classList.add("flex", "w-[75px]", "h-[75px]", "items-center", "justify-center", "text-center", "border", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]");
+    categoryDiv.classList.add("flex", "w-[270px]", "h-[130px]", "border", "justify-center", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]");
+
     categoryDiv.id = 'guess_result';  // Single box for the result
     rowContainer.appendChild(categoryDiv);
     
@@ -38,7 +39,7 @@ function placeIcon(iconElement, guessData) {
     let imageName;
 
     // If your images are named using character names
-    imageName = guessData["name"].toLowerCase().replace(/\s+/g, '-');
+    imageName = guessData["character_id"].toLowerCase().replace(/\s+/g, '-');
     //imageName = guessData["id"];  
 
     const imageUrl = `/static/images/character_icons/${imageName}.png`;
@@ -46,15 +47,20 @@ function placeIcon(iconElement, guessData) {
 
     iconElement.style.backgroundImage = `url('${imageUrl}')`;
     iconElement.style.backgroundSize = '75px 75px';
-    iconElement.style.backgroundPosition = 'center';
+    iconElement.style.backgroundPosition = 'center 10px';
     iconElement.style.backgroundRepeat = 'no-repeat';
+
+    spanElement = document.createElement('span')
+    spanElement.classList.add('mt-[90px]','bottom-[8px]', 'text-lg')
+    spanElement.innerText = guessData["name"]
+    iconElement.appendChild(spanElement)
 }
 
 
 function submitGuess(e) {
     e.preventDefault();  // Prevent form submission
     let inputElement = document.getElementById("guess");
-    let guess = inputElement.value.trim();
+    let guess = inputElement.value;
     let resultsContainer = document.getElementById('results');
     let guessData = null;
     let gameOver = false;
@@ -82,9 +88,10 @@ function submitGuess(e) {
             document.getElementById("submit").disabled = true;
             inputElement.disabled = true;
         }
+        let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
+        window.arr.splice(index, 1)[0];
         inputElement.value = "";
         inputElement.focus();
-        
     } else {
         alert("Character not found.");
     }
@@ -97,7 +104,7 @@ function displayCongratulatoryMessage(tries) {
     setTimeout(() => {
         congratsMessageElement.classList.remove("hidden");
         congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 2200); // Delay
+    }, 500); // Delay
 }
 
 // submit on enter

@@ -49,6 +49,7 @@ def get_voicelines():
                     voiceline["audio"] = audio_src
                     voiceline["quote"] = quote_text
                     voiceline["id"] = i
+                    voiceline["character_id"] = c.get("id")
 
                     name_parts = character_name.split()
                     name_in_quote = False
@@ -95,6 +96,7 @@ def get_voicelines():
                     voiceline["audio"] = audio_src
                     voiceline["quote"] = quote_text
                     voiceline["id"] = j
+                    voiceline["character_id"] = c.get("id")
 
                     name_parts = character_name.split()
                     name_in_quote = False
