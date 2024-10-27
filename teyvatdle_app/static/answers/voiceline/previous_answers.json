@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Venti",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/VO_Venti_Elemental_Burst_01.ogg/revision/latest?cb=20221112213734",
+        "quote": "Think you can get away?",
+        "id": 2
+    },
+    {
+        "name": "Mualani",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/VO_Mualani_Elemental_Burst_03.ogg/revision/latest?cb=20240831135207",
+        "quote": "Check this out! Best of luck!",
+        "id": 2
+    },
+    {
+        "name": "Faruzan",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/VO_Faruzan_When_Thunder_Strikes.ogg/revision/latest?cb=20221207193406",
+        "quote": "Whoa! W\u2014What? There's nothing wrong with being afraid of thunder even at an older age!",
+        "id": 0
+    },
+    {
+        "name": "Dehya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/ca/VO_Dehya_Low_HP_01.ogg/revision/latest?cb=20230303004200",
+        "quote": "Urgh... We've got ourselves a tough cookie!",
+        "id": 3
+    },
+    {
+        "name": "Kirara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c3/VO_Kirara_Chat_-_Packages.ogg/revision/latest?cb=20230526230947",
+        "quote": "I wonder what's inside this package... No no no, no peeking at my customer's stuff...",
+        "id": 0
+    },
+    {
+        "name": "Candace",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/fd/VO_Candace_When_Thunder_Strikes.ogg/revision/latest?cb=20220928123401",
+        "quote": "The thunder rumbles \u2014 does it scare you?",
+        "id": 1
+    },
+    {
+        "name": "Yun Jin",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3f/VO_Yun_Jin_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112220118",
+        "quote": "Hmm... Anything the troupe could use on our journey?",
+        "id": 3
+    },
+    {
+        "name": "Xiangling",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/17/VO_Xiangling_Chat_-_Snacks.ogg/revision/latest?cb=20210113123312",
+        "quote": "Is there time for a quick snack? I'll whip one up in no time!",
+        "id": 0
+    }
+]
