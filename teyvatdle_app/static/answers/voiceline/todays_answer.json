@@ -1,7 +1,7 @@
 {
-    "name": "Gaming",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/ab/VO_Gaming_When_It_Snows.ogg/revision/latest?cb=20240131021452",
-    "quote": "Ahhh... Eh? Why can't I catch any in my mouth?",
-    "id": 1,
-    "character_id": "gaming"
+    "name": "Tighnari",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/VO_Tighnari_Elemental_Burst_02.ogg/revision/latest?cb=20230416125013",
+    "quote": "Let's nip that in the bud!",
+    "id": 2,
+    "character_id": "tighnari"
 }

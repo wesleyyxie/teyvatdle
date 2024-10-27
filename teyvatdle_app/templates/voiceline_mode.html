@@ -3,15 +3,13 @@
 <script src="{{ url_for('static',filename='/scripts/auto-complete.js') }}"></script>
 <script src="{{ url_for('static',filename='/scripts/voiceline-mode.js') }}"></script>
 <div class="flex flex-col justify-center items-center gap-y-[10px]">
-    <div class="flex justify-center items-center mt-[20px] h-[150px] w-[300px] rounded-lg" 
-    style="background-color: rgba(39, 52, 63, 0.8); border: 3px solid rgb(120, 120, 120); box-sizing: border-box;">
-   <div class="text-white p-[20px] text-center font-bold">
+    <div class="flex flex-col items-center mt-[20px] h-[230px] w-[300px] rounded-lg" style="background-color: rgba(39, 52, 63, 0.8); border: 3px solid rgb(120, 120, 120); box-sizing: border-box;">
+    <div class="text-white p-[20px] text-center font-bold mt-[15px]">
        Which character says:
-       <div id="random_quote" class="italic text-center mt-[10px]">
-
-       </div>
-   </div>
-</div>
+       <div id="random_quote" class="italic text-center mt-[10px] text-lg"></div>
+    </div>
+    <div id="play_audio" onclick='playAudio()' class="bg-gray-500 h-[50px] w-[50px] cursor-pointer"></div>
+    </div>
     <span id="show_character_data"></span>
     
     <form autocomplete="off" class="flex w-[300px] items-center relative inline-block"id="guess-form">

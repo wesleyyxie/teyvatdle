@@ -78,5 +78,40 @@
         "quote": "Ahhh... Eh? Why can't I catch any in my mouth?",
         "id": 1,
         "character_id": "gaming"
+    },
+    {
+        "name": "Yanfei",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/8f/VO_Yanfei_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20221112215359",
+        "quote": "Huh, let's appraise the value on this...",
+        "id": 3,
+        "character_id": "yanfei"
+    },
+    {
+        "name": "Collei",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/63/VO_Collei_Receiving_a_Gift_-_01.ogg/revision/latest?cb=20220828112057",
+        "quote": "Mmm... It's delicious! Could you teach me?",
+        "id": 1,
+        "character_id": "collei"
+    },
+    {
+        "name": "Mualani",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/87/VO_Mualani_Chat_-_Unity.ogg/revision/latest?cb=20240831135142",
+        "quote": "You can only do so much on your own, but with a group, anything's possible!",
+        "id": 0,
+        "character_id": "mualani"
+    },
+    {
+        "name": "Tartaglia",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1d/VO_Tartaglia_Elemental_Burst_03.ogg/revision/latest?cb=20221112213005",
+        "quote": "Shouldn't let your guard down!",
+        "id": 3,
+        "character_id": "tartaglia"
+    },
+    {
+        "name": "Tighnari",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/VO_Tighnari_Elemental_Burst_02.ogg/revision/latest?cb=20230416125013",
+        "quote": "Let's nip that in the bud!",
+        "id": 2,
+        "character_id": "tighnari"
     }
 ]
