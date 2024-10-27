@@ -57,3 +57,12 @@
   visibility: visible;
   opacity: 1;
 }
+.bg-green {
+  background-color: #28a745;  
+  border-color: #28a745;     
+}
+
+.bg-red {
+  background-color: #dc3545;  
+  border-color: #dc3545;      
+}
