@@ -62,15 +62,15 @@ function submitGuess(e) {
     let inputElement = document.getElementById("guess");
     let guess = inputElement.value;
     let resultsContainer = document.getElementById('results');
+    let audioCountdown = document.getElementById('audio_countdown')
     let guessData = null;
     let gameOver = false;
-    tries++;
-
     // Loop through the characters to find the guessed character
     for (let i = 0; i < charactersInfoData.length; i++) {
         let currentCharacter = charactersInfoData[i];
         if (currentCharacter["name"].toLowerCase() === guess.toLowerCase()) {
             guessData = currentCharacter;
+            tries++;
             break;
         }
     }
@@ -92,6 +92,15 @@ function submitGuess(e) {
         window.arr.splice(index, 1)[0];
         inputElement.value = "";
         inputElement.focus();
+        if (tries < 5) {
+            audioCountdown.innerText = `Audio clue in ${5 - tries} tries`
+        }
+    }
+
+    if (tries == 5) {
+        let audioContainer = document.getElementById('audio_container')
+        audioContainer.classList.remove('hidden')
+        audioCountdown.classList.add('hidden')
     }
 }
 
@@ -145,5 +154,6 @@ function getRandomQuoteForCharacter(characterName) {
 
 function playAudio() {
     let audio = new Audio(`/static/data/voiceline_audios/${answerData.character_id}${answerData.id}.mp3`)
+    audio.volume = document.getElementById('audioLevel').value
     audio.play()
 }

@@ -5,7 +5,6 @@ function autocomplete(inp, arr) {
     /*execute a function when someone writes in the text field:*/
     inp.addEventListener("input", function(e) {
         var a, b, i, val = this.value;
-        console.log(a)
         /*close any already open lists of autocompleted values*/
         closeAllLists();
         if (!val) { return false;}
@@ -75,7 +74,6 @@ function autocomplete(inp, arr) {
             a.appendChild(container)
           }
         }
-        console.log(a)
         if (a.innerHTML != "") {
             addActive(a.getElementsByTagName("div"))
         }
@@ -101,7 +99,7 @@ function autocomplete(inp, arr) {
           e.preventDefault();
           if (currentFocus > -1) {
             /*and simulate a click on the "active" item:*/
-            if (x.length > 0) {
+            if (x && x.length > 0) {
                 x[currentFocus].click();   
             }
           }
@@ -144,6 +142,5 @@ window.addEventListener('load', async function () {
     charactersInfoData = await characterInfoRes.json();
     window.arr = charactersInfoData
     /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-    console.log(document.getElementById("guess"))
     autocomplete(document.getElementById("guess"), window.arr);
 });

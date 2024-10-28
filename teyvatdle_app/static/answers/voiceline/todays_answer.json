@@ -1,7 +1,7 @@
 {
-    "name": "Tighnari",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/16/VO_Tighnari_Elemental_Burst_02.ogg/revision/latest?cb=20230416125013",
-    "quote": "Let's nip that in the bud!",
-    "id": 2,
-    "character_id": "tighnari"
+    "name": "Gorou",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Gorou_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112201557",
+    "quote": "Let's distribute these among our forces.",
+    "id": 3,
+    "character_id": "gorou"
 }

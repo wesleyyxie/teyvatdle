@@ -1,11 +1,11 @@
 {
-    "name": "Chiori",
-    "title": "The Thundering Seamstress",
-    "vision": "Geo",
-    "weapon": "Sword",
-    "gender": "Female",
-    "nation": "Inazuma",
-    "affiliation": "Chioriya Boutique",
-    "release": "2024",
-    "id": "chiori"
+    "name": "Chongyun",
+    "title": "Frozen Ardor",
+    "vision": "Cryo",
+    "weapon": "Claymore",
+    "gender": "Male",
+    "nation": "Liyue",
+    "affiliation": "Liyue Harbor",
+    "release": "2020",
+    "id": "chongyun"
 }
