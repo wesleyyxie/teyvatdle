@@ -53,5 +53,49 @@
         "affiliation": "Chioriya Boutique",
         "release": "2024",
         "id": "chiori"
+    },
+    {
+        "name": "Xingqiu",
+        "title": "Juvenile Galant",
+        "vision": "Hydro",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Liyue",
+        "affiliation": "Feiyun Commerce Guild",
+        "release": "2020",
+        "id": "xingqiu"
+    },
+    {
+        "name": "Layla",
+        "title": "Fantastical Evening Star",
+        "vision": "Cryo",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Sumeru",
+        "affiliation": "Sumeru Akademiya",
+        "release": "2022",
+        "id": "Layla"
+    },
+    {
+        "name": "Xiao",
+        "title": "Vigilant Yaksha",
+        "vision": "Anemo",
+        "weapon": "Polearm",
+        "gender": "Male",
+        "nation": "Liyue",
+        "affiliation": "Liyue Adeptus",
+        "release": "2021",
+        "id": "xiao"
+    },
+    {
+        "name": "Chongyun",
+        "title": "Frozen Ardor",
+        "vision": "Cryo",
+        "weapon": "Claymore",
+        "gender": "Male",
+        "nation": "Liyue",
+        "affiliation": "Liyue Harbor",
+        "release": "2020",
+        "id": "chongyun"
     }
 ]

@@ -113,5 +113,33 @@
         "quote": "Let's nip that in the bud!",
         "id": 2,
         "character_id": "tighnari"
+    },
+    {
+        "name": "Emilie",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/50/VO_Emilie_Chat_-_Inspiration.ogg/revision/latest?cb=20240806141807",
+        "quote": "Ah, now there's an idea... Just a moment, please. I need to jot this down.",
+        "id": 0,
+        "character_id": "emilie"
+    },
+    {
+        "name": "Yaoyao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/da/VO_Yaoyao_When_the_Sun_Is_Out.ogg/revision/latest?cb=20230119182129",
+        "quote": "The weather's so nice. Let's go have a walk around the harbor!",
+        "id": 1,
+        "character_id": "yaoyao"
+    },
+    {
+        "name": "Klee",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/a/a8/VO_Klee_When_Thunder_Strikes.ogg/revision/latest?cb=20210111213456",
+        "quote": "What'd I blow up!? ...Oh wait, it's just thunder and lightning. Phew.",
+        "id": 1,
+        "character_id": "klee"
+    },
+    {
+        "name": "Gorou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Gorou_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112201557",
+        "quote": "Let's distribute these among our forces.",
+        "id": 3,
+        "character_id": "gorou"
     }
 ]
