@@ -141,5 +141,33 @@
         "quote": "Let's distribute these among our forces.",
         "id": 3,
         "character_id": "gorou"
+    },
+    {
+        "name": "Beidou",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/VO_Beidou_Chat_-_Sparring.ogg/revision/latest?cb=20210110185956",
+        "quote": "If you ever want to trade tactics, I'm always ready.",
+        "id": 0,
+        "character_id": "beidou"
+    },
+    {
+        "name": "Sayu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f6/VO_Sayu_Chat_-_Height.ogg/revision/latest?cb=20210810124800",
+        "quote": "Surely I should be due a growth spurt by now?",
+        "id": 1,
+        "character_id": "sayu"
+    },
+    {
+        "name": "Layla",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c8/VO_Layla_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221122184621",
+        "quote": "Huh, glad I saw this. I almost didn't even notice it.",
+        "id": 3,
+        "character_id": "Layla"
+    },
+    {
+        "name": "Thoma",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/VO_Thoma_Chat_-_Thoma%27s_Treat.ogg/revision/latest?cb=20211102103727",
+        "quote": "Hey... how about we go for a nice meal some time? My treat, of course.",
+        "id": 0,
+        "character_id": "thoma"
     }
 ]

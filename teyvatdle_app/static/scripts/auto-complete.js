@@ -12,7 +12,7 @@ function autocomplete(inp, arr) {
         /*create a DIV element that will contain the items (values):*/
         a = document.createElement("DIV");
         a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items bg-white z-99 absolute w-[300px] max-h-[300px] overflow-y-scroll");
+        a.setAttribute("class", "autocomplete-items bg-white z-99 absolute w-[280px] left-1/2 -translate-x-1/2 max-h-[300px] overflow-y-scroll");
         /*append the DIV element as a child of the autocomplete container:*/
         this.parentNode.appendChild(a);
         /*for each item in the array...*/
@@ -23,12 +23,12 @@ function autocomplete(inp, arr) {
           if (characterName.substr(0, val.length).toUpperCase() == val.toUpperCase()) {
             /*create a DIV element for each matching element:*/
             container = document.createElement("DIV")
-            container.setAttribute("class", "flex cursor-pointer items-center p-[5px] hover:bg-[#e9e9e9]")
+            container.setAttribute("class", "flex cursor-pointer items-center p-[10px] hover:bg-[#e9e9e9]")
             icon = document.createElement("DIV")
             icon.style.backgroundImage = `url('/static/images/character_icons/${arr[i]["id"].toLowerCase()}.png')`
-            icon.setAttribute("class", "h-[50px] w-[50px] bg-contain bg-no-repeat bg-center mr-[2px]")
+            icon.setAttribute("class", "mr-[5px] h-[50px] w-[50px] bg-contain bg-no-repeat bg-center mr-[2px]")
             b = document.createElement("DIV");
-            b.setAttribute("class", "flex p-[5px] h-[50px] border-b items-center")
+            b.setAttribute("class", "flex p-[5px] h-[50px] items-center")
             /*make the matching letters bold:*/
             b.innerHTML = "<strong>" + characterName.substr(0, val.length).replace(" ", "&nbsp;") + "</strong>";
             b.innerHTML += characterName.substr(val.length).replace(" ", "&nbsp;");
@@ -49,12 +49,12 @@ function autocomplete(inp, arr) {
           if ((characterNameParts.length > 1) && (characterNameParts[1].substr(0, val.length).toUpperCase() == val.toUpperCase())) {
             /*create a DIV element for each matching element:*/
             container = document.createElement("DIV")
-            container.setAttribute("class", "flex cursor-pointer items-center p-[5px] hover:bg-[#e9e9e9]")
+            container.setAttribute("class", "flex cursor-pointer items-center p-[10px] hover:bg-[#e9e9e9]")
             icon = document.createElement("DIV")
             icon.style.backgroundImage = `url('/static/images/character_icons/${arr[i]["id"].toLowerCase()}.png')`
             icon.setAttribute("class", "h-[50px] w-[50px] bg-contain bg-no-repeat bg-center mr-[2px]")
             b = document.createElement("DIV");
-            b.setAttribute("class", "flex p-[5px] h-[50px] border-b items-center")
+            b.setAttribute("class", "flex p-[5px] h-[50px] items-center")
             /*make the matching letters bold:*/
             b.innerHTML = characterNameParts[0]
             b.innerHTML += "<strong>&nbsp;" + characterNameParts[1].substr(0, val.length) + "</strong>";
@@ -111,7 +111,7 @@ function autocomplete(inp, arr) {
       /*start by removing the "active" class on all items:*/
       removeActive(x);
       if (currentFocus >= x.length) currentFocus = 0;
-      if (currentFocus < 0) currentFocus = (x.length - 1);
+      if (currentFocus < 0) currentFocus = (x.length - 3);
       /*add class "autocomplete-active":*/
       x[currentFocus].classList.add("autocomplete-active");
     }
