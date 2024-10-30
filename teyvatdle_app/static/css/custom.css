@@ -3,6 +3,15 @@
   color: #ffffff; 
 }
 
+.autocomplete-items::-webkit-scrollbar {
+  width: 10px;
+}
+
+.autocomplete-items::-webkit-scrollbar-thumb {
+  background-color: rgb(175, 175, 175);
+}
+
+
 @keyframes fadeToGreen {
   0% {
       background-color: transparent; /* Starting color */

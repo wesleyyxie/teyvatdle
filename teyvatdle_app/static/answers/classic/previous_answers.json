@@ -97,5 +97,49 @@
         "affiliation": "Liyue Harbor",
         "release": "2020",
         "id": "chongyun"
+    },
+    {
+        "name": "Yun Jin",
+        "title": "Stage Lucida",
+        "vision": "Geo",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Yun-Han Opera Troupe",
+        "release": "2022",
+        "id": "yun-jin"
+    },
+    {
+        "name": "Charlotte",
+        "title": "Lens of Verity",
+        "vision": "Cryo",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "The Steambird",
+        "release": "2023",
+        "id": "charlotte"
+    },
+    {
+        "name": "Clorinde",
+        "title": "Candlebearer, Shadowhunter",
+        "vision": "Electro",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "Trial Court",
+        "release": "2024",
+        "id": "clorinde"
+    },
+    {
+        "name": "Kirara",
+        "title": "Cat Upon the Eaves",
+        "vision": "Dendro",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Komaniya Express",
+        "release": "2023",
+        "id": "kirara"
     }
 ]
