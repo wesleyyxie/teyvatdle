@@ -14,7 +14,7 @@
 
 @keyframes fadeToGreen {
   0% {
-      background-color: transparent; /* Starting color */
+      background-color: #27343fcc; /* Starting color */
   }
   100% {
       background-color: green; /* End color */
@@ -25,7 +25,7 @@
 
 @keyframes fadeToRed {
   0% {
-      background-color: transparent; /* Starting color */
+      background-color: #27343fcc; /* Starting color */
   }
   100% {
       background-color: rgb(255, 0, 0); /* End color */

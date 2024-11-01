@@ -9,7 +9,7 @@ function createBlankRow(){
     rowContainer.classList.add("flex", "text-white", "font-bold", "text-[13px]", "flex-row", "gap-x-[12px]",  "pb-[10px]")
     for (i = 0; i < categories.length; i++) {
         categoryDiv = document.createElement('div')
-        categoryDiv.classList.add("flex", "w-[75px]", "h-[75px]", "items-center", "justify-center", "text-center", "border", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]")
+        categoryDiv.classList.add("flex", "w-[75px]", "h-[75px]", "items-center", "justify-center", "bg-[#27343fcc]", "text-center", "border", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]")
         categoryDiv.id = 'guess_' + categories[i]
         rowContainer.appendChild(categoryDiv)
     }   

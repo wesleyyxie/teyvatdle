@@ -169,5 +169,54 @@
         "quote": "Hey... how about we go for a nice meal some time? My treat, of course.",
         "id": 0,
         "character_id": "thoma"
+    },
+    {
+        "name": "Fischl",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/fe/VO_Fischl_Elemental_Skill_1_04.ogg/revision/latest?cb=20221112200927",
+        "quote": "Oz: No rest for the wicked...",
+        "id": 2,
+        "character_id": "fischl"
+    },
+    {
+        "name": "Mualani",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/07/VO_Mualani_When_It_Rains.ogg/revision/latest?cb=20240831135437",
+        "quote": "Woohoo! The slippery ground here is perfect for sliding around on a surfboard!",
+        "id": 1,
+        "character_id": "mualani"
+    },
+    {
+        "name": "Keqing",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/VO_Keqing_Chat_-_Relax.ogg/revision/latest?cb=20210111202855",
+        "quote": "I'm all for work-life balance, but I think this is pushing it.",
+        "id": 1,
+        "character_id": "keqing"
+    },
+    {
+        "name": "Diluc",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Diluc_Red_Dead_of_Night_Chat_-_Preparation.ogg/revision/latest?cb=20220713165008",
+        "quote": "We should prepare while we can, then make a preemptive strike against the enemy.",
+        "id": 2,
+        "character_id": "diluc"
+    },
+    {
+        "name": "Furina",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/26/VO_Furina_When_It_Rains.ogg/revision/latest?cb=20231111062059",
+        "quote": "It's pouring out here! Wait, the water levels aren't rising, are they?",
+        "id": 1,
+        "character_id": "furina"
+    },
+    {
+        "name": "Albedo",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/2e/VO_Albedo_Chat_-_Investigation.ogg/revision/latest?cb=20201226205452",
+        "quote": "\"The truth of this world\"... *sigh* What could it be?",
+        "id": 1,
+        "character_id": "albedo"
+    },
+    {
+        "name": "Hu Tao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/VO_Hu_Tao_Elemental_Burst_03.ogg/revision/latest?cb=20221112203101",
+        "quote": "Pyre, pyre, pants on fire!",
+        "id": 2,
+        "character_id": "hu-tao"
     }
 ]

@@ -12,7 +12,7 @@ function autocomplete(inp, arr) {
         /*create a DIV element that will contain the items (values):*/
         a = document.createElement("DIV");
         a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items bg-white z-99 absolute w-[280px] left-1/2 -translate-x-1/2 max-h-[300px] overflow-y-scroll");
+        a.setAttribute("class", "autocomplete-items bg-[#f1e8e0] z-99 absolute w-[280px] left-1/2 -translate-x-1/2 max-h-[300px] overflow-y-scroll");
         /*append the DIV element as a child of the autocomplete container:*/
         this.parentNode.appendChild(a);
         /*for each item in the array...*/
@@ -23,7 +23,7 @@ function autocomplete(inp, arr) {
           if (characterName.substr(0, val.length).toUpperCase() == val.toUpperCase()) {
             /*create a DIV element for each matching element:*/
             container = document.createElement("DIV")
-            container.setAttribute("class", "flex cursor-pointer items-center p-[10px] hover:bg-[#e9e9e9]")
+            container.setAttribute("class", "flex cursor-pointer items-center p-[10px] hover:bg-[#c9c9c9]")
             icon = document.createElement("DIV")
             icon.style.backgroundImage = `url('/static/images/character_icons/${arr[i]["id"].toLowerCase()}.png')`
             icon.setAttribute("class", "mr-[5px] h-[50px] w-[50px] bg-contain bg-no-repeat bg-center mr-[2px]")
@@ -49,7 +49,7 @@ function autocomplete(inp, arr) {
           if ((characterNameParts.length > 1) && (characterNameParts[1].substr(0, val.length).toUpperCase() == val.toUpperCase())) {
             /*create a DIV element for each matching element:*/
             container = document.createElement("DIV")
-            container.setAttribute("class", "flex cursor-pointer items-center p-[10px] hover:bg-[#e9e9e9]")
+            container.setAttribute("class", "flex cursor-pointer items-center p-[10px] hover:bg-[#c9c9c9]")
             icon = document.createElement("DIV")
             icon.style.backgroundImage = `url('/static/images/character_icons/${arr[i]["id"].toLowerCase()}.png')`
             icon.setAttribute("class", "h-[50px] w-[50px] bg-contain bg-no-repeat bg-center mr-[2px]")

@@ -1,6 +1,5 @@
 import requests
 import json
-import os
 
 
 def fetch_character_data(api_url):
