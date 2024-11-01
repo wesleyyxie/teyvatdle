@@ -3,9 +3,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 
 from get_answers.update_classic_answer import update_classic_answer
 from get_answers.update_voiceline_answer import update_voiceline_answer
-
-
-import os
+from get_answers.update_ability_answer import update_ability_answer
 
 app = Flask(__name__)
 # IF DEBUG MODE IS ON, IT WILL TRIGGER THE SCHEDULER AGAIN
@@ -15,6 +13,7 @@ app = Flask(__name__)
 
 update_classic_answer()
 update_voiceline_answer()
+update_ability_answer()
 
 
 

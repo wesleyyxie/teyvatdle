@@ -1,11 +1,11 @@
 {
-    "name": "Amber",
-    "title": "Gliding Champion",
+    "name": "Klee",
+    "title": "Fleeing Sunlight",
     "vision": "Pyro",
-    "weapon": "Bow",
+    "weapon": "Catalyst",
     "gender": "Female",
     "nation": "Mondstadt",
     "affiliation": "Knights of Favonius",
     "release": "2020",
-    "id": "amber"
+    "id": "klee"
 }

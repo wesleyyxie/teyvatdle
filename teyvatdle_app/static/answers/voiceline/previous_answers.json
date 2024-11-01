@@ -218,5 +218,19 @@
         "quote": "Pyre, pyre, pants on fire!",
         "id": 2,
         "character_id": "hu-tao"
+    },
+    {
+        "name": "Neuvillette",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/12/VO_Neuvillette_Elemental_Burst_03.ogg/revision/latest?cb=20231001184717",
+        "quote": "Let the mighty be humbled.",
+        "id": 2,
+        "character_id": "Neuvillette"
+    },
+    {
+        "name": "Diluc",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/ef/VO_Diluc_Chat_-_Knights_of_Favonius.ogg/revision/latest?cb=20210110215633",
+        "quote": "You should really bring the Knights of Favonius with you next time.",
+        "id": 1,
+        "character_id": "diluc"
     }
 ]
