@@ -218,5 +218,27 @@
         "affiliation": "Knights of Favonius",
         "release": "2020",
         "id": "amber"
+    },
+    {
+        "name": "Kaedehara Kazuha",
+        "title": "Scarlet Leaves Pursue Wild Waves",
+        "vision": "Anemo",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Inazuma",
+        "affiliation": "The Crux",
+        "release": "2021",
+        "id": "kazuha"
+    },
+    {
+        "name": "Klee",
+        "title": "Fleeing Sunlight",
+        "vision": "Pyro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "klee"
     }
 ]

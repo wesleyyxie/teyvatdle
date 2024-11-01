@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Chiori",
+        "id": "chiori",
+        "elementalSkill": "Fluttering Hasode",
+        "burstSkill": "Hiyoku: Twin Blades"
+    },
+    {
+        "name": "Kujou Sara",
+        "id": "sara",
+        "elementalSkill": "Tengu Stormcall",
+        "burstSkill": "Subjugation: Koukou Sendou"
+    },
+    {
+        "name": "Sangonomiya Kokomi",
+        "id": "kokomi",
+        "elementalSkill": "Kurage's Oath",
+        "burstSkill": "Nereid's Ascension"
+    },
+    {
+        "name": "Hu Tao",
+        "id": "hu-tao",
+        "elementalSkill": "Guide to Afterlife",
+        "burstSkill": "Spirit Soother"
+    }
+]

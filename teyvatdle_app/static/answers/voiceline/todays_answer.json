@@ -1,7 +1,7 @@
 {
-    "name": "Hu Tao",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/VO_Hu_Tao_Elemental_Burst_03.ogg/revision/latest?cb=20221112203101",
-    "quote": "Pyre, pyre, pants on fire!",
-    "id": 2,
-    "character_id": "hu-tao"
+    "name": "Diluc",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/ef/VO_Diluc_Chat_-_Knights_of_Favonius.ogg/revision/latest?cb=20210110215633",
+    "quote": "You should really bring the Knights of Favonius with you next time.",
+    "id": 1,
+    "character_id": "diluc"
 }
