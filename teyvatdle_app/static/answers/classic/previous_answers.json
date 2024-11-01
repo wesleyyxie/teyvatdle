@@ -141,5 +141,82 @@
         "affiliation": "Komaniya Express",
         "release": "2023",
         "id": "kirara"
+    },
+    {
+        "name": "Hu Tao",
+        "title": "Fragrance in Thaw",
+        "vision": "Pyro",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Wangsheng Funeral Parlor",
+        "release": "2021",
+        "id": "hu-tao"
+    },
+    {
+        "name": "Kamisato Ayaka",
+        "title": "Frostflake Heron",
+        "vision": "Cryo",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Yashiro Commission",
+        "release": "2021",
+        "id": "ayaka"
+    },
+    {
+        "name": "Yae Miko",
+        "title": "Astute Amusement",
+        "vision": "Electro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Grand Narukami Shrine",
+        "release": "2022",
+        "id": "yae-miko"
+    },
+    {
+        "name": "Mualani",
+        "title": "Splish-Splash Wavechaser",
+        "vision": "Hydro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Natlan",
+        "affiliation": "Meztli",
+        "release": "2024",
+        "id": "mualani"
+    },
+    {
+        "name": "Beidou",
+        "title": "Uncrowned Lord of the Ocean",
+        "vision": "Electro",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "The Crux",
+        "release": "2020",
+        "id": "beidou"
+    },
+    {
+        "name": "Furina",
+        "title": "Endless Solo of Solitude",
+        "vision": "Hydro",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "Court of Fontaine",
+        "release": "2023",
+        "id": "furina"
+    },
+    {
+        "name": "Amber",
+        "title": "Gliding Champion",
+        "vision": "Pyro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "amber"
     }
 ]

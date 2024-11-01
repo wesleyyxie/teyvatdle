@@ -1,7 +1,7 @@
 {
-    "name": "Thoma",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/24/VO_Thoma_Chat_-_Thoma%27s_Treat.ogg/revision/latest?cb=20211102103727",
-    "quote": "Hey... how about we go for a nice meal some time? My treat, of course.",
-    "id": 0,
-    "character_id": "thoma"
+    "name": "Hu Tao",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/VO_Hu_Tao_Elemental_Burst_03.ogg/revision/latest?cb=20221112203101",
+    "quote": "Pyre, pyre, pants on fire!",
+    "id": 2,
+    "character_id": "hu-tao"
 }

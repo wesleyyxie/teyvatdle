@@ -1,0 +1,524 @@
+[
+    {
+        "name": "Albedo",
+        "id": "albedo",
+        "elementalSkill": "Abiogenesis: Solar Isotoma",
+        "burstSkill": "Rite of Progeniture: Tectonic Tide"
+    },
+    {
+        "name": "Alhaitham",
+        "id": "alhaitham",
+        "elementalSkill": "Universality: An Elaboration on Form",
+        "burstSkill": "Particular Field: Fetters of Phenomena"
+    },
+    {
+        "name": "Aloy",
+        "id": "aloy",
+        "elementalSkill": "Frozen Wilds",
+        "burstSkill": "Prophecies of Dawn"
+    },
+    {
+        "name": "Amber",
+        "id": "amber",
+        "elementalSkill": "Explosive Puppet",
+        "burstSkill": "Fiery Rain"
+    },
+    {
+        "name": "Arataki Itto",
+        "id": "arataki-itto",
+        "elementalSkill": "Masatsu Zetsugi: Akaushi Burst!",
+        "burstSkill": "Royal Descent: Behold, Itto the Evil!"
+    },
+    {
+        "name": "Arlecchino",
+        "id": "arlecchino",
+        "elementalSkill": "All Is Ash",
+        "burstSkill": "Balemoon Rising"
+    },
+    {
+        "name": "Kamisato Ayaka",
+        "id": "ayaka",
+        "elementalSkill": "Kamisato Art: Hyouka",
+        "burstSkill": "Kamisato Art: Soumetsu"
+    },
+    {
+        "name": "Kamisato Ayato",
+        "id": "ayato",
+        "elementalSkill": "Kamisato Art: Kyouka",
+        "burstSkill": "Kamisato Art: Suiyuu"
+    },
+    {
+        "name": "Baizhu",
+        "id": "baizhu",
+        "elementalSkill": "Universal Diagnosis",
+        "burstSkill": "Holistic Revivification"
+    },
+    {
+        "name": "Barbara",
+        "id": "barbara",
+        "elementalSkill": "Let the Show Begin",
+        "burstSkill": "Shining Miracle"
+    },
+    {
+        "name": "Beidou",
+        "id": "beidou",
+        "elementalSkill": "Tidecaller",
+        "burstSkill": "Stormbreaker"
+    },
+    {
+        "name": "Bennett",
+        "id": "bennett",
+        "elementalSkill": "Passion Overload",
+        "burstSkill": "Fantastic Voyage"
+    },
+    {
+        "name": "Candace",
+        "id": "Candace",
+        "elementalSkill": "Sacred Rite: Heron's Sanctum",
+        "burstSkill": "Sacred Rite: Wagtail's Tide"
+    },
+    {
+        "name": "Charlotte",
+        "id": "charlotte",
+        "elementalSkill": "Framing: Freezing Point Composition",
+        "burstSkill": "Still Photo: Comprehensive Confirmation"
+    },
+    {
+        "name": "Chevreuse",
+        "id": "chevreuse",
+        "elementalSkill": "Short-Range Rapid Interdiction Fire",
+        "burstSkill": "Ring of Bursting Grenades"
+    },
+    {
+        "name": "Chiori",
+        "id": "chiori",
+        "elementalSkill": "Fluttering Hasode",
+        "burstSkill": "Hiyoku: Twin Blades"
+    },
+    {
+        "name": "Chongyun",
+        "id": "chongyun",
+        "elementalSkill": "Spirit Blade - Chonghua's Layered Frost",
+        "burstSkill": "Spirit Blade - Cloud-parting Star"
+    },
+    {
+        "name": "Clorinde",
+        "id": "clorinde",
+        "elementalSkill": "Hunter's Vigil",
+        "burstSkill": "Last Lightfall"
+    },
+    {
+        "name": "Collei",
+        "id": "collei",
+        "elementalSkill": "Floral Brush",
+        "burstSkill": "Trump-Card Kitty"
+    },
+    {
+        "name": "Cyno",
+        "id": "cyno",
+        "elementalSkill": "Secret Rite: Chasmic Soulfarer",
+        "burstSkill": "Sacred Rite: Wolf's Swiftness"
+    },
+    {
+        "name": "Dehya",
+        "id": "dehya",
+        "elementalSkill": "Molten Inferno",
+        "burstSkill": "Leonine Bite"
+    },
+    {
+        "name": "Diluc",
+        "id": "diluc",
+        "elementalSkill": "Searing Onslaught",
+        "burstSkill": "Dawn"
+    },
+    {
+        "name": "Diona",
+        "id": "diona",
+        "elementalSkill": "Icy Paws",
+        "burstSkill": "Signature Mix"
+    },
+    {
+        "name": "Dori",
+        "id": "dori",
+        "elementalSkill": "Spirit-Warding Lamp: Troubleshooter Cannon",
+        "burstSkill": "Alcazarzaray's Exactitude"
+    },
+    {
+        "name": "Emilie",
+        "id": "emilie",
+        "elementalSkill": "Fragrance Extraction",
+        "burstSkill": "Aromatic Explication"
+    },
+    {
+        "name": "Eula",
+        "id": "eula",
+        "elementalSkill": "Icetide Vortex",
+        "burstSkill": "Glacial Illumination"
+    },
+    {
+        "name": "Faruzan",
+        "id": "faruzan",
+        "elementalSkill": "Wind Realm of Nasamjnin",
+        "burstSkill": "The Wind's Secret Ways"
+    },
+    {
+        "name": "Fischl",
+        "id": "fischl",
+        "elementalSkill": "Nightrider",
+        "burstSkill": "Midnight Phantasmagoria"
+    },
+    {
+        "name": "Freminet",
+        "id": "freminet",
+        "elementalSkill": "Pressurized Floe",
+        "burstSkill": "Shadowhunter's Ambush"
+    },
+    {
+        "name": "Furina",
+        "id": "furina",
+        "elementalSkill": "Salon Solitaire",
+        "burstSkill": "Let the People Rejoice"
+    },
+    {
+        "name": "Gaming",
+        "id": "gaming",
+        "elementalSkill": "Bestial Ascent",
+        "burstSkill": "Suanni's Gilded Dance"
+    },
+    {
+        "name": "Ganyu",
+        "id": "ganyu",
+        "elementalSkill": "Trail of the Qilin",
+        "burstSkill": "Celestial Shower"
+    },
+    {
+        "name": "Gorou",
+        "id": "gorou",
+        "elementalSkill": "Inuzaka All-Round Defense",
+        "burstSkill": "Juuga: Forward Unto Victory"
+    },
+    {
+        "name": "Hu Tao",
+        "id": "hu-tao",
+        "elementalSkill": "Guide to Afterlife",
+        "burstSkill": "Spirit Soother"
+    },
+    {
+        "name": "Jean",
+        "id": "jean",
+        "elementalSkill": "Gale Blade",
+        "burstSkill": "Dandelion Breeze"
+    },
+    {
+        "name": "Kachina",
+        "id": "Kachina",
+        "elementalSkill": "Go, Go Turbo Twirly!",
+        "burstSkill": "Time to Get Serious!"
+    },
+    {
+        "name": "Kaeya",
+        "id": "kaeya",
+        "elementalSkill": "Frostgnaw",
+        "burstSkill": "Glacial Waltz"
+    },
+    {
+        "name": "Kaveh",
+        "id": "kaveh",
+        "elementalSkill": "Artistic Ingenuity",
+        "burstSkill": "Painted Dome"
+    },
+    {
+        "name": "Kaedehara Kazuha",
+        "id": "kazuha",
+        "elementalSkill": "Chihayaburu",
+        "burstSkill": "Kazuha Slash"
+    },
+    {
+        "name": "Keqing",
+        "id": "keqing",
+        "elementalSkill": "Stellar Restoration",
+        "burstSkill": "Starward Sword"
+    },
+    {
+        "name": "Kinich",
+        "id": "kinich",
+        "elementalSkill": "Canopy Hunter: Riding High",
+        "burstSkill": "Hail to the Almighty Dragonlord"
+    },
+    {
+        "name": "Kirara",
+        "id": "kirara",
+        "elementalSkill": "Meow-teor Kick",
+        "burstSkill": "Secret Art: Surprise Dispatch"
+    },
+    {
+        "name": "Klee",
+        "id": "klee",
+        "elementalSkill": "Jumpy Dumpty",
+        "burstSkill": "Sparks 'n' Splash"
+    },
+    {
+        "name": "Sangonomiya Kokomi",
+        "id": "kokomi",
+        "elementalSkill": "Kurage's Oath",
+        "burstSkill": "Nereid's Ascension"
+    },
+    {
+        "name": "Kuki Shinobu",
+        "id": "kuki-shinobu",
+        "elementalSkill": "Sanctifying Ring",
+        "burstSkill": "Gyoei Narukami Kariyama Rite"
+    },
+    {
+        "name": "Layla",
+        "id": "Layla",
+        "elementalSkill": "Nights of Formal Focus",
+        "burstSkill": "Dream of the Star-Stream Shaker"
+    },
+    {
+        "name": "Lisa",
+        "id": "lisa",
+        "elementalSkill": "Violet Arc",
+        "burstSkill": "Lightning Rose"
+    },
+    {
+        "name": "Lynette",
+        "id": "Lynette",
+        "elementalSkill": "Enigmatic Feint",
+        "burstSkill": "Magic Trick: Astonishing Shift"
+    },
+    {
+        "name": "Lyney",
+        "id": "Lyney",
+        "elementalSkill": "Bewildering Lights",
+        "burstSkill": "Wondrous Trick: Miracle Parade"
+    },
+    {
+        "name": "Mika",
+        "id": "mika",
+        "elementalSkill": "Starfrost Swirl",
+        "burstSkill": "Skyfeather Song"
+    },
+    {
+        "name": "Mona",
+        "id": "Mona",
+        "elementalSkill": "Reflection of Doom",
+        "burstSkill": "Stellaris Phantasm"
+    },
+    {
+        "name": "Mualani",
+        "id": "mualani",
+        "elementalSkill": "Surfshark Wavebreaker",
+        "burstSkill": "Boomsharka-laka"
+    },
+    {
+        "name": "Nahida",
+        "id": "nahida",
+        "elementalSkill": "All Schemes to Know",
+        "burstSkill": "Illusory Heart"
+    },
+    {
+        "name": "Navia",
+        "id": "navia",
+        "elementalSkill": "Ceremonial Crystalshot",
+        "burstSkill": "As the Sunlit Sky's Singing Salute"
+    },
+    {
+        "name": "Neuvillette",
+        "id": "Neuvillette",
+        "elementalSkill": "O Tears, I Shall Repay",
+        "burstSkill": "O Tides, I Have Returned"
+    },
+    {
+        "name": "Nilou",
+        "id": "nilou",
+        "elementalSkill": "Dance of Haftkarsvar",
+        "burstSkill": "Dance of Abzendegi: Distant Dreams, Listening Spring"
+    },
+    {
+        "name": "Ningguang",
+        "id": "Ningguang",
+        "elementalSkill": "Jade Screen",
+        "burstSkill": "Starshatter"
+    },
+    {
+        "name": "Noelle",
+        "id": "noelle",
+        "elementalSkill": "Breastplate",
+        "burstSkill": "Sweeping Time"
+    },
+    {
+        "name": "Qiqi",
+        "id": "qiqi",
+        "elementalSkill": "Adeptus Art: Herald of Frost",
+        "burstSkill": "Adeptus Art: Preserver of Fortune"
+    },
+    {
+        "name": "Raiden Shogun",
+        "id": "raiden",
+        "elementalSkill": "Transcendence: Baleful Omen",
+        "burstSkill": "Secret Art: Musou Shinsetsu"
+    },
+    {
+        "name": "Razor",
+        "id": "razor",
+        "elementalSkill": "Claw and Thunder",
+        "burstSkill": "Lightning Fang"
+    },
+    {
+        "name": "Rosaria",
+        "id": "rosaria",
+        "elementalSkill": "Ravaging Confession",
+        "burstSkill": "Rites of Termination"
+    },
+    {
+        "name": "Kujou Sara",
+        "id": "sara",
+        "elementalSkill": "Tengu Stormcall",
+        "burstSkill": "Subjugation: Koukou Sendou"
+    },
+    {
+        "name": "Sayu",
+        "id": "sayu",
+        "elementalSkill": "Yoohoo Art: Fuuin Dash",
+        "burstSkill": "Yoohoo Art: Mujina Flurry"
+    },
+    {
+        "name": "Sethos",
+        "id": "sethos",
+        "elementalSkill": "Ancient Rite: The Thundering Sands",
+        "burstSkill": "Secret Rite: Twilight Shadowpiercer"
+    },
+    {
+        "name": "Shenhe",
+        "id": "shenhe",
+        "elementalSkill": "Spring Spirit Summoning",
+        "burstSkill": "Divine Maiden's Deliverance"
+    },
+    {
+        "name": "Shikanoin Heizou",
+        "id": "shikanoin-heizou",
+        "elementalSkill": "Heartstopper Strike",
+        "burstSkill": "Windmuster Kick"
+    },
+    {
+        "name": "Sigewinne",
+        "id": "Sigewinne",
+        "elementalSkill": "Rebound Hydrotherapy",
+        "burstSkill": "Super Saturated Syringing"
+    },
+    {
+        "name": "Sucrose",
+        "id": "sucrose",
+        "elementalSkill": "Astable Anemohypostasis Creation - 6308",
+        "burstSkill": "Forbidden Creation - Isomer 75 / Type II"
+    },
+    {
+        "name": "Tartaglia",
+        "id": "tartaglia",
+        "elementalSkill": "Foul Legacy: Raging Tide",
+        "burstSkill": "Havor: Obliteration"
+    },
+    {
+        "name": "Thoma",
+        "id": "thoma",
+        "elementalSkill": "Blazing Blessing",
+        "burstSkill": "Crimson Ooyoroi"
+    },
+    {
+        "name": "Tighnari",
+        "id": "tighnari",
+        "elementalSkill": "Vijnana-Phala Mine",
+        "burstSkill": "Fashioner's Tanglevine Shaft"
+    },
+    {
+        "name": "Venti",
+        "id": "venti",
+        "elementalSkill": "Skyward Sonnet",
+        "burstSkill": "Wind's Grand Ode"
+    },
+    {
+        "name": "Wanderer",
+        "id": "wanderer",
+        "elementalSkill": "Hanega: Song of the Wind",
+        "burstSkill": "Kyougen: Five Ceremonial Plays"
+    },
+    {
+        "name": "Wriothesley",
+        "id": "wriothesley",
+        "elementalSkill": "Icefang Rush",
+        "burstSkill": "Darkgold Wolfbite"
+    },
+    {
+        "name": "Xiangling",
+        "id": "xiangling",
+        "elementalSkill": "Guoba Attack",
+        "burstSkill": "Pyronado"
+    },
+    {
+        "name": "Xianyun",
+        "id": "xianyun",
+        "elementalSkill": "White Clouds at Dawn",
+        "burstSkill": "Stars Gather at Dusk"
+    },
+    {
+        "name": "Xiao",
+        "id": "xiao",
+        "elementalSkill": "Lemniscatic Wind Cycling",
+        "burstSkill": "Bane of All Evil"
+    },
+    {
+        "name": "Xingqiu",
+        "id": "xingqiu",
+        "elementalSkill": "Guhua Sword - Fatal Rainscreen",
+        "burstSkill": "Guhua Sword - Raincutter"
+    },
+    {
+        "name": "Xinyan",
+        "id": "Xinyan",
+        "elementalSkill": "Sweeping Fervor",
+        "burstSkill": "Riff Revolution"
+    },
+    {
+        "name": "Yae Miko",
+        "id": "yae-miko",
+        "elementalSkill": "Yakan Evocation: Sesshou Sakura",
+        "burstSkill": "Great Secret Art: Tenko Kenshin"
+    },
+    {
+        "name": "Yanfei",
+        "id": "yanfei",
+        "elementalSkill": "Signed Edict",
+        "burstSkill": "Done Deal"
+    },
+    {
+        "name": "Yaoyao",
+        "id": "yaoyao",
+        "elementalSkill": "Raphanus Sky Cluster",
+        "burstSkill": "Moonjade Descent"
+    },
+    {
+        "name": "Yelan",
+        "id": "yelan",
+        "elementalSkill": "Lingering Lifeline",
+        "burstSkill": "Depth-Clarion Dice"
+    },
+    {
+        "name": "Yoimiya",
+        "id": "yoimiya",
+        "elementalSkill": "Niwabi Fire-Dance",
+        "burstSkill": "Ryuukin Saxifrage"
+    },
+    {
+        "name": "Yun Jin",
+        "id": "yun-jin",
+        "elementalSkill": "Opening Flourish",
+        "burstSkill": "Cliffbreaker's Banner'"
+    },
+    {
+        "name": "Zhongli",
+        "id": "zhongli",
+        "elementalSkill": "Dominus Lapidis",
+        "burstSkill": "Planet Befall"
+    }
+]
