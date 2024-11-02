@@ -1,6 +1,6 @@
 {
-    "name": "Hu Tao",
-    "id": "hu-tao",
-    "elementalSkill": "Guide to Afterlife",
-    "burstSkill": "Spirit Soother"
+    "name": "Layla",
+    "id": "Layla",
+    "type": "skill",
+    "abilityName": "Nights of Formal Focus"
 }

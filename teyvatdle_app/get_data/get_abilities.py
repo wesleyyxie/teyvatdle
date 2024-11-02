@@ -14,13 +14,20 @@ def write_json_file(file_path, content):
         content_new_arr = []
         for character in content:
             if "Traveler" not in character.get("name"):
-                character_ability = {
+                character_elemental_skill = {
                     "name": character.get("name"),
                     "id": character.get("id"),
-                    "elementalSkill": character.get("skillTalents")[1].get("name"),
-                    "burstSkill": character.get("skillTalents")[2].get("name")
+                    "type": "skill",
+                    "abilityName": character.get("skillTalents")[1].get("name"),
                 }
-                content_new_arr.append(character_ability)
+                character_elemental_burst = {
+                    "name": character.get("name"),
+                    "id": character.get("id"),
+                    "type": "burst",
+                    "abilityName": character.get("skillTalents")[2].get("name"),
+                }
+                content_new_arr.append(character_elemental_skill)
+                content_new_arr.append(character_elemental_burst)
         json.dump(content_new_arr, json_file, indent=4)
         print(f"Data written to {file_path} successfully.")  # Confirmation message
 
