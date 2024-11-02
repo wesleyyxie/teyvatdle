@@ -16,7 +16,6 @@ update_voiceline_answer()
 update_ability_answer()
 
 
-
 @app.route("/spy")
 def spy():
     return render_template("spy_mode.html")

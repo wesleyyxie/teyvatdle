@@ -1,7 +1,7 @@
 {
-    "name": "Diluc",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/ef/VO_Diluc_Chat_-_Knights_of_Favonius.ogg/revision/latest?cb=20210110215633",
-    "quote": "You should really bring the Knights of Favonius with you next time.",
-    "id": 1,
-    "character_id": "diluc"
+    "name": "Mona",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c2/VO_Mona_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112205813",
+    "quote": "This should cover food and rent for a while!",
+    "id": 3,
+    "character_id": "Mona"
 }
