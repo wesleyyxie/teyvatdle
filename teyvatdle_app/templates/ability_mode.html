@@ -4,9 +4,9 @@
 <script src="{{ url_for('static',filename='/scripts/ability-mode.js') }}"></script>
 <div class="flex flex-col justify-center items-center gap-y-[10px]">
     <div class="flex flex-col items-center mt-[20px] h-auto w-[300px] rounded-lg" style="background-color: rgba(39, 52, 63, 0.8); border: 3px solid rgb(120, 120, 120); box-sizing: border-box;">
-    <div class="text-white p-[15px] text-center font-bold mt-[15px]">
+    <div class="flex flex-col items-center text-white p-[15px] text-center font-bold mt-[15px]">
        Which character has this elemental skill or burst?
-       <div id="ability-icon"></div>
+       <div id="ability-icon" class="grayscale h-[128px] w-[128px] bg-no-repeat bg-center"></div>
     </div>
     <span id="audio_countdown" class="text-white text-xs font-bold pb-[25px]">Clues in 5 tries</span>
     <div id="audio_container" class="hidden flex flex-col items-center gap-y-[10px] pb-[20px]">

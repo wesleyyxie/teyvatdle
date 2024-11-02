@@ -123,34 +123,24 @@ function checkSubmit(e) {
 }
 
 window.addEventListener('load', async function() {
-    const answerRes = await fetch("/static/answers/voiceline/todays_answer.json");
-    answerData = await answerRes.json();  // Load today's answer
+    const answerRes = await fetch("/static/answers/ability/todays_answer.json");
+    const answerData = await answerRes.json();  // Load today's answer
     console.log(answerData);
     
-    const characterInfoRes = await fetch("/static/data/voicelines.json");
-    charactersInfoData = await characterInfoRes.json();  // Load all character info
-    console.log(charactersInfoData);
+    const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
+    const charactersInfoData = await characterInfoRes.json();  // Load all character info
     
     // Display today's answer quote from todays_answer.json
-    const randomQuoteElement = document.getElementById('random_quote');
-    randomQuoteElement.innerText = `"${answerData.quote}"`; 
+    const randomAbilityElement = document.getElementById('ability-icon');
+    console.log(answerData)
+    randomAbilityElement.style.backgroundImage = `url('/static/images/ability_icons/${answerData["id"]}_${answerData["type"]}.png')`;
+    randomAbilityElement.style.backgroundSize = "90px 90px"
+    console.log(randomAbilityElement)
 
     document.getElementById('guess').focus();
     document.addEventListener("keyup", checkSubmit);
     document.getElementById("guess-form").addEventListener("submit", submitGuess);
 });
-
-// Get Quote
-
-function getRandomQuoteForCharacter(characterName) {
-    const filteredQuotes = charactersInfoData.filter(quote => quote.name.toLowerCase() === characterName.toLowerCase());
-    
-    if (filteredQuotes.length > 0) {
-        const randomIndex = Math.floor(Math.random() * filteredQuotes.length);
-        return filteredQuotes[randomIndex].quote;
-    }
-    return null;  
-}
 
 function playAudio() {
     let audio = new Audio(`/static/data/voiceline_audios/${answerData.character_id}${answerData.id}.mp3`)

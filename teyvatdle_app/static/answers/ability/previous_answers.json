@@ -10,5 +10,17 @@
         "id": "Layla",
         "type": "skill",
         "abilityName": "Nights of Formal Focus"
+    },
+    {
+        "name": "Collei",
+        "id": "collei",
+        "type": "skill",
+        "abilityName": "Floral Brush"
+    },
+    {
+        "name": "Mualani",
+        "id": "mualani",
+        "type": "skill",
+        "abilityName": "Surfshark Wavebreaker"
     }
 ]
