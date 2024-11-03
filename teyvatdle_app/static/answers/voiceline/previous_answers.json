@@ -246,5 +246,19 @@
         "quote": "This should cover food and rent for a while!",
         "id": 3,
         "character_id": "Mona"
+    },
+    {
+        "name": "Sigewinne",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b3/VO_Sigewinne_Chat_-_Concern.ogg/revision/latest?cb=20240625205146",
+        "quote": "Oh no! Did you bump into something? Well, if it hurts, just let me know.",
+        "id": 1,
+        "character_id": "Sigewinne"
+    },
+    {
+        "name": "Wanderer",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/8/85/VO_Wanderer_Elemental_Burst_06.ogg/revision/latest?cb=20221207192725",
+        "quote": "You dare to gaze upon me!?",
+        "id": 2,
+        "character_id": "wanderer"
     }
 ]

@@ -1,11 +1,11 @@
 {
-    "name": "Collei",
-    "title": "Sprout of Rebirth",
-    "vision": "Dendro",
-    "weapon": "Bow",
-    "gender": "Female",
-    "nation": "Sumeru",
-    "affiliation": "Avidya Forest Ranger Trainee",
-    "release": "2022",
-    "id": "collei"
+    "name": "Wriothesley",
+    "title": "Emissary of Solitary Iniquity",
+    "vision": "Cryo",
+    "weapon": "Catalyst",
+    "gender": "Male",
+    "nation": "Fontaine",
+    "affiliation": "Fortress of Meropide",
+    "release": "2023",
+    "id": "wriothesley"
 }

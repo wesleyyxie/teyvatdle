@@ -22,7 +22,6 @@ function checkGuess(guessData, row) {
 
     // Display the character icon in the result box
     placeIcon(result_element, guessData);
-
     // Check if the guessed character is correct
     if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {   
         result_element.classList.add('bg-green');  // Turn green if correct
@@ -39,7 +38,7 @@ function placeIcon(iconElement, guessData) {
     let imageName;
 
     // If your images are named using character names
-    imageName = guessData["character_id"].toLowerCase().replace(/\s+/g, '-');
+    imageName = guessData["id"].toLowerCase().replace(/\s+/g, '-');
     //imageName = guessData["id"];  
 
     const imageUrl = `/static/images/character_icons/${imageName}.png`;
@@ -62,12 +61,14 @@ function submitGuess(e) {
     let inputElement = document.getElementById("guess");
     let guess = inputElement.value;
     let resultsContainer = document.getElementById('results');
-    let audioCountdown = document.getElementById('audio_countdown')
+    let clueCountdown = document.getElementById('clue_countdown')
     let guessData = null;
     let gameOver = false;
     // Loop through the characters to find the guessed character
     for (let i = 0; i < charactersInfoData.length; i++) {
         let currentCharacter = charactersInfoData[i];
+        console.log(currentCharacter)
+        console.log(guess)
         if (currentCharacter["name"].toLowerCase() === guess.toLowerCase()) {
             guessData = currentCharacter;
             tries++;
@@ -93,14 +94,16 @@ function submitGuess(e) {
         inputElement.value = "";
         inputElement.focus();
         if (tries < 5) {
-            audioCountdown.innerText = `Audio clue in ${5 - tries} tries`
+            clueCountdown.innerText = `Clues in ${5 - tries} tries`
         }
     }
 
     if (tries == 5) {
-        let audioContainer = document.getElementById('audio_container')
-        audioContainer.classList.remove('hidden')
-        audioCountdown.classList.add('hidden')
+        let nameClue = document.getElementById('name_clue')
+        clueCountdown.classList.add('hidden')
+        nameClue.classList.remove('hidden')
+        nameClue.innerText = answerData["abilityName"]
+        document.getElementById('ability-icon').classList.remove('grayscale')
     }
 }
 
@@ -124,26 +127,18 @@ function checkSubmit(e) {
 
 window.addEventListener('load', async function() {
     const answerRes = await fetch("/static/answers/ability/todays_answer.json");
-    const answerData = await answerRes.json();  // Load today's answer
+    answerData = await answerRes.json();  // Load today's answer
     console.log(answerData);
     
     const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
-    const charactersInfoData = await characterInfoRes.json();  // Load all character info
+    charactersInfoData = await characterInfoRes.json();  // Load all character info
     
     // Display today's answer quote from todays_answer.json
     const randomAbilityElement = document.getElementById('ability-icon');
-    console.log(answerData)
     randomAbilityElement.style.backgroundImage = `url('/static/images/ability_icons/${answerData["id"]}_${answerData["type"]}.png')`;
     randomAbilityElement.style.backgroundSize = "90px 90px"
-    console.log(randomAbilityElement)
 
     document.getElementById('guess').focus();
     document.addEventListener("keyup", checkSubmit);
     document.getElementById("guess-form").addEventListener("submit", submitGuess);
 });
-
-function playAudio() {
-    let audio = new Audio(`/static/data/voiceline_audios/${answerData.character_id}${answerData.id}.mp3`)
-    audio.volume = document.getElementById('audioLevel').value
-    audio.play()
-}
