@@ -22,5 +22,17 @@
         "id": "mualani",
         "type": "skill",
         "abilityName": "Surfshark Wavebreaker"
+    },
+    {
+        "name": "Zhongli",
+        "id": "zhongli",
+        "type": "skill",
+        "abilityName": "Dominus Lapidis"
+    },
+    {
+        "name": "Xiangling",
+        "id": "xiangling",
+        "type": "skill",
+        "abilityName": "Guoba Attack"
     }
 ]
