@@ -1,11 +1,11 @@
 {
-    "name": "Wriothesley",
-    "title": "Emissary of Solitary Iniquity",
+    "name": "Aloy",
+    "title": "Savior From Another World",
     "vision": "Cryo",
-    "weapon": "Catalyst",
-    "gender": "Male",
-    "nation": "Fontaine",
-    "affiliation": "Fortress of Meropide",
-    "release": "2023",
-    "id": "wriothesley"
+    "weapon": "Bow",
+    "gender": "Female",
+    "nation": "Unknown",
+    "affiliation": "Wandering Heroine",
+    "release": "2021",
+    "id": "aloy"
 }
