@@ -34,5 +34,17 @@
         "id": "xiangling",
         "type": "skill",
         "abilityName": "Guoba Attack"
+    },
+    {
+        "name": "Yaoyao",
+        "id": "yaoyao",
+        "type": "skill",
+        "abilityName": "Raphanus Sky Cluster"
+    },
+    {
+        "name": "Lynette",
+        "id": "Lynette",
+        "type": "skill",
+        "abilityName": "Enigmatic Feint"
     }
 ]

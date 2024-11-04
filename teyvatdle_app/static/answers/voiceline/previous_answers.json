@@ -260,5 +260,19 @@
         "quote": "You dare to gaze upon me!?",
         "id": 2,
         "character_id": "wanderer"
+    },
+    {
+        "name": "Lisa",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/7e/VO_Lisa_Chat_-_Afternoon_Tea.ogg/revision/latest?cb=20210111234253",
+        "quote": "It's nearly time for afternoon tea.",
+        "id": 0,
+        "character_id": "lisa"
+    },
+    {
+        "name": "Kirara",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/VO_Kirara_Chat_-_Work.ogg/revision/latest?cb=20230526230949",
+        "quote": "Whoa, the scenery here is wonderful. Hehe, I've landed the perfect job.",
+        "id": 1,
+        "character_id": "kirara"
     }
 ]

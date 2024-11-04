@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Beidou",
+        "title": "Uncrowned Lord of the Ocean",
+        "vision": "Electro",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "The Crux",
+        "release": "2020",
+        "id": "beidou"
+    },
+    {
+        "name": "Alhaitham",
+        "title": "Admonishing Instruction",
+        "vision": "Dendro",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Sumeru",
+        "affiliation": "Sumeru Akademiya",
+        "release": "2023",
+        "id": "alhaitham"
+    }
+]

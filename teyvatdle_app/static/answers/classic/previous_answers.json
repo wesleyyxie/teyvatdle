@@ -284,5 +284,27 @@
         "affiliation": "Fortress of Meropide",
         "release": "2023",
         "id": "wriothesley"
+    },
+    {
+        "name": "Navia",
+        "title": "Helm of the Radiant Rose",
+        "vision": "Geo",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "Spina di Rosula",
+        "release": "2023",
+        "id": "navia"
+    },
+    {
+        "name": "Aloy",
+        "title": "Savior From Another World",
+        "vision": "Cryo",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Unknown",
+        "affiliation": "Wandering Heroine",
+        "release": "2021",
+        "id": "aloy"
     }
 ]
