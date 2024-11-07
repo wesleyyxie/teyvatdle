@@ -126,6 +126,16 @@ window.addEventListener('load', async function() {
 
 
     console.log(charactersInfoData);
+
+    // Check if the current answer is different from the saved one
+    const savedAnswer = localStorage.getItem("currentAnswer");
+    if (savedAnswer !== answerData.name) {
+        // Clear saved data if the answer has changed
+        localStorage.removeItem("previousGuesses");
+        localStorage.removeItem("gameOver");
+        localStorage.removeItem("tries");
+        localStorage.setItem("currentAnswer", answerData.name); // Update to the new answer
+    }
     
     document.getElementById('guess').focus();
     document.addEventListener("keyup", checkSubmit);
@@ -158,3 +168,4 @@ window.addEventListener('load', async function() {
         document.getElementById("guess").disabled = true;
     }
 });
+
