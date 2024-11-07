@@ -146,6 +146,16 @@ window.addEventListener('load', async function() {
     randomAbilityElement.style.backgroundImage = `url('/static/images/ability_icons/${answerData["id"]}_${answerData["type"]}.png')`;
     randomAbilityElement.style.backgroundSize = "90px 90px"
 
+    // Check if the current answer is different from the saved one
+    const savedAnswer = localStorage.getItem("abilityCurrentAnswer");
+    if (savedAnswer !== answerData.name) {
+        // Clear saved data if the answer has changed
+        localStorage.removeItem("abilityPreviousGuesses");
+        localStorage.removeItem("abilityGameOver");
+        localStorage.removeItem("abilityTries");
+        localStorage.setItem("abilityCurrentAnswer", answerData.name); // Update to the new answer
+    }
+
     // Load previous guesses from localStorage
     const previousGuesses = JSON.parse(localStorage.getItem("abilityPreviousGuesses")) || [];
     const resultsContainer = document.getElementById('results');
@@ -175,4 +185,5 @@ window.addEventListener('load', async function() {
     document.addEventListener("keyup", checkSubmit);
     document.getElementById("guess-form").addEventListener("submit", submitGuess);
 });
+
 
