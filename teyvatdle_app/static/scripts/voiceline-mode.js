@@ -133,17 +133,32 @@ function checkSubmit(e) {
 
 window.addEventListener('load', async function() {
     const answerRes = await fetch("/static/answers/voiceline/todays_answer.json");
-    answerData = await answerRes.json();  // Load today's answer
-    console.log(answerData);
+    answerData = await answerRes.json(); // Load today's answer
+    console.log("Today's Answer Data:", answerData);
     
     const characterInfoRes = await fetch("/static/data/voicelines.json");
-    charactersInfoData = await characterInfoRes.json();  // Load all character info
-    console.log(charactersInfoData);
+    charactersInfoData = await characterInfoRes.json(); // Load all character info
+    console.log("Characters Info Data:", charactersInfoData);
     
     // Display today's answer quote from todays_answer.json
     const randomQuoteElement = document.getElementById('random_quote');
     randomQuoteElement.innerText = `"${answerData.quote}"`; 
 
+    // Check if the current answer is different from the saved one
+    const savedAnswer = localStorage.getItem("voicelineCurrentAnswer");
+    console.log("Saved Answer:", savedAnswer);
+    console.log("Current Answer:", answerData.name);
+
+    if (savedAnswer !== answerData.name) {
+        // Clear saved data if the answer has changed
+        console.log("Answer has changed. Clearing saved data...");
+        localStorage.removeItem("voicelinePreviousGuesses");
+        localStorage.removeItem("voicelineGameOver");
+        localStorage.removeItem("voicelineTries");
+        localStorage.setItem("voicelineCurrentAnswer", answerData.name); // Update to the new answer
+    } else {
+        console.log("Answer has not changed. Keeping saved data.");
+    }
 
     // Load previous guesses from localStorage
     const previousGuesses = JSON.parse(localStorage.getItem("voicelinePreviousGuesses")) || [];
