@@ -72,10 +72,20 @@ function submitGuess(e) {
             }
         }
         resultsContainer.prepend(row);
+
+        // Save the guess data to localStorage
+        const previousGuesses = JSON.parse(localStorage.getItem("previousGuesses")) || [];
+        previousGuesses.push(guessData);
+        localStorage.setItem("previousGuesses", JSON.stringify(previousGuesses));
+
         if (gameOver) {
             displayCongratulatoryMessage(tries); // Call to display message
             document.getElementById("submit").disabled = true;
             inputElement.disabled = true;
+
+            // Save the game state to localStorage
+            localStorage.setItem("gameOver", "true");
+            localStorage.setItem("tries", tries);
         }
         let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
         window.arr.splice(index, 1)[0];
@@ -88,10 +98,16 @@ function displayCongratulatoryMessage(tries) {
     const congratsMessageElement = document.getElementById("congrats_message");
     const triesTextElement = document.getElementById('tried-text')
     triesTextElement.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
+    // Check if game state is loaded from storage
+    const isLoadedFromStorage = localStorage.getItem("gameOver") === "true";
+
+    // Use a shorter delay if loaded from storage, otherwise use the original delay
+    const delay = isLoadedFromStorage ? 500 : 2200;
+
     setTimeout(() => {
         congratsMessageElement.classList.remove("hidden");
         congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }, 2200); // Delay
+    }, delay);
 }
 
 // submit on enter
@@ -114,4 +130,31 @@ window.addEventListener('load', async function() {
     document.getElementById('guess').focus();
     document.addEventListener("keyup", checkSubmit);
     document.getElementById("guess-form").addEventListener("submit", submitGuess)
+
+    // Load previous guesses from localStorage
+    const previousGuesses = JSON.parse(localStorage.getItem("previousGuesses")) || [];
+    const resultsContainer = document.getElementById('results');
+
+    // Display each previous guess
+    previousGuesses.forEach(guessData => {
+        const row = createBlankRow();
+        placeIcon(row.querySelector('#guess_image'), guessData);
+
+        let gameOver = true;
+        let categories = ["gender", "vision", "weapon", "nation", "release"];
+        for (let i = 0; i < categories.length; i++) {
+            if (!(checkGuess(categories[i], guessData, row, i))) {
+                gameOver = false;
+            }
+        }
+        resultsContainer.prepend(row);
+    });
+
+    // Check for saved game state
+    if (localStorage.getItem("gameOver") === "true") {
+        const tries = localStorage.getItem("tries");
+        displayCongratulatoryMessage(tries); 
+        document.getElementById("submit").disabled = true;
+        document.getElementById("guess").disabled = true;
+    }
 });
