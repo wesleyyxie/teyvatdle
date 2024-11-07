@@ -85,9 +85,17 @@ function submitGuess(e) {
         }
         resultsContainer.prepend(row);
 
+        // Save the guess data to localStorage
+        const previousGuesses = JSON.parse(localStorage.getItem("abilityPreviousGuesses")) || [];
+        previousGuesses.push(guessData);
+        localStorage.setItem("abilityPreviousGuesses", JSON.stringify(previousGuesses));
+
+
         if (gameOver) {
             document.getElementById("submit").disabled = true;
             inputElement.disabled = true;
+            localStorage.setItem("abilityGameOver", "true");
+            localStorage.setItem("abilityTries", tries);
         }
         let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
         window.arr.splice(index, 1)[0];
@@ -138,7 +146,33 @@ window.addEventListener('load', async function() {
     randomAbilityElement.style.backgroundImage = `url('/static/images/ability_icons/${answerData["id"]}_${answerData["type"]}.png')`;
     randomAbilityElement.style.backgroundSize = "90px 90px"
 
+    // Load previous guesses from localStorage
+    const previousGuesses = JSON.parse(localStorage.getItem("abilityPreviousGuesses")) || [];
+    const resultsContainer = document.getElementById('results');
+
+    // Display each previous guess
+    previousGuesses.forEach(guessData => {
+        const row = createBlankRow();
+        placeIcon(row.querySelector("#guess_result"), guessData);
+
+        if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {
+            row.querySelector("#guess_result").classList.add('bg-green');
+        } else {
+            row.querySelector("#guess_result").classList.add('bg-red');
+        }
+        resultsContainer.prepend(row);
+    });
+
+    // Check if the game was already won
+    if (localStorage.getItem("abilityGameOver") === "true") {
+        const tries = localStorage.getItem("abilityTries");
+        displayCongratulatoryMessage(tries);
+        document.getElementById("submit").disabled = true;
+        document.getElementById("guess").disabled = true;
+    }
+
     document.getElementById('guess').focus();
     document.addEventListener("keyup", checkSubmit);
     document.getElementById("guess-form").addEventListener("submit", submitGuess);
 });
+
