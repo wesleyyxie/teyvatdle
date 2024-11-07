@@ -1,6 +1,6 @@
 {
-    "name": "Lynette",
-    "id": "Lynette",
-    "type": "skill",
-    "abilityName": "Enigmatic Feint"
+    "name": "Wriothesley",
+    "id": "wriothesley",
+    "type": "burst",
+    "abilityName": "Darkgold Wolfbite"
 }
