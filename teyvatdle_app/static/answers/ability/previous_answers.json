@@ -46,5 +46,281 @@
         "id": "Lynette",
         "type": "skill",
         "abilityName": "Enigmatic Feint"
+    },
+    {
+        "name": "Charlotte",
+        "id": "charlotte",
+        "type": "burst",
+        "abilityName": "Still Photo: Comprehensive Confirmation"
+    },
+    {
+        "name": "Hu Tao",
+        "id": "hu-tao",
+        "type": "burst",
+        "abilityName": "Spirit Soother"
+    },
+    {
+        "name": "Tighnari",
+        "id": "tighnari",
+        "type": "burst",
+        "abilityName": "Fashioner's Tanglevine Shaft"
+    },
+    {
+        "name": "Venti",
+        "id": "venti",
+        "type": "skill",
+        "abilityName": "Skyward Sonnet"
+    },
+    {
+        "name": "Thoma",
+        "id": "thoma",
+        "type": "skill",
+        "abilityName": "Blazing Blessing"
+    },
+    {
+        "name": "Xinyan",
+        "id": "Xinyan",
+        "type": "skill",
+        "abilityName": "Sweeping Fervor"
+    },
+    {
+        "name": "Beidou",
+        "id": "beidou",
+        "type": "burst",
+        "abilityName": "Stormbreaker"
+    },
+    {
+        "name": "Bennett",
+        "id": "bennett",
+        "type": "burst",
+        "abilityName": "Fantastic Voyage"
+    },
+    {
+        "name": "Arlecchino",
+        "id": "arlecchino",
+        "type": "burst",
+        "abilityName": "Balemoon Rising"
+    },
+    {
+        "name": "Shenhe",
+        "id": "shenhe",
+        "type": "burst",
+        "abilityName": "Divine Maiden's Deliverance"
+    },
+    {
+        "name": "Dehya",
+        "id": "dehya",
+        "type": "burst",
+        "abilityName": "Leonine Bite"
+    },
+    {
+        "name": "Kamisato Ayaka",
+        "id": "ayaka",
+        "type": "skill",
+        "abilityName": "Kamisato Art: Hyouka"
+    },
+    {
+        "name": "Sucrose",
+        "id": "sucrose",
+        "type": "burst",
+        "abilityName": "Forbidden Creation - Isomer 75 / Type II"
+    },
+    {
+        "name": "Xingqiu",
+        "id": "xingqiu",
+        "type": "skill",
+        "abilityName": "Guhua Sword - Fatal Rainscreen"
+    },
+    {
+        "name": "Aloy",
+        "id": "aloy",
+        "type": "skill",
+        "abilityName": "Frozen Wilds"
+    },
+    {
+        "name": "Nilou",
+        "id": "nilou",
+        "type": "skill",
+        "abilityName": "Dance of Haftkarsvar"
+    },
+    {
+        "name": "Lisa",
+        "id": "lisa",
+        "type": "burst",
+        "abilityName": "Lightning Rose"
+    },
+    {
+        "name": "Chongyun",
+        "id": "chongyun",
+        "type": "skill",
+        "abilityName": "Spirit Blade - Chonghua's Layered Frost"
+    },
+    {
+        "name": "Xianyun",
+        "id": "xianyun",
+        "type": "burst",
+        "abilityName": "Stars Gather at Dusk"
+    },
+    {
+        "name": "Keqing",
+        "id": "keqing",
+        "type": "burst",
+        "abilityName": "Starward Sword"
+    },
+    {
+        "name": "Kirara",
+        "id": "kirara",
+        "type": "skill",
+        "abilityName": "Meow-teor Kick"
+    },
+    {
+        "name": "Amber",
+        "id": "amber",
+        "type": "burst",
+        "abilityName": "Fiery Rain"
+    },
+    {
+        "name": "Eula",
+        "id": "eula",
+        "type": "skill",
+        "abilityName": "Icetide Vortex"
+    },
+    {
+        "name": "Tighnari",
+        "id": "tighnari",
+        "type": "skill",
+        "abilityName": "Vijnana-Phala Mine"
+    },
+    {
+        "name": "Yelan",
+        "id": "yelan",
+        "type": "skill",
+        "abilityName": "Lingering Lifeline"
+    },
+    {
+        "name": "Kaveh",
+        "id": "kaveh",
+        "type": "skill",
+        "abilityName": "Artistic Ingenuity"
+    },
+    {
+        "name": "Kachina",
+        "id": "Kachina",
+        "type": "skill",
+        "abilityName": "Go, Go Turbo Twirly!"
+    },
+    {
+        "name": "Sangonomiya Kokomi",
+        "id": "kokomi",
+        "type": "skill",
+        "abilityName": "Kurage's Oath"
+    },
+    {
+        "name": "Kamisato Ayato",
+        "id": "ayato",
+        "type": "burst",
+        "abilityName": "Kamisato Art: Suiyuu"
+    },
+    {
+        "name": "Wanderer",
+        "id": "wanderer",
+        "type": "skill",
+        "abilityName": "Hanega: Song of the Wind"
+    },
+    {
+        "name": "Xinyan",
+        "id": "Xinyan",
+        "type": "burst",
+        "abilityName": "Riff Revolution"
+    },
+    {
+        "name": "Kirara",
+        "id": "kirara",
+        "type": "burst",
+        "abilityName": "Secret Art: Surprise Dispatch"
+    },
+    {
+        "name": "Chevreuse",
+        "id": "chevreuse",
+        "type": "burst",
+        "abilityName": "Ring of Bursting Grenades"
+    },
+    {
+        "name": "Yanfei",
+        "id": "yanfei",
+        "type": "burst",
+        "abilityName": "Done Deal"
+    },
+    {
+        "name": "Furina",
+        "id": "furina",
+        "type": "skill",
+        "abilityName": "Salon Solitaire"
+    },
+    {
+        "name": "Alhaitham",
+        "id": "alhaitham",
+        "type": "burst",
+        "abilityName": "Particular Field: Fetters of Phenomena"
+    },
+    {
+        "name": "Sucrose",
+        "id": "sucrose",
+        "type": "skill",
+        "abilityName": "Astable Anemohypostasis Creation - 6308"
+    },
+    {
+        "name": "Kuki Shinobu",
+        "id": "kuki-shinobu",
+        "type": "burst",
+        "abilityName": "Gyoei Narukami Kariyama Rite"
+    },
+    {
+        "name": "Tartaglia",
+        "id": "tartaglia",
+        "type": "burst",
+        "abilityName": "Havor: Obliteration"
+    },
+    {
+        "name": "Clorinde",
+        "id": "clorinde",
+        "type": "skill",
+        "abilityName": "Hunter's Vigil"
+    },
+    {
+        "name": "Navia",
+        "id": "navia",
+        "type": "skill",
+        "abilityName": "Ceremonial Crystalshot"
+    },
+    {
+        "name": "Shikanoin Heizou",
+        "id": "shikanoin-heizou",
+        "type": "burst",
+        "abilityName": "Windmuster Kick"
+    },
+    {
+        "name": "Xiangling",
+        "id": "xiangling",
+        "type": "burst",
+        "abilityName": "Pyronado"
+    },
+    {
+        "name": "Rosaria",
+        "id": "rosaria",
+        "type": "skill",
+        "abilityName": "Ravaging Confession"
+    },
+    {
+        "name": "Kinich",
+        "id": "kinich",
+        "type": "skill",
+        "abilityName": "Canopy Hunter: Riding High"
+    },
+    {
+        "name": "Wriothesley",
+        "id": "wriothesley",
+        "type": "burst",
+        "abilityName": "Darkgold Wolfbite"
     }
 ]

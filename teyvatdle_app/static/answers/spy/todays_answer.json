@@ -1,11 +1,11 @@
 {
-    "name": "Alhaitham",
-    "title": "Admonishing Instruction",
-    "vision": "Dendro",
-    "weapon": "Sword",
+    "name": "Freminet",
+    "title": "Yearning for Unseen Depths",
+    "vision": "Cryo",
+    "weapon": "Claymore",
     "gender": "Male",
-    "nation": "Sumeru",
-    "affiliation": "Sumeru Akademiya",
+    "nation": "Fontaine",
+    "affiliation": "Hotel Bouffes d'ete",
     "release": "2023",
-    "id": "alhaitham"
+    "id": "freminet"
 }

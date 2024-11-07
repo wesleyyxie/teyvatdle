@@ -1,11 +1,11 @@
 {
-    "name": "Aloy",
-    "title": "Savior From Another World",
-    "vision": "Cryo",
-    "weapon": "Bow",
+    "name": "Sayu",
+    "title": "Mujina Ninja",
+    "vision": "Anemo",
+    "weapon": "Claymore",
     "gender": "Female",
-    "nation": "Unknown",
-    "affiliation": "Wandering Heroine",
+    "nation": "Inazuma",
+    "affiliation": "Shuumatsuban",
     "release": "2021",
-    "id": "aloy"
+    "id": "sayu"
 }
