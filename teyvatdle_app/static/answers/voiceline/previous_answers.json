@@ -596,5 +596,40 @@
         "quote": "More treasure, more treasure! Hee-hee...",
         "id": 2,
         "character_id": "klee"
+    },
+    {
+        "name": "Mualani",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/77/VO_Mualani_Elemental_Burst_03.ogg/revision/latest?cb=20240831135207",
+        "quote": "Check this out! Best of luck!",
+        "id": 2,
+        "character_id": "mualani"
+    },
+    {
+        "name": "Rosaria",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/6c/VO_Rosaria_Chat_-_Boredom.ogg/revision/latest?cb=20210513000500",
+        "quote": "Don't we have a job to do?",
+        "id": 0,
+        "character_id": "rosaria"
+    },
+    {
+        "name": "Chiori",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/cd/VO_Chiori_In_the_Desert.ogg/revision/latest?cb=20240317055314",
+        "quote": "Hmm, just how can I market high fashion here...",
+        "id": 1,
+        "character_id": "chiori"
+    },
+    {
+        "name": "Shenhe",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d3/VO_Shenhe_Good_Morning.ogg/revision/latest?cb=20220107122844",
+        "quote": "Good morning. The dew is very sweet today, would you like some?",
+        "id": 1,
+        "character_id": "shenhe"
+    },
+    {
+        "name": "Xiao",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/12/VO_Xiao_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112214409",
+        "quote": "If it's useful, I'll take it.",
+        "id": 2,
+        "character_id": "xiao"
     }
 ]

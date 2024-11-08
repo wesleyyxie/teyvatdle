@@ -812,5 +812,60 @@
         "affiliation": "Shuumatsuban",
         "release": "2021",
         "id": "sayu"
+    },
+    {
+        "name": "Keqing",
+        "title": "Driving Thunder",
+        "vision": "Electro",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Liyue Qixing",
+        "release": "2020",
+        "id": "keqing"
+    },
+    {
+        "name": "Candace",
+        "title": "Golden Vow",
+        "vision": "Hydro",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Sumeru",
+        "affiliation": "Aaru Village",
+        "release": "2022",
+        "id": "Candace"
+    },
+    {
+        "name": "Sigewinne",
+        "title": "Wondrous Dragonheir",
+        "vision": "Hydro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "Fortress of Meropide",
+        "release": "2024",
+        "id": "Sigewinne"
+    },
+    {
+        "name": "Venti",
+        "title": "Windborne Bard",
+        "vision": "Anemo",
+        "weapon": "Bow",
+        "gender": "Male",
+        "nation": "Mondstadt",
+        "affiliation": "Mondstadt",
+        "release": "2020",
+        "id": "venti"
+    },
+    {
+        "name": "Kuki Shinobu",
+        "title": "Mender of Tribulations",
+        "vision": "Electro",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Arataki Gang",
+        "release": "2022",
+        "id": "kuki-shinobu"
     }
 ]

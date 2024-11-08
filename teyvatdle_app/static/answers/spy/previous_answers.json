@@ -526,5 +526,60 @@
         "affiliation": "Hotel Bouffes d'ete",
         "release": "2023",
         "id": "freminet"
+    },
+    {
+        "name": "Charlotte",
+        "title": "Lens of Verity",
+        "vision": "Cryo",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "The Steambird",
+        "release": "2023",
+        "id": "charlotte"
+    },
+    {
+        "name": "Emilie",
+        "title": "A Thousand Scents Traced",
+        "vision": "Dendro",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Fontaine",
+        "affiliation": "Court of Fontaine",
+        "release": "2022",
+        "id": "emilie"
+    },
+    {
+        "name": "Kamisato Ayato",
+        "title": "Pillar of Fortitude",
+        "vision": "Hydro",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Inazuma",
+        "affiliation": "Yashiro Commission",
+        "release": "2022",
+        "id": "ayato"
+    },
+    {
+        "name": "Mika",
+        "title": "Coordinates of Clear Frost",
+        "vision": "Cryo",
+        "weapon": "Polearm",
+        "gender": "Male",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2023",
+        "id": "mika"
+    },
+    {
+        "name": "Thoma",
+        "title": "Protector From Afar",
+        "vision": "Pyro",
+        "weapon": "Polearm",
+        "gender": "Male",
+        "nation": "Mondstadt",
+        "affiliation": "Yashiro Commission Kamisato Clan",
+        "release": "2021",
+        "id": "thoma"
     }
 ]
