@@ -322,5 +322,35 @@
         "id": "wriothesley",
         "type": "burst",
         "abilityName": "Darkgold Wolfbite"
+    },
+    {
+        "name": "Candace",
+        "id": "Candace",
+        "type": "burst",
+        "abilityName": "Sacred Rite: Wagtail's Tide"
+    },
+    {
+        "name": "Lyney",
+        "id": "Lyney",
+        "type": "burst",
+        "abilityName": "Wondrous Trick: Miracle Parade"
+    },
+    {
+        "name": "Barbara",
+        "id": "barbara",
+        "type": "burst",
+        "abilityName": "Shining Miracle"
+    },
+    {
+        "name": "Ningguang",
+        "id": "Ningguang",
+        "type": "skill",
+        "abilityName": "Jade Screen"
+    },
+    {
+        "name": "Lisa",
+        "id": "lisa",
+        "type": "skill",
+        "abilityName": "Violet Arc"
     }
 ]

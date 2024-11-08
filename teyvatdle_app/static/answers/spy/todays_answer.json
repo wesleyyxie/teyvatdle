@@ -1,11 +1,11 @@
 {
-    "name": "Freminet",
-    "title": "Yearning for Unseen Depths",
-    "vision": "Cryo",
-    "weapon": "Claymore",
+    "name": "Thoma",
+    "title": "Protector From Afar",
+    "vision": "Pyro",
+    "weapon": "Polearm",
     "gender": "Male",
-    "nation": "Fontaine",
-    "affiliation": "Hotel Bouffes d'ete",
-    "release": "2023",
-    "id": "freminet"
+    "nation": "Mondstadt",
+    "affiliation": "Yashiro Commission Kamisato Clan",
+    "release": "2021",
+    "id": "thoma"
 }

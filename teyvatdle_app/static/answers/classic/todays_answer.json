@@ -1,11 +1,11 @@
 {
-    "name": "Sayu",
-    "title": "Mujina Ninja",
-    "vision": "Anemo",
-    "weapon": "Claymore",
+    "name": "Kuki Shinobu",
+    "title": "Mender of Tribulations",
+    "vision": "Electro",
+    "weapon": "Sword",
     "gender": "Female",
     "nation": "Inazuma",
-    "affiliation": "Shuumatsuban",
-    "release": "2021",
-    "id": "sayu"
+    "affiliation": "Arataki Gang",
+    "release": "2022",
+    "id": "kuki-shinobu"
 }

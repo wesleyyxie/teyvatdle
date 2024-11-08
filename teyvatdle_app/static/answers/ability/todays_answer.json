@@ -1,6 +1,6 @@
 {
-    "name": "Wriothesley",
-    "id": "wriothesley",
-    "type": "burst",
-    "abilityName": "Darkgold Wolfbite"
+    "name": "Lisa",
+    "id": "lisa",
+    "type": "skill",
+    "abilityName": "Violet Arc"
 }

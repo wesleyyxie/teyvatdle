@@ -1,7 +1,7 @@
 {
-    "name": "Klee",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b8/VO_Klee_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112204941",
-    "quote": "More treasure, more treasure! Hee-hee...",
+    "name": "Xiao",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/12/VO_Xiao_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112214409",
+    "quote": "If it's useful, I'll take it.",
     "id": 2,
-    "character_id": "klee"
+    "character_id": "xiao"
 }
