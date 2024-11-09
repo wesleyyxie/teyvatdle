@@ -1,3 +1,5 @@
 .venv
 previous_answers.json
 todays_answer.json
+__pycache__/
+*.py[cod]
