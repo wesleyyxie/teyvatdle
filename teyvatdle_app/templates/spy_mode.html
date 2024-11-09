@@ -3,13 +3,13 @@
 <script src="{{ url_for('static',filename='/scripts/auto-complete.js') }}"></script>
 <script src="{{ url_for('static',filename='/scripts/spy-mode.js') }}"></script>
 <div class="flex flex-col justify-center items-center gap-y-[10px]">
-    <div class="flex flex-col items-center mt-[20px] h-auto w-[300px] rounded-lg" style="background-color: rgba(39, 52, 63, 0.8); border: 3px solid rgb(120, 120, 120); box-sizing: border-box;">
+    <div class="flex flex-col items-center mt-[20px] h-auto w-[430px] rounded-lg" style="background-color: rgba(39, 52, 63, 0.8); border: 3px solid rgb(120, 120, 120); box-sizing: border-box;">
         <div class="flex flex-col items-center text-white p-[15px] text-center font-bold mt-[15px]">
         Which character does this splash art belong to?
         <!-- Placeholder for the splash image -->
-        <div id="splash-icon" class="h-[192px] w-[192px] bg-no-repeat bg-center bg-cover" style="image-rendering: pixelated;"></div>
+        <div id="splash-icon" class="h-[270px] w-[270px] bg-no-repeat bg-center bg-cover" style="image-rendering: pixelated;"></div>
         </div>
-        <span id="clue_countdown" class="text-white text-xs font-bold pb-[25px]">Clue in 2 tries</span>
+        <span id="clue_countdown" class="text-white text-s font-bold pb-[25px]">Clue in 2 tries</span>
         <span id="name_clue" class="hidden text-white font-bold pb-[25px]"></span>
     </div>
     <span id="show_character_data"></span>
