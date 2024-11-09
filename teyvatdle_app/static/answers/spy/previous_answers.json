@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Yun Jin",
+        "title": "Stage Lucida",
+        "vision": "Geo",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Yun-Han Opera Troupe",
+        "release": "2022",
+        "id": "yun-jin"
+    },
+    {
+        "name": "Noelle",
+        "title": "Chivalric Blossom",
+        "vision": "Geo",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "noelle"
+    }
+]
