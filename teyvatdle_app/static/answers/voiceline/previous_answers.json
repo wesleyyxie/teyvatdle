@@ -631,5 +631,19 @@
         "quote": "If it's useful, I'll take it.",
         "id": 2,
         "character_id": "xiao"
+    },
+    {
+        "name": "Rosaria",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c7/VO_Rosaria_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112211716",
+        "quote": "I suppose it wasn't too much trouble.",
+        "id": 3,
+        "character_id": "rosaria"
+    },
+    {
+        "name": "Jean",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/VO_Jean_Chat_-_Operation.ogg/revision/latest?cb=20210112160802",
+        "quote": "It's time to move on, we shouldn't stay here.",
+        "id": 0,
+        "character_id": "jean"
     }
 ]

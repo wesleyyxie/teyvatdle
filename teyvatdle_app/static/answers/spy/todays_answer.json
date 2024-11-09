@@ -1,11 +1,11 @@
 {
-    "name": "Thoma",
-    "title": "Protector From Afar",
+    "name": "Yanfei",
+    "title": "Wise Innocence",
     "vision": "Pyro",
-    "weapon": "Polearm",
-    "gender": "Male",
-    "nation": "Mondstadt",
-    "affiliation": "Yashiro Commission Kamisato Clan",
+    "weapon": "Catalyst",
+    "gender": "Female",
+    "nation": "Liyue",
+    "affiliation": "Liyue Harbor Adepti",
     "release": "2021",
-    "id": "thoma"
+    "id": "yanfei"
 }

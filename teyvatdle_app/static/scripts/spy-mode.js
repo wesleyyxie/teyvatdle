@@ -1,6 +1,9 @@
 var charactersInfoData = null;   
 var answerData = null;
-let tries = 0;
+var splashImageName = null
+var tries = 0;
+var pathToPixelatedFolder = "/static/images/character_splashes/pixelated/"
+
 
 function createBlankRow() {
     rowContainer = document.createElement('div');
@@ -61,6 +64,7 @@ function submitGuess(e) {
     let guess = inputElement.value;
     let resultsContainer = document.getElementById('results');
     let clueCountdown = document.getElementById('clue_countdown')
+    let splashElement = document.getElementById('splash-icon')
     let guessData = null;
     let gameOver = false;
 
@@ -93,17 +97,20 @@ function submitGuess(e) {
         window.arr.splice(index, 1)[0];
         inputElement.value = "";
         inputElement.focus();
-        if (tries < 5) {
-            clueCountdown.innerText = `Clues in ${5 - tries} tries`
+        console.log(tries)
+        if (tries <= 6) {
+            clueCountdown.innerText = `Clue in ${2 - (tries % 2)} tries`
         }
     }
-
-    if (tries == 5) {
-        let nameClue = document.getElementById('name_clue')
+    if (tries >= 6) {
         clueCountdown.classList.add('hidden')
-        nameClue.classList.remove('hidden')
-        nameClue.innerText = answerData["abilityName"]
-        document.getElementById('splash-icon').classList.remove('grayscale')
+        splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${4}.png')`;
+    }
+    else if (tries >= 4) {
+        splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${3}.png')`;
+    }
+    else if (tries >= 2) {
+        splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${2}.png')`;
     }
 }
 
@@ -137,10 +144,11 @@ window.addEventListener('load', async function() {
     const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
     charactersInfoData = await characterInfoRes.json();  // Load all character info
     
-    // Display today's answer splash image instead of ability icon
+    // Display today's answer splash image
     const splashElement = document.getElementById('splash-icon');
-    let splashImageName = answerData["id"].toLowerCase().replace(/\s+/g, '-');
-    splashElement.style.backgroundImage = `url('/static/images/character_splashes/${splashImageName}_splash.png')`;
+    splashImageName = answerData["id"].toLowerCase().replace(/\s+/g, '-');
+    console.log(Math.floor(tries / 2))
+    splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${Math.floor(tries / 2) + 1}.png')`;
     splashElement.style.backgroundSize = "16px 16px;"
     splashElement.style.backgroundPosition = "center";
     splashElement.style.imageRendering = "pixelated";  // Apply pixelated rendering
