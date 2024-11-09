@@ -867,5 +867,27 @@
         "affiliation": "Arataki Gang",
         "release": "2022",
         "id": "kuki-shinobu"
+    },
+    {
+        "name": "Arlecchino",
+        "title": "Dire Balemoon",
+        "vision": "Pyro",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Snezhnaya",
+        "affiliation": "Fatui",
+        "release": "2024",
+        "id": "arlecchino"
+    },
+    {
+        "name": "Mona",
+        "title": "Astral Reflection",
+        "vision": "Hydro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Mondstadt",
+        "release": "2020",
+        "id": "Mona"
     }
 ]

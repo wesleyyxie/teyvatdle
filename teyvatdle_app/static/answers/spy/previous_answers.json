@@ -581,5 +581,27 @@
         "affiliation": "Yashiro Commission Kamisato Clan",
         "release": "2021",
         "id": "thoma"
+    },
+    {
+        "name": "Cyno",
+        "title": "Judicator of Secrets",
+        "vision": "Electro",
+        "weapon": "Polearm",
+        "gender": "Male",
+        "nation": "Sumeru",
+        "affiliation": "Temple of Silence",
+        "release": "2022",
+        "id": "cyno"
+    },
+    {
+        "name": "Yanfei",
+        "title": "Wise Innocence",
+        "vision": "Pyro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Liyue Harbor Adepti",
+        "release": "2021",
+        "id": "yanfei"
     }
 ]

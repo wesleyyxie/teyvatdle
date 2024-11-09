@@ -1,11 +1,11 @@
 {
-    "name": "Kuki Shinobu",
-    "title": "Mender of Tribulations",
-    "vision": "Electro",
-    "weapon": "Sword",
+    "name": "Mona",
+    "title": "Astral Reflection",
+    "vision": "Hydro",
+    "weapon": "Catalyst",
     "gender": "Female",
-    "nation": "Inazuma",
-    "affiliation": "Arataki Gang",
-    "release": "2022",
-    "id": "kuki-shinobu"
+    "nation": "Mondstadt",
+    "affiliation": "Mondstadt",
+    "release": "2020",
+    "id": "Mona"
 }
