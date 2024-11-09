@@ -1,0 +1,24 @@
+[
+    {
+        "name": "Yae Miko",
+        "title": "Astute Amusement",
+        "vision": "Electro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Grand Narukami Shrine",
+        "release": "2022",
+        "id": "yae-miko"
+    },
+    {
+        "name": "Mona",
+        "title": "Astral Reflection",
+        "vision": "Hydro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Mondstadt",
+        "release": "2020",
+        "id": "Mona"
+    }
+]

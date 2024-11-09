@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Noelle",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/VO_Noelle_Elemental_Skill_1_02.ogg/revision/latest?cb=20221112210559",
+        "quote": "I must leave no stone unturned.",
+        "id": 2,
+        "character_id": "noelle"
+    },
+    {
+        "name": "Venti",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/VO_Venti_Chat_-_Playing_the_Lyre.ogg/revision/latest?cb=20210113121113",
+        "quote": "Sure, I'll play you another tune, but it'll cost you an apple.",
+        "id": 0,
+        "character_id": "venti"
+    }
+]

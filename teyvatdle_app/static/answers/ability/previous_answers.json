@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Kaedehara Kazuha",
+        "id": "kazuha",
+        "type": "skill",
+        "abilityName": "Chihayaburu"
+    },
+    {
+        "name": "Tartaglia",
+        "id": "tartaglia",
+        "type": "burst",
+        "abilityName": "Havor: Obliteration"
+    }
+]
