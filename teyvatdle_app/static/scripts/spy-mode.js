@@ -151,9 +151,6 @@ window.addEventListener('load', async function() {
     
     // Adjust the styling of the splash element
     splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${Math.floor(tries / 2) + 1}.png')`;
-    splashElement.style.backgroundSize = "cover";  // Use 'cover' to make it fill the container appropriately
-    splashElement.style.backgroundPosition = "center";
-    splashElement.style.imageRendering = "pixelated";
 
     // Check if the current answer is different from the saved one
     const savedAnswer = localStorage.getItem("spyCurrentAnswer");
