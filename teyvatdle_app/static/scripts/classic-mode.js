@@ -1,14 +1,17 @@
+import { autocomplete } from './auto-complete.js'
+
 var charactersInfoData = null
 var answerData = null
-let tries = 0;
+let tries = localStorage.getItem("classicTries") || 0;
+console.log(tries)
 
 // Creates a blank row for the hints
 function createBlankRow(){
-    categories = ['image', 'gender', 'vision', 'weapon', 'nation', 'release']
-    rowContainer = document.createElement('div')
+    let categories = ['image', 'gender', 'vision', 'weapon', 'nation', 'release']
+    let rowContainer = document.createElement('div')
     rowContainer.classList.add("flex", "text-white", "font-bold", "text-[13px]", "flex-row", "gap-x-[12px]",  "pb-[10px]")
-    for (i = 0; i < categories.length; i++) {
-        categoryDiv = document.createElement('div')
+    for (let i = 0; i < categories.length; i++) {
+        let categoryDiv = document.createElement('div')
         categoryDiv.classList.add("flex", "w-[75px]", "h-[75px]", "items-center", "justify-center", "bg-[#27343fcc]", "text-center", "border", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]")
         categoryDiv.id = 'guess_' + categories[i]
         rowContainer.appendChild(categoryDiv)
@@ -18,8 +21,7 @@ function createBlankRow(){
 
 // Checks whether or not the guess was correct or not and changes boxes accordingly
 function checkGuess(category, guessData, row, i) {
-    console.log("now checking " + category)
-    result_element = row.querySelector("#guess_" + category)
+    let result_element = row.querySelector("#guess_" + category)
     result_element.innerText = guessData[category]
     result_element.style.animationDelay = `${0.4 * i}s`
     
@@ -35,8 +37,6 @@ function checkGuess(category, guessData, row, i) {
 
 // Places the character icon
 function placeIcon(iconElement, guessData){
-    console.log("now placing icon")
-    console.log(guessData["id"])
     iconElement.style.backgroundImage = `url('/static/images/character_icons/${guessData["id"].toLowerCase()}.png')`
     iconElement.style.backgroundSize = '75px 75px'
     iconElement.style.backgroundPosition = 'center';
@@ -52,12 +52,11 @@ function submitGuess(e) {
     let categories = ["gender", "vision", "weapon", "nation", "release"];
     let gameOver = true;
 
-    row = createBlankRow();
+    let row = createBlankRow();
     tries++; // Increment tries count
 
     for (let i = 0; i < charactersInfoData.length; i++) {
         let currentCharacter = charactersInfoData[i];
-        console.log(currentCharacter["name"]);
         if (currentCharacter["name"].toLowerCase() == guess.toLowerCase()) {
             guessData = currentCharacter;
             break;
@@ -74,9 +73,16 @@ function submitGuess(e) {
         resultsContainer.prepend(row);
 
         // Save the guess data to localStorage
-        const previousGuesses = JSON.parse(localStorage.getItem("previousGuesses")) || [];
+        const previousGuesses = JSON.parse(localStorage.getItem("previousGuessesClassic")) || [];
         previousGuesses.push(guessData);
-        localStorage.setItem("previousGuesses", JSON.stringify(previousGuesses));
+
+        let arrClassic = JSON.parse(localStorage.getItem('arrClassic'));
+        console.log(arrClassic)
+        let index = arrClassic.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
+        arrClassic.splice(index, 1)[0];
+        localStorage.setItem("previousGuessesClassic", JSON.stringify(previousGuesses));
+        localStorage.setItem("classicTries", tries);
+        localStorage.setItem("arrClassic", JSON.stringify(arrClassic));
 
         if (gameOver) {
             displayCongratulatoryMessage(tries); // Call to display message
@@ -85,10 +91,7 @@ function submitGuess(e) {
 
             // Save the game state to localStorage
             localStorage.setItem("gameOver", "true");
-            localStorage.setItem("tries", tries);
         }
-        let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
-        window.arr.splice(index, 1)[0];
         inputElement.value = "";  // Remove all user input in text box
         inputElement.focus();
     }
@@ -131,9 +134,9 @@ window.addEventListener('load', async function() {
     const savedAnswer = localStorage.getItem("currentAnswer");
     if (savedAnswer !== answerData.name) {
         // Clear saved data if the answer has changed
-        localStorage.removeItem("previousGuesses");
+        localStorage.removeItem("previousGuessesClassic");
         localStorage.removeItem("gameOver");
-        localStorage.removeItem("tries");
+        localStorage.removeItem("classicTries");
         localStorage.setItem("currentAnswer", answerData.name); // Update to the new answer
     }
     
@@ -142,8 +145,10 @@ window.addEventListener('load', async function() {
     document.getElementById("guess-form").addEventListener("submit", submitGuess)
 
     // Load previous guesses from localStorage
-    const previousGuesses = JSON.parse(localStorage.getItem("previousGuesses")) || [];
+    const previousGuesses = JSON.parse(localStorage.getItem("previousGuessesClassic")) || [];
     const resultsContainer = document.getElementById('results');
+
+    console.log(previousGuesses)
 
     // Display each previous guess
     previousGuesses.forEach(guessData => {
@@ -162,10 +167,21 @@ window.addEventListener('load', async function() {
 
     // Check for saved game state
     if (localStorage.getItem("gameOver") === "true") {
-        const tries = localStorage.getItem("tries");
         displayCongratulatoryMessage(tries); 
         document.getElementById("submit").disabled = true;
         document.getElementById("guess").disabled = true;
     }
+
+
+    var arrClassic = localStorage.getItem('arrClassic');
+    console.log('local storage check 1: ' + arrClassic)
+    if (arrClassic == null) {
+        arrClassic = charactersInfoData
+        localStorage.setItem('arrClassic', JSON.stringify(arrClassic))
+    }
+    else {
+        arrClassic = JSON.parse(arrClassic)
+    }
+    autocomplete(document.getElementById("guess"), arrClassic);
 });
 
