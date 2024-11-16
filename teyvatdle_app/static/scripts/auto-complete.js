@@ -1,4 +1,4 @@
-function autocomplete(inp, arr) {
+export function autocomplete(inp, arr) {
     /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
     var currentFocus;
@@ -18,13 +18,13 @@ function autocomplete(inp, arr) {
         /*for each item in the array...*/
         for (i = 0; i < arr.length; i++) {
           /*check if the item starts with the same letters as the text field value:*/
-          characterName = arr[i]["name"]
-          characterNameParts = characterName.split(" ")
+          let characterName = arr[i]["name"]
+          let characterNameParts = characterName.split(" ")
           if (characterName.substr(0, val.length).toUpperCase() == val.toUpperCase()) {
             /*create a DIV element for each matching element:*/
-            container = document.createElement("DIV")
+            let container = document.createElement("DIV")
             container.setAttribute("class", "flex cursor-pointer items-center p-[10px] hover:bg-[#c9c9c9]")
-            icon = document.createElement("DIV")
+            let icon = document.createElement("DIV")
             icon.style.backgroundImage = `url('/static/images/character_icons/${arr[i]["id"].toLowerCase()}.png')`
             icon.setAttribute("class", "mr-[5px] h-[50px] w-[50px] bg-contain bg-no-repeat bg-center mr-[2px]")
             b = document.createElement("DIV");
@@ -48,9 +48,9 @@ function autocomplete(inp, arr) {
           }
           if ((characterNameParts.length > 1) && (characterNameParts[1].substr(0, val.length).toUpperCase() == val.toUpperCase())) {
             /*create a DIV element for each matching element:*/
-            container = document.createElement("DIV")
+            let container = document.createElement("DIV")
             container.setAttribute("class", "flex cursor-pointer items-center p-[10px] hover:bg-[#c9c9c9]")
-            icon = document.createElement("DIV")
+            let icon = document.createElement("DIV")
             icon.style.backgroundImage = `url('/static/images/character_icons/${arr[i]["id"].toLowerCase()}.png')`
             icon.setAttribute("class", "h-[50px] w-[50px] bg-contain bg-no-repeat bg-center mr-[2px]")
             b = document.createElement("DIV");
@@ -136,11 +136,3 @@ function autocomplete(inp, arr) {
       closeAllLists(e.target);
   });
 }
-
-window.addEventListener('load', async function () {
-    const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
-    charactersInfoData = await characterInfoRes.json();
-    window.arr = charactersInfoData
-    /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
-    autocomplete(document.getElementById("guess"), window.arr);
-});
