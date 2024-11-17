@@ -5,10 +5,7 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
 ## How to Play
 
 1. **Choose a Category**: Teyvatdle offers four exciting game modes to test different aspects of your Genshin Impact character knowledge. Pick one to get started:
-   - **Elements**: Guess based on elemental affinities like Pyro, Hydro, Anemo, etc.
-   - **Weapon Types**: Use hints about weapons characters wield, such as swords, bows, or catalysts.
-   - **Regions**: Deduce characters based on the regions they belong to, like Mondstadt, Liyue, or Inazuma.
-   - **Rarity**: Use star rarity to narrow down your options.
+   - 
 
 2. **Make a Guess**: Enter the name of a Genshin Impact character. Teyvatdle will provide feedback to help you get closer to the answer:
    - Each hint will indicate if you're getting closer to the answer.
