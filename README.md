@@ -22,3 +22,7 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
 - **Multiple Game Modes**: Challenge yourself across different categories to keep the game fresh and exciting.
 - **Interactive Feedback**: Hints after each guess will guide you toward the right answer by revealing information about the correct character.
 - **Genshin Impact Themed**: Enjoy a game experience that is entirely centered around the beloved characters of Teyvat.
+
+## Acknowledgements
+
+## Licenses
