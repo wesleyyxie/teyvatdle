@@ -1,6 +1,21 @@
 # teyvatdle
 
-Welcome to **Teyvatdle** Traveller! Inspired by the classic Wordle, Teyvatdle invites you on a journey across Teyvat, where your knowledge of Genshin Impact characters will be put to the test. Use clues and information from your previous guesses to unearth the character shrouded in mystery. Can you master the elements and uncover the truth before your adventure comes to an end?
+Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle invites you on a journey across Teyvat, where your knowledge of Genshin Impact characters will be put to the test. Use clues and information from your previous guesses to unearth the character shrouded in mystery. Can you master the elements and uncover the truth before your adventure comes to an end?
+
+## How to Play
+
+1. **Choose a Category**: Teyvatdle offers four exciting game modes to test different aspects of your Genshin Impact character knowledge. Pick one to get started:
+   - **Elements**: Guess based on elemental affinities like Pyro, Hydro, Anemo, etc.
+   - **Weapon Types**: Use hints about weapons characters wield, such as swords, bows, or catalysts.
+   - **Regions**: Deduce characters based on the regions they belong to, like Mondstadt, Liyue, or Inazuma.
+   - **Rarity**: Use star rarity to narrow down your options.
+
+2. **Make a Guess**: Enter the name of a Genshin Impact character. Teyvatdle will provide feedback to help you get closer to the answer:
+   - Each hint will indicate if you're getting closer in terms of **Element, Weapon Type, Region, or Rarity**.
+   - Use the information to refine your future guesses.
+
+3. **Solve It**: Keep guessing until you unveil the correct character! While you have an unlimited number of attempts, true Travelers aim to solve the mystery in as few tries as possible. Use each hint wisely and challenge yourself to become a master of deduction!
+
 
 ## Features
 
