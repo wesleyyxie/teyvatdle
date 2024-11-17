@@ -11,7 +11,7 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
    - **Rarity**: Use star rarity to narrow down your options.
 
 2. **Make a Guess**: Enter the name of a Genshin Impact character. Teyvatdle will provide feedback to help you get closer to the answer:
-   - Each hint will indicate if you're getting closer in terms of **Element, Weapon Type, Region, or Rarity**.
+   - Each hint will indicate if you're getting closer to the answer.
    - Use the information to refine your future guesses.
 
 3. **Solve It**: Keep guessing until you unveil the correct character! While you have an unlimited number of attempts, true Travelers aim to solve the mystery in as few tries as possible. Use each hint wisely and challenge yourself to become a master of deduction!
