@@ -5,7 +5,10 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
 ## How to Play
 
 1. **Choose a Category**: Teyvatdle offers four exciting game modes to test different aspects of your Genshin Impact character knowledge. Pick one to get started:
-   - **Classic**
+   - **Classic**: Our classic Teyvatdle game mode! Guess a character and unlock hints for each guess!
+   - **Voiceline**: Guess the character based off of in-game voice lines!
+   - **Ability**: Which character does this ability belong to?
+   - **Spy**: Can you see through the pixelation and guess the character?
 
 2. **Make a Guess**: Enter the name of a Genshin Impact character. Teyvatdle will provide feedback to help you get closer to the answer:
    - Each hint will indicate if you're getting closer to the answer.
@@ -19,6 +22,20 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
 - **Multiple Game Modes**: Challenge yourself across different categories to keep the game fresh and exciting.
 - **Interactive Feedback**: Hints after each guess will guide you toward the right answer by revealing information about the correct character.
 - **Genshin Impact Themed**: Enjoy a game experience that is entirely centered around the beloved characters of Teyvat.
+
+## Setup
+
+### Prerequisites
+
+- Python3 (version 3.12.6 or higher)
+- `pip` (Python package installer)
+
+### Steps
+
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/wesleyyxie/teyvatdle.git
+   cd teyvatdle
 
 ## Acknowledgements
 
