@@ -37,6 +37,11 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
    git clone https://github.com/wesleyyxie/teyvatdle.git
    cd teyvatdle
 
+2. **Install requirements**:
+   ```bash
+   pip install -r requirements.txt
+
+
 ## Acknowledgements
 
 ## Licenses
