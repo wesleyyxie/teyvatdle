@@ -77,7 +77,6 @@ function submitGuess(e) {
         previousGuesses.push(guessData);
 
         let arrClassic = JSON.parse(localStorage.getItem('arrClassic'));
-        console.log(arrClassic)
         let index = arrClassic.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
         arrClassic.splice(index, 1)[0];
         localStorage.setItem("previousGuessesClassic", JSON.stringify(previousGuesses));
@@ -128,8 +127,6 @@ window.addEventListener('load', async function() {
     charactersInfoData = await characterInfoRes.json();
 
 
-    console.log(charactersInfoData);
-
     // Check if the current answer is different from the saved one
     const savedAnswer = localStorage.getItem("currentAnswer");
     if (savedAnswer !== answerData.name) {
@@ -147,8 +144,6 @@ window.addEventListener('load', async function() {
     // Load previous guesses from localStorage
     const previousGuesses = JSON.parse(localStorage.getItem("previousGuessesClassic")) || [];
     const resultsContainer = document.getElementById('results');
-
-    console.log(previousGuesses)
 
     // Display each previous guess
     previousGuesses.forEach(guessData => {
@@ -174,7 +169,6 @@ window.addEventListener('load', async function() {
 
 
     var arrClassic = localStorage.getItem('arrClassic');
-    console.log('local storage check 1: ' + arrClassic)
     if (arrClassic == null) {
         arrClassic = charactersInfoData
         localStorage.setItem('arrClassic', JSON.stringify(arrClassic))
