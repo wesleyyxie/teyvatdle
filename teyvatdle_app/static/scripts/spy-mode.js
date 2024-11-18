@@ -1,15 +1,17 @@
+import { autocomplete } from './auto-complete.js'
+
 var charactersInfoData = null;
 var answerData = null;
 var splashImageName = null;
-var tries = 0;
+var tries = localStorage.getItem('spyTries') || 0;
 var pathToPixelatedFolder = "/static/images/character_splashes/pixelated/";
 
 function createBlankRow() {
-    rowContainer = document.createElement('div');
+    let rowContainer = document.createElement('div');
     rowContainer.classList.add("flex", "text-white", "font-bold", "text-[13px]", "flex-row", "gap-x-[12px]", "mb-[10px]");
 
     // Create one box for the character icon and result (red or green)
-    categoryDiv = document.createElement('div');
+    let categoryDiv = document.createElement('div');
     categoryDiv.classList.add("flex", "w-[270px]", "h-[130px]", "border", "justify-center", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]");
 
     categoryDiv.id = 'guess_result';  // Single box for the result
@@ -47,7 +49,7 @@ function placeIcon(iconElement, guessData) {
     iconElement.style.backgroundPosition = 'center 10px';
     iconElement.style.backgroundRepeat = 'no-repeat';
 
-    spanElement = document.createElement('span');
+    let spanElement = document.createElement('span');
     spanElement.classList.add('mt-[90px]', 'bottom-[8px]', 'text-lg');
     spanElement.innerText = guessData["name"];
     iconElement.appendChild(spanElement);
@@ -88,14 +90,19 @@ function submitGuess(e) {
         previousGuesses.push(guessData);
         localStorage.setItem("spyPreviousGuesses", JSON.stringify(previousGuesses));
 
+        let arrSpy = JSON.parse(localStorage.getItem('arrSpy'));
+        let index = arrSpy.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
+        arrSpy.splice(index, 1)[0];
+        localStorage.setItem("spyTries", tries);
+        localStorage.setItem("arrSpy", JSON.stringify(arrSpy));
+
         if (gameOver) {
             document.getElementById("submit").disabled = true;
             inputElement.disabled = true;
             localStorage.setItem("spyGameOver", "true");
             localStorage.setItem("spyTries", tries);
         }
-        let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
-        window.arr.splice(index, 1)[0];
+        
         inputElement.value = "";
         inputElement.focus();
         console.log(tries);
@@ -149,9 +156,6 @@ window.addEventListener('load', async function() {
     const splashElement = document.getElementById('splash-icon');
     splashImageName = answerData["id"].toLowerCase().replace(/\s+/g, '-');
     
-    // Adjust the styling of the splash element
-    splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${Math.floor(tries / 2) + 1}.png')`;
-
     // Check if the current answer is different from the saved one
     const savedAnswer = localStorage.getItem("spyCurrentAnswer");
     if (savedAnswer !== answerData.name) {
@@ -162,6 +166,25 @@ window.addEventListener('load', async function() {
         localStorage.setItem("spyCurrentAnswer", answerData.name); // Update to the new answer
     }
 
+
+    let clueCountdown = document.getElementById('clue_countdown');
+
+    if (tries < 6) {
+        clueCountdown.innerText = `Clue in ${2 - (tries % 2)} tries`;
+    }
+
+    if (tries >= 6) {
+        clueCountdown.classList.add('hidden');
+        splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${4}.png')`;
+    } else if (tries >= 4) {
+        splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${3}.png')`;
+    } else if (tries >= 2) {
+        splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${2}.png')`;
+    } else if (tries < 2) {
+        splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${1}.png')`;
+    }
+
+    
     // Load previous guesses from localStorage
     const previousGuesses = JSON.parse(localStorage.getItem("spyPreviousGuesses")) || [];
     const resultsContainer = document.getElementById('results');
@@ -191,5 +214,15 @@ window.addEventListener('load', async function() {
     document.getElementById('guess').focus();
     document.addEventListener("keyup", checkSubmit);
     document.getElementById("guess-form").addEventListener("submit", submitGuess);
+
+    var arrSpy = localStorage.getItem('arrSpy');
+    if (arrSpy == null) {
+        arrSpy = charactersInfoData
+        localStorage.setItem('arrSpy', JSON.stringify(arrSpy))
+    }
+    else {
+        arrSpy = JSON.parse(arrSpy)
+    }
+    autocomplete(document.getElementById("guess"), arrSpy);
 });
 
