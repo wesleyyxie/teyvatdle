@@ -1,13 +1,15 @@
+import { autocomplete } from './auto-complete.js'
+
 var charactersInfoData = null   
 var answerData = null
-let tries = 0;
+let tries = localStorage.getItem("abilityTries") || 0;
 
 function createBlankRow() {
-    rowContainer = document.createElement('div');
+    let rowContainer = document.createElement('div');
     rowContainer.classList.add("flex", "text-white", "font-bold", "text-[13px]", "flex-row", "gap-x-[12px]",  "mb-[10px]");
     
     // Create one box for the character icon and result (red or green)
-    categoryDiv = document.createElement('div');
+    let categoryDiv = document.createElement('div');
     categoryDiv.classList.add("flex", "w-[270px]", "h-[130px]", "border", "justify-center", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]");
 
     categoryDiv.id = 'guess_result';  // Single box for the result
@@ -49,7 +51,7 @@ function placeIcon(iconElement, guessData) {
     iconElement.style.backgroundPosition = 'center 10px';
     iconElement.style.backgroundRepeat = 'no-repeat';
 
-    spanElement = document.createElement('span')
+    let spanElement = document.createElement('span')
     spanElement.classList.add('mt-[90px]','bottom-[8px]', 'text-lg')
     spanElement.innerText = guessData["name"]
     iconElement.appendChild(spanElement)
@@ -90,6 +92,11 @@ function submitGuess(e) {
         previousGuesses.push(guessData);
         localStorage.setItem("abilityPreviousGuesses", JSON.stringify(previousGuesses));
 
+        let arrAbility = JSON.parse(localStorage.getItem('arrAbility'));
+        let index = arrAbility.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
+        arrAbility.splice(index, 1)[0];
+        localStorage.setItem("abilityTries", tries);
+        localStorage.setItem("arrAbility", JSON.stringify(arrAbility));
 
         if (gameOver) {
             document.getElementById("submit").disabled = true;
@@ -97,8 +104,7 @@ function submitGuess(e) {
             localStorage.setItem("abilityGameOver", "true");
             localStorage.setItem("abilityTries", tries);
         }
-        let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
-        window.arr.splice(index, 1)[0];
+
         inputElement.value = "";
         inputElement.focus();
         if (tries < 5) {
@@ -181,9 +187,31 @@ window.addEventListener('load', async function() {
         document.getElementById("guess").disabled = true;
     }
 
+    let cluesCountdownElement = document.getElementById("clue_countdown")
+    let nameClue = document.getElementById('name_clue')
+    if (tries < 5) {
+        cluesCountdownElement.innerText = `Audio clue in ${5 - tries} tries`
+    }
+    else {
+        cluesCountdownElement.classList.add("hidden")
+        document.getElementById('ability-icon').classList.remove('grayscale')
+        nameClue.classList.remove('hidden')
+        nameClue.innerText = answerData["abilityName"]
+    }
+
     document.getElementById('guess').focus();
     document.addEventListener("keyup", checkSubmit);
     document.getElementById("guess-form").addEventListener("submit", submitGuess);
+
+    var arrAbility = localStorage.getItem('arrAbility');
+    if (arrAbility == null) {
+        arrAbility = charactersInfoData
+        localStorage.setItem('arrAbility', JSON.stringify(arrAbility))
+    }
+    else {
+        arrAbility = JSON.parse(arrAbility)
+    }
+    autocomplete(document.getElementById("guess"), arrAbility);
 });
 
 
