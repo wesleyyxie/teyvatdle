@@ -50,8 +50,8 @@ def get_voicelines():
                     voiceline["name"] = character_name
                     voiceline["audio"] = audio_src
                     voiceline["quote"] = quote_text
-                    voiceline["id"] = i
-                    voiceline["character_id"] = c.get("id")
+                    voiceline["id"] = c.get("id")
+                    voiceline["voiceline_id"] = i
 
                     name_parts = character_name.split()
                     name_in_quote = False
@@ -97,8 +97,8 @@ def get_voicelines():
                     voiceline["name"] = character_name
                     voiceline["audio"] = audio_src
                     voiceline["quote"] = quote_text
-                    voiceline["id"] = j
-                    voiceline["character_id"] = c.get("id")
+                    voiceline["id"] = c.get("id")
+                    voiceline["voiceline_id"] = j
 
                     name_parts = character_name.split()
                     name_in_quote = False
@@ -140,5 +140,5 @@ def download_mp3s():
                 mp3_file.write(r.content)
 
 if __name__ == "__main__":
-    download_mp3s()
+    get_voicelines()
 

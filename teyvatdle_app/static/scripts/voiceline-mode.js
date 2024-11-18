@@ -1,13 +1,15 @@
-var charactersInfoData = null   
+import { autocomplete } from './auto-complete.js'
+
+var voicelineInfoData = null   
 var answerData = null
-let tries = 0;
+let tries = localStorage.getItem("voicelineTries") || 0;
 
 function createBlankRow() {
-    rowContainer = document.createElement('div');
+    let rowContainer = document.createElement('div');
     rowContainer.classList.add("flex", "text-white", "font-bold", "text-[13px]", "flex-row", "gap-x-[12px]",  "mb-[10px]");
     
     // Create one box for the character icon and result (red or green)
-    categoryDiv = document.createElement('div');
+    let categoryDiv = document.createElement('div');
     categoryDiv.classList.add("flex", "w-[270px]", "h-[130px]", "border", "justify-center", "border-white", "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]", "shadow-[0_4px_6px_rgba(0,0,0,0.5)]");
 
     categoryDiv.id = 'guess_result';  // Single box for the result
@@ -39,7 +41,7 @@ function placeIcon(iconElement, guessData) {
     let imageName;
 
     // If your images are named using character names
-    imageName = guessData["character_id"].toLowerCase().replace(/\s+/g, '-');
+    imageName = guessData["id"].toLowerCase().replace(/\s+/g, '-');
     //imageName = guessData["id"];  
 
     const imageUrl = `/static/images/character_icons/${imageName}.png`;
@@ -50,7 +52,7 @@ function placeIcon(iconElement, guessData) {
     iconElement.style.backgroundPosition = 'center 10px';
     iconElement.style.backgroundRepeat = 'no-repeat';
 
-    spanElement = document.createElement('span')
+    let spanElement = document.createElement('span')
     spanElement.classList.add('mt-[90px]','bottom-[8px]', 'text-lg')
     spanElement.innerText = guessData["name"]
     iconElement.appendChild(spanElement)
@@ -66,8 +68,8 @@ function submitGuess(e) {
     let guessData = null;
     let gameOver = false;
     // Loop through the characters to find the guessed character
-    for (let i = 0; i < charactersInfoData.length; i++) {
-        let currentCharacter = charactersInfoData[i];
+    for (let i = 0; i < voicelineInfoData.length; i++) {
+        let currentCharacter = voicelineInfoData[i];
         if (currentCharacter["name"].toLowerCase() === guess.toLowerCase()) {
             guessData = currentCharacter;
             tries++;
@@ -89,16 +91,20 @@ function submitGuess(e) {
         previousGuesses.push(guessData);
         localStorage.setItem("voicelinePreviousGuesses", JSON.stringify(previousGuesses));
 
+        let arrVoiceline = JSON.parse(localStorage.getItem('arrVoiceline'));
+        let index = arrVoiceline.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
+        arrVoiceline.splice(index, 1)[0];
+        localStorage.setItem("voicelineTries", tries);
+        localStorage.setItem("arrVoiceline", JSON.stringify(arrVoiceline));
 
         if (gameOver) {
             document.getElementById("submit").disabled = true;
             inputElement.disabled = true;
 
             localStorage.setItem("voicelineGameOver", "true");
-            localStorage.setItem("voicelineTries", tries);
         }
-        let index = window.arr.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
-        window.arr.splice(index, 1)[0];
+
+
         inputElement.value = "";
         inputElement.focus();
         if (tries < 5) {
@@ -136,9 +142,12 @@ window.addEventListener('load', async function() {
     answerData = await answerRes.json(); // Load today's answer
     console.log("Today's Answer Data:", answerData);
     
-    const characterInfoRes = await fetch("/static/data/voicelines.json");
-    charactersInfoData = await characterInfoRes.json(); // Load all character info
+    const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
+    const charactersInfoData = await characterInfoRes.json(); // Load all character info
     console.log("Characters Info Data:", charactersInfoData);
+
+    const voicelineInfoRes = await fetch("/static/data/voicelines.json");
+    voicelineInfoData = await voicelineInfoRes.json();
     
     // Display today's answer quote from todays_answer.json
     const randomQuoteElement = document.getElementById('random_quote');
@@ -185,25 +194,35 @@ window.addEventListener('load', async function() {
         document.getElementById("guess").disabled = true;
     }
 
+    const cluesCountdownElement = document.getElementById("audio_countdown")
+    const audioContainer = document.getElementById('audio_container')
+    if (tries < 5) {
+        cluesCountdownElement.innerText = `Audio clue in ${5 - tries} tries`
+    }
+    else {
+        cluesCountdownElement.classList.add("hidden")
+        audioContainer.classList.remove('hidden')
+    }
     document.getElementById('guess').focus();
     document.addEventListener("keyup", checkSubmit);
     document.getElementById("guess-form").addEventListener("submit", submitGuess);
+    document.getElementById('play_audio').addEventListener('click', playAudio)
+
+    var arrVoiceline = localStorage.getItem('arrVoiceline');
+    if (arrVoiceline == null) {
+        arrVoiceline = charactersInfoData;
+        localStorage.setItem('arrVoiceline', JSON.stringify(arrVoiceline))
+    }
+    else {
+        arrVoiceline = JSON.parse(arrVoiceline)
+    }
+    console.log(arrVoiceline)
+    
+    autocomplete(document.getElementById("guess"), arrVoiceline);
 });
 
-// Get Quote
-
-function getRandomQuoteForCharacter(characterName) {
-    const filteredQuotes = charactersInfoData.filter(quote => quote.name.toLowerCase() === characterName.toLowerCase());
-    
-    if (filteredQuotes.length > 0) {
-        const randomIndex = Math.floor(Math.random() * filteredQuotes.length);
-        return filteredQuotes[randomIndex].quote;
-    }
-    return null;  
-}
-
-function playAudio() {
-    let audio = new Audio(`/static/data/voiceline_audios/${answerData.character_id}${answerData.id}.mp3`)
+export function playAudio() {
+    let audio = new Audio(`/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`)
     audio.volume = document.getElementById('audioLevel').value
     audio.play()
 }
