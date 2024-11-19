@@ -10,5 +10,167 @@
         "id": "tartaglia",
         "type": "burst",
         "abilityName": "Havor: Obliteration"
+    },
+    {
+        "name": "Beidou",
+        "id": "beidou",
+        "type": "skill",
+        "abilityName": "Tidecaller"
+    },
+    {
+        "name": "Kachina",
+        "id": "Kachina",
+        "type": "burst",
+        "abilityName": "Time to Get Serious!"
+    },
+    {
+        "name": "Collei",
+        "id": "collei",
+        "type": "burst",
+        "abilityName": "Trump-Card Kitty"
+    },
+    {
+        "name": "Shikanoin Heizou",
+        "id": "shikanoin-heizou",
+        "type": "burst",
+        "abilityName": "Windmuster Kick"
+    },
+    {
+        "name": "Nilou",
+        "id": "nilou",
+        "type": "skill",
+        "abilityName": "Dance of Haftkarsvar"
+    },
+    {
+        "name": "Amber",
+        "id": "amber",
+        "type": "burst",
+        "abilityName": "Fiery Rain"
+    },
+    {
+        "name": "Mona",
+        "id": "Mona",
+        "type": "burst",
+        "abilityName": "Stellaris Phantasm"
+    },
+    {
+        "name": "Kamisato Ayato",
+        "id": "ayato",
+        "type": "skill",
+        "abilityName": "Kamisato Art: Kyouka"
+    },
+    {
+        "name": "Kamisato Ayaka",
+        "id": "ayaka",
+        "type": "skill",
+        "abilityName": "Kamisato Art: Hyouka"
+    },
+    {
+        "name": "Kaveh",
+        "id": "kaveh",
+        "type": "burst",
+        "abilityName": "Painted Dome"
+    },
+    {
+        "name": "Yun Jin",
+        "id": "yun-jin",
+        "type": "burst",
+        "abilityName": "Cliffbreaker's Banner'"
+    },
+    {
+        "name": "Cyno",
+        "id": "cyno",
+        "type": "burst",
+        "abilityName": "Sacred Rite: Wolf's Swiftness"
+    },
+    {
+        "name": "Klee",
+        "id": "klee",
+        "type": "burst",
+        "abilityName": "Sparks 'n' Splash"
+    },
+    {
+        "name": "Diona",
+        "id": "diona",
+        "type": "burst",
+        "abilityName": "Signature Mix"
+    },
+    {
+        "name": "Xinyan",
+        "id": "Xinyan",
+        "type": "skill",
+        "abilityName": "Sweeping Fervor"
+    },
+    {
+        "name": "Qiqi",
+        "id": "qiqi",
+        "type": "burst",
+        "abilityName": "Adeptus Art: Preserver of Fortune"
+    },
+    {
+        "name": "Nahida",
+        "id": "nahida",
+        "type": "burst",
+        "abilityName": "Illusory Heart"
+    },
+    {
+        "name": "Chevreuse",
+        "id": "chevreuse",
+        "type": "skill",
+        "abilityName": "Short-Range Rapid Interdiction Fire"
+    },
+    {
+        "name": "Nahida",
+        "id": "nahida",
+        "type": "skill",
+        "abilityName": "All Schemes to Know"
+    },
+    {
+        "name": "Chongyun",
+        "id": "chongyun",
+        "type": "skill",
+        "abilityName": "Spirit Blade - Chonghua's Layered Frost"
+    },
+    {
+        "name": "Kachina",
+        "id": "Kachina",
+        "type": "skill",
+        "abilityName": "Go, Go Turbo Twirly!"
+    },
+    {
+        "name": "Tartaglia",
+        "id": "tartaglia",
+        "type": "skill",
+        "abilityName": "Foul Legacy: Raging Tide"
+    },
+    {
+        "name": "Xingqiu",
+        "id": "xingqiu",
+        "type": "skill",
+        "abilityName": "Guhua Sword - Fatal Rainscreen"
+    },
+    {
+        "name": "Yae Miko",
+        "id": "yae-miko",
+        "type": "skill",
+        "abilityName": "Yakan Evocation: Sesshou Sakura"
+    },
+    {
+        "name": "Bennett",
+        "id": "bennett",
+        "type": "skill",
+        "abilityName": "Passion Overload"
+    },
+    {
+        "name": "Navia",
+        "id": "navia",
+        "type": "burst",
+        "abilityName": "As the Sunlit Sky's Singing Salute"
+    },
+    {
+        "name": "Aloy",
+        "id": "aloy",
+        "type": "skill",
+        "abilityName": "Frozen Wilds"
     }
 ]
