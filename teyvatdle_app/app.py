@@ -12,10 +12,12 @@ app = Flask(__name__)
 # scheduler.add_job(func=update_classic_answer, trigger=”cron”, hour = 0, minute = 0)
 # scheduler.start()
 
-update_classic_answer()
-update_voiceline_answer()
-update_ability_answer()
-update_spy_answer()
+
+def update_all_answers():
+    update_classic_answer()
+    update_voiceline_answer()
+    update_ability_answer()
+    update_spy_answer()
 
 
 @app.route("/spy")
@@ -44,4 +46,5 @@ def hello_world():
 
 
 if __name__ == "__main__":
+    update_all_answers()
     app.run(debug=True)

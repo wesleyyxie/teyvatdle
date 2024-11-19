@@ -1,7 +1,7 @@
 {
-    "name": "Venti",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/VO_Venti_Chat_-_Playing_the_Lyre.ogg/revision/latest?cb=20210113121113",
-    "quote": "Sure, I'll play you another tune, but it'll cost you an apple.",
-    "id": 0,
-    "character_id": "venti"
+    "name": "Chiori",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/VO_Chiori_Elemental_Burst_01.ogg/revision/latest?cb=20240317055216",
+    "quote": "I am the cutting edge of fashion.",
+    "id": "chiori",
+    "voiceline_id": 2
 }

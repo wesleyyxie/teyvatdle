@@ -1,6 +1,6 @@
 {
-    "name": "Tartaglia",
-    "id": "tartaglia",
-    "type": "burst",
-    "abilityName": "Havor: Obliteration"
+    "name": "Aloy",
+    "id": "aloy",
+    "type": "skill",
+    "abilityName": "Frozen Wilds"
 }

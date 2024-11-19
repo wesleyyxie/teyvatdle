@@ -1,11 +1,11 @@
 {
-    "name": "Mona",
-    "title": "Astral Reflection",
-    "vision": "Hydro",
-    "weapon": "Catalyst",
-    "gender": "Female",
-    "nation": "Mondstadt",
-    "affiliation": "Mondstadt",
-    "release": "2020",
-    "id": "Mona"
+    "name": "Kaveh",
+    "title": "Empyrean Reflection",
+    "vision": "Dendro",
+    "weapon": "Claymore",
+    "gender": "Male",
+    "nation": "Sumeru",
+    "affiliation": "Independent Design Studio",
+    "release": "2023",
+    "id": "kaveh"
 }

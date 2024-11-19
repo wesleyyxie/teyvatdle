@@ -1,11 +1,11 @@
 {
-    "name": "Noelle",
-    "title": "Chivalric Blossom",
-    "vision": "Geo",
-    "weapon": "Claymore",
+    "name": "Xiangling",
+    "title": "Exquisite Delicacy",
+    "vision": "Pyro",
+    "weapon": "Polearm",
     "gender": "Female",
-    "nation": "Mondstadt",
-    "affiliation": "Knights of Favonius",
+    "nation": "Liyue",
+    "affiliation": "Wanmin Restaurant",
     "release": "2020",
-    "id": "noelle"
+    "id": "xiangling"
 }
