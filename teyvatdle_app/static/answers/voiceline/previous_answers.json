@@ -33,5 +33,19 @@
         "quote": "I am the cutting edge of fashion.",
         "id": "chiori",
         "voiceline_id": 2
+    },
+    {
+        "name": "Keqing",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/VO_Keqing_Chat_-_Relax.ogg/revision/latest?cb=20210111202855",
+        "quote": "I'm all for work-life balance, but I think this is pushing it.",
+        "id": "keqing",
+        "voiceline_id": 1
+    },
+    {
+        "name": "Xingqiu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/VO_Xingqiu_Chat_-_Literature.ogg/revision/latest?cb=20210111085106",
+        "quote": "I never embark on a journey without a good book to accompany me.",
+        "id": "xingqiu",
+        "voiceline_id": 1
     }
 ]
