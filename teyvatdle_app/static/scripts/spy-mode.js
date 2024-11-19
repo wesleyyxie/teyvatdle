@@ -102,7 +102,7 @@ function submitGuess(e) {
             localStorage.setItem("spyGameOver", "true");
             localStorage.setItem("spyTries", tries);
         }
-        
+        autocomplete(document.getElementById("guess"), arrSpy);
         inputElement.value = "";
         inputElement.focus();
         console.log(tries);

@@ -1,7 +1,7 @@
 {
-    "name": "Chiori",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/VO_Chiori_Elemental_Burst_01.ogg/revision/latest?cb=20240317055216",
-    "quote": "I am the cutting edge of fashion.",
-    "id": "chiori",
-    "voiceline_id": 2
+    "name": "Xingqiu",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/VO_Xingqiu_Chat_-_Literature.ogg/revision/latest?cb=20210111085106",
+    "quote": "I never embark on a journey without a good book to accompany me.",
+    "id": "xingqiu",
+    "voiceline_id": 1
 }

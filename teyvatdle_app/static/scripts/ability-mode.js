@@ -107,6 +107,7 @@ function submitGuess(e) {
 
         inputElement.value = "";
         inputElement.focus();
+        autocomplete(document.getElementById("guess"), arrAbility);
         if (tries < 5) {
             clueCountdown.innerText = `Clues in ${5 - tries} tries`
         }
@@ -190,7 +191,7 @@ window.addEventListener('load', async function() {
     let cluesCountdownElement = document.getElementById("clue_countdown")
     let nameClue = document.getElementById('name_clue')
     if (tries < 5) {
-        cluesCountdownElement.innerText = `Audio clue in ${5 - tries} tries`
+        cluesCountdownElement.innerText = `Clues in ${5 - tries} tries`
     }
     else {
         cluesCountdownElement.classList.add("hidden")

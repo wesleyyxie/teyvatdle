@@ -93,6 +93,7 @@ function submitGuess(e) {
         }
         inputElement.value = "";  // Remove all user input in text box
         inputElement.focus();
+        autocomplete(document.getElementById("guess"), arrClassic)
     }
 }
 

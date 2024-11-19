@@ -317,5 +317,27 @@
         "affiliation": "Wanmin Restaurant",
         "release": "2020",
         "id": "xiangling"
+    },
+    {
+        "name": "Wriothesley",
+        "title": "Emissary of Solitary Iniquity",
+        "vision": "Cryo",
+        "weapon": "Catalyst",
+        "gender": "Male",
+        "nation": "Fontaine",
+        "affiliation": "Fortress of Meropide",
+        "release": "2023",
+        "id": "wriothesley"
+    },
+    {
+        "name": "Mualani",
+        "title": "Splish-Splash Wavechaser",
+        "vision": "Hydro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Natlan",
+        "affiliation": "Meztli",
+        "release": "2024",
+        "id": "mualani"
     }
 ]

@@ -1,11 +1,11 @@
 {
-    "name": "Xiangling",
-    "title": "Exquisite Delicacy",
-    "vision": "Pyro",
-    "weapon": "Polearm",
+    "name": "Mualani",
+    "title": "Splish-Splash Wavechaser",
+    "vision": "Hydro",
+    "weapon": "Catalyst",
     "gender": "Female",
-    "nation": "Liyue",
-    "affiliation": "Wanmin Restaurant",
-    "release": "2020",
-    "id": "xiangling"
+    "nation": "Natlan",
+    "affiliation": "Meztli",
+    "release": "2024",
+    "id": "mualani"
 }

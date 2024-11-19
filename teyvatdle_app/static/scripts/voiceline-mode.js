@@ -95,6 +95,7 @@ function submitGuess(e) {
         let index = arrVoiceline.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
         arrVoiceline.splice(index, 1)[0];
         localStorage.setItem("voicelineTries", tries);
+        console.log(arrVoiceline)
         localStorage.setItem("arrVoiceline", JSON.stringify(arrVoiceline));
 
         if (gameOver) {
@@ -104,7 +105,7 @@ function submitGuess(e) {
             localStorage.setItem("voicelineGameOver", "true");
         }
 
-
+        autocomplete(document.getElementById("guess"), arrVoiceline);
         inputElement.value = "";
         inputElement.focus();
         if (tries < 5) {

@@ -172,5 +172,17 @@
         "id": "aloy",
         "type": "skill",
         "abilityName": "Frozen Wilds"
+    },
+    {
+        "name": "Kuki Shinobu",
+        "id": "kuki-shinobu",
+        "type": "skill",
+        "abilityName": "Sanctifying Ring"
+    },
+    {
+        "name": "Dori",
+        "id": "dori",
+        "type": "skill",
+        "abilityName": "Spirit-Warding Lamp: Troubleshooter Cannon"
     }
 ]

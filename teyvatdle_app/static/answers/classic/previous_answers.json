@@ -317,5 +317,27 @@
         "affiliation": "Independent Design Studio",
         "release": "2023",
         "id": "kaveh"
+    },
+    {
+        "name": "Nilou",
+        "title": "Dance of Lotuslight",
+        "vision": "Hydro",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Sumeru",
+        "affiliation": "Zubayr Theater",
+        "release": "2022",
+        "id": "nilou"
+    },
+    {
+        "name": "Sethos",
+        "title": "Wisdom's Measure",
+        "vision": "Electro",
+        "weapon": "Bow",
+        "gender": "Male",
+        "nation": "Sumeru",
+        "affiliation": "Temple of Silence",
+        "release": "2024",
+        "id": "sethos"
     }
 ]

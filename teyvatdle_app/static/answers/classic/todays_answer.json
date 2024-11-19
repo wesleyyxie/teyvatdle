@@ -1,11 +1,11 @@
 {
-    "name": "Kaveh",
-    "title": "Empyrean Reflection",
-    "vision": "Dendro",
-    "weapon": "Claymore",
+    "name": "Sethos",
+    "title": "Wisdom's Measure",
+    "vision": "Electro",
+    "weapon": "Bow",
     "gender": "Male",
     "nation": "Sumeru",
-    "affiliation": "Independent Design Studio",
-    "release": "2023",
-    "id": "kaveh"
+    "affiliation": "Temple of Silence",
+    "release": "2024",
+    "id": "sethos"
 }
