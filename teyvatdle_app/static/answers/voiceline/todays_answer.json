@@ -1,7 +1,14 @@
 {
+<<<<<<< HEAD
     "name": "Kirara",
     "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/VO_Kirara_Chat_-_Work.ogg/revision/latest?cb=20230526230949",
     "quote": "Whoa, the scenery here is wonderful. Hehe, I've landed the perfect job.",
     "id": "kirara",
+=======
+    "name": "Xingqiu",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/VO_Xingqiu_Chat_-_Literature.ogg/revision/latest?cb=20210111085106",
+    "quote": "I never embark on a journey without a good book to accompany me.",
+    "id": "xingqiu",
+>>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
     "voiceline_id": 1
 }

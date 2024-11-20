@@ -1,12 +1,13 @@
 [
     {
-        "name": "Noelle",
-        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/VO_Noelle_Elemental_Skill_1_02.ogg/revision/latest?cb=20221112210559",
-        "quote": "I must leave no stone unturned.",
-        "id": 2,
-        "character_id": "noelle"
+        "name": "Aloy",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/VO_Aloy_Elemental_Skill_1_03.ogg/revision/latest?cb=20221112193254",
+        "quote": "Ever seen one of these?",
+        "id": "aloy",
+        "voiceline_id": 2
     },
     {
+<<<<<<< HEAD
         "name": "Venti",
         "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/VO_Venti_Chat_-_Playing_the_Lyre.ogg/revision/latest?cb=20210113121113",
         "quote": "Sure, I'll play you another tune, but it'll cost you an apple.",
@@ -259,11 +260,49 @@
         "voiceline_id": 2
     },
     {
+=======
+        "name": "Keqing",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/bf/VO_Keqing_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112204714",
+        "quote": "Not bad, as far as treasure is concerned...",
+        "id": "keqing",
+        "voiceline_id": 2
+    },
+    {
+        "name": "Xiangling",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/17/VO_Xiangling_Chat_-_Snacks.ogg/revision/latest?cb=20210113123312",
+        "quote": "Is there time for a quick snack? I'll whip one up in no time!",
+        "id": "xiangling",
+        "voiceline_id": 0
+    },
+    {
+        "name": "Lyney",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d8/VO_Lyney_Elemental_Burst_02.ogg/revision/latest?cb=20230816023540",
+        "quote": "Let's get this show on the road!",
+        "id": "Lyney",
+        "voiceline_id": 2
+    },
+    {
+        "name": "Chiori",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/2/22/VO_Chiori_Elemental_Burst_01.ogg/revision/latest?cb=20240317055216",
+        "quote": "I am the cutting edge of fashion.",
+        "id": "chiori",
+        "voiceline_id": 2
+    },
+    {
+        "name": "Keqing",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/d/d2/VO_Keqing_Chat_-_Relax.ogg/revision/latest?cb=20210111202855",
+        "quote": "I'm all for work-life balance, but I think this is pushing it.",
+        "id": "keqing",
+        "voiceline_id": 1
+    },
+    {
+>>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
         "name": "Xingqiu",
         "audio": "https://static.wikia.nocookie.net/gensin-impact/images/5/53/VO_Xingqiu_Chat_-_Literature.ogg/revision/latest?cb=20210111085106",
         "quote": "I never embark on a journey without a good book to accompany me.",
         "id": "xingqiu",
         "voiceline_id": 1
+<<<<<<< HEAD
     },
     {
         "name": "Yanfei",
@@ -376,5 +415,7 @@
         "quote": "Whoa, the scenery here is wonderful. Hehe, I've landed the perfect job.",
         "id": "kirara",
         "voiceline_id": 1
+=======
+>>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
     }
 ]

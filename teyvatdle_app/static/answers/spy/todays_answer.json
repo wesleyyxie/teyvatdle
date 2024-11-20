@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "Ganyu",
     "title": "Plenilune Gaze",
     "vision": "Cryo",
@@ -8,4 +9,15 @@
     "affiliation": "Yuehai Pavilion",
     "release": "2021",
     "id": "ganyu"
+=======
+    "name": "Mualani",
+    "title": "Splish-Splash Wavechaser",
+    "vision": "Hydro",
+    "weapon": "Catalyst",
+    "gender": "Female",
+    "nation": "Natlan",
+    "affiliation": "Meztli",
+    "release": "2024",
+    "id": "mualani"
+>>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
 }

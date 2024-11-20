@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
     "name": "Amber",
     "id": "amber",
     "type": "skill",
     "abilityName": "Explosive Puppet"
+=======
+    "name": "Dori",
+    "id": "dori",
+    "type": "skill",
+    "abilityName": "Spirit-Warding Lamp: Troubleshooter Cannon"
+>>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
 }
