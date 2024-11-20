@@ -107,6 +107,7 @@ function submitGuess(e) {
 
         inputElement.value = "";
         inputElement.focus();
+        autocomplete(document.getElementById("guess"), arrAbility);
         if (tries < 5) {
             clueCountdown.innerText = `Clues in ${5 - tries} tries`
         }

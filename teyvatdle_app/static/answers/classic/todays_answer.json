@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "Albedo",
     "title": "Kreideprinz",
     "vision": "Geo",
@@ -8,4 +9,15 @@
     "affiliation": "Knights of Favonius",
     "release": "2020",
     "id": "albedo"
+=======
+    "name": "Sethos",
+    "title": "Wisdom's Measure",
+    "vision": "Electro",
+    "weapon": "Bow",
+    "gender": "Male",
+    "nation": "Sumeru",
+    "affiliation": "Temple of Silence",
+    "release": "2024",
+    "id": "sethos"
+>>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
 }
