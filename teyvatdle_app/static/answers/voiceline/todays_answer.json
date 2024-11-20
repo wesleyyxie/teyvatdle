@@ -1,7 +1,7 @@
 {
-    "name": "Venti",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/7/73/VO_Venti_Chat_-_Playing_the_Lyre.ogg/revision/latest?cb=20210113121113",
-    "quote": "Sure, I'll play you another tune, but it'll cost you an apple.",
-    "id": 0,
-    "character_id": "venti"
+    "name": "Kirara",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/4/4a/VO_Kirara_Chat_-_Work.ogg/revision/latest?cb=20230526230949",
+    "quote": "Whoa, the scenery here is wonderful. Hehe, I've landed the perfect job.",
+    "id": "kirara",
+    "voiceline_id": 1
 }

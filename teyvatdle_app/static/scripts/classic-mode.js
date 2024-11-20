@@ -89,7 +89,7 @@ function submitGuess(e) {
             inputElement.disabled = true;
 
             // Save the game state to localStorage
-            localStorage.setItem("gameOver", "true");
+            localStorage.setItem("gameOverClassic", "true");
         }
         inputElement.value = "";  // Remove all user input in text box
         inputElement.focus();
@@ -101,7 +101,7 @@ function displayCongratulatoryMessage(tries) {
     const triesTextElement = document.getElementById('tried-text')
     triesTextElement.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
     // Check if game state is loaded from storage
-    const isLoadedFromStorage = localStorage.getItem("gameOver") === "true";
+    const isLoadedFromStorage = localStorage.getItem("gameOverClassic") === "true";
 
     // Use a shorter delay if loaded from storage, otherwise use the original delay
     const delay = isLoadedFromStorage ? 500 : 2200;
@@ -119,6 +119,19 @@ function checkSubmit(e) {
     }
 }
 
+function resetGame(){
+    const savedAnswer = localStorage.getItem("currentAnswerClassic");
+    if (savedAnswer !== answerData.name) {
+        // Clear saved data if the answer has changed
+        localStorage.removeItem("previousGuessesClassic");
+        localStorage.removeItem("gameOverClassic");
+        localStorage.removeItem("classicTries");
+        tries = 0;
+        localStorage.setItem("currentAnswerClassic", answerData.name); // Update to the new answer
+        localStorage.setItem('arrClassic', JSON.stringify(charactersInfoData))
+    }
+}
+
 window.addEventListener('load', async function() {
     const answerRes = await fetch("/static/answers/classic/todays_answer.json");
     answerData = await answerRes.json();
@@ -128,14 +141,7 @@ window.addEventListener('load', async function() {
 
 
     // Check if the current answer is different from the saved one
-    const savedAnswer = localStorage.getItem("currentAnswer");
-    if (savedAnswer !== answerData.name) {
-        // Clear saved data if the answer has changed
-        localStorage.removeItem("previousGuessesClassic");
-        localStorage.removeItem("gameOver");
-        localStorage.removeItem("classicTries");
-        localStorage.setItem("currentAnswer", answerData.name); // Update to the new answer
-    }
+    resetGame()
     
     document.getElementById('guess').focus();
     document.addEventListener("keyup", checkSubmit);
@@ -161,7 +167,7 @@ window.addEventListener('load', async function() {
     });
 
     // Check for saved game state
-    if (localStorage.getItem("gameOver") === "true") {
+    if (localStorage.getItem("gameOverClassic") === "true") {
         displayCongratulatoryMessage(tries); 
         document.getElementById("submit").disabled = true;
         document.getElementById("guess").disabled = true;

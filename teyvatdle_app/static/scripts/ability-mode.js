@@ -139,6 +139,19 @@ function checkSubmit(e) {
     }
 }
 
+function resetGame(){
+    const savedAnswer = localStorage.getItem("abilityCurrentAnswer");
+    if (savedAnswer !== answerData.name) {
+        // Clear saved data if the answer has changed
+        localStorage.removeItem("abilityPreviousGuesses");
+        localStorage.removeItem("abilityGameOver");
+        localStorage.removeItem("abilityTries");
+        tries = 0
+        localStorage.setItem("abilityCurrentAnswer", answerData.name); // Update to the new answer
+        localStorage.setItem("arrAbility", JSON.stringify(charactersInfoData))
+    }
+}
+
 window.addEventListener('load', async function() {
     const answerRes = await fetch("/static/answers/ability/todays_answer.json");
     answerData = await answerRes.json();  // Load today's answer
@@ -153,14 +166,7 @@ window.addEventListener('load', async function() {
     randomAbilityElement.style.backgroundSize = "90px 90px"
 
     // Check if the current answer is different from the saved one
-    const savedAnswer = localStorage.getItem("abilityCurrentAnswer");
-    if (savedAnswer !== answerData.name) {
-        // Clear saved data if the answer has changed
-        localStorage.removeItem("abilityPreviousGuesses");
-        localStorage.removeItem("abilityGameOver");
-        localStorage.removeItem("abilityTries");
-        localStorage.setItem("abilityCurrentAnswer", answerData.name); // Update to the new answer
-    }
+    resetGame()
 
     // Load previous guesses from localStorage
     const previousGuesses = JSON.parse(localStorage.getItem("abilityPreviousGuesses")) || [];
@@ -190,7 +196,7 @@ window.addEventListener('load', async function() {
     let cluesCountdownElement = document.getElementById("clue_countdown")
     let nameClue = document.getElementById('name_clue')
     if (tries < 5) {
-        cluesCountdownElement.innerText = `Audio clue in ${5 - tries} tries`
+        cluesCountdownElement.innerText = `Clues in ${5 - tries} tries`
     }
     else {
         cluesCountdownElement.classList.add("hidden")

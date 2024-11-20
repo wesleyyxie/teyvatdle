@@ -10,5 +10,317 @@
         "id": "tartaglia",
         "type": "burst",
         "abilityName": "Havor: Obliteration"
+    },
+    {
+        "name": "Hu Tao",
+        "id": "hu-tao",
+        "type": "skill",
+        "abilityName": "Guide to Afterlife"
+    },
+    {
+        "name": "Zhongli",
+        "id": "zhongli",
+        "type": "burst",
+        "abilityName": "Planet Befall"
+    },
+    {
+        "name": "Xingqiu",
+        "id": "xingqiu",
+        "type": "skill",
+        "abilityName": "Guhua Sword - Fatal Rainscreen"
+    },
+    {
+        "name": "Klee",
+        "id": "klee",
+        "type": "skill",
+        "abilityName": "Jumpy Dumpty"
+    },
+    {
+        "name": "Gorou",
+        "id": "gorou",
+        "type": "skill",
+        "abilityName": "Inuzaka All-Round Defense"
+    },
+    {
+        "name": "Kaveh",
+        "id": "kaveh",
+        "type": "burst",
+        "abilityName": "Painted Dome"
+    },
+    {
+        "name": "Chongyun",
+        "id": "chongyun",
+        "type": "burst",
+        "abilityName": "Spirit Blade - Cloud-parting Star"
+    },
+    {
+        "name": "Albedo",
+        "id": "albedo",
+        "type": "burst",
+        "abilityName": "Rite of Progeniture: Tectonic Tide"
+    },
+    {
+        "name": "Eula",
+        "id": "eula",
+        "type": "burst",
+        "abilityName": "Glacial Illumination"
+    },
+    {
+        "name": "Emilie",
+        "id": "emilie",
+        "type": "skill",
+        "abilityName": "Fragrance Extraction"
+    },
+    {
+        "name": "Xiangling",
+        "id": "xiangling",
+        "type": "burst",
+        "abilityName": "Pyronado"
+    },
+    {
+        "name": "Qiqi",
+        "id": "qiqi",
+        "type": "skill",
+        "abilityName": "Adeptus Art: Herald of Frost"
+    },
+    {
+        "name": "Kachina",
+        "id": "Kachina",
+        "type": "skill",
+        "abilityName": "Go, Go Turbo Twirly!"
+    },
+    {
+        "name": "Nahida",
+        "id": "nahida",
+        "type": "skill",
+        "abilityName": "All Schemes to Know"
+    },
+    {
+        "name": "Thoma",
+        "id": "thoma",
+        "type": "burst",
+        "abilityName": "Crimson Ooyoroi"
+    },
+    {
+        "name": "Beidou",
+        "id": "beidou",
+        "type": "burst",
+        "abilityName": "Stormbreaker"
+    },
+    {
+        "name": "Fischl",
+        "id": "fischl",
+        "type": "skill",
+        "abilityName": "Nightrider"
+    },
+    {
+        "name": "Yanfei",
+        "id": "yanfei",
+        "type": "burst",
+        "abilityName": "Done Deal"
+    },
+    {
+        "name": "Cyno",
+        "id": "cyno",
+        "type": "burst",
+        "abilityName": "Sacred Rite: Wolf's Swiftness"
+    },
+    {
+        "name": "Xiao",
+        "id": "xiao",
+        "type": "burst",
+        "abilityName": "Bane of All Evil"
+    },
+    {
+        "name": "Freminet",
+        "id": "freminet",
+        "type": "skill",
+        "abilityName": "Pressurized Floe"
+    },
+    {
+        "name": "Nilou",
+        "id": "nilou",
+        "type": "skill",
+        "abilityName": "Dance of Haftkarsvar"
+    },
+    {
+        "name": "Gorou",
+        "id": "gorou",
+        "type": "burst",
+        "abilityName": "Juuga: Forward Unto Victory"
+    },
+    {
+        "name": "Yaoyao",
+        "id": "yaoyao",
+        "type": "burst",
+        "abilityName": "Moonjade Descent"
+    },
+    {
+        "name": "Charlotte",
+        "id": "charlotte",
+        "type": "skill",
+        "abilityName": "Framing: Freezing Point Composition"
+    },
+    {
+        "name": "Xingqiu",
+        "id": "xingqiu",
+        "type": "burst",
+        "abilityName": "Guhua Sword - Raincutter"
+    },
+    {
+        "name": "Wanderer",
+        "id": "wanderer",
+        "type": "skill",
+        "abilityName": "Hanega: Song of the Wind"
+    },
+    {
+        "name": "Yun Jin",
+        "id": "yun-jin",
+        "type": "burst",
+        "abilityName": "Cliffbreaker's Banner'"
+    },
+    {
+        "name": "Faruzan",
+        "id": "faruzan",
+        "type": "skill",
+        "abilityName": "Wind Realm of Nasamjnin"
+    },
+    {
+        "name": "Jean",
+        "id": "jean",
+        "type": "skill",
+        "abilityName": "Gale Blade"
+    },
+    {
+        "name": "Arataki Itto",
+        "id": "arataki-itto",
+        "type": "skill",
+        "abilityName": "Masatsu Zetsugi: Akaushi Burst!"
+    },
+    {
+        "name": "Collei",
+        "id": "collei",
+        "type": "skill",
+        "abilityName": "Floral Brush"
+    },
+    {
+        "name": "Chongyun",
+        "id": "chongyun",
+        "type": "skill",
+        "abilityName": "Spirit Blade - Chonghua's Layered Frost"
+    },
+    {
+        "name": "Kaeya",
+        "id": "kaeya",
+        "type": "burst",
+        "abilityName": "Glacial Waltz"
+    },
+    {
+        "name": "Yanfei",
+        "id": "yanfei",
+        "type": "skill",
+        "abilityName": "Signed Edict"
+    },
+    {
+        "name": "Navia",
+        "id": "navia",
+        "type": "burst",
+        "abilityName": "As the Sunlit Sky's Singing Salute"
+    },
+    {
+        "name": "Yun Jin",
+        "id": "yun-jin",
+        "type": "skill",
+        "abilityName": "Opening Flourish"
+    },
+    {
+        "name": "Barbara",
+        "id": "barbara",
+        "type": "skill",
+        "abilityName": "Let the Show Begin"
+    },
+    {
+        "name": "Venti",
+        "id": "venti",
+        "type": "skill",
+        "abilityName": "Skyward Sonnet"
+    },
+    {
+        "name": "Lynette",
+        "id": "Lynette",
+        "type": "burst",
+        "abilityName": "Magic Trick: Astonishing Shift"
+    },
+    {
+        "name": "Dori",
+        "id": "dori",
+        "type": "burst",
+        "abilityName": "Alcazarzaray's Exactitude"
+    },
+    {
+        "name": "Yaoyao",
+        "id": "yaoyao",
+        "type": "skill",
+        "abilityName": "Raphanus Sky Cluster"
+    },
+    {
+        "name": "Mualani",
+        "id": "mualani",
+        "type": "skill",
+        "abilityName": "Surfshark Wavebreaker"
+    },
+    {
+        "name": "Diluc",
+        "id": "diluc",
+        "type": "burst",
+        "abilityName": "Dawn"
+    },
+    {
+        "name": "Albedo",
+        "id": "albedo",
+        "type": "skill",
+        "abilityName": "Abiogenesis: Solar Isotoma"
+    },
+    {
+        "name": "Wriothesley",
+        "id": "wriothesley",
+        "type": "skill",
+        "abilityName": "Icefang Rush"
+    },
+    {
+        "name": "Tighnari",
+        "id": "tighnari",
+        "type": "burst",
+        "abilityName": "Fashioner's Tanglevine Shaft"
+    },
+    {
+        "name": "Rosaria",
+        "id": "rosaria",
+        "type": "skill",
+        "abilityName": "Ravaging Confession"
+    },
+    {
+        "name": "Diluc",
+        "id": "diluc",
+        "type": "skill",
+        "abilityName": "Searing Onslaught"
+    },
+    {
+        "name": "Layla",
+        "id": "Layla",
+        "type": "skill",
+        "abilityName": "Nights of Formal Focus"
+    },
+    {
+        "name": "Kinich",
+        "id": "kinich",
+        "type": "burst",
+        "abilityName": "Hail to the Almighty Dragonlord"
+    },
+    {
+        "name": "Amber",
+        "id": "amber",
+        "type": "skill",
+        "abilityName": "Explosive Puppet"
     }
 ]

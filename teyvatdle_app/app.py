@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify
 from apscheduler.schedulers.background import BackgroundScheduler
+from apscheduler.triggers.cron import CronTrigger
 
 from get_answers.update_classic_answer import update_classic_answer
 from get_answers.update_voiceline_answer import update_voiceline_answer
@@ -8,15 +9,25 @@ from get_answers.update_spy_answer import update_spy_answer
 
 app = Flask(__name__)
 # IF DEBUG MODE IS ON, IT WILL TRIGGER THE SCHEDULER AGAIN
-# scheduler = BackgroundScheduler()
-# scheduler.add_job(func=update_classic_answer, trigger=”cron”, hour = 0, minute = 0)
-# scheduler.start()
 
-update_classic_answer()
-update_voiceline_answer()
-update_ability_answer()
-update_spy_answer()
+def update_answers():
+    print("Updating answers...")
+    update_classic_answer()
+    update_voiceline_answer()
+    update_ability_answer()
+    update_spy_answer()
 
+def scheduler():
+    print("running scheduler")
+    scheduler = BackgroundScheduler()
+    trigger = CronTrigger(
+        year="*", month="*", day="*", hour="*", minute="*", second="24"
+    )
+    scheduler.add_job(func=update_answers, trigger=trigger)
+    scheduler.start()
+
+#scheduler()
+update_answers()
 
 @app.route("/spy")
 def spy():
