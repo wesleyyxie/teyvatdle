@@ -1,6 +1,6 @@
 {
-    "name": "Tartaglia",
-    "id": "tartaglia",
-    "type": "burst",
-    "abilityName": "Havor: Obliteration"
+    "name": "Amber",
+    "id": "amber",
+    "type": "skill",
+    "abilityName": "Explosive Puppet"
 }

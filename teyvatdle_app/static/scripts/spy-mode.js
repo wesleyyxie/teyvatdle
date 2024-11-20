@@ -141,6 +141,19 @@ function checkSubmit(e) {
     }
 }
 
+function resetGame(){
+    const savedAnswer = localStorage.getItem("spyCurrentAnswer");
+    if (savedAnswer !== answerData.name) {
+        // Clear saved data if the answer has changed
+        localStorage.removeItem("spyPreviousGuesses");
+        localStorage.removeItem("spyGameOver");
+        localStorage.removeItem("spyTries");
+        tries = 0
+        localStorage.setItem("spyCurrentAnswer", answerData.name); // Update to the new answer
+        localStorage.setItem("arrSpy", JSON.stringify(charactersInfoData))
+    }
+}
+
 window.addEventListener('load', async function() {
     // Fetch today's answer
     const answerRes = await fetch("/static/answers/spy/todays_answer.json");
@@ -157,15 +170,7 @@ window.addEventListener('load', async function() {
     splashImageName = answerData["id"].toLowerCase().replace(/\s+/g, '-');
     
     // Check if the current answer is different from the saved one
-    const savedAnswer = localStorage.getItem("spyCurrentAnswer");
-    if (savedAnswer !== answerData.name) {
-        // Clear saved data if the answer has changed
-        localStorage.removeItem("spyPreviousGuesses");
-        localStorage.removeItem("spyGameOver");
-        localStorage.removeItem("spyTries");
-        localStorage.setItem("spyCurrentAnswer", answerData.name); // Update to the new answer
-    }
-
+    resetGame()
 
     let clueCountdown = document.getElementById('clue_countdown');
 

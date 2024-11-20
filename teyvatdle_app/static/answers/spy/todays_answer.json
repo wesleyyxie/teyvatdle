@@ -1,11 +1,11 @@
 {
-    "name": "Noelle",
-    "title": "Chivalric Blossom",
-    "vision": "Geo",
-    "weapon": "Claymore",
+    "name": "Ganyu",
+    "title": "Plenilune Gaze",
+    "vision": "Cryo",
+    "weapon": "Bow",
     "gender": "Female",
-    "nation": "Mondstadt",
-    "affiliation": "Knights of Favonius",
-    "release": "2020",
-    "id": "noelle"
+    "nation": "Liyue",
+    "affiliation": "Yuehai Pavilion",
+    "release": "2021",
+    "id": "ganyu"
 }
