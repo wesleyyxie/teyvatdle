@@ -1,7 +1,7 @@
 {
-    "name": "Yaoyao",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/bc/VO_Yaoyao_Chat_-_Join_In_the_Fun.ogg/revision/latest?cb=20230119182022",
-    "quote": "Ooh, what's happening over there? Can we take a sneaky peek, huh? Can we?",
-    "id": "yaoyao",
+    "name": "Yoimiya",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/VO_Yoimiya_Chat_-_Fireworks.ogg/revision/latest?cb=20210810130543",
+    "quote": "Fireworks are for now, but friends are forever.",
+    "id": "yoimiya",
     "voiceline_id": 0
 }

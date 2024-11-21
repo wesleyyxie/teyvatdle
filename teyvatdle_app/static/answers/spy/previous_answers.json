@@ -152,5 +152,27 @@
         "affiliation": "Fortress of Meropide",
         "release": "2023",
         "id": "wriothesley"
+    },
+    {
+        "name": "Alhaitham",
+        "title": "Admonishing Instruction",
+        "vision": "Dendro",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Sumeru",
+        "affiliation": "Sumeru Akademiya",
+        "release": "2023",
+        "id": "alhaitham"
+    },
+    {
+        "name": "Gaming",
+        "title": "Leonine Vanguard",
+        "vision": "Pyro",
+        "weapon": "Claymore",
+        "gender": "Male",
+        "nation": "Liyue",
+        "affiliation": "Sword and Strongbox Secure Transport Agency",
+        "release": "2024",
+        "id": "gaming"
     }
 ]

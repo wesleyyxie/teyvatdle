@@ -82,5 +82,19 @@
         "quote": "Ooh, what's happening over there? Can we take a sneaky peek, huh? Can we?",
         "id": "yaoyao",
         "voiceline_id": 0
+    },
+    {
+        "name": "Kaedehara Kazuha",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b6/VO_Kaedehara_Kazuha_Elemental_Burst_02.ogg/revision/latest?cb=20221112203543",
+        "quote": "As one with wind and cloud.",
+        "id": "kazuha",
+        "voiceline_id": 3
+    },
+    {
+        "name": "Yoimiya",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/9/97/VO_Yoimiya_Chat_-_Fireworks.ogg/revision/latest?cb=20210810130543",
+        "quote": "Fireworks are for now, but friends are forever.",
+        "id": "yoimiya",
+        "voiceline_id": 0
     }
 ]
