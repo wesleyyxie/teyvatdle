@@ -1,23 +1,11 @@
 {
-<<<<<<< HEAD
-    "name": "Ganyu",
-    "title": "Plenilune Gaze",
+    "name": "Wriothesley",
+    "title": "Emissary of Solitary Iniquity",
     "vision": "Cryo",
-    "weapon": "Bow",
-    "gender": "Female",
-    "nation": "Liyue",
-    "affiliation": "Yuehai Pavilion",
-    "release": "2021",
-    "id": "ganyu"
-=======
-    "name": "Mualani",
-    "title": "Splish-Splash Wavechaser",
-    "vision": "Hydro",
     "weapon": "Catalyst",
-    "gender": "Female",
-    "nation": "Natlan",
-    "affiliation": "Meztli",
-    "release": "2024",
-    "id": "mualani"
->>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
+    "gender": "Male",
+    "nation": "Fontaine",
+    "affiliation": "Fortress of Meropide",
+    "release": "2023",
+    "id": "wriothesley"
 }

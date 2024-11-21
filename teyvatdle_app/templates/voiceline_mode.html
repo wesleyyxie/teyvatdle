@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 {% block gamemode %}
 <script type="module" src="{{ url_for('static', filename='scripts/voiceline-mode.js') }}"></script>
+<script type="module" src="{{ url_for('static',filename='/scripts/timer.js') }}"></script>
 <div class="flex flex-col justify-center items-center gap-y-[10px]">
     <div class="flex flex-col items-center mt-[20px] h-auto w-[300px] rounded-lg" style="background-color: rgba(39, 52, 63, 0.8); border: 3px solid rgb(120, 120, 120); box-sizing: border-box;">
     <div class="text-white p-[15px] text-center font-bold mt-[15px]">
@@ -29,6 +30,8 @@
     <div id="congrats_message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 rounded-lg">
         <div class="font-bold text-3xl text-center">Congrats!</div>
         <div id="tried-text" class="text-lg text-center">"You guessed it in 1 try!"</div>
+        <span class="pt-[10px]">Next character in:</span>
+        <div class="font-bold text-3xl" id="timer"></div>
         <div class="font-bold text-xl text-center mt-4">Next Mode</div>
         <div class="bg-no-repeat hover:scale-button cursor-pointer bg-center aspect-[173/50] w-[173px]" onclick="location.href='/ability'" style="background-image: url(&quot;/static/images/buttons/ability_button_short.png&quot;); background-size: 173px 50px;"></div>
         <div class="font-bold text-xl text-center mt-4">Other Modes</div>

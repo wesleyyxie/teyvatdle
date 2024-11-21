@@ -1,23 +1,11 @@
 {
-<<<<<<< HEAD
-    "name": "Albedo",
-    "title": "Kreideprinz",
-    "vision": "Geo",
-    "weapon": "Sword",
-    "gender": "Male",
-    "nation": "Mondstadt",
-    "affiliation": "Knights of Favonius",
-    "release": "2020",
-    "id": "albedo"
-=======
-    "name": "Sethos",
-    "title": "Wisdom's Measure",
-    "vision": "Electro",
-    "weapon": "Bow",
-    "gender": "Male",
-    "nation": "Sumeru",
-    "affiliation": "Temple of Silence",
-    "release": "2024",
-    "id": "sethos"
->>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
+    "name": "Yanfei",
+    "title": "Wise Innocence",
+    "vision": "Pyro",
+    "weapon": "Catalyst",
+    "gender": "Female",
+    "nation": "Liyue",
+    "affiliation": "Liyue Harbor Adepti",
+    "release": "2021",
+    "id": "yanfei"
 }
