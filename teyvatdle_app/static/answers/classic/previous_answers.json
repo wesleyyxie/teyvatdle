@@ -1,530 +1,5 @@
 [
     {
-        "name": "Yae Miko",
-        "title": "Astute Amusement",
-        "vision": "Electro",
-        "weapon": "Catalyst",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Grand Narukami Shrine",
-        "release": "2022",
-        "id": "yae-miko"
-    },
-    {
-        "name": "Mona",
-        "title": "Astral Reflection",
-        "vision": "Hydro",
-        "weapon": "Catalyst",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Mondstadt",
-        "release": "2020",
-        "id": "Mona"
-    },
-    {
-<<<<<<< HEAD
-        "name": "Baizhu",
-        "title": "Beyond Mortality",
-        "vision": "Dendro",
-        "weapon": "Catalyst",
-        "gender": "Male",
-        "nation": "Liyue",
-        "affiliation": "Bubu Pharmacy",
-        "release": "2023",
-        "id": "baizhu"
-    },
-    {
-        "name": "Xianyun",
-        "title": "Passerine Herald",
-        "vision": "Anemo",
-        "weapon": "Catalyst",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Mt. Aocang",
-        "release": "2024",
-        "id": "xianyun"
-    },
-    {
-        "name": "Amber",
-        "title": "Gliding Champion",
-        "vision": "Pyro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Knights of Favonius",
-        "release": "2020",
-        "id": "amber"
-    },
-    {
-        "name": "Faruzan",
-        "title": "Enigmatic Machinist",
-        "vision": "Anemo",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Sumeru",
-        "affiliation": "Haravatat",
-        "release": "2022",
-        "id": "faruzan"
-    },
-    {
-        "name": "Dori",
-        "title": "Treasure of Dream Garden",
-        "vision": "Electro",
-        "weapon": "Claymore",
-        "gender": "Female",
-        "nation": "Sumeru",
-        "affiliation": "Sumeru Merchant",
-        "release": "2022",
-        "id": "dori"
-    },
-    {
-        "name": "Raiden Shogun",
-        "title": "Plane of Euthymia",
-        "vision": "Electro",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Inazuma City",
-        "release": "2021",
-        "id": "raiden"
-    },
-    {
-        "name": "Xiangling",
-        "title": "Exquisite Delicacy",
-        "vision": "Pyro",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Wanmin Restaurant",
-        "release": "2020",
-        "id": "xiangling"
-    },
-    {
-        "name": "Kamisato Ayaka",
-        "title": "Frostflake Heron",
-        "vision": "Cryo",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Yashiro Commission",
-        "release": "2021",
-        "id": "ayaka"
-    },
-    {
-        "name": "Mika",
-        "title": "Coordinates of Clear Frost",
-        "vision": "Cryo",
-        "weapon": "Polearm",
-        "gender": "Male",
-        "nation": "Mondstadt",
-        "affiliation": "Knights of Favonius",
-        "release": "2023",
-        "id": "mika"
-    },
-    {
-        "name": "Collei",
-        "title": "Sprout of Rebirth",
-        "vision": "Dendro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Sumeru",
-        "affiliation": "Avidya Forest Ranger Trainee",
-        "release": "2022",
-        "id": "collei"
-=======
-        "name": "Gorou",
-        "title": "Canine Warrior",
-        "vision": "Geo",
-        "weapon": "Bow",
-        "gender": "Male",
-        "nation": "Inazuma",
-        "affiliation": "Watatsumi Island",
-        "release": "2021",
-        "id": "gorou"
->>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
-    },
-    {
-        "name": "Chevreuse",
-        "title": "Executor of Justice",
-        "vision": "Pyro",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Fontaine",
-        "affiliation": "Special Security and Surveillance Patrol",
-        "release": "2024",
-        "id": "chevreuse"
-    },
-    {
-<<<<<<< HEAD
-        "name": "Venti",
-        "title": "Windborne Bard",
-        "vision": "Anemo",
-        "weapon": "Bow",
-        "gender": "Male",
-        "nation": "Mondstadt",
-        "affiliation": "Mondstadt",
-        "release": "2020",
-        "id": "venti"
-    },
-    {
-        "name": "Candace",
-        "title": "Golden Vow",
-        "vision": "Hydro",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Sumeru",
-        "affiliation": "Aaru Village",
-        "release": "2022",
-        "id": "Candace"
-    },
-    {
-        "name": "Gaming",
-        "title": "Leonine Vanguard",
-        "vision": "Pyro",
-        "weapon": "Claymore",
-        "gender": "Male",
-        "nation": "Liyue",
-        "affiliation": "Sword and Strongbox Secure Transport Agency",
-        "release": "2024",
-        "id": "gaming"
-    },
-    {
-        "name": "Lynette",
-        "title": "Elegance in the Shadows",
-        "vision": "Anemo",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Fontaine",
-        "affiliation": "Hotel Bouffes d'ete",
-        "release": "2023",
-        "id": "Lynette"
-    },
-    {
-        "name": "Kuki Shinobu",
-        "title": "Mender of Tribulations",
-        "vision": "Electro",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Arataki Gang",
-        "release": "2022",
-        "id": "kuki-shinobu"
-    },
-    {
-        "name": "Kaveh",
-        "title": "Empyrean Reflection",
-        "vision": "Dendro",
-        "weapon": "Claymore",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Independent Design Studio",
-        "release": "2023",
-        "id": "kaveh"
-    },
-    {
-        "name": "Sigewinne",
-        "title": "Wondrous Dragonheir",
-        "vision": "Hydro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Fontaine",
-        "affiliation": "Fortress of Meropide",
-        "release": "2024",
-        "id": "Sigewinne"
-    },
-    {
-        "name": "Chiori",
-        "title": "The Thundering Seamstress",
-        "vision": "Geo",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Chioriya Boutique",
-        "release": "2024",
-        "id": "chiori"
-    },
-    {
-        "name": "Wanderer",
-        "title": "Eons Adrift",
-        "vision": "Anemo",
-        "weapon": "Catalyst",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "None",
-        "release": "2022",
-        "id": "wanderer"
-    },
-    {
-        "name": "Yelan",
-        "title": "Valley Orchid",
-        "vision": "Hydro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Yanshang Teahouse",
-        "release": "2022",
-        "id": "yelan"
-    },
-    {
-        "name": "Fischl",
-        "title": "Prinzessin der Verurteilung!",
-        "vision": "Electro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Adventurers' Guild",
-        "release": "2020",
-        "id": "fischl"
-    },
-    {
-        "name": "Hu Tao",
-        "title": "Fragrance in Thaw",
-        "vision": "Pyro",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Wangsheng Funeral Parlor",
-        "release": "2021",
-        "id": "hu-tao"
-    },
-    {
-        "name": "Tartaglia",
-        "title": "Childe",
-        "vision": "Hydro",
-        "weapon": "Bow",
-        "gender": "Male",
-        "nation": "Snezhnaya",
-        "affiliation": "Fatui",
-        "release": "2020",
-        "id": "tartaglia"
-    },
-    {
-        "name": "Mualani",
-        "title": "Splish-Splash Wavechaser",
-        "vision": "Hydro",
-        "weapon": "Catalyst",
-        "gender": "Female",
-        "nation": "Natlan",
-        "affiliation": "Meztli",
-        "release": "2024",
-        "id": "mualani"
-    },
-    {
-        "name": "Eula",
-        "title": "Dance of the Shimmering Wave",
-        "vision": "Cryo",
-        "weapon": "Claymore",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Knights of Favonius",
-        "release": "2021",
-        "id": "eula"
-    },
-    {
-=======
->>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
-        "name": "Xiao",
-        "title": "Vigilant Yaksha",
-        "vision": "Anemo",
-        "weapon": "Polearm",
-        "gender": "Male",
-        "nation": "Liyue",
-        "affiliation": "Liyue Adeptus",
-        "release": "2021",
-        "id": "xiao"
-    },
-    {
-<<<<<<< HEAD
-        "name": "Aloy",
-        "title": "Savior From Another World",
-        "vision": "Cryo",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Unknown",
-        "affiliation": "Wandering Heroine",
-        "release": "2021",
-        "id": "aloy"
-    },
-    {
-        "name": "Freminet",
-        "title": "Yearning for Unseen Depths",
-        "vision": "Cryo",
-        "weapon": "Claymore",
-        "gender": "Male",
-        "nation": "Fontaine",
-        "affiliation": "Hotel Bouffes d'ete",
-        "release": "2023",
-        "id": "freminet"
-    },
-    {
-        "name": "Thoma",
-        "title": "Protector From Afar",
-        "vision": "Pyro",
-        "weapon": "Polearm",
-        "gender": "Male",
-        "nation": "Mondstadt",
-        "affiliation": "Yashiro Commission Kamisato Clan",
-        "release": "2021",
-        "id": "thoma"
-    },
-    {
-        "name": "Tighnari",
-        "title": "Verdant Strider",
-        "vision": "Dendro",
-        "weapon": "Bow",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Gandharva Ville",
-        "release": "2022",
-        "id": "tighnari"
-    },
-    {
-        "name": "Kaeya",
-        "title": "Frostwind Swordsman",
-        "vision": "Cryo",
-        "weapon": "Sword",
-        "gender": "Male",
-        "nation": "Mondstadt",
-        "affiliation": "Knights of Favonius",
-        "release": "2020",
-        "id": "kaeya"
-    },
-    {
-        "name": "Kinich",
-        "title": "Turnfire Hunt",
-        "vision": "Dendro",
-        "weapon": "Claymore",
-        "gender": "Male",
-        "nation": "Natlan",
-        "affiliation": "Scions of the Canopy",
-        "release": "2024",
-        "id": "kinich"
-    },
-    {
-        "name": "Diona",
-        "title": "K\u00e4tzlein Cocktail",
-        "vision": "Cryo",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "The Cat's Tail",
-        "release": "2020",
-        "id": "diona"
-    },
-    {
-        "name": "Clorinde",
-        "title": "Candlebearer, Shadowhunter",
-        "vision": "Electro",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Fontaine",
-        "affiliation": "Trial Court",
-        "release": "2024",
-        "id": "clorinde"
-    },
-    {
-        "name": "Kujou Sara",
-        "title": "Crowfeather Kaburaya",
-        "vision": "Electro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Tenryou Commission",
-        "release": "2021",
-        "id": "sara"
-    },
-    {
-        "name": "Sethos",
-        "title": "Wisdom's Measure",
-        "vision": "Electro",
-        "weapon": "Bow",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Temple of Silence",
-        "release": "2024",
-        "id": "sethos"
-    },
-    {
-        "name": "Cyno",
-        "title": "Judicator of Secrets",
-        "vision": "Electro",
-        "weapon": "Polearm",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Temple of Silence",
-        "release": "2022",
-        "id": "cyno"
-    },
-    {
-        "name": "Wriothesley",
-        "title": "Emissary of Solitary Iniquity",
-        "vision": "Cryo",
-        "weapon": "Catalyst",
-        "gender": "Male",
-        "nation": "Fontaine",
-        "affiliation": "Fortress of Meropide",
-        "release": "2023",
-        "id": "wriothesley"
-    },
-    {
-=======
->>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
-        "name": "Kachina",
-        "title": "Mottled Gold Yet Unsmelted",
-        "vision": "Geo",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Natlan",
-        "affiliation": "Nanatzcayan",
-        "release": "2024",
-        "id": "Kachina"
-    },
-    {
-<<<<<<< HEAD
-        "name": "Jean",
-        "title": "Dandelion Knight",
-        "vision": "Anemo",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Knights of Favonius",
-        "release": "2020",
-        "id": "jean"
-    },
-    {
-        "name": "Kamisato Ayato",
-        "title": "Pillar of Fortitude",
-        "vision": "Hydro",
-        "weapon": "Sword",
-        "gender": "Male",
-        "nation": "Inazuma",
-        "affiliation": "Yashiro Commission",
-        "release": "2022",
-        "id": "ayato"
-    },
-    {
-        "name": "Alhaitham",
-        "title": "Admonishing Instruction",
-        "vision": "Dendro",
-        "weapon": "Sword",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Sumeru Akademiya",
-        "release": "2023",
-        "id": "alhaitham"
-    },
-    {
-        "name": "Yun Jin",
-        "title": "Stage Lucida",
-        "vision": "Geo",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Yun-Han Opera Troupe",
-        "release": "2022",
-        "id": "yun-jin"
-    },
-    {
         "name": "Lisa",
         "title": "Witch of Purple Rose",
         "vision": "Electro",
@@ -534,195 +9,6 @@
         "affiliation": "Knights of Favonius",
         "release": "2020",
         "id": "lisa"
-    },
-    {
-        "name": "Diluc",
-        "title": "The Dark Side of Dawn",
-        "vision": "Pyro",
-        "weapon": "Claymore",
-        "gender": "Male",
-        "nation": "Mondstadt",
-        "affiliation": "Dawn Winery",
-        "release": "2020",
-        "id": "diluc"
-    },
-    {
-        "name": "Rosaria",
-        "title": "Thorny Benevolence",
-        "vision": "Cryo",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Church of Favonius",
-        "release": "2021",
-        "id": "rosaria"
-    },
-    {
-        "name": "Neuvillette",
-        "title": "Ordainer of Inexorable Judgment",
-        "vision": "Hydro",
-        "weapon": "Catalyst",
-        "gender": "Male",
-        "nation": "Fontaine",
-        "affiliation": "Court of Fontaine",
-        "release": "2023",
-        "id": "Neuvillette"
-    },
-    {
-        "name": "Sayu",
-        "title": "Mujina Ninja",
-        "vision": "Anemo",
-        "weapon": "Claymore",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Shuumatsuban",
-        "release": "2021",
-        "id": "sayu"
-    },
-    {
-        "name": "Dehya",
-        "title": "Flame-Mane",
-        "vision": "Pyro",
-        "weapon": "Claymore",
-        "gender": "Female",
-        "nation": "Sumeru",
-        "affiliation": "The Eremites",
-        "release": "2023",
-        "id": "dehya"
-    },
-    {
-        "name": "Furina",
-        "title": "Endless Solo of Solitude",
-        "vision": "Hydro",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Fontaine",
-        "affiliation": "Court of Fontaine",
-        "release": "2023",
-        "id": "furina"
-=======
-        "name": "Xiangling",
-        "title": "Exquisite Delicacy",
-        "vision": "Pyro",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Wanmin Restaurant",
-        "release": "2020",
-        "id": "xiangling"
-    },
-    {
-        "name": "Xingqiu",
-        "title": "Juvenile Galant",
-        "vision": "Hydro",
-        "weapon": "Sword",
-        "gender": "Male",
-        "nation": "Liyue",
-        "affiliation": "Feiyun Commerce Guild",
-        "release": "2020",
-        "id": "xingqiu"
-    },
-    {
-        "name": "Chiori",
-        "title": "The Thundering Seamstress",
-        "vision": "Geo",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Chioriya Boutique",
-        "release": "2024",
-        "id": "chiori"
-    },
-    {
-        "name": "Fischl",
-        "title": "Prinzessin der Verurteilung!",
-        "vision": "Electro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Adventurers' Guild",
-        "release": "2020",
-        "id": "fischl"
->>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
-    },
-    {
-        "name": "Albedo",
-        "title": "Kreideprinz",
-        "vision": "Geo",
-        "weapon": "Sword",
-        "gender": "Male",
-        "nation": "Mondstadt",
-        "affiliation": "Knights of Favonius",
-        "release": "2020",
-        "id": "albedo"
-<<<<<<< HEAD
-=======
-    },
-    {
-        "name": "Mika",
-        "title": "Coordinates of Clear Frost",
-        "vision": "Cryo",
-        "weapon": "Polearm",
-        "gender": "Male",
-        "nation": "Mondstadt",
-        "affiliation": "Knights of Favonius",
-        "release": "2023",
-        "id": "mika"
-    },
-    {
-        "name": "Chongyun",
-        "title": "Frozen Ardor",
-        "vision": "Cryo",
-        "weapon": "Claymore",
-        "gender": "Male",
-        "nation": "Liyue",
-        "affiliation": "Liyue Harbor",
-        "release": "2020",
-        "id": "chongyun"
-    },
-    {
-        "name": "Cyno",
-        "title": "Judicator of Secrets",
-        "vision": "Electro",
-        "weapon": "Polearm",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Temple of Silence",
-        "release": "2022",
-        "id": "cyno"
-    },
-    {
-        "name": "Hu Tao",
-        "title": "Fragrance in Thaw",
-        "vision": "Pyro",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Wangsheng Funeral Parlor",
-        "release": "2021",
-        "id": "hu-tao"
-    },
-    {
-        "name": "Xianyun",
-        "title": "Passerine Herald",
-        "vision": "Anemo",
-        "weapon": "Catalyst",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Mt. Aocang",
-        "release": "2024",
-        "id": "xianyun"
-    },
-    {
-        "name": "Tighnari",
-        "title": "Verdant Strider",
-        "vision": "Dendro",
-        "weapon": "Bow",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Gandharva Ville",
-        "release": "2022",
-        "id": "tighnari"
     },
     {
         "name": "Keqing",
@@ -736,147 +22,91 @@
         "id": "keqing"
     },
     {
-        "name": "Kujou Sara",
-        "title": "Crowfeather Kaburaya",
-        "vision": "Electro",
+        "name": "Kamisato Ayaka",
+        "title": "Frostflake Heron",
+        "vision": "Cryo",
+        "weapon": "Sword",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Yashiro Commission",
+        "release": "2021",
+        "id": "ayaka"
+    },
+    {
+        "name": "Yoimiya",
+        "title": "Frolicking Flames",
+        "vision": "Pyro",
         "weapon": "Bow",
         "gender": "Female",
         "nation": "Inazuma",
-        "affiliation": "Tenryou Commission",
+        "affiliation": "Naganohara Fireworks",
         "release": "2021",
-        "id": "sara"
+        "id": "yoimiya"
     },
     {
-        "name": "Beidou",
-        "title": "Uncrowned Lord of the Ocean",
-        "vision": "Electro",
-        "weapon": "Claymore",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "The Crux",
-        "release": "2020",
-        "id": "beidou"
-    },
-    {
-        "name": "Sangonomiya Kokomi",
-        "title": "Pearl of Wisdom",
-        "vision": "Hydro",
-        "weapon": "Catalyst",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Watatsumi Island",
-        "release": "2021",
-        "id": "kokomi"
-    },
-    {
-        "name": "Candace",
-        "title": "Golden Vow",
-        "vision": "Hydro",
+        "name": "Rosaria",
+        "title": "Thorny Benevolence",
+        "vision": "Cryo",
         "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Sumeru",
-        "affiliation": "Aaru Village",
-        "release": "2022",
-        "id": "Candace"
-    },
-    {
-        "name": "Arlecchino",
-        "title": "Dire Balemoon",
-        "vision": "Pyro",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Snezhnaya",
-        "affiliation": "Fatui",
-        "release": "2024",
-        "id": "arlecchino"
-    },
-    {
-        "name": "Barbara",
-        "title": "Shining Idol",
-        "vision": "Hydro",
-        "weapon": "Catalyst",
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Church of Favonius",
-        "release": "2020",
-        "id": "barbara"
+        "release": "2021",
+        "id": "rosaria"
     },
     {
-        "name": "Shikanoin Heizou",
-        "title": "Analytical Harmony",
-        "vision": "Anemo",
-        "weapon": "Catalyst",
+        "name": "Tighnari",
+        "title": "Verdant Strider",
+        "vision": "Dendro",
+        "weapon": "Bow",
         "gender": "Male",
-        "nation": "Inazuma",
-        "affiliation": "Tenryou Commission",
+        "nation": "Sumeru",
+        "affiliation": "Gandharva Ville",
         "release": "2022",
-        "id": "shikanoin-heizou"
+        "id": "tighnari"
     },
     {
-        "name": "Zhongli",
-        "title": "Vago Mundo",
-        "vision": "Geo",
-        "weapon": "Polearm",
+        "name": "Yelan",
+        "title": "Valley Orchid",
+        "vision": "Hydro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Yanshang Teahouse",
+        "release": "2022",
+        "id": "yelan"
+    },
+    {
+        "name": "Chongyun",
+        "title": "Frozen Ardor",
+        "vision": "Cryo",
+        "weapon": "Claymore",
         "gender": "Male",
         "nation": "Liyue",
         "affiliation": "Liyue Harbor",
         "release": "2020",
-        "id": "zhongli"
+        "id": "chongyun"
     },
     {
-        "name": "Kinich",
-        "title": "Turnfire Hunt",
-        "vision": "Dendro",
+        "name": "Xinyan",
+        "title": "Blazing Riff",
+        "vision": "Pyro",
         "weapon": "Claymore",
-        "gender": "Male",
-        "nation": "Natlan",
-        "affiliation": "Scions of the Canopy",
-        "release": "2024",
-        "id": "kinich"
-    },
-    {
-        "name": "Sigewinne",
-        "title": "Wondrous Dragonheir",
-        "vision": "Hydro",
-        "weapon": "Bow",
         "gender": "Female",
-        "nation": "Fontaine",
-        "affiliation": "Fortress of Meropide",
-        "release": "2024",
-        "id": "Sigewinne"
+        "nation": "Liyue",
+        "affiliation": "Liyue Harbor",
+        "release": "2020",
+        "id": "Xinyan"
     },
     {
-        "name": "Kaveh",
-        "title": "Empyrean Reflection",
-        "vision": "Dendro",
-        "weapon": "Claymore",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Independent Design Studio",
-        "release": "2023",
-        "id": "kaveh"
-    },
-    {
-        "name": "Nilou",
-        "title": "Dance of Lotuslight",
-        "vision": "Hydro",
-        "weapon": "Sword",
+        "name": "Yanfei",
+        "title": "Wise Innocence",
+        "vision": "Pyro",
+        "weapon": "Catalyst",
         "gender": "Female",
-        "nation": "Sumeru",
-        "affiliation": "Zubayr Theater",
-        "release": "2022",
-        "id": "nilou"
-    },
-    {
-        "name": "Sethos",
-        "title": "Wisdom's Measure",
-        "vision": "Electro",
-        "weapon": "Bow",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Temple of Silence",
-        "release": "2024",
-        "id": "sethos"
->>>>>>> 17fbd6efe7604d98da35af97db3c604dced6c5e8
+        "nation": "Liyue",
+        "affiliation": "Liyue Harbor Adepti",
+        "release": "2021",
+        "id": "yanfei"
     }
 ]
