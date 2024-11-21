@@ -43,6 +43,21 @@ function placeIcon(iconElement, guessData){
     iconElement.style.backgroundRepeat = 'no-repeat';
 }
 
+function updateStreak(){
+    let currentTime = new Date().getTime()
+    let prevTime = localStorage.getItem("prevTimeClassic")
+    let streak = localStorage.getItem("streakClassic")
+    if (prevTime != null) {
+        if ((currentTime - prevTime) / (1000 * 60 * 60 * 24) === 1){
+            localStorage.setItem("streakClassic", streak + 1)
+        }
+        else {
+            localStorage.setItem("streakClassic", 1)
+        }
+    }
+    localStorage.setItem("prevTimeClassic", currentTime)
+}
+
 function submitGuess(e) {
     e.preventDefault();
     let inputElement = document.getElementById("guess");
@@ -90,6 +105,7 @@ function submitGuess(e) {
 
             // Save the game state to localStorage
             localStorage.setItem("gameOverClassic", "true");
+            updateStreak();
         }
         inputElement.value = "";  // Remove all user input in text box
         inputElement.focus();
@@ -133,21 +149,7 @@ function resetGame(){
     }
 }
 
-window.addEventListener('load', async function() {
-    const answerRes = await fetch("/static/answers/classic/todays_answer.json");
-    answerData = await answerRes.json();
-    console.log(answerData);
-    const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
-    charactersInfoData = await characterInfoRes.json();
-
-
-    // Check if the current answer is different from the saved one
-    resetGame()
-    
-    document.getElementById('guess').focus();
-    document.addEventListener("keyup", checkSubmit);
-    document.getElementById("guess-form").addEventListener("submit", submitGuess)
-
+function displayPreviousGuesses() {
     // Load previous guesses from localStorage
     const previousGuesses = JSON.parse(localStorage.getItem("previousGuessesClassic")) || [];
     const resultsContainer = document.getElementById('results');
@@ -166,6 +168,24 @@ window.addEventListener('load', async function() {
         }
         resultsContainer.prepend(row);
     });
+}
+
+window.addEventListener('load', async function() {
+    const answerRes = await fetch("/static/answers/classic/todays_answer.json");
+    answerData = await answerRes.json();
+    console.log(answerData);
+    const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
+    charactersInfoData = await characterInfoRes.json();
+
+
+    // Check if the current answer is different from the saved one
+    resetGame()
+    
+    document.getElementById('guess').focus();
+    document.addEventListener("keyup", checkSubmit);
+    document.getElementById("guess-form").addEventListener("submit", submitGuess)
+
+    displayPreviousGuesses()
 
     // Check for saved game state
     if (localStorage.getItem("gameOverClassic") === "true") {

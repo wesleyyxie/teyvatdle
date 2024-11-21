@@ -1,11 +1,11 @@
 {
-    "name": "Wriothesley",
-    "title": "Emissary of Solitary Iniquity",
-    "vision": "Cryo",
-    "weapon": "Catalyst",
+    "name": "Gaming",
+    "title": "Leonine Vanguard",
+    "vision": "Pyro",
+    "weapon": "Claymore",
     "gender": "Male",
-    "nation": "Fontaine",
-    "affiliation": "Fortress of Meropide",
-    "release": "2023",
-    "id": "wriothesley"
+    "nation": "Liyue",
+    "affiliation": "Sword and Strongbox Secure Transport Agency",
+    "release": "2024",
+    "id": "gaming"
 }

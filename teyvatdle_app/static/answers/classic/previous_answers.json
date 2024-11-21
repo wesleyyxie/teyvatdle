@@ -108,5 +108,27 @@
         "affiliation": "Liyue Harbor Adepti",
         "release": "2021",
         "id": "yanfei"
+    },
+    {
+        "name": "Amber",
+        "title": "Gliding Champion",
+        "vision": "Pyro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "amber"
+    },
+    {
+        "name": "Fischl",
+        "title": "Prinzessin der Verurteilung!",
+        "vision": "Electro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Adventurers' Guild",
+        "release": "2020",
+        "id": "fischl"
     }
 ]

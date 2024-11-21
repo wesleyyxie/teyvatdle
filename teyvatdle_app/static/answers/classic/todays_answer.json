@@ -1,11 +1,11 @@
 {
-    "name": "Yanfei",
-    "title": "Wise Innocence",
-    "vision": "Pyro",
-    "weapon": "Catalyst",
+    "name": "Fischl",
+    "title": "Prinzessin der Verurteilung!",
+    "vision": "Electro",
+    "weapon": "Bow",
     "gender": "Female",
-    "nation": "Liyue",
-    "affiliation": "Liyue Harbor Adepti",
-    "release": "2021",
-    "id": "yanfei"
+    "nation": "Mondstadt",
+    "affiliation": "Adventurers' Guild",
+    "release": "2020",
+    "id": "fischl"
 }
