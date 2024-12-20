@@ -6,7 +6,7 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
 
 1. **Choose a Category**: Teyvatdle offers four exciting game modes to test different aspects of your Genshin Impact character knowledge. Pick one to get started:
    - **Classic**: Our classic Teyvatdle game mode! Guess a character and unlock hints for each guess!
-   - **Voiceline**: Guess the character based off of in-game voice lines!
+   - **Voiceline**: Guess the character based on in-game voice lines!
    - **Ability**: Which character does this ability belong to?
    - **Spy**: Can you see through the pixelation and guess the character?
 
@@ -14,7 +14,7 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
    - Each hint will indicate if you're getting closer to the answer.
    - Use the information to refine your future guesses.
 
-3. **Solve It**: Keep guessing until you unveil the correct character! While you have an unlimited number of attempts, true Travelers aim to solve the mystery in as few tries as possible. Use each hint wisely and challenge yourself to become a master of deduction!
+3. **Solve It**: Keep guessing until you unveil the correct character! While you have an unlimited number of attempts, true Travelers aim to solve the mystery in as few tries as possible. Use each hint wisely and challenge yourself to become the greatest traveler!
 
 
 ## Features
