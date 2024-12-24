@@ -1,113 +1,25 @@
 [
     {
-        "name": "Clorinde",
-        "title": "Candlebearer, Shadowhunter",
-        "vision": "Electro",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Fontaine",
-        "affiliation": "Trial Court",
-        "release": "2024",
-        "id": "clorinde"
-    },
-    {
-        "name": "Lisa",
-        "title": "Witch of Purple Rose",
-        "vision": "Electro",
-        "weapon": "Catalyst",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Knights of Favonius",
-        "release": "2020",
-        "id": "lisa"
-    },
-    {
-        "name": "Yanfei",
-        "title": "Wise Innocence",
-        "vision": "Pyro",
-        "weapon": "Catalyst",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Liyue Harbor Adepti",
-        "release": "2021",
-        "id": "yanfei"
-    },
-    {
-        "name": "Beidou",
-        "title": "Uncrowned Lord of the Ocean",
-        "vision": "Electro",
-        "weapon": "Claymore",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "The Crux",
-        "release": "2020",
-        "id": "beidou"
-    },
-    {
-        "name": "Collei",
-        "title": "Sprout of Rebirth",
+        "name": "Emilie",
+        "title": "A Thousand Scents Traced",
         "vision": "Dendro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Sumeru",
-        "affiliation": "Avidya Forest Ranger Trainee",
-        "release": "2022",
-        "id": "collei"
-    },
-    {
-        "name": "Kaeya",
-        "title": "Frostwind Swordsman",
-        "vision": "Cryo",
-        "weapon": "Sword",
-        "gender": "Male",
-        "nation": "Mondstadt",
-        "affiliation": "Knights of Favonius",
-        "release": "2020",
-        "id": "kaeya"
-    },
-    {
-        "name": "Raiden Shogun",
-        "title": "Plane of Euthymia",
-        "vision": "Electro",
         "weapon": "Polearm",
         "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Inazuma City",
-        "release": "2021",
-        "id": "raiden"
-    },
-    {
-        "name": "Faruzan",
-        "title": "Enigmatic Machinist",
-        "vision": "Anemo",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Sumeru",
-        "affiliation": "Haravatat",
+        "nation": "Fontaine",
+        "affiliation": "Court of Fontaine",
         "release": "2022",
-        "id": "faruzan"
+        "id": "emilie"
     },
     {
-        "name": "Kujou Sara",
-        "title": "Crowfeather Kaburaya",
-        "vision": "Electro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Tenryou Commission",
-        "release": "2021",
-        "id": "sara"
-    },
-    {
-        "name": "Mona",
-        "title": "Astral Reflection",
-        "vision": "Hydro",
+        "name": "Xianyun",
+        "title": "Passerine Herald",
+        "vision": "Anemo",
         "weapon": "Catalyst",
         "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Mondstadt",
-        "release": "2020",
-        "id": "Mona"
+        "nation": "Liyue",
+        "affiliation": "Mt. Aocang",
+        "release": "2024",
+        "id": "xianyun"
     },
     {
         "name": "Yaoyao",
@@ -119,60 +31,5 @@
         "affiliation": "Streetward Rambler's Abode",
         "release": "2023",
         "id": "yaoyao"
-    },
-    {
-        "name": "Venti",
-        "title": "Windborne Bard",
-        "vision": "Anemo",
-        "weapon": "Bow",
-        "gender": "Male",
-        "nation": "Mondstadt",
-        "affiliation": "Mondstadt",
-        "release": "2020",
-        "id": "venti"
-    },
-    {
-        "name": "Sigewinne",
-        "title": "Wondrous Dragonheir",
-        "vision": "Hydro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Fontaine",
-        "affiliation": "Fortress of Meropide",
-        "release": "2024",
-        "id": "Sigewinne"
-    },
-    {
-        "name": "Wriothesley",
-        "title": "Emissary of Solitary Iniquity",
-        "vision": "Cryo",
-        "weapon": "Catalyst",
-        "gender": "Male",
-        "nation": "Fontaine",
-        "affiliation": "Fortress of Meropide",
-        "release": "2023",
-        "id": "wriothesley"
-    },
-    {
-        "name": "Alhaitham",
-        "title": "Admonishing Instruction",
-        "vision": "Dendro",
-        "weapon": "Sword",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Sumeru Akademiya",
-        "release": "2023",
-        "id": "alhaitham"
-    },
-    {
-        "name": "Gaming",
-        "title": "Leonine Vanguard",
-        "vision": "Pyro",
-        "weapon": "Claymore",
-        "gender": "Male",
-        "nation": "Liyue",
-        "affiliation": "Sword and Strongbox Secure Transport Agency",
-        "release": "2024",
-        "id": "gaming"
     }
 ]

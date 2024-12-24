@@ -46,16 +46,24 @@ function placeIcon(iconElement, guessData){
 function updateStreak(){
     let currentTime = new Date().getTime()
     let prevTime = localStorage.getItem("prevTimeClassic")
-    let streak = localStorage.getItem("streakClassic")
+
+    let streak = localStorage.getItem("streakClassic") || 1
+    let maxStreak = localStorage.getItem("maxStreakClassic") || 1
+
     if (prevTime != null) {
-        if ((currentTime - prevTime) / (1000 * 60 * 60 * 24) === 1){
-            localStorage.setItem("streakClassic", streak + 1)
+        if (Math.round((currentTime - prevTime) / (1000 * 60)) === 1){
+            streak = streak + 1
+            if (streak > maxStreak) {
+                maxStreak = streak
+            }
         }
         else {
-            localStorage.setItem("streakClassic", 1)
+            streak = 1
         }
     }
     localStorage.setItem("prevTimeClassic", currentTime)
+    localStorage.setItem("streakClassic", streak)
+    localStorage.setItem("maxStreakClassic", maxStreak)
 }
 
 function submitGuess(e) {
@@ -99,13 +107,13 @@ function submitGuess(e) {
         localStorage.setItem("arrClassic", JSON.stringify(arrClassic));
 
         if (gameOver) {
+            updateStreak();
             displayCongratulatoryMessage(tries); // Call to display message
             document.getElementById("submit").disabled = true;
             inputElement.disabled = true;
 
             // Save the game state to localStorage
             localStorage.setItem("gameOverClassic", "true");
-            updateStreak();
         }
         inputElement.value = "";  // Remove all user input in text box
         inputElement.focus();
@@ -116,7 +124,14 @@ function submitGuess(e) {
 function displayCongratulatoryMessage(tries) {
     const congratsMessageElement = document.getElementById("congrats_message");
     const triesTextElement = document.getElementById('tried-text')
+    const streakTextElement = document.getElementById('streak')
+    const streakLabelTextElement = document.getElementById('streak-label')
+    const streak = localStorage.getItem("streakClassic")
+    const maxStreak = localStorage.getItem("maxStreakClassic")
+
     triesTextElement.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
+    streakTextElement.innerText = streak
+    streakLabelTextElement.innerText = `Current Streak: ${streak} Max Streak: ${maxStreak}`
     // Check if game state is loaded from storage
     const isLoadedFromStorage = localStorage.getItem("gameOverClassic") === "true";
 

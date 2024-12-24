@@ -11,10 +11,10 @@ def get_random_character():
         current_directory, "..", "static", "data", "classicModeInfo.json"
     )
     previous_answers_path = os.path.join(
-        current_directory, "..", "static", "answers","classic", "previous_answers.json"
+        current_directory, "..", "static", "answers", "classic", "previous_answers.json"
     )
     with open(all_characters_path, "r") as characters_json:
-            characters = json.load(characters_json)
+        characters = json.load(characters_json)
 
     with open(previous_answers_path, "r") as previous_answers_json:
         try:
@@ -23,7 +23,6 @@ def get_random_character():
                 previous_answers = []
         except JSONDecodeError:
             previous_answers = []
-    
 
     while True:
         random_character = random.choice(characters)
@@ -43,15 +42,19 @@ def update_classic_answer():
     random_character = (
         get_random_character()
     )  # Call the function to get a random character
-    
+
     # Serializing json
     character_json = json.dumps(random_character, indent=4)
     # Writing to sample.json
     with open(
         os.path.join(
-            current_directory, "..", "static", "answers", "classic", "todays_answer.json"
+            current_directory,
+            "..",
+            "static",
+            "answers",
+            "classic",
+            "todays_answer.json",
         ),
         "w",
     ) as outfile:
         outfile.write(character_json)
-    
