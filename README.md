@@ -49,5 +49,6 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
    - All rights to the Genshin Impact name, characters, and related content belong to HoYoverse. These assets are used in a non-commercial, fan-made project to celebrate the      game and its community.
    - This project uses the [GenshinDev API](https://github.com/genshindev/api) to access character data and other resources.
      
+     **Disclaimer**: This project is not affiliated with, endorsed by, or sponsored by **HoYoverse**. It is a fan-made project created for entertainment purposes only.
 
 ## Licenses
