@@ -44,5 +44,6 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
 
 
 ## Acknowledgements
+   - Teyvatdle is inspired by Wordle and Loldle
 
 ## Licenses
