@@ -1,86 +1,15 @@
 [
     {
-        "name": "Raiden Shogun",
-        "id": "raiden",
+        "name": "Fischl",
+        "id": "fischl",
         "type": "burst",
-        "abilityName": "Secret Art: Musou Shinsetsu"
+        "abilityName": "Midnight Phantasmagoria"
     },
     {
-        "name": "Kinich",
-        "id": "kinich",
-        "type": "burst",
-        "abilityName": "Hail to the Almighty Dragonlord"
-    },
-    {
-        "name": "Kaeya",
-        "id": "kaeya",
-        "type": "burst",
-        "abilityName": "Glacial Waltz"
-    },
-    {
-        "name": "Navia",
-        "id": "navia",
-        "type": "burst",
-        "abilityName": "As the Sunlit Sky's Singing Salute"
-    },
-    {
-        "name": "Sayu",
-        "id": "sayu",
-        "type": "burst",
-        "abilityName": "Yoohoo Art: Mujina Flurry"
-    },
-    {
-        "name": "Diluc",
-        "id": "diluc",
-        "type": "burst",
-        "abilityName": "Dawn"
-    },
-    {
-        "name": "Lisa",
-        "id": "lisa",
-        "type": "burst",
-        "abilityName": "Lightning Rose"
-    },
-    {
-        "name": "Wriothesley",
-        "id": "wriothesley",
+        "name": "Kaveh",
+        "id": "kaveh",
         "type": "skill",
-        "abilityName": "Icefang Rush"
-    },
-    {
-        "name": "Diona",
-        "id": "diona",
-        "type": "burst",
-        "abilityName": "Signature Mix"
-    },
-    {
-        "name": "Kinich",
-        "id": "kinich",
-        "type": "skill",
-        "abilityName": "Canopy Hunter: Riding High"
-    },
-    {
-        "name": "Yanfei",
-        "id": "yanfei",
-        "type": "skill",
-        "abilityName": "Signed Edict"
-    },
-    {
-        "name": "Wanderer",
-        "id": "wanderer",
-        "type": "burst",
-        "abilityName": "Kyougen: Five Ceremonial Plays"
-    },
-    {
-        "name": "Yaoyao",
-        "id": "yaoyao",
-        "type": "skill",
-        "abilityName": "Raphanus Sky Cluster"
-    },
-    {
-        "name": "Sethos",
-        "id": "sethos",
-        "type": "burst",
-        "abilityName": "Secret Rite: Twilight Shadowpiercer"
+        "abilityName": "Artistic Ingenuity"
     }
+]  }
 ]

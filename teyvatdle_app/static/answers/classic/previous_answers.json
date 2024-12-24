@@ -1,134 +1,35 @@
 [
     {
-        "name": "Lisa",
-        "title": "Witch of Purple Rose",
-        "vision": "Electro",
-        "weapon": "Catalyst",
+        "name": "Kaeya",
+        "title": "Frostwind Swordsman",
+        "vision": "Cryo",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "kaeya"
+    },
+    {
+        "name": "Venti",
+        "title": "Windborne Bard",
+        "vision": "Anemo",
+        "weapon": "Bow",
+        "gender": "Male",
+        "nation": "Mondstadt",
+        "affiliation": "Mondstadt",
+        "release": "2020",
+        "id": "venti"
+    },
+    {
+        "name": "Jean",
+        "title": "Dandelion Knight",
+        "vision": "Anemo",
+        "weapon": "Sword",
         "gender": "Female",
         "nation": "Mondstadt",
         "affiliation": "Knights of Favonius",
         "release": "2020",
-        "id": "lisa"
-    },
-    {
-        "name": "Keqing",
-        "title": "Driving Thunder",
-        "vision": "Electro",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Liyue Qixing",
-        "release": "2020",
-        "id": "keqing"
-    },
-    {
-        "name": "Kamisato Ayaka",
-        "title": "Frostflake Heron",
-        "vision": "Cryo",
-        "weapon": "Sword",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Yashiro Commission",
-        "release": "2021",
-        "id": "ayaka"
-    },
-    {
-        "name": "Yoimiya",
-        "title": "Frolicking Flames",
-        "vision": "Pyro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Inazuma",
-        "affiliation": "Naganohara Fireworks",
-        "release": "2021",
-        "id": "yoimiya"
-    },
-    {
-        "name": "Rosaria",
-        "title": "Thorny Benevolence",
-        "vision": "Cryo",
-        "weapon": "Polearm",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Church of Favonius",
-        "release": "2021",
-        "id": "rosaria"
-    },
-    {
-        "name": "Tighnari",
-        "title": "Verdant Strider",
-        "vision": "Dendro",
-        "weapon": "Bow",
-        "gender": "Male",
-        "nation": "Sumeru",
-        "affiliation": "Gandharva Ville",
-        "release": "2022",
-        "id": "tighnari"
-    },
-    {
-        "name": "Yelan",
-        "title": "Valley Orchid",
-        "vision": "Hydro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Yanshang Teahouse",
-        "release": "2022",
-        "id": "yelan"
-    },
-    {
-        "name": "Chongyun",
-        "title": "Frozen Ardor",
-        "vision": "Cryo",
-        "weapon": "Claymore",
-        "gender": "Male",
-        "nation": "Liyue",
-        "affiliation": "Liyue Harbor",
-        "release": "2020",
-        "id": "chongyun"
-    },
-    {
-        "name": "Xinyan",
-        "title": "Blazing Riff",
-        "vision": "Pyro",
-        "weapon": "Claymore",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Liyue Harbor",
-        "release": "2020",
-        "id": "Xinyan"
-    },
-    {
-        "name": "Yanfei",
-        "title": "Wise Innocence",
-        "vision": "Pyro",
-        "weapon": "Catalyst",
-        "gender": "Female",
-        "nation": "Liyue",
-        "affiliation": "Liyue Harbor Adepti",
-        "release": "2021",
-        "id": "yanfei"
-    },
-    {
-        "name": "Amber",
-        "title": "Gliding Champion",
-        "vision": "Pyro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Knights of Favonius",
-        "release": "2020",
-        "id": "amber"
-    },
-    {
-        "name": "Fischl",
-        "title": "Prinzessin der Verurteilung!",
-        "vision": "Electro",
-        "weapon": "Bow",
-        "gender": "Female",
-        "nation": "Mondstadt",
-        "affiliation": "Adventurers' Guild",
-        "release": "2020",
-        "id": "fischl"
+        "id": "jean"
     }
 ]

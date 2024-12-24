@@ -1,11 +1,11 @@
 {
-    "name": "Gaming",
-    "title": "Leonine Vanguard",
-    "vision": "Pyro",
-    "weapon": "Claymore",
-    "gender": "Male",
+    "name": "Yaoyao",
+    "title": "Burgeoning Grace",
+    "vision": "Dendro",
+    "weapon": "Polearm",
+    "gender": "Female",
     "nation": "Liyue",
-    "affiliation": "Sword and Strongbox Secure Transport Agency",
-    "release": "2024",
-    "id": "gaming"
+    "affiliation": "Streetward Rambler's Abode",
+    "release": "2023",
+    "id": "yaoyao"
 }

@@ -3,7 +3,7 @@
 <script type="module" src="{{ url_for('static',filename='/scripts/classic-mode.js') }}"></script>
 <script type="module" src="{{ url_for('static',filename='/scripts/timer.js') }}"></script>
 <div class="flex flex-col justify-center items-center gap-y-[10px]">
-    <div class="flex justify-center items-center mt-[20px] h-[100px] w-[250px] rounded-lg" 
+    <div class="flex justify-center items-center mt-[15px] h-[100px] w-[250px] rounded-lg" 
          style="background-color: rgba(39, 52, 63, 0.8); border: 3px solid rgb(120, 120, 120); box-sizing: border-box;">
         <span class="text-white p-[35px] text-center font-bold">
             Guess Today's Genshin Impact Character!
@@ -42,22 +42,26 @@
     </div>
     <div id="congrats_message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 rounded-lg">
         <div class="font-bold text-3xl text-center">Congrats!</div>
-        <div id="tried-text" class="text-lg text-center">"You guessed it in 1 try!"</div>
+        <div id="tried-text" class="mb-[10px] text-lg text-center">You guessed it in 1 try!</div>
+        <div class="streak cursor-pointer hover:scale-button flex pt-[25px] justify-center h-[60px] w-[60px] bg-center bg-cover bg-no-repeat" style="background-image: url(&quot;/static/images/streakIcon-WHITE.webp&quot;); background-size: 60px 60px;">
+            <span id="streak-label" class="gamemode-label"></span>
+            <span id="streak" class="text-[22px] text-green-800 font-bold"></span>
+        </div>
         <span class="pt-[10px]">Next character in:</span>
         <div class="font-bold text-3xl" id="timer"></div>
         <div class="font-bold text-xl text-center mt-4">Next Mode</div>
-        <div class="bg-no-repeat hover:scale-button cursor-pointer bg-center aspect-[173/50] w-[173px]" onclick="location.href='/voiceline'" style="background-image: url(&quot;/static/images/buttons/voiceline_button_short.png&quot;); background-size: 173px 50px;"></div>
+        <button class="bg-no-repeat hover:scale-button cursor-pointer bg-center aspect-[173/50] w-[173px]" onclick="location.href='/voiceline'" style="background-image: url(&quot;/static/images/buttons/voiceline_button_short.png&quot;); background-size: 173px 50px;"></button>
         <div class="font-bold text-xl text-center mt-4">Other Modes</div>
         <div class="flex gap-4 justify-center mt-2">
-            <div class="gamemode-button bg-no-repeat w-[50px] h-[50px] cursor-pointer hover:scale-button" onclick="location.href='/voiceline'" style="background-image: url(&quot;/static/images/buttons/voiceline_1.png&quot;); background-size: 50px 50px;">
+            <button class="gamemode-button bg-no-repeat w-[50px] h-[50px] cursor-pointer hover:scale-button" onclick="location.href='/voiceline'" style="background-image: url(&quot;/static/images/buttons/voiceline_1.png&quot;); background-size: 50px 50px;">
                 <span class="gamemode-label">Voiceline Mode</span>
-            </div>
-            <div class="gamemode-button bg-no-repeat w-[50px] h-[50px] cursor-pointer hover:scale-button" onclick="location.href='/ability'" style="background-image: url(&quot;/static/images/buttons/ability_1.png&quot;); background-size: 50px 50px;">
+            </button>
+            <button class="gamemode-button bg-no-repeat w-[50px] h-[50px] cursor-pointer hover:scale-button" onclick="location.href='/ability'" style="background-image: url(&quot;/static/images/buttons/ability_1.png&quot;); background-size: 50px 50px;">
                 <span class="gamemode-label">Ability Mode</span>
-            </div>
-            <div class="gamemode-button bg-no-repeat  w-[50px] h-[50px] cursor-pointer hover:scale-button" onclick="location.href='/spy'" style="background-image: url(&quot;/static/images/buttons/spy_1.png&quot;); background-size: 50px 50px;">
+            </button>
+            <button class="gamemode-button bg-no-repeat  w-[50px] h-[50px] cursor-pointer hover:scale-button" onclick="location.href='/spy'" style="background-image: url(&quot;/static/images/buttons/spy_1.png&quot;); background-size: 50px 50px;">
                 <span class="gamemode-label">Spy Mode</span>
-            </div>
+            </button>
         </div>
     </div>
 </div>
