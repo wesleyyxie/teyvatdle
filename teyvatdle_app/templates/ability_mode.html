@@ -24,10 +24,10 @@
     </div>
     <div id="congrats_message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 rounded-lg">
         <div class="font-bold text-3xl text-center">Congrats!</div>
-        <div id="tried-text" class="text-lg text-center">"You guessed it in 1 try!"</div>
+        <div id="tried-text" class="mb-[10px] text-lg text-center">"You guessed it in 1 try!"</div>
         <div class="streak cursor-pointer hover:scale-button flex pt-[25px] justify-center h-[60px] w-[60px] bg-center bg-cover bg-no-repeat" style="background-image: url(&quot;/static/images/streakIcon-WHITE.webp&quot;); background-size: 60px 60px;">
-            <span class="gamemode-label"></span>
-            <span class="text-[22px] text-green-800 font-bold"></span>
+            <span id="streak-label" class="gamemode-label"></span>
+            <span id="streak" class="text-[22px] text-green-800 font-bold"></span>
         </div>
         <span class="pt-[10px]">Next character in:</span>
         <div class="font-bold text-3xl" id="timer"></div>

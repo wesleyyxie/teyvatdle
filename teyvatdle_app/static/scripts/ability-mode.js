@@ -57,6 +57,37 @@ function placeIcon(iconElement, guessData) {
     iconElement.appendChild(spanElement)
 }
 
+function updateStreak() {
+    let currentTime = new Date();
+    let prevTime = new Date(parseInt(localStorage.getItem("prevTimeAbility")));
+
+    let streak = parseInt(localStorage.getItem("streakAbility")) || 1;
+    let maxStreak = parseInt(localStorage.getItem("maxStreakAbility")) || 1;
+
+    if (!isNaN(prevTime.getTime())) {
+        // Get the date parts only (ignoring time)
+        const currentDate = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate());
+        const prevDate = new Date(prevTime.getFullYear(), prevTime.getMonth(), prevTime.getDate());
+
+        // Check if the dates are consecutive
+        const diffInDays = (currentDate - prevDate) / (1000 * 60 * 60 * 24);
+
+        if (diffInDays === 1) {
+            streak += 1;
+            if (streak > maxStreak) {
+                maxStreak = streak;
+            }
+        } else if (diffInDays > 1) {
+            streak = 1;
+        }
+    }
+
+    // Update localStorage
+    localStorage.setItem("prevTimeAbility", currentTime.getTime());
+    localStorage.setItem("streakAbility", streak);
+    localStorage.setItem("maxStreakAbility", maxStreak);
+}
+
 
 function submitGuess(e) {
     e.preventDefault();  // Prevent form submission
@@ -82,6 +113,7 @@ function submitGuess(e) {
         const row = createBlankRow();
 
         if (checkGuess(guessData, row)) {
+            updateStreak()
             displayCongratulatoryMessage(tries);  
             gameOver = true;
         }
@@ -126,6 +158,14 @@ function displayCongratulatoryMessage(tries) {
     const congratsMessageElement = document.getElementById("congrats_message");
     const triesTextElement = document.getElementById('tried-text')
     triesTextElement.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
+
+    const streakTextElement = document.getElementById('streak')
+    const streakLabelTextElement = document.getElementById('streak-label')
+    const streak = localStorage.getItem("streakAbility")
+    const maxStreak = localStorage.getItem("maxStreakAbility")
+    streakTextElement.innerText = streak
+    streakLabelTextElement.innerText = `Current Streak: ${streak} Max Streak: ${maxStreak}`
+   
     setTimeout(() => {
         congratsMessageElement.classList.remove("hidden");
         congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });

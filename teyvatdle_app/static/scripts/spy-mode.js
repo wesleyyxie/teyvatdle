@@ -39,10 +39,8 @@ function checkGuess(guessData, row) {
 
 // Places the character icon
 function placeIcon(iconElement, guessData) {
-    console.log("Now placing icon");
     let imageName = guessData["id"].toLowerCase().replace(/\s+/g, '-');
     const imageUrl = `/static/images/character_icons/${imageName}.png`;
-    console.log("Image URL:", imageUrl);
 
     iconElement.style.backgroundImage = `url('${imageUrl}')`;
     iconElement.style.backgroundSize = '75px 75px';
@@ -80,6 +78,7 @@ function submitGuess(e) {
         const row = createBlankRow();
 
         if (checkGuess(guessData, row)) {
+            updateStreak()
             displayCongratulatoryMessage(tries);
             gameOver = true;
         }
@@ -105,8 +104,6 @@ function submitGuess(e) {
         autocomplete(document.getElementById("guess"), arrSpy);
         inputElement.value = "";
         inputElement.focus();
-        console.log(tries);
-
         if (tries <= 6) {
             clueCountdown.innerText = `Clue in ${2 - (tries % 2)} tries`;
         }
@@ -122,11 +119,50 @@ function submitGuess(e) {
     }
 }
 
+function updateStreak() {
+    let currentTime = new Date();
+    let prevTime = new Date(parseInt(localStorage.getItem("prevTimeSpy")));
+
+    let streak = parseInt(localStorage.getItem("streakSpy")) || 1;
+    let maxStreak = parseInt(localStorage.getItem("maxStreakSpy")) || 1;
+
+    if (!isNaN(prevTime.getTime())) {
+        // Get the date parts only (ignoring time)
+        const currentDate = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate());
+        const prevDate = new Date(prevTime.getFullYear(), prevTime.getMonth(), prevTime.getDate());
+
+        // Check if the dates are consecutive
+        const diffInDays = (currentDate - prevDate) / (1000 * 60 * 60 * 24);
+
+        if (diffInDays === 1) {
+            streak += 1;
+            if (streak > maxStreak) {
+                maxStreak = streak;
+            }
+        } else if (diffInDays > 1) {
+            streak = 1;
+        }
+    }
+
+    // Update localStorage
+    localStorage.setItem("prevTimeSpy", currentTime.getTime());
+    localStorage.setItem("streakSpy", streak);
+    localStorage.setItem("maxStreakSpy", maxStreak);
+}
+
 // Displays congratulatory message when the correct guess is made
 function displayCongratulatoryMessage(tries) {
     const congratsMessageElement = document.getElementById("congrats_message");
     const triesTextElement = document.getElementById('tried-text');
     triesTextElement.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
+
+    const streakTextElement = document.getElementById('streak')
+    const streakLabelTextElement = document.getElementById('streak-label')
+    const streak = localStorage.getItem("streakSpy")
+    const maxStreak = localStorage.getItem("maxStreakSpy")
+    streakTextElement.innerText = streak
+    streakLabelTextElement.innerText = `Current Streak: ${streak} Max Streak: ${maxStreak}`
+
     setTimeout(() => {
         congratsMessageElement.classList.remove("hidden");
         congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -163,7 +199,6 @@ window.addEventListener('load', async function() {
     // Fetch character info data
     const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
     charactersInfoData = await characterInfoRes.json();
-    console.log(charactersInfoData);
 
     // Display today's answer splash image
     const splashElement = document.getElementById('splash-icon');

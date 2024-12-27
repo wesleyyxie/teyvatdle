@@ -1,7 +1,7 @@
 {
-    "name": "Aloy",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/e/e7/VO_Aloy_Chat_-_Help.ogg/revision/latest?cb=20210902221816",
-    "quote": "Let's get going. There are people who need our help.",
-    "id": "aloy",
-    "voiceline_id": 1
+    "name": "Faruzan",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/VO_Faruzan_Elemental_Skill_1_02.ogg/revision/latest?cb=20221207193127",
+    "quote": "Dare to mess with me?",
+    "id": "faruzan",
+    "voiceline_id": 2
 }

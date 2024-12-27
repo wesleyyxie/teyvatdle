@@ -1,15 +1,50 @@
 [
     {
-        "name": "Fischl",
-        "id": "fischl",
-        "type": "burst",
-        "abilityName": "Midnight Phantasmagoria"
+        "name": "Rosaria",
+        "id": "rosaria",
+        "type": "skill",
+        "abilityName": "Ravaging Confession"
     },
     {
-        "name": "Kaveh",
-        "id": "kaveh",
+        "name": "Xianyun",
+        "id": "xianyun",
         "type": "skill",
-        "abilityName": "Artistic Ingenuity"
+        "abilityName": "White Clouds at Dawn"
+    },
+    {
+        "name": "Diona",
+        "id": "diona",
+        "type": "skill",
+        "abilityName": "Icy Paws"
+    },
+    {
+        "name": "Furina",
+        "id": "furina",
+        "type": "burst",
+        "abilityName": "Let the People Rejoice"
+    },
+    {
+        "name": "Bennett",
+        "id": "bennett",
+        "type": "skill",
+        "abilityName": "Passion Overload"
+    },
+    {
+        "name": "Barbara",
+        "id": "barbara",
+        "type": "skill",
+        "abilityName": "Let the Show Begin"
+    },
+    {
+        "name": "Qiqi",
+        "id": "qiqi",
+        "type": "skill",
+        "abilityName": "Adeptus Art: Herald of Frost"
+    },
+    {
+        "name": "Nilou",
+        "id": "nilou",
+        "type": "burst",
+        "abilityName": "Dance of Abzendegi: Distant Dreams, Listening Spring"
     }
-]  }
 ]

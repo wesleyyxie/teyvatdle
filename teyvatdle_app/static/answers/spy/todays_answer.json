@@ -1,11 +1,11 @@
 {
-    "name": "Yaoyao",
-    "title": "Burgeoning Grace",
-    "vision": "Dendro",
-    "weapon": "Polearm",
+    "name": "Yanfei",
+    "title": "Wise Innocence",
+    "vision": "Pyro",
+    "weapon": "Catalyst",
     "gender": "Female",
     "nation": "Liyue",
-    "affiliation": "Streetward Rambler's Abode",
-    "release": "2023",
-    "id": "yaoyao"
+    "affiliation": "Liyue Harbor Adepti",
+    "release": "2021",
+    "id": "yanfei"
 }
