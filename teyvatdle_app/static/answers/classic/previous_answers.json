@@ -31,5 +31,93 @@
         "affiliation": "Knights of Favonius",
         "release": "2020",
         "id": "jean"
+    },
+    {
+        "name": "Sayu",
+        "title": "Mujina Ninja",
+        "vision": "Anemo",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Inazuma",
+        "affiliation": "Shuumatsuban",
+        "release": "2021",
+        "id": "sayu"
+    },
+    {
+        "name": "Yun Jin",
+        "title": "Stage Lucida",
+        "vision": "Geo",
+        "weapon": "Polearm",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Yun-Han Opera Troupe",
+        "release": "2022",
+        "id": "yun-jin"
+    },
+    {
+        "name": "Dori",
+        "title": "Treasure of Dream Garden",
+        "vision": "Electro",
+        "weapon": "Claymore",
+        "gender": "Female",
+        "nation": "Sumeru",
+        "affiliation": "Sumeru Merchant",
+        "release": "2022",
+        "id": "dori"
+    },
+    {
+        "name": "Ningguang",
+        "title": "Eclipsing Star",
+        "vision": "Geo",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Liyue",
+        "affiliation": "Liyue Qixing",
+        "release": "2020",
+        "id": "Ningguang"
+    },
+    {
+        "name": "Freminet",
+        "title": "Yearning for Unseen Depths",
+        "vision": "Cryo",
+        "weapon": "Claymore",
+        "gender": "Male",
+        "nation": "Fontaine",
+        "affiliation": "Hotel Bouffes d'ete",
+        "release": "2023",
+        "id": "freminet"
+    },
+    {
+        "name": "Nahida",
+        "title": "Physic of Purity",
+        "vision": "Dendro",
+        "weapon": "Catalyst",
+        "gender": "Female",
+        "nation": "Sumeru",
+        "affiliation": "Sumeru City",
+        "release": "2022",
+        "id": "nahida"
+    },
+    {
+        "name": "Gaming",
+        "title": "Leonine Vanguard",
+        "vision": "Pyro",
+        "weapon": "Claymore",
+        "gender": "Male",
+        "nation": "Liyue",
+        "affiliation": "Sword and Strongbox Secure Transport Agency",
+        "release": "2024",
+        "id": "gaming"
+    },
+    {
+        "name": "Amber",
+        "title": "Gliding Champion",
+        "vision": "Pyro",
+        "weapon": "Bow",
+        "gender": "Female",
+        "nation": "Mondstadt",
+        "affiliation": "Knights of Favonius",
+        "release": "2020",
+        "id": "amber"
     }
 ]

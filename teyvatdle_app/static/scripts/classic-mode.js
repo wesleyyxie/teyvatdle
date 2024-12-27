@@ -43,29 +43,36 @@ function placeIcon(iconElement, guessData){
     iconElement.style.backgroundRepeat = 'no-repeat';
 }
 
-function updateStreak(){
-    let currentTime = new Date().getTime()
-    let prevTime = localStorage.getItem("prevTimeClassic")
+function updateStreak() {
+    let currentTime = new Date();
+    let prevTime = new Date(parseInt(localStorage.getItem("prevTimeClassic")));
 
-    let streak = localStorage.getItem("streakClassic") || 1
-    let maxStreak = localStorage.getItem("maxStreakClassic") || 1
+    let streak = parseInt(localStorage.getItem("streakClassic")) || 1;
+    let maxStreak = parseInt(localStorage.getItem("maxStreakClassic")) || 1;
 
-    if (prevTime != null) {
-        if (Math.round((currentTime - prevTime) / (1000 * 60)) === 1){
-            streak = streak + 1
+    if (!isNaN(prevTime.getTime())) {
+        // Get the date parts only (ignoring time)
+        const currentDate = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate());
+        const prevDate = new Date(prevTime.getFullYear(), prevTime.getMonth(), prevTime.getDate());
+
+        // Check if the dates are consecutive
+        const diffInDays = (currentDate - prevDate) / (1000 * 60 * 60 * 24);
+
+        if (diffInDays === 1) {
+            streak += 1;
             if (streak > maxStreak) {
-                maxStreak = streak
+                maxStreak = streak;
             }
-        }
-        else {
-            streak = 1
+        } else if (diffInDays > 1) {
+            streak = 1;
         }
     }
-    localStorage.setItem("prevTimeClassic", currentTime)
-    localStorage.setItem("streakClassic", streak)
-    localStorage.setItem("maxStreakClassic", maxStreak)
-}
 
+    // Update localStorage
+    localStorage.setItem("prevTimeClassic", currentTime.getTime());
+    localStorage.setItem("streakClassic", streak);
+    localStorage.setItem("maxStreakClassic", maxStreak);
+}
 function submitGuess(e) {
     e.preventDefault();
     let inputElement = document.getElementById("guess");
@@ -124,14 +131,16 @@ function submitGuess(e) {
 function displayCongratulatoryMessage(tries) {
     const congratsMessageElement = document.getElementById("congrats_message");
     const triesTextElement = document.getElementById('tried-text')
+
+    triesTextElement.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
+
     const streakTextElement = document.getElementById('streak')
     const streakLabelTextElement = document.getElementById('streak-label')
     const streak = localStorage.getItem("streakClassic")
     const maxStreak = localStorage.getItem("maxStreakClassic")
-
-    triesTextElement.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
     streakTextElement.innerText = streak
     streakLabelTextElement.innerText = `Current Streak: ${streak} Max Streak: ${maxStreak}`
+   
     // Check if game state is loaded from storage
     const isLoadedFromStorage = localStorage.getItem("gameOverClassic") === "true";
 

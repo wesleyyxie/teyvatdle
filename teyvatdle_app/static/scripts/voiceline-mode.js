@@ -38,7 +38,6 @@ function checkGuess(guessData, row) {
 
 // Places the character icon
 function placeIcon(iconElement, guessData) {
-    console.log("Now placing icon");
     let imageName;
 
     // If your images are named using character names
@@ -46,7 +45,6 @@ function placeIcon(iconElement, guessData) {
     //imageName = guessData["id"];  
 
     const imageUrl = `/static/images/character_icons/${imageName}.png`;
-    console.log("Image URL:", imageUrl);
 
     iconElement.style.backgroundImage = `url('${imageUrl}')`;
     iconElement.style.backgroundSize = '75px 75px';
@@ -59,6 +57,36 @@ function placeIcon(iconElement, guessData) {
     iconElement.appendChild(spanElement)
 }
 
+function updateStreak() {
+    let currentTime = new Date();
+    let prevTime = new Date(parseInt(localStorage.getItem("prevTimeVoiceline")));
+
+    let streak = parseInt(localStorage.getItem("streakVoiceline")) || 1;
+    let maxStreak = parseInt(localStorage.getItem("maxStreakVoiceline")) || 1;
+
+    if (!isNaN(prevTime.getTime())) {
+        // Get the date parts only (ignoring time)
+        const currentDate = new Date(currentTime.getFullYear(), currentTime.getMonth(), currentTime.getDate());
+        const prevDate = new Date(prevTime.getFullYear(), prevTime.getMonth(), prevTime.getDate());
+
+        // Check if the dates are consecutive
+        const diffInDays = (currentDate - prevDate) / (1000 * 60 * 60 * 24);
+
+        if (diffInDays === 1) {
+            streak += 1;
+            if (streak > maxStreak) {
+                maxStreak = streak;
+            }
+        } else if (diffInDays > 1) {
+            streak = 1;
+        }
+    }
+
+    // Update localStorage
+    localStorage.setItem("prevTimeVoiceline", currentTime.getTime());
+    localStorage.setItem("streakVoiceline", streak);
+    localStorage.setItem("maxStreakVoiceline", maxStreak);
+}
 
 function submitGuess(e) {
     e.preventDefault();  // Prevent form submission
@@ -82,6 +110,7 @@ function submitGuess(e) {
         const row = createBlankRow();
 
         if (checkGuess(guessData, row)) {
+            updateStreak()
             displayCongratulatoryMessage(tries);  
             gameOver = true;
         }
@@ -96,7 +125,6 @@ function submitGuess(e) {
         let index = arrVoiceline.findIndex(obj => obj["name"].toLowerCase() === inputElement.value.toLowerCase());
         arrVoiceline.splice(index, 1)[0];
         localStorage.setItem("voicelineTries", tries);
-        console.log(arrVoiceline)
         localStorage.setItem("arrVoiceline", JSON.stringify(arrVoiceline));
 
         if (gameOver) {
@@ -125,6 +153,14 @@ function displayCongratulatoryMessage(tries) {
     const congratsMessageElement = document.getElementById("congrats_message");
     const triesTextElement = document.getElementById('tried-text')
     triesTextElement.innerText = tries < 2 ? "You guessed it in 1 try!" : `You guessed it in ${tries} tries!`;
+
+    const streakTextElement = document.getElementById('streak')
+    const streakLabelTextElement = document.getElementById('streak-label')
+    const streak = localStorage.getItem("streakVoiceline")
+    const maxStreak = localStorage.getItem("maxStreakVoiceline")
+    streakTextElement.innerText = streak
+    streakLabelTextElement.innerText = `Current Streak: ${streak} Max Streak: ${maxStreak}`
+
     setTimeout(() => {
         congratsMessageElement.classList.remove("hidden");
         congratsMessageElement.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
@@ -143,7 +179,6 @@ function resetGame(){
     const savedAnswer = localStorage.getItem("voicelineCurrentAnswer");
     if (savedAnswer !== answerData.name) {
         // Clear saved data if the answer has changed
-        console.log("Answer has changed. Clearing saved data...");
         localStorage.removeItem("voicelinePreviousGuesses");
         localStorage.removeItem("voicelineGameOver");
         localStorage.removeItem("voicelineTries");
@@ -160,7 +195,6 @@ window.addEventListener('load', async function() {
     
     const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
     charactersInfoData = await characterInfoRes.json(); // Load all character info
-    console.log("Characters Info Data:", charactersInfoData);
 
     const voicelineInfoRes = await fetch("/static/data/voicelines.json");
     voicelineInfoData = await voicelineInfoRes.json();
@@ -218,9 +252,7 @@ window.addEventListener('load', async function() {
     }
     else {
         arrVoiceline = JSON.parse(arrVoiceline)
-    }
-    console.log(arrVoiceline)
-    
+    }    
     autocomplete(document.getElementById("guess"), arrVoiceline);
 });
 

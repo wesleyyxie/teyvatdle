@@ -1,11 +1,11 @@
 {
-    "name": "Alhaitham",
-    "title": "Admonishing Instruction",
-    "vision": "Dendro",
-    "weapon": "Sword",
-    "gender": "Male",
-    "nation": "Sumeru",
-    "affiliation": "Sumeru Akademiya",
-    "release": "2023",
-    "id": "alhaitham"
+    "name": "Amber",
+    "title": "Gliding Champion",
+    "vision": "Pyro",
+    "weapon": "Bow",
+    "gender": "Female",
+    "nation": "Mondstadt",
+    "affiliation": "Knights of Favonius",
+    "release": "2020",
+    "id": "amber"
 }
