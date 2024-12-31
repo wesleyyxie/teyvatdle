@@ -1,50 +1,8 @@
 [
     {
-        "name": "Rosaria",
-        "id": "rosaria",
+        "name": "Venti",
+        "id": "venti",
         "type": "skill",
-        "abilityName": "Ravaging Confession"
-    },
-    {
-        "name": "Xianyun",
-        "id": "xianyun",
-        "type": "skill",
-        "abilityName": "White Clouds at Dawn"
-    },
-    {
-        "name": "Diona",
-        "id": "diona",
-        "type": "skill",
-        "abilityName": "Icy Paws"
-    },
-    {
-        "name": "Furina",
-        "id": "furina",
-        "type": "burst",
-        "abilityName": "Let the People Rejoice"
-    },
-    {
-        "name": "Bennett",
-        "id": "bennett",
-        "type": "skill",
-        "abilityName": "Passion Overload"
-    },
-    {
-        "name": "Barbara",
-        "id": "barbara",
-        "type": "skill",
-        "abilityName": "Let the Show Begin"
-    },
-    {
-        "name": "Qiqi",
-        "id": "qiqi",
-        "type": "skill",
-        "abilityName": "Adeptus Art: Herald of Frost"
-    },
-    {
-        "name": "Nilou",
-        "id": "nilou",
-        "type": "burst",
-        "abilityName": "Dance of Abzendegi: Distant Dreams, Listening Spring"
+        "abilityName": "Skyward Sonnet"
     }
 ]

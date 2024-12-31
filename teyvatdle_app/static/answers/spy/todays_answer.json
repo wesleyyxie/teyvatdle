@@ -1,11 +1,11 @@
 {
-    "name": "Yanfei",
-    "title": "Wise Innocence",
+    "name": "Xinyan",
+    "title": "Blazing Riff",
     "vision": "Pyro",
-    "weapon": "Catalyst",
+    "weapon": "Claymore",
     "gender": "Female",
     "nation": "Liyue",
-    "affiliation": "Liyue Harbor Adepti",
-    "release": "2021",
-    "id": "yanfei"
+    "affiliation": "Liyue Harbor",
+    "release": "2020",
+    "id": "Xinyan"
 }

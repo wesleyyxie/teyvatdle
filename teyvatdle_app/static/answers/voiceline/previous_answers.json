@@ -1,58 +1,9 @@
 [
     {
-        "name": "Shikanoin Heizou",
-        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/0/01/VO_Shikanoin_Heizou_Chat_-_Intuition.ogg/revision/latest?cb=20220714153115",
-        "quote": "Huh, my intuition tells me that something very interesting is about to happen...",
-        "id": "shikanoin-heizou",
+        "name": "Yun Jin",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/60/VO_Yun_Jin_When_It_Snows.ogg/revision/latest?cb=20220107123932",
+        "quote": "(Translated) Fie! This cold shall be mine end!",
+        "id": "yun-jin",
         "voiceline_id": 1
-    },
-    {
-        "name": "Kaveh",
-        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/b0/VO_Kaveh_Opening_Treasure_Chest_03.ogg/revision/latest?cb=20230509232815",
-        "quote": "This is incredible! No, extraordinary!",
-        "id": "kaveh",
-        "voiceline_id": 3
-    },
-    {
-        "name": "Hu Tao",
-        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/3/3e/VO_Hu_Tao_Chat_-_Wangsheng_Funeral_Parlor.ogg/revision/latest?cb=20210303203530",
-        "quote": "Wanna come over for tea?",
-        "id": "hu-tao",
-        "voiceline_id": 0
-    },
-    {
-        "name": "Aloy",
-        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/f/f5/VO_Aloy_Elemental_Skill_1_03.ogg/revision/latest?cb=20221112193254",
-        "quote": "Ever seen one of these?",
-        "id": "aloy",
-        "voiceline_id": 2
-    },
-    {
-        "name": "Gorou",
-        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/c/c4/VO_Gorou_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112201557",
-        "quote": "Let's distribute these among our forces.",
-        "id": "gorou",
-        "voiceline_id": 3
-    },
-    {
-        "name": "Noelle",
-        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/13/VO_Noelle_Chat_-_Being_Reliable.ogg/revision/latest?cb=20210112155530",
-        "quote": "Whenever you need me, I'll be there.",
-        "id": "noelle",
-        "voiceline_id": 0
-    },
-    {
-        "name": "Ningguang",
-        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/b/be/VO_Ningguang_Opening_Treasure_Chest_02.ogg/revision/latest?cb=20221112210504",
-        "quote": "We can't have treasure unaccounted for.",
-        "id": "Ningguang",
-        "voiceline_id": 2
-    },
-    {
-        "name": "Faruzan",
-        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/VO_Faruzan_Elemental_Skill_1_02.ogg/revision/latest?cb=20221207193127",
-        "quote": "Dare to mess with me?",
-        "id": "faruzan",
-        "voiceline_id": 2
     }
 ]
