@@ -1,7 +1,7 @@
 {
-    "name": "Faruzan",
-    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1a/VO_Faruzan_Elemental_Skill_1_02.ogg/revision/latest?cb=20221207193127",
-    "quote": "Dare to mess with me?",
-    "id": "faruzan",
-    "voiceline_id": 2
+    "name": "Yun Jin",
+    "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/60/VO_Yun_Jin_When_It_Snows.ogg/revision/latest?cb=20220107123932",
+    "quote": "(Translated) Fie! This cold shall be mine end!",
+    "id": "yun-jin",
+    "voiceline_id": 1
 }

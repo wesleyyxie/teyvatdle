@@ -37,7 +37,7 @@ def scheduler():
 
 
 # scheduler()
-update_answers()
+# update_answers()
 
 
 @app.route("/spy")

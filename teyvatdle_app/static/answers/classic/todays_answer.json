@@ -1,11 +1,11 @@
 {
-    "name": "Amber",
-    "title": "Gliding Champion",
-    "vision": "Pyro",
-    "weapon": "Bow",
-    "gender": "Female",
-    "nation": "Mondstadt",
-    "affiliation": "Knights of Favonius",
-    "release": "2020",
-    "id": "amber"
+    "name": "Kaveh",
+    "title": "Empyrean Reflection",
+    "vision": "Dendro",
+    "weapon": "Claymore",
+    "gender": "Male",
+    "nation": "Sumeru",
+    "affiliation": "Independent Design Studio",
+    "release": "2023",
+    "id": "kaveh"
 }
