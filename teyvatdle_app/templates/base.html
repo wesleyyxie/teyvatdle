@@ -22,14 +22,43 @@
     </script>
   </head>
   <body class="flex flex-row justify-center h-screen m-0 bg-black">
-    <div class="w-full absolute -z-999 relative bg-no-repeat bg-background bg-cover h-screen overflow-hidden filter brightness-75 from-current to-black">
+    <script src="{{ url_for('static',filename='/scripts/modal.js') }}"></script>
+    <div class="w-full absolute z-0 relative bg-no-repeat bg-background bg-cover h-screen overflow-hidden filter brightness-75 from-current to-black">
       <div class="fixed inset-0 bg-gradient-to-b from-black/0 to-black/100 pointer-events-none"></div>
     </div>
-    <div class="flex absolute z-1 flex-col h-[500px] pt-[50px] top-[50px] overflow-y-visible">
+    <div class="flex absolute z-10 flex-col pt-[50px] top-[50px] overflow-y-visible">
       <a class="flex justify-center hover:scale-button" href="/">
         <img src="{{url_for('static', filename='/images/site_logo.png')}}" class="aspect-[475/157]">
       </a>
       {% block gamemode %}{% endblock %}
+      <button onclick="activateModal()" class="hover:scale-button fixed bottom-4 left-4 bg-cover bg-center w-[50px] h-[50px] bg-no-repeat" style="background-image: url(&quot;/static/images/buttons/info_button.png&quot;); background-size: 40px 40px;"></button>
+    </div>
+    <div id="modal-overlay" class="hidden bg-black/[0.5] pt-[50px] fixed overflow-auto z-50 left-0 top-0 w-full h-full">
+      <div id="modal-content" class="text-center text-white lg:w-1/2 w-5/6 m-auto lg:text-xl rounded-lg" style="background-color: rgba(39, 52, 63); border: 3px solid rgb(120, 120, 120); box-sizing: border-box;">
+        <button id="close" onclick="closeModal()" class="cursor-pointer float-right float-top pr-[5px] text-3xl">&times;</button>
+        <div class="content whitespace-pre-line p-[20px]"><p>Test your   Genshin Impact knowledge by playing through our 4 gamemodes
+          
+            This website is inspired by <a class="underline text-[#b1f4f4]" href="https://loldle.net/" target="_blank">Loldle</a> and <a class="underline text-[#b1f4f4]" href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle</a>
+            
+            Creators:
+            Wesley Xie
+            Jason Lam
+
+            Credits:
+            Game data and images are gathered from <a class="underline text-[#b1f4f4]" href="https://genshin.dev/" target="_blank">genshin.dev API</a>
+            Character splashes and voicelines are from the <a class="underline text-[#b1f4f4]" href="https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki" target="_blank">Genshin Impact Wiki on Fandom</a>
+            Font found <a class="underline text-[#b1f4f4]" href="https://ko-fi.com/s/003e0b6b50" target="_blank">here</a> 
+            Background is by <a class="underline text-[#b1f4f4]" href="https://www.hoyolab.com/article/383753" target="_blank">HoYoverse</a>
+
+            © All rights reserved by HoYoverse. Other properties belong to their respective owners. 
+            HoYoverse does not endorse or sponsor this project.
+
+            <a class="underline text-[#b1f4f4]" href="https://github.com/wesleyyxie/teyvatdle" target="_blank">Source Code </a>
+
+            If you have any questions or concerns, feel free to contact us at <a href="mailto: teyvatdle@gmail.com" class="underline  text-[#b1f4f4]">teyvatdle@gmail.com</a>
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
