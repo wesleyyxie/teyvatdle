@@ -13,7 +13,7 @@ export function autocomplete(inp, arr) {
         /*create a DIV element that will contain the items (values):*/
         a = document.createElement("DIV");
         a.setAttribute("id", this.id + "autocomplete-list");
-        a.setAttribute("class", "autocomplete-items bg-[#f1e8e0] z-99 absolute w-[280px] left-1/2 -translate-x-1/2 max-h-[300px] overflow-y-scroll");
+        a.setAttribute("class", "autocomplete-items bg-[#f1e8e0] z-99 absolute w-[270px] left-1/2 -translate-x-1/2 max-h-[300px] overflow-y-scroll");
         /*append the DIV element as a child of the autocomplete container:*/
         this.parentNode.appendChild(a);
         /*for each item in the array...*/
