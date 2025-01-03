@@ -1,4 +1,4 @@
-<div style="text-align:center">
+<div align="center">
 <img src="./teyvatdle_app/static/images/site_logo.png"/>
 </div>
 
