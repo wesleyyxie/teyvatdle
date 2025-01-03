@@ -1,35 +1,29 @@
-# teyvatdle
+# Teyvatdle
 
-Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle invites you on a journey across Teyvat, where your knowledge of Genshin Impact characters will be put to the test. Use clues and information from your previous guesses to unearth the character shrouded in mystery. Can you master the elements and uncover the truth before your adventure comes to an end?
+Welcome to **Teyvatdle**, a website inspired by [Wordle](https://www.nytimes.com/games/wordle/index.html) and [Loldle](https://loldle.net/) to test your knowledge on Genshin Impact characters.  
 
 ## How to Play
 
-1. **Choose a Category**: Teyvatdle offers four exciting game modes to test different aspects of your Genshin Impact character knowledge. Pick one to get started:
-   - **Classic**: Our classic Teyvatdle game mode! Guess a character and unlock hints for each guess!
-   - **Voiceline**: Guess the character based on in-game voice lines!
-   - **Ability**: Which character does this ability belong to?
-   - **Spy**: Can you see through the pixelation and guess the character?
+1. **Choose a Category**: Teyvatdle offers four game modes to test different aspects of your Genshin Impact character knowledge. Pick one to get started:
+   - **Classic**: Guess the character based on their attributes
+   - **Voiceline**: Guess the character based on an in-game voiceline
+   - **Ability**: Guess the character based on an image of one of their talents
+   - **Spy**: Guess the character based on lower quality images of their splash art
 
 2. **Make a Guess**: Enter the name of a Genshin Impact character. Teyvatdle will provide feedback to help you get closer to the answer:
    - Each hint will indicate if you're getting closer to the answer.
    - Use the information to refine your future guesses.
 
-3. **Solve It**: Keep guessing until you unveil the correct character! While you have an unlimited number of attempts, true Travelers aim to solve the mystery in as few tries as possible. Use each hint wisely and challenge yourself to become the greatest traveler!
+3. **Solve It**: Keep guessing based on given hints and clues until you unveil the correct character in the least amount of attempts possible!
 
-
-## Features
-
-- **Multiple Game Modes**: Challenge yourself across different categories to keep the game fresh and exciting.
-- **Interactive Feedback**: Hints after each guess will guide you toward the right answer by revealing information about the correct character.
-- **Genshin Impact Themed**: Enjoy a game experience that is entirely centered around the beloved characters of Teyvat.
-- **Daily Streaks**: Track your progress with a streak counter and share your achievements with fellow travelers. 
+4. **Keep Your Streak**: Make sure to play and win everyday to maintain your daily streak!
 
 ## Setup
 
 ### Prerequisites
 
 - Python3 (version 3.12.6 or higher)
-- `pip` (Python package installer)
+- pip (Python package installer)
 
 ### Steps
 
@@ -42,14 +36,16 @@ Welcome to **Teyvatdle** Traveler! Inspired by the classic Wordle, Teyvatdle inv
    ```bash
    pip install -r requirements.txt
 
+3. **Start the development server**
+   ```bash
+   cd teyvatdle_app
+   python app.py
 
 ## Acknowledgements
-   - Teyvatdle is inspired by Wordle and Loldle.
-   - This project incorporates references to the characters, lore, and assets from Genshin Impact, which is developed and owned by HoYoverse.
-   - All rights to the Genshin Impact name, characters, and related content belong to HoYoverse. These assets are used in a non-commercial, fan-made project to celebrate the      game and its community.
+   - Teyvatdle is inspired by [Wordle](https://www.nytimes.com/games/wordle/index.html) and [Loldle](https://loldle.net/).
+   - © All rights reserved by HoYoverse. Other properties belong to their respective owners. HoYoverse does not endorse or sponsor this project.
    - This project uses the [GenshinDev API](https://github.com/genshindev/api) to access character data and other resources.
    - The font used in this project is sourced from [Ko-fi](https://ko-fi.com/s/003e0b6b50).
-     
-     **Disclaimer**: This project is not affiliated with, endorsed by, or sponsored by **HoYoverse**. It is a fan-made project created for entertainment purposes only.
 
-## Licenses
+## License
+
