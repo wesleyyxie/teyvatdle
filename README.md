@@ -49,3 +49,4 @@ Welcome to **Teyvatdle**, a website inspired by [Wordle](https://www.nytimes.com
 
 ## License
 
+Teyvatdle is released under the [MIT License](https://github.com/wesleyyxie/teyvatdle/blob/main/LICENSE). See `LICENSE` for more info.
