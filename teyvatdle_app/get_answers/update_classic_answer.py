@@ -29,7 +29,7 @@ def get_random_character():
         if previous_answers == [] or random_character not in previous_answers:
             print(f"Selected {random_character.get("name")}!")
             break
-        print(f"{random_character.get("name")} was already an answer! Reselecting!")
+        print(f"{random_character.get('name')} was already an answer! Reselecting!")
 
     previous_answers.append(random_character)
     with open(previous_answers_path, "w") as previous_answers_json:
