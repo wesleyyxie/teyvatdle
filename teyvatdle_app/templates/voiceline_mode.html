@@ -20,14 +20,14 @@
     
     <form autocomplete="off" class="flex w-[300px] items-center relative inline-block"id="guess-form">
         <div class="autocomplete w-[300px]">
-            <input id="guess" style="background-image: url(&quot;/static/images/input.png&quot;); background-size: 300px 58px;" class="bg-transparent bg-no-repeat outline-none text-white w-[300px] pl-[25px] p-[18px]" type="text" name="guess-character" placeholder="Character">
+            <input id="guess" style="background-image: url(&quot;/static/images/input.png&quot;); background-size: 340px 65px;" class="bg-transparent bg-center bg-no-repeat outline-none text-white w-[300px] pl-[25px] p-[18px]" type="text" name="guess-character" placeholder="Character">
         </div>
-        <input id="submit" value='' style="background-image: url(&quot;/static/images/buttons/submit_button.png&quot;); background-size: 40px 40px;" class="absolute hover:brightness-110 right-[10px] bg-no-repeat bg-center bg-transparent aspect-[1] h-[40px] ml-[10px] cursor-pointer" type="submit">
+        <input id="submit" value='' style="background-image: url(&quot;/static/images/buttons/submit_button.png&quot;); background-size: 40px 40px;" class="absolute hover:brightness-110 top-[11px] right-[8px] bg-no-repeat bg-center bg-transparent aspect-[1] h-[40px] ml-[10px] cursor-pointer" type="submit">
     </form>
     <div id="results">
         
     </div>
-    <div id="congrats_message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 rounded-lg">
+    <div id="congrats_message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 mb-8 rounded-lg">
         <div class="font-bold text-3xl text-center">Congrats!</div>
         <div id="tried-text" class="mb-[10px] text-lg text-center">"You guessed it in 1 try!"</div>
         <div class="streak cursor-pointer hover:scale-button flex pt-[25px] justify-center h-[60px] w-[60px] bg-center bg-cover bg-no-repeat" style="background-image: url(&quot;/static/images/streakIcon-WHITE.webp&quot;); background-size: 60px 60px;">
@@ -37,7 +37,7 @@
         <span class="pt-[10px]">Next character in:</span>
         <div class="font-bold text-3xl" id="timer"></div>
         <div class="font-bold text-xl text-center mt-4">Next Mode</div>
-        <div class="bg-no-repeat hover:scale-button cursor-pointer bg-center aspect-[173/50] w-[173px]" onclick="location.href='/ability'" style="background-image: url(&quot;/static/images/buttons/ability_button_short.png&quot;); background-size: 173px 50px;"></div>
+        <div class="bg-no-repeat hover:scale-button cursor-pointer bg-center aspect-[160/50] w-[173px]" onclick="location.href='/ability'" style="background-image: url(&quot;/static/images/buttons/ability_button_short.png&quot;); background-size: 170px 55px;"></div>
         <div class="font-bold text-xl text-center mt-4">Other Modes</div>
         <div class="flex gap-4 justify-center mt-2">
             <div class="gamemode-button bg-no-repeat w-[50px] h-[50px] cursor-pointer hover:scale-button" onclick="location.href='/ability'" style="background-image: url(&quot;/static/images/buttons/ability_1.png&quot;); background-size: 50px 50px;">
