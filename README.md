@@ -1,5 +1,6 @@
-#
-![bannner](/teyvatdle_app/static/images/site_logo.png)
+<div style="text-align:center">
+<img src="./teyvatdle_app/static/images/site_logo.png"/>
+</div>
 
 Welcome to [**Teyvatdle**](https://teyvatdle.net), a website inspired by [Wordle](https://www.nytimes.com/games/wordle/index.html) and [Loldle](https://loldle.net/) to test your knowledge on Genshin Impact characters. Check it out at [teyvatdle.net](https://teyvatdle.net).
 
