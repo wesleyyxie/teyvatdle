@@ -15,7 +15,8 @@ function createBlankRow() {
     "text-[13px]",
     "flex-row",
     "gap-x-[12px]",
-    "pb-[10px]"
+    "pb-[10px]",
+    "w-[510px]"
   );
   for (let i = 0; i < categories.length; i++) {
     let categoryDiv = document.createElement("div");
