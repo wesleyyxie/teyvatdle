@@ -233,7 +233,22 @@ function resetGame() {
   }
 }
 
+function playAudio() {
+  let audio = new Audio();
+  audio.autoplay = true
+  // (This is a tiny MP3 file that is silent and extremely short - retrieved from https://bigsoundbank.com and then modified)
+  audio.src = "data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
+
+  // later on when you actually want to play a sound at any point without user interaction
+  audio.src = `/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`;
+  audio.volume = document.getElementById("audioLevel").value;
+  audio.play();
+}
+
+window.playAudio = playAudio;
+
 window.addEventListener("load", async function () {
+  
   const answerRes = await fetch("/static/answers/voiceline/todays_answer.json");
   answerData = await answerRes.json(); // Load today's answer
   
@@ -287,7 +302,7 @@ window.addEventListener("load", async function () {
   document.getElementById("guess").focus();
   document.addEventListener("keyup", checkSubmit);
   document.getElementById("guess-form").addEventListener("submit", submitGuess);
-  document.getElementById("play_audio").addEventListener("click", playAudio);
+  //document.getElementById("play_audio").addEventListener("click", playAudio);
 
   var arrVoiceline = localStorage.getItem("arrVoiceline");
   if (arrVoiceline == null) {
@@ -298,15 +313,3 @@ window.addEventListener("load", async function () {
   }
   autocomplete(document.getElementById("guess"), arrVoiceline);
 });
-
-export function playAudio() {
-  let audio = new Audio();
-  audio.autoplay = true
-  // (This is a tiny MP3 file that is silent and extremely short - retrieved from https://bigsoundbank.com and then modified)
-  audio.src = "data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
-
-  // later on when you actually want to play a sound at any point without user interaction
-  audio.src = `/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`;
-  audio.volume = document.getElementById("audioLevel").value;
-  audio.play();
-}
