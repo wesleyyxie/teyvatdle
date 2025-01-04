@@ -234,12 +234,9 @@ function resetGame() {
 }
 
 function playAudio() {
-  let audioPlayer = document.createElement('audio');
-  let audioContainer = document.getElementById('audio_container');
-
+  let audioPlayer = document.getElementById('audio-player')
   audioPlayer.src = `/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`;
   audioPlayer.volume = document.getElementById("audioLevel").value;
-  audioContainer.appendChild(audioPlayer);
   audioPlayer.play();
 }
 
@@ -256,6 +253,7 @@ window.addEventListener("load", async function () {
   const voicelineInfoRes = await fetch("/static/data/voicelines.json");
   voicelineInfoData = await voicelineInfoRes.json();
 
+  
   // Display today's answer quote from todays_answer.json
   const randomQuoteElement = document.getElementById("random_quote");
   randomQuoteElement.innerText = `"${answerData.quote}"`;
@@ -291,6 +289,7 @@ window.addEventListener("load", async function () {
 
   const cluesCountdownElement = document.getElementById("audio_countdown");
   const audioContainer = document.getElementById("audio_container");
+
   if (tries < 3) {
     if (tries == 1) {
       cluesCountdownElement.innerText = `Audio clue in 1 try`;
