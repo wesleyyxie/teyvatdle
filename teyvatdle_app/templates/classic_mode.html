@@ -2,7 +2,7 @@
 {% block gamemode %}
 <script type="module" src="{{ url_for('static',filename='/scripts/classic-mode.js') }}"></script>
 <script type="module" src="{{ url_for('static',filename='/scripts/timer.js') }}"></script>
-<div class="flex flex-col justify-center items-center gap-y-[10px]">
+<div class="flex flex-col justify-center items-center gap-y-[10px] w-screen">
     <div class="flex justify-center items-center mt-[15px] h-[100px] w-[250px] rounded-lg" 
          style="background-color: rgba(39, 52, 63, 0.8); border: 3px solid rgb(120, 120, 120); box-sizing: border-box;">
         <span class="text-white p-[35px] text-center font-bold">
@@ -17,27 +17,29 @@
         </div>
         <input id="submit" value='' style="background-image: url(&quot;/static/images/buttons/submit_button.png&quot;); background-size: 40px 40px;" class="absolute hover:brightness-110 top-[11px] right-[8px] bg-no-repeat bg-center bg-transparent aspect-[1] h-[40px] ml-[10px] cursor-pointer" type="submit">
     </form>
-    <div id="hints_container" class="flex text-white font-bold flex-row gap-x-[12px]">
-        <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_name">
-            Character
+    <div class="overflow-x-scroll w-10/12 flex flex-col gap-y-[10px] max-w-[510px] md:overflow-x-hidden">
+        <div id="hints_container" class="flex w-[510px] text-white font-bold m-0 flex-row gap-x-[12px]">
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_name">
+                Character
+            </div>
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_gender">
+                Gender
+            </div>
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_vision">
+                Vision
+            </div>
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_weapon">
+                Weapon
+            </div>
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_nation">
+                Region
+            </div>
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_release">
+                Release
+            </div>
         </div>
-        <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_gender">
-            Gender
-        </div>
-        <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_vision">
-            Vision
-        </div>
-        <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_weapon">
-            Weapon
-        </div>
-        <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_nation">
-            Region
-        </div>
-        <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_release">
-            Release
-        </div>
+        <div id="results">
     </div>
-    <div id="results">
         
     </div>
     <div id="congrats_message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 mb-8 rounded-lg">
