@@ -27,7 +27,7 @@ def get_random_character():
     while True:
         random_character = random.choice(characters)
         if previous_answers == [] or random_character not in previous_answers:
-            print(f"Selected {random_character.get("name")}!")
+            print(f"Selected {random_character.get('name')}!")
             break
         print(f"{random_character.get('name')} was already an answer! Reselecting!")
 
