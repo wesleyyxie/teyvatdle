@@ -132,7 +132,13 @@ function submitGuess(e) {
     inputElement.value = "";
     inputElement.focus();
     if (tries <= 6) {
-      clueCountdown.innerText = `Clue in ${2 - (tries % 2)} tries`;
+      let i = 2 - (tries % 2)
+      if (i == 1) {
+        clueCountdown.innerText = `Clue in 1 try`;
+      }
+      else {
+        clueCountdown.innerText = `Clue in ${i} tries`;
+      }
     }
   }
 
@@ -253,7 +259,13 @@ window.addEventListener("load", async function () {
   let clueCountdown = document.getElementById("clue_countdown");
 
   if (tries < 6) {
-    clueCountdown.innerText = `Clue in ${2 - (tries % 2)} tries`;
+    let i = 2 - (tries % 2)
+    if (i == 1) {
+      clueCountdown.innerText = `Clue in 1 try`;
+    }
+    else {
+      clueCountdown.innerText = `Clue in ${i} tries`;
+    }
   }
 
   if (tries >= 6) {

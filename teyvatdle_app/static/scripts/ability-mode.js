@@ -180,7 +180,12 @@ function submitGuess(e) {
     inputElement.focus();
     autocomplete(document.getElementById("guess"), arrAbility);
     if (tries < 5) {
-      clueCountdown.innerText = `Clues in ${5 - tries} tries`;
+      if (5 - tries == 1) {
+        clueCountdown.innerText = `Clues in 1 try`;
+      }
+      else {
+        clueCountdown.innerText = `Clues in ${5 - tries} tries`;
+      }
     }
   }
 
@@ -284,7 +289,12 @@ window.addEventListener("load", async function () {
   let cluesCountdownElement = document.getElementById("clue_countdown");
   let nameClue = document.getElementById("name_clue");
   if (tries < 5) {
-    cluesCountdownElement.innerText = `Clues in ${5 - tries} tries`;
+    if (5 - tries == 1) {
+      cluesCountdownElement.innerText = `Clues in 1 try`;
+    }
+    else {
+      cluesCountdownElement.innerText = `Clues in ${5 - tries} tries`;
+    }
   } else {
     cluesCountdownElement.classList.add("hidden");
     document.getElementById("ability-icon").classList.remove("grayscale");

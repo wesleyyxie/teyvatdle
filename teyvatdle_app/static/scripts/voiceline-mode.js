@@ -177,7 +177,12 @@ function submitGuess(e) {
     inputElement.value = "";
     inputElement.focus();
     if (tries < 3) {
-      audioCountdown.innerText = `Audio clue in ${3 - tries} tries`;
+      if (3 - tries == 1) {
+        audioCountdown.innerText = `Audio clue in 1 try`;
+      }
+      else {
+        audioCountdown.innerText = `Audio clue in ${3 - tries} tries`;
+      }
     }
   }
 
@@ -233,15 +238,6 @@ function resetGame() {
   }
 }
 
-function playAudio() {
-  let audioPlayer = document.getElementById('audio-player')
-  audioPlayer.src = `/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`;
-  audioPlayer.volume = document.getElementById("audioLevel").value;
-  audioPlayer.play();
-}
-
-window.playAudio = playAudio;
-
 window.addEventListener("load", async function () {
   
   const answerRes = await fetch("/static/answers/voiceline/todays_answer.json");
@@ -289,9 +285,16 @@ window.addEventListener("load", async function () {
 
   const cluesCountdownElement = document.getElementById("audio_countdown");
   const audioContainer = document.getElementById("audio_container");
+  let audioPlayer =  new Audio(`/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`);
+  document.getElementById('play_audio').addEventListener('click', function () {
+    audioPlayer.volume = document.getElementById('audioLevel').value
+    audioPlayer.play().catch(error => {
+        console.error('Audio playback failed:', error);
+    });
+});
 
   if (tries < 3) {
-    if (tries == 1) {
+    if (3 - tries == 1) {
       cluesCountdownElement.innerText = `Audio clue in 1 try`;
     }
     else {
