@@ -234,15 +234,13 @@ function resetGame() {
 }
 
 function playAudio() {
-  let audio = new Audio();
-  audio.autoplay = true
-  // (This is a tiny MP3 file that is silent and extremely short - retrieved from https://bigsoundbank.com and then modified)
-  audio.src = "data:audio/mpeg;base64,SUQzBAAAAAABEVRYWFgAAAAtAAADY29tbWVudABCaWdTb3VuZEJhbmsuY29tIC8gTGFTb25vdGhlcXVlLm9yZwBURU5DAAAAHQAAA1N3aXRjaCBQbHVzIMKpIE5DSCBTb2Z0d2FyZQBUSVQyAAAABgAAAzIyMzUAVFNTRQAAAA8AAANMYXZmNTcuODMuMTAwAAAAAAAAAAAAAAD/80DEAAAAA0gAAAAATEFNRTMuMTAwVVVVVVVVVVVVVUxBTUUzLjEwMFVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQsRbAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVf/zQMSkAAADSAAAAABVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVVV";
+  let audioPlayer = document.createElement('audio');
+  let audioContainer = document.getElementById('audio_container');
 
-  // later on when you actually want to play a sound at any point without user interaction
-  audio.src = `/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`;
-  audio.volume = document.getElementById("audioLevel").value;
-  audio.play();
+  audioPlayer.src = `/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`;
+  audioPlayer.volume = document.getElementById("audioLevel").value;
+  audioContainer.appendChild(audioPlayer);
+  audioPlayer.play();
 }
 
 window.playAudio = playAudio;
@@ -294,7 +292,12 @@ window.addEventListener("load", async function () {
   const cluesCountdownElement = document.getElementById("audio_countdown");
   const audioContainer = document.getElementById("audio_container");
   if (tries < 3) {
-    cluesCountdownElement.innerText = `Audio clue in ${3 - tries} tries`;
+    if (tries == 1) {
+      cluesCountdownElement.innerText = `Audio clue in 1 try`;
+    }
+    else {
+      cluesCountdownElement.innerText = `Audio clue in ${3 - tries} tries`;
+    }
   } else {
     cluesCountdownElement.classList.add("hidden");
     audioContainer.classList.remove("hidden");
