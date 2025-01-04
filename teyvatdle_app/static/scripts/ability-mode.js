@@ -126,15 +126,25 @@ function submitGuess(e) {
     let currentCharacter = charactersInfoData[i];
     if (currentCharacter["name"].toLowerCase() === guess.toLowerCase()) {
       guessData = currentCharacter;
-      tries++;
       break;
     }
   }
 
   if (guessData) {
+    const previousGuesses =
+      JSON.parse(localStorage.getItem("abilityPreviousGuesses")) || [];
+
+    for (let j = 0; j < previousGuesses.length; j++) {
+      if (guessData.name == previousGuesses[j].name) {
+        return
+      }
+    }
+
+    previousGuesses.push(guessData);
+
     // If guess is not empty, place a row with the guess
     const row = createBlankRow();
-
+    tries++;
     if (checkGuess(guessData, row)) {
       // User wins
       updateStreak();
@@ -144,9 +154,6 @@ function submitGuess(e) {
     resultsContainer.prepend(row);
 
     // Save the guess data to localStorage
-    const previousGuesses =
-      JSON.parse(localStorage.getItem("abilityPreviousGuesses")) || [];
-    previousGuesses.push(guessData);
     localStorage.setItem(
       "abilityPreviousGuesses",
       JSON.stringify(previousGuesses)

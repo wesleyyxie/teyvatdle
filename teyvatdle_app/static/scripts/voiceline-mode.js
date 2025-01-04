@@ -126,14 +126,25 @@ function submitGuess(e) {
     let currentCharacter = voicelineInfoData[i];
     if (currentCharacter["name"].toLowerCase() === guess.toLowerCase()) {
       guessData = currentCharacter;
-      tries++;
       break;
     }
   }
 
   if (guessData) {
+    const previousGuesses =
+      JSON.parse(localStorage.getItem("voicelinePreviousGuesses")) || [];
+
+    for (let j = 0; j < previousGuesses.length; j++) {
+      if (guessData.name == previousGuesses[j].name) {
+        return
+      }
+    }
+    
+    previousGuesses.push(guessData);
+
     const row = createBlankRow();
 
+    tries++;
     if (checkGuess(guessData, row)) {
       updateStreak();
       displayCongratulatoryMessage(tries);
@@ -142,19 +153,16 @@ function submitGuess(e) {
     resultsContainer.prepend(row);
 
     // Save the guess data to localStorage
-    const previousGuesses =
-      JSON.parse(localStorage.getItem("voicelinePreviousGuesses")) || [];
-    previousGuesses.push(guessData);
-    localStorage.setItem(
-      "voicelinePreviousGuesses",
-      JSON.stringify(previousGuesses)
-    );
 
     let arrVoiceline = JSON.parse(localStorage.getItem("arrVoiceline"));
     let index = arrVoiceline.findIndex(
       (obj) => obj["name"].toLowerCase() === inputElement.value.toLowerCase()
     );
     arrVoiceline.splice(index, 1)[0];
+    localStorage.setItem(
+      "voicelinePreviousGuesses",
+      JSON.stringify(previousGuesses)
+    );
     localStorage.setItem("voicelineTries", tries);
     localStorage.setItem("arrVoiceline", JSON.stringify(arrVoiceline));
 

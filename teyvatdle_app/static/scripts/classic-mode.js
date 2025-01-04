@@ -122,19 +122,16 @@ function submitGuess(e) {
     }
   }
   if (guessData) {
-    tries++; // Increment tries count
-    placeIcon(row.querySelector("#guess_image"), guessData);
-
-    for (let i = 0; i < categories.length; i++) {
-      if (!checkGuess(categories[i], guessData, row, i)) {
-        gameOver = false;
-      }
-    }
-    resultsContainer.prepend(row);
-
     // Save the guess data to localStorage
     const previousGuesses =
       JSON.parse(localStorage.getItem("previousGuessesClassic")) || [];
+    
+    // If current guess is in previous guess, return
+    for (let j = 0; j < previousGuesses.length; j++) {
+      if (guessData.name == previousGuesses[j].name) {
+        return
+      }
+    }
     previousGuesses.push(guessData);
 
     let arrClassic = JSON.parse(localStorage.getItem("arrClassic"));
@@ -146,6 +143,18 @@ function submitGuess(e) {
       "previousGuessesClassic",
       JSON.stringify(previousGuesses)
     );
+
+    placeIcon(row.querySelector("#guess_image"), guessData);
+
+    for (let i = 0; i < categories.length; i++) {
+      if (!checkGuess(categories[i], guessData, row, i)) {
+        gameOver = false;
+      }
+    }
+    resultsContainer.prepend(row);
+
+    tries++; // Increment tries count
+
     localStorage.setItem("classicTries", tries);
     localStorage.setItem("arrClassic", JSON.stringify(arrClassic));
 

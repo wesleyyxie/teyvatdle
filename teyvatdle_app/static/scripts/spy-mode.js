@@ -87,14 +87,23 @@ function submitGuess(e) {
     let currentCharacter = charactersInfoData[i];
     if (currentCharacter["name"].toLowerCase() === guess.toLowerCase()) {
       guessData = currentCharacter;
-      tries++;
       break;
     }
   }
 
   if (guessData) {
-    const row = createBlankRow();
+    const previousGuesses =
+      JSON.parse(localStorage.getItem("spyPreviousGuesses")) || [];
 
+    // If current guess is in previous guess, return
+    for (let j = 0; j < previousGuesses.length; j++) {
+      if (guessData.name == previousGuesses[j].name) {
+        return
+      }
+    }
+    previousGuesses.push(guessData);
+    const row = createBlankRow();
+    tries++;
     if (checkGuess(guessData, row)) {
       updateStreak();
       displayCongratulatoryMessage(tries);
@@ -103,9 +112,6 @@ function submitGuess(e) {
     resultsContainer.prepend(row);
 
     // Save the guess data to localStorage
-    const previousGuesses =
-      JSON.parse(localStorage.getItem("spyPreviousGuesses")) || [];
-    previousGuesses.push(guessData);
     localStorage.setItem("spyPreviousGuesses", JSON.stringify(previousGuesses));
 
     let arrSpy = JSON.parse(localStorage.getItem("arrSpy"));
