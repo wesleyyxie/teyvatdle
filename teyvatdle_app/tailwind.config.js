@@ -11,9 +11,6 @@ module.exports = {
         'background': "url('/static/images/background.jpg')",
       },
     },
-    screens: {
-      'container': '510px',
-    }
   },
   plugins: [],
 }
