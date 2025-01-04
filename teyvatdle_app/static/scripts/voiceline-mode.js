@@ -286,6 +286,7 @@ window.addEventListener("load", async function () {
   const cluesCountdownElement = document.getElementById("audio_countdown");
   const audioContainer = document.getElementById("audio_container");
   let audioPlayer =  new Audio(`/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`);
+  audioPlayer.preload = "auto";
   document.getElementById('play_audio').addEventListener('click', function () {
     audioPlayer.volume = document.getElementById('audioLevel').value
     audioPlayer.play().catch(error => {
