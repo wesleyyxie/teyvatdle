@@ -558,9 +558,33 @@ video {
   width: 100%;
 }
 
-@media (min-width: 510px) {
+@media (min-width: 640px) {
   .container {
-    max-width: 510px;
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
   }
 }
 
@@ -784,6 +808,10 @@ video {
   width: 83.333333%;
 }
 
+.w-11\/12 {
+  width: 91.666667%;
+}
+
 .w-5\/6 {
   width: 83.333333%;
 }
@@ -806,10 +834,6 @@ video {
 
 .w-\[300px\] {
   width: 300px;
-}
-
-.w-\[430px\] {
-  width: 430px;
 }
 
 .w-\[50px\] {
@@ -836,8 +860,16 @@ video {
   width: 100%;
 }
 
-.w-screen {
-  width: 100vw;
+.max-w-\[430px\] {
+  max-width: 430px;
+}
+
+.max-w-\[510px\] {
+  max-width: 510px;
+}
+
+.max-w-\[650px\] {
+  max-width: 650px;
 }
 
 .-translate-x-1\/2 {
@@ -884,6 +916,10 @@ video {
 
 .overflow-auto {
   overflow: auto;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .overflow-y-visible {
@@ -1009,6 +1045,10 @@ video {
 
 .p-\[15px\] {
   padding: 15px;
+}
+
+.p-\[16px\] {
+  padding: 16px;
 }
 
 .p-\[18px\] {
@@ -1168,20 +1208,23 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-@media (min-width: 510px) {
-  .container\:w-\[510px\] {
-    width: 510px;
-  }
-
-  .container\:overflow-x-hidden {
+@media (min-width: 768px) {
+  .md\:overflow-x-hidden {
     overflow-x: hidden;
   }
 }
 
-.hover\:scale-button {
-  transition: transform 0.3s ease-in-out; 
-}
+@media (min-width: 1024px) {
+  .lg\:h-\[95px\] {
+    height: 95px;
+  }
 
-.hover\:scale-button:hover {
-  transform: scale(1.05); /* Scales image to however much you want it */
+  .lg\:w-1\/2 {
+    width: 50%;
+  }
+
+  .lg\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }

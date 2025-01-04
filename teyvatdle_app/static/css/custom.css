@@ -81,3 +81,11 @@
   background-color: #dc3545;  
   border-color: #dc3545;      
 }
+
+.hover\:scale-button {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.hover\:scale-button:hover {
+  transform: scale(1.05); /* Scales image to however much you want it */
+}
