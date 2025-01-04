@@ -228,7 +228,6 @@ window.addEventListener("load", async function () {
   // Fetch today's answer
   const answerRes = await fetch("/static/answers/spy/todays_answer.json");
   answerData = await answerRes.json();
-  console.log(answerData);
 
   // Fetch character info data
   const characterInfoRes = await fetch("/static/data/classicModeInfo.json");

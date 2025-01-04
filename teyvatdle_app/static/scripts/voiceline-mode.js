@@ -228,8 +228,7 @@ function resetGame() {
 window.addEventListener("load", async function () {
   const answerRes = await fetch("/static/answers/voiceline/todays_answer.json");
   answerData = await answerRes.json(); // Load today's answer
-  console.log("Today's Answer Data:", answerData);
-
+  
   const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
   charactersInfoData = await characterInfoRes.json(); // Load all character info
 
