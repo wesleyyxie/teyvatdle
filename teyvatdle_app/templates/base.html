@@ -21,10 +21,10 @@
       }
     </script> -->
   </head>
-  <body class="flex flex-row justify-center m-0 bg-black">
+  <body class="flex flex-row justify-center m-0 bg-transparent bg-no-repeat bg-center bg-background bg-cover bg-fixed">
     <script src="{{ url_for('static',filename='/scripts/modal.js') }}"></script>
-    <div class="w-full absolute z-0 relative bg-no-repeat bg-background bg-cover h-screen overflow-hidden filter brightness-75 from-current to-black">
-      <div class="fixed inset-0 bg-gradient-to-b from-black/0 to-black/100 pointer-events-none"></div>
+    <div class="w-full fixed top-0 absolute z-0 relative h-screen overflow-hidden">
+      <div class="bg-fixed w-screen fixed h-screen top-0 bg-gradient-to-b from-black/25 to-black/100 pointer-events-none"></div>
     </div>
     <div class="flex absolute z-10 flex-col pt-[50px] top-[50px] w-full max-w-[650px] overflow-y-visible">
       <a class="flex justify-center hover:scale-button" href="/">
