@@ -5,6 +5,7 @@ var answerData = null;
 var splashImageName = null;
 var tries = localStorage.getItem("spyTries") || 0;
 var pathToPixelatedFolder = "/static/images/character_splashes/pixelated/";
+var pathToSplashFolder = "/static/images/character_splashes/";
 
 function createBlankRow() {
   let rowContainer = document.createElement("div");
@@ -136,6 +137,9 @@ function submitGuess(e) {
     splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${3}.png')`;
   } else if (tries >= 2) {
     splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${2}.png')`;
+  }
+  if (gameOver) {
+    splashElement.style.backgroundImage = `url('${pathToSplashFolder}${splashImageName}_splash.png')`;
   }
 }
 
@@ -281,6 +285,7 @@ window.addEventListener("load", async function () {
     displayCongratulatoryMessage(tries);
     document.getElementById("submit").disabled = true;
     document.getElementById("guess").disabled = true;
+    splashElement.style.backgroundImage = `url('${pathToSplashFolder}${splashImageName}_splash.png')`;
   }
 
   // Focus the guess input and add event listeners
