@@ -113,7 +113,6 @@ function submitGuess(e) {
   let gameOver = true;
 
   let row = createBlankRow();
-  tries++; // Increment tries count
 
   for (let i = 0; i < charactersInfoData.length; i++) {
     let currentCharacter = charactersInfoData[i];
@@ -123,6 +122,7 @@ function submitGuess(e) {
     }
   }
   if (guessData) {
+    tries++; // Increment tries count
     placeIcon(row.querySelector("#guess_image"), guessData);
 
     for (let i = 0; i < categories.length; i++) {

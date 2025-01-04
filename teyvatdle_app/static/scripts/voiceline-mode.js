@@ -168,12 +168,12 @@ function submitGuess(e) {
     autocomplete(document.getElementById("guess"), arrVoiceline);
     inputElement.value = "";
     inputElement.focus();
-    if (tries < 5) {
-      audioCountdown.innerText = `Audio clue in ${5 - tries} tries`;
+    if (tries < 3) {
+      audioCountdown.innerText = `Audio clue in ${3 - tries} tries`;
     }
   }
 
-  if (tries == 5) {
+  if (tries == 3) {
     let audioContainer = document.getElementById("audio_container");
     audioContainer.classList.remove("hidden");
     audioCountdown.classList.add("hidden");
@@ -270,8 +270,8 @@ window.addEventListener("load", async function () {
 
   const cluesCountdownElement = document.getElementById("audio_countdown");
   const audioContainer = document.getElementById("audio_container");
-  if (tries < 5) {
-    cluesCountdownElement.innerText = `Audio clue in ${5 - tries} tries`;
+  if (tries < 3) {
+    cluesCountdownElement.innerText = `Audio clue in ${3 - tries} tries`;
   } else {
     cluesCountdownElement.classList.add("hidden");
     audioContainer.classList.remove("hidden");
