@@ -294,7 +294,7 @@ window.addEventListener("load", async function () {
   const cluesCountdownElement = document.getElementById("audio_countdown");
   const audioContainer = document.getElementById("audio_container");
   const audioButton = document.getElementById('play-audio')
-  audioPlayer.src = `./static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`
+  audioPlayer.src = `./static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.wav`
 
   audioButton.addEventListener('click', () => {
     audioPlayer.volume = document.getElementById('audio-level').value

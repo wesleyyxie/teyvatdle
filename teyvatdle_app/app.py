@@ -16,7 +16,7 @@ app = Flask(__name__)
 
 @app.route("/static/data/voiceline_audios/<filename>")
 def serve_audio(filename):
-    return send_file(f"static/data/voiceline_audios/{filename}", mimetype="audio/mpeg")
+    return send_file(f"static/data/voiceline_audios/{filename}", mimetype="audio/wav")
 
 
 def update_answers():
