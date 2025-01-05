@@ -1,11 +1,11 @@
 {
-    "name": "Kaveh",
-    "title": "Empyrean Reflection",
-    "vision": "Dendro",
+    "name": "Freminet",
+    "title": "Yearning for Unseen Depths",
+    "vision": "Cryo",
     "weapon": "Claymore",
     "gender": "Male",
-    "nation": "Sumeru",
-    "affiliation": "Independent Design Studio",
+    "nation": "Fontaine",
+    "affiliation": "Hotel Bouffes d'ete",
     "release": "2023",
-    "id": "kaveh"
+    "id": "freminet"
 }

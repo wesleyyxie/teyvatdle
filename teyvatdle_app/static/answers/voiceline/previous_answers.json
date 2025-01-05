@@ -5,5 +5,12 @@
         "quote": "(Translated) Fie! This cold shall be mine end!",
         "id": "yun-jin",
         "voiceline_id": 1
+    },
+    {
+        "name": "Kamisato Ayaka",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/1/1f/VO_Kamisato_Ayaka_Chat_-_Famous_Sword.ogg/revision/latest?cb=20210728005800",
+        "quote": "A blade embraces its duty as a jeweler cherishes their gems.",
+        "id": "ayaka",
+        "voiceline_id": 0
     }
 ]

@@ -1,6 +1,6 @@
 {
-    "name": "Venti",
-    "id": "venti",
-    "type": "skill",
-    "abilityName": "Skyward Sonnet"
+    "name": "Furina",
+    "id": "furina",
+    "type": "burst",
+    "abilityName": "Let the People Rejoice"
 }

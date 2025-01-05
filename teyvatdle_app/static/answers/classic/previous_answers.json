@@ -9,5 +9,16 @@
         "affiliation": "Independent Design Studio",
         "release": "2023",
         "id": "kaveh"
+    },
+    {
+        "name": "Freminet",
+        "title": "Yearning for Unseen Depths",
+        "vision": "Cryo",
+        "weapon": "Claymore",
+        "gender": "Male",
+        "nation": "Fontaine",
+        "affiliation": "Hotel Bouffes d'ete",
+        "release": "2023",
+        "id": "freminet"
     }
 ]

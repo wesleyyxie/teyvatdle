@@ -4,6 +4,7 @@ var voicelineInfoData = null;
 var charactersInfoData = null;
 var answerData = null;
 let tries = localStorage.getItem("voicelineTries") || 0;
+var audioPlayer = document.getElementById("audio-player")
 
 function createBlankRow() {
   let rowContainer = document.createElement("div");
@@ -238,6 +239,12 @@ function resetGame() {
   }
 }
 
+function playAudio(){
+
+  audioPlayer.volume = document.getElementById('audio-level').value
+  audioPlayer.play().catch(error => console.error('Playback failed:', error))
+}
+window.playAudio = playAudio;
 window.addEventListener("load", async function () {
   
   const answerRes = await fetch("/static/answers/voiceline/todays_answer.json");
@@ -285,14 +292,8 @@ window.addEventListener("load", async function () {
 
   const cluesCountdownElement = document.getElementById("audio_countdown");
   const audioContainer = document.getElementById("audio_container");
-  let audioPlayer =  new Audio(`/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`);
-  audioPlayer.preload = "auto";
-  document.getElementById('play_audio').addEventListener('click', function () {
-    audioPlayer.volume = document.getElementById('audioLevel').value
-    audioPlayer.play().catch(error => {
-        console.error('Audio playback failed:', error);
-    });
-});
+  audioPlayer.src = `/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`
+  
 
   if (tries < 3) {
     if (3 - tries == 1) {
