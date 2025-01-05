@@ -6,6 +6,8 @@ import json
 import os
 import glob
 
+from pydub import AudioSegment
+
 
 def get_voicelines():
     path_to_character_info = "./teyvatdle_app/static/data/classicModeInfo.json"
@@ -85,7 +87,7 @@ def get_voicelines():
                     break
                 voiceline = {}
                 audio = t.find("audio")
-                if audio != -1:
+                if audio != -1 and audio is not None:
                     audio_src = audio.get("src")
                 quote_span_tag = t.find(attrs={"lang": "en"})
                 if quote_span_tag:
@@ -139,10 +141,23 @@ def download_wav():
         for v in voicelines:
             r = requests.get(v["audio"])
             with open(
-                f"./teyvatdle_app/static/data/voiceline_audios/{v['id']}{v['voiceline_id']}.wav",
+                f"./teyvatdle_app/static/data/voiceline_audios/{v['id']}{v['voiceline_id']}.mp3",
                 "wb",
-            ) as wav_file:
-                wav_file.write(r.content)
+            ) as mp3_file:
+                mp3_file.write(r.content)
+
+            mp3 = AudioSegment.from_file(
+                f"./teyvatdle_app/static/data/voiceline_audios/{v['id']}{v['voiceline_id']}.mp3"
+            )
+            mp3.export(
+                f"./teyvatdle_app/static/data/voiceline_audios/{v['id']}{v['voiceline_id']}.wav",
+                format="wav",
+            )
+            os.remove(
+                os.path.abspath(
+                    f"./teyvatdle_app/static/data/voiceline_audios/{v['id']}{v['voiceline_id']}.mp3"
+                )
+            )
 
 
 if __name__ == "__main__":

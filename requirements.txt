@@ -3,3 +3,4 @@ requests==2.32.3
 Flask-APScheduler==1.13.1
 pillow==10.4.0
 beautifulsoup4==4.12.3
+pydub==0.25.1
