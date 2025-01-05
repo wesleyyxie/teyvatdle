@@ -5,7 +5,6 @@ var charactersInfoData = null;
 var answerData = null;
 let tries = localStorage.getItem("voicelineTries") || 0;
 var audioPlayer = document.getElementById("audio-player")
-var preloadedAudio = false
 
 function createBlankRow() {
   let rowContainer = document.createElement("div");
@@ -124,11 +123,6 @@ function submitGuess(e) {
   let guessData = null;
   let gameOver = false;
 
-  if (preloadedAudio == false) {
-    audioPlayer.play();
-    audioPlayer.pause();
-    preloadedAudio = true
-  }
   // Loop through the characters to find the guessed character
   for (let i = 0; i < voicelineInfoData.length; i++) {
     let currentCharacter = voicelineInfoData[i];
@@ -251,6 +245,7 @@ function playAudio(){
   audioPlayer.volume = document.getElementById('audio-level').value
   audioPlayer.play().catch(error => console.error('Playback failed:', error))
 }
+
 window.playAudio = playAudio;
 window.addEventListener("load", async function () {
   
@@ -299,7 +294,12 @@ window.addEventListener("load", async function () {
 
   const cluesCountdownElement = document.getElementById("audio_countdown");
   const audioContainer = document.getElementById("audio_container");
+  const audioButton = document.getElementById('play-audio')
   audioPlayer.src = `/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`
+  audioButton.addEventListener('click', () => {
+    audioPlayer.volume = document.getElementById('audio-level').value
+    audioPlayer.play()
+  })
   
 
   if (tries < 3) {
