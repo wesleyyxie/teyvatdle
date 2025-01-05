@@ -6,6 +6,15 @@ from io import BytesIO
 from bs4 import BeautifulSoup
 
 
+from PIL import Image
+
+
+from PIL import Image
+
+
+from PIL import Image
+
+
 def get_splashes(info):
     cwd = os.getcwd()
     path_to_splash_folder = os.path.join(
@@ -44,13 +53,17 @@ def get_splashes(info):
             (new_dimension - original_height) // 2,
         )
         new_splash.paste(splash, position, splash)
+
+        # Reduce color depth (for lower quality)
+        reduced_splash = new_splash.convert("P", palette=Image.ADAPTIVE, colors=256)
+
         for c in info:
             if c.get("name").lower().replace(" ", "_") == character_name.lower():
-                new_splash.save(
-                    os.path.join(
-                        path_to_splash_folder, f"{c.get("id").lower()}_splash.png"
-                    )
+                # Save as PNG with reduced quality (through reduced color depth)
+                save_path = os.path.join(
+                    path_to_splash_folder, f"{c.get('id').lower()}_splash.png"
                 )
+                reduced_splash.save(save_path, "PNG", optimize=True)
                 print("saved as " + c.get("id").lower() + "_splash.png")
 
 
