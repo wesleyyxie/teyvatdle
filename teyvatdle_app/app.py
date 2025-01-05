@@ -8,8 +8,15 @@ from get_answers.update_voiceline_answer import update_voiceline_answer
 from get_answers.update_ability_answer import update_ability_answer
 from get_answers.update_spy_answer import update_spy_answer
 
+from flask import send_file
+
 app = Flask(__name__)
 # IF DEBUG MODE IS ON, IT WILL TRIGGER THE SCHEDULER AGAIN
+
+
+@app.route("/static/data/voiceline_audios/<filename>")
+def serve_audio(filename):
+    return send_file(f"static/data/voiceline_audios/{filename}", mimetype="audio/mpeg")
 
 
 def update_answers():
