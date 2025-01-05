@@ -297,7 +297,6 @@ window.addEventListener("load", async function () {
   audioPlayer.src = `./static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`
 
   audioButton.addEventListener('click', () => {
-    audioPlayer.load()
     audioPlayer.volume = document.getElementById('audio-level').value
     audioPlayer.play()
   })
