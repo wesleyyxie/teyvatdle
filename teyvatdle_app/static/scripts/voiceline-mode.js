@@ -5,6 +5,7 @@ var charactersInfoData = null;
 var answerData = null;
 let tries = localStorage.getItem("voicelineTries") || 0;
 var audioPlayer = document.getElementById("audio-player")
+var preloadedAudio = false
 
 function createBlankRow() {
   let rowContainer = document.createElement("div");
@@ -122,6 +123,12 @@ function submitGuess(e) {
   let audioCountdown = document.getElementById("audio_countdown");
   let guessData = null;
   let gameOver = false;
+
+  if (preloadedAudio == false) {
+    audioPlayer.play();
+    audioPlayer.pause();
+    preloadedAudio = true
+  }
   // Loop through the characters to find the guessed character
   for (let i = 0; i < voicelineInfoData.length; i++) {
     let currentCharacter = voicelineInfoData[i];
