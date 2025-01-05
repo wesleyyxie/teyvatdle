@@ -16,13 +16,13 @@ def write_json_file(file_path, content):
             if "Traveler" not in character.get("name"):
                 character_elemental_skill = {
                     "name": character.get("name"),
-                    "id": character.get("id"),
+                    "id": character.get("id").lower(),
                     "type": "skill",
                     "abilityName": character.get("skillTalents")[1].get("name"),
                 }
                 character_elemental_burst = {
                     "name": character.get("name"),
-                    "id": character.get("id"),
+                    "id": character.get("id").lower(),
                     "type": "burst",
                     "abilityName": character.get("skillTalents")[2].get("name"),
                 }

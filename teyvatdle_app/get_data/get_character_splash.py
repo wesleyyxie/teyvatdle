@@ -39,7 +39,10 @@ def get_splashes(info):
             new_dimension = original_width
 
         new_splash = Image.new("RGBA", (new_dimension, new_dimension), (0, 0, 0, 0))
-        position = ((new_dimension - original_width) // 2, (new_dimension - original_height) // 2)
+        position = (
+            (new_dimension - original_width) // 2,
+            (new_dimension - original_height) // 2,
+        )
         new_splash.paste(splash, position, splash)
         for c in info:
             if c.get("name").lower().replace(" ", "_") == character_name.lower():

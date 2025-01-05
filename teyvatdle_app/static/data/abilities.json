@@ -145,13 +145,13 @@
     },
     {
         "name": "Candace",
-        "id": "Candace",
+        "id": "candace",
         "type": "skill",
         "abilityName": "Sacred Rite: Heron's Sanctum"
     },
     {
         "name": "Candace",
-        "id": "Candace",
+        "id": "candace",
         "type": "burst",
         "abilityName": "Sacred Rite: Wagtail's Tide"
     },
@@ -421,13 +421,13 @@
     },
     {
         "name": "Kachina",
-        "id": "Kachina",
+        "id": "kachina",
         "type": "skill",
         "abilityName": "Go, Go Turbo Twirly!"
     },
     {
         "name": "Kachina",
-        "id": "Kachina",
+        "id": "kachina",
         "type": "burst",
         "abilityName": "Time to Get Serious!"
     },
@@ -541,13 +541,13 @@
     },
     {
         "name": "Layla",
-        "id": "Layla",
+        "id": "layla",
         "type": "skill",
         "abilityName": "Nights of Formal Focus"
     },
     {
         "name": "Layla",
-        "id": "Layla",
+        "id": "layla",
         "type": "burst",
         "abilityName": "Dream of the Star-Stream Shaker"
     },
@@ -565,25 +565,25 @@
     },
     {
         "name": "Lynette",
-        "id": "Lynette",
+        "id": "lynette",
         "type": "skill",
         "abilityName": "Enigmatic Feint"
     },
     {
         "name": "Lynette",
-        "id": "Lynette",
+        "id": "lynette",
         "type": "burst",
         "abilityName": "Magic Trick: Astonishing Shift"
     },
     {
         "name": "Lyney",
-        "id": "Lyney",
+        "id": "lyney",
         "type": "skill",
         "abilityName": "Bewildering Lights"
     },
     {
         "name": "Lyney",
-        "id": "Lyney",
+        "id": "lyney",
         "type": "burst",
         "abilityName": "Wondrous Trick: Miracle Parade"
     },
@@ -601,13 +601,13 @@
     },
     {
         "name": "Mona",
-        "id": "Mona",
+        "id": "mona",
         "type": "skill",
         "abilityName": "Reflection of Doom"
     },
     {
         "name": "Mona",
-        "id": "Mona",
+        "id": "mona",
         "type": "burst",
         "abilityName": "Stellaris Phantasm"
     },
@@ -649,13 +649,13 @@
     },
     {
         "name": "Neuvillette",
-        "id": "Neuvillette",
+        "id": "neuvillette",
         "type": "skill",
         "abilityName": "O Tears, I Shall Repay"
     },
     {
         "name": "Neuvillette",
-        "id": "Neuvillette",
+        "id": "neuvillette",
         "type": "burst",
         "abilityName": "O Tides, I Have Returned"
     },
@@ -673,13 +673,13 @@
     },
     {
         "name": "Ningguang",
-        "id": "Ningguang",
+        "id": "ningguang",
         "type": "skill",
         "abilityName": "Jade Screen"
     },
     {
         "name": "Ningguang",
-        "id": "Ningguang",
+        "id": "ningguang",
         "type": "burst",
         "abilityName": "Starshatter"
     },
@@ -805,13 +805,13 @@
     },
     {
         "name": "Sigewinne",
-        "id": "Sigewinne",
+        "id": "sigewinne",
         "type": "skill",
         "abilityName": "Rebound Hydrotherapy"
     },
     {
         "name": "Sigewinne",
-        "id": "Sigewinne",
+        "id": "sigewinne",
         "type": "burst",
         "abilityName": "Super Saturated Syringing"
     },
@@ -949,13 +949,13 @@
     },
     {
         "name": "Xinyan",
-        "id": "Xinyan",
+        "id": "xinyan",
         "type": "skill",
         "abilityName": "Sweeping Fervor"
     },
     {
         "name": "Xinyan",
-        "id": "Xinyan",
+        "id": "xinyan",
         "type": "burst",
         "abilityName": "Riff Revolution"
     },

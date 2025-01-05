@@ -140,7 +140,7 @@
         "nation": "Sumeru",
         "affiliation": "Aaru Village",
         "release": "2022",
-        "id": "Candace"
+        "id": "candace"
     },
     {
         "name": "Charlotte",
@@ -393,7 +393,7 @@
         "nation": "Natlan",
         "affiliation": "Nanatzcayan",
         "release": "2024",
-        "id": "Kachina"
+        "id": "kachina"
     },
     {
         "name": "Kaeya",
@@ -503,7 +503,7 @@
         "nation": "Sumeru",
         "affiliation": "Sumeru Akademiya",
         "release": "2022",
-        "id": "Layla"
+        "id": "layla"
     },
     {
         "name": "Lisa",
@@ -525,7 +525,7 @@
         "nation": "Fontaine",
         "affiliation": "Hotel Bouffes d'ete",
         "release": "2023",
-        "id": "Lynette"
+        "id": "lynette"
     },
     {
         "name": "Lyney",
@@ -536,7 +536,7 @@
         "nation": "Fontaine",
         "affiliation": "Hotel Bouffes d'ete",
         "release": "2023",
-        "id": "Lyney"
+        "id": "lyney"
     },
     {
         "name": "Mika",
@@ -558,7 +558,7 @@
         "nation": "Mondstadt",
         "affiliation": "Mondstadt",
         "release": "2020",
-        "id": "Mona"
+        "id": "mona"
     },
     {
         "name": "Mualani",
@@ -602,7 +602,7 @@
         "nation": "Fontaine",
         "affiliation": "Court of Fontaine",
         "release": "2023",
-        "id": "Neuvillette"
+        "id": "neuvillette"
     },
     {
         "name": "Nilou",
@@ -624,7 +624,7 @@
         "nation": "Liyue",
         "affiliation": "Liyue Qixing",
         "release": "2020",
-        "id": "Ningguang"
+        "id": "ningguang"
     },
     {
         "name": "Noelle",
@@ -745,7 +745,7 @@
         "nation": "Fontaine",
         "affiliation": "Fortress of Meropide",
         "release": "2024",
-        "id": "Sigewinne"
+        "id": "sigewinne"
     },
     {
         "name": "Sucrose",
@@ -877,7 +877,7 @@
         "nation": "Liyue",
         "affiliation": "Liyue Harbor",
         "release": "2020",
-        "id": "Xinyan"
+        "id": "xinyan"
     },
     {
         "name": "Yae Miko",

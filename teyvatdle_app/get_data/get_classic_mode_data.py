@@ -23,7 +23,7 @@ def write_json_file(file_path, content):
                     "nation": character.get("nation"),
                     "affiliation": character.get("affiliation"),
                     "release": character.get("release")[:4],
-                    "id": character.get("id"),
+                    "id": character.get("id").lower(),
                     # maybe stars?
                 }
                 content_new_arr.append(character_info)

@@ -6,6 +6,7 @@ import json
 import os
 import glob
 
+
 def get_voicelines():
     path_to_character_info = "./teyvatdle_app/static/data/classicModeInfo.json"
 
@@ -126,8 +127,9 @@ def get_voicelines():
                         print("added to json!")
                         j += 1
 
-def download_mp3s():
-    current_files = glob.glob('/teyvatdle_app/static/data/voiceline_audios/*')
+
+def download_wav():
+    current_files = glob.glob("/teyvatdle_app/static/data/voiceline_audios/*")
     for f in current_files:
         os.remove(f)
 
@@ -136,9 +138,13 @@ def download_mp3s():
         voicelines = json.load(json_file)
         for v in voicelines:
             r = requests.get(v["audio"])
-            with open(f"./teyvatdle_app/static/data/voiceline_audios/{v['character_id']}{v['id']}.mp3", "wb") as mp3_file:
-                mp3_file.write(r.content)
+            with open(
+                f"./teyvatdle_app/static/data/voiceline_audios/{v['id']}{v['voiceline_id']}.wav",
+                "wb",
+            ) as wav_file:
+                wav_file.write(r.content)
+
 
 if __name__ == "__main__":
-    get_voicelines()
-
+    # get_voicelines()
+    download_wav()
