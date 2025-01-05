@@ -241,7 +241,6 @@ function resetGame() {
 }
 
 function playAudio(){
-
   audioPlayer.volume = document.getElementById('audio-level').value
   audioPlayer.play().catch(error => console.error('Playback failed:', error))
 }
@@ -296,7 +295,9 @@ window.addEventListener("load", async function () {
   const audioContainer = document.getElementById("audio_container");
   const audioButton = document.getElementById('play-audio')
   audioPlayer.src = `/static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.mp3`
+
   audioButton.addEventListener('click', () => {
+    audioPlayer.load()
     audioPlayer.volume = document.getElementById('audio-level').value
     audioPlayer.play()
   })
