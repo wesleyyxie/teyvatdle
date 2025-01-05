@@ -14,11 +14,6 @@ app = Flask(__name__)
 # IF DEBUG MODE IS ON, IT WILL TRIGGER THE SCHEDULER AGAIN
 
 
-@app.route("/static/data/voiceline_audios/<filename>")
-def serve_audio(filename):
-    return send_file(f"static/data/voiceline_audios/{filename}", mimetype="audio/wav")
-
-
 def update_answers():
     print("Updating answers...")
     update_classic_answer()
