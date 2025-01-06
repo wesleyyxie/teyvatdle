@@ -3,7 +3,7 @@
 </div>
 <br/><br/>
 
-Welcome to [**Teyvatdle**](https://teyvatdle.net), a website inspired by [Wordle](https://www.nytimes.com/games/wordle/index.html) and [Loldle](https://loldle.net/) to test your knowledge on Genshin Impact characters. Check it out at [teyvatdle.net](https://teyvatdle.net).
+Welcome to [**Teyvatdle**](https://www.teyvatdle.net), a website inspired by [Wordle](https://www.nytimes.com/games/wordle/index.html) and [Loldle](https://loldle.net/) to test your knowledge on Genshin Impact characters. Check it out at [teyvatdle.net](http://www.teyvatdle.net).
 
 ## How to Play
 
@@ -48,7 +48,9 @@ Welcome to [**Teyvatdle**](https://teyvatdle.net), a website inspired by [Wordle
    - Teyvatdle is inspired by [Wordle](https://www.nytimes.com/games/wordle/index.html) and [Loldle](https://loldle.net/).
    - © All rights reserved by HoYoverse. Other properties belong to their respective owners. HoYoverse does not endorse or sponsor this project.
    - This project uses the [GenshinDev API](https://github.com/genshindev/api) to access character data and other resources.
+   - Additional images and resources were gathered at the [Genshin Impact Wiki on Fandom](https://genshin-impact.fandom.com/wiki/Genshin_Impact_Wiki)
    - The font used in this project is sourced from [Ko-fi](https://ko-fi.com/s/003e0b6b50).
+   - Background is by [HoYoverse](https://www.hoyolab.com/article/383753)
 
 ## Contact
 
