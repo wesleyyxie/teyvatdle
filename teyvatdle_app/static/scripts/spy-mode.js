@@ -208,7 +208,7 @@ function displayCongratulatoryMessage(tries) {
   const streak = localStorage.getItem("streakSpy");
   const maxStreak = localStorage.getItem("maxStreakSpy");
   streakTextElement.innerText = streak;
-  streakLabelTextElement.innerText = `Current Streak: ${streak} Max Streak: ${maxStreak}`;
+  streakLabelTextElement.innerText = `Current Streak: ${streak}\nMax Streak: ${maxStreak}`;
 
   setTimeout(() => {
     congratsMessageElement.classList.remove("hidden");

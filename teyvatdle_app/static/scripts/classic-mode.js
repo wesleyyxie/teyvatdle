@@ -187,7 +187,7 @@ function displayCongratulatoryMessage(tries) {
   const streak = localStorage.getItem("streakClassic");
   const maxStreak = localStorage.getItem("maxStreakClassic");
   streakTextElement.innerText = streak;
-  streakLabelTextElement.innerText = `Current Streak: ${streak} Max Streak: ${maxStreak}`;
+  streakLabelTextElement.innerText = `Current Streak: ${streak}\nMax Streak: ${maxStreak}`;
 
   // Check if game state is loaded from storage
   const isLoadedFromStorage =
