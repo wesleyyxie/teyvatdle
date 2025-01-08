@@ -33,7 +33,7 @@ function createBlankRow() {
       "shadow-[inset_0_4px_6px_rgba(0,0,0,0.5)]",
       "shadow-[0_4px_6px_rgba(0,0,0,0.5)]"
     );
-    categoryDiv.id = "guess_" + categories[i];
+    categoryDiv.id = "guess-" + categories[i];
     rowContainer.appendChild(categoryDiv);
   }
   return rowContainer;
@@ -41,15 +41,15 @@ function createBlankRow() {
 
 // Checks whether or not the guess was correct or not and changes boxes accordingly
 function checkGuess(category, guessData, row, i) {
-  let result_element = row.querySelector("#guess_" + category);
-  result_element.innerText = guessData[category];
-  result_element.style.animationDelay = `${0.4 * i}s`;
+  let resultElement = row.querySelector("#guess-" + category);
+  resultElement.innerText = guessData[category];
+  resultElement.style.animationDelay = `${0.4 * i}s`;
 
   if (guessData[category] == answerData[category]) {
-    result_element.classList.add("fade-to-green");
+    resultElement.classList.add("fade-to-green");
     return true;
   } else {
-    result_element.classList.add("fade-to-red");
+    resultElement.classList.add("fade-to-red");
     return false;
   }
 }
@@ -144,7 +144,7 @@ function submitGuess(e) {
       JSON.stringify(previousGuesses)
     );
 
-    placeIcon(row.querySelector("#guess_image"), guessData);
+    placeIcon(row.querySelector("#guess-image"), guessData);
 
     for (let i = 0; i < categories.length; i++) {
       if (!checkGuess(categories[i], guessData, row, i)) {
@@ -174,7 +174,7 @@ function submitGuess(e) {
 }
 
 function displayCongratulatoryMessage(tries) {
-  const congratsMessageElement = document.getElementById("congrats_message");
+  const congratsMessageElement = document.getElementById("congrats-message");
   const triesTextElement = document.getElementById("tried-text");
 
   triesTextElement.innerText =
@@ -234,7 +234,7 @@ function displayPreviousGuesses() {
   // Display each previous guess
   previousGuesses.forEach((guessData) => {
     const row = createBlankRow();
-    placeIcon(row.querySelector("#guess_image"), guessData);
+    placeIcon(row.querySelector("#guess-image"), guessData);
 
     let gameOver = true;
     let categories = ["gender", "vision", "weapon", "nation", "release"];

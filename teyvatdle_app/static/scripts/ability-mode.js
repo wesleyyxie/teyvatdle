@@ -30,7 +30,7 @@ function createBlankRow() {
     "shadow-[0_4px_6px_rgba(0,0,0,0.5)]"
   );
 
-  categoryDiv.id = "guess_result"; // Single box for the result
+  categoryDiv.id = "guess-result"; // Single box for the result
   rowContainer.appendChild(categoryDiv);
 
   return rowContainer;
@@ -38,16 +38,16 @@ function createBlankRow() {
 
 function checkGuess(guessData, row) {
   // Checks whether or not the guess was correct or not and changes boxes accordingly
-  const result_element = row.querySelector("#guess_result");
+  const resultElement = row.querySelector("#guess-result");
 
   // Display the character icon in the result box
-  placeIcon(result_element, guessData);
+  placeIcon(resultElement, guessData);
   // Check if the guessed character is correct
   if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {
-    result_element.classList.add("bg-green"); // Turn green if correct
+    resultElement.classList.add("bg-green"); // Turn green if correct
     return true;
   } else {
-    result_element.classList.add("bg-red"); // Turn red if incorrect
+    resultElement.classList.add("bg-red"); // Turn red if incorrect
     return false;
   }
 }
@@ -118,7 +118,7 @@ function submitGuess(e) {
   let inputElement = document.getElementById("guess");
   let guess = inputElement.value;
   let resultsContainer = document.getElementById("results");
-  let clueCountdown = document.getElementById("clue_countdown");
+  let clueCountdown = document.getElementById("clue-countdown");
   let guessData = null;
   let gameOver = false;
   // Loop through the characters to find the guessed character
@@ -191,7 +191,7 @@ function submitGuess(e) {
 
   // Show clue
   if (tries == 5) {
-    let nameClue = document.getElementById("name_clue");
+    let nameClue = document.getElementById("name-clue");
     clueCountdown.classList.add("hidden");
     nameClue.classList.remove("hidden");
     nameClue.innerText = answerData["abilityName"];
@@ -200,7 +200,7 @@ function submitGuess(e) {
 }
 
 function displayCongratulatoryMessage(tries) {
-  const congratsMessageElement = document.getElementById("congrats_message");
+  const congratsMessageElement = document.getElementById("congrats-message");
   const triesTextElement = document.getElementById("tried-text");
   triesTextElement.innerText =
     tries < 2
@@ -267,12 +267,12 @@ window.addEventListener("load", async function () {
   // Display each previous guess
   previousGuesses.forEach((guessData) => {
     const row = createBlankRow();
-    placeIcon(row.querySelector("#guess_result"), guessData);
+    placeIcon(row.querySelector("#guess-result"), guessData);
 
     if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {
-      row.querySelector("#guess_result").classList.add("bg-green");
+      row.querySelector("#guess-result").classList.add("bg-green");
     } else {
-      row.querySelector("#guess_result").classList.add("bg-red");
+      row.querySelector("#guess-result").classList.add("bg-red");
     }
     resultsContainer.prepend(row);
   });
@@ -286,8 +286,8 @@ window.addEventListener("load", async function () {
   }
 
   // Clues countdown
-  let cluesCountdownElement = document.getElementById("clue_countdown");
-  let nameClue = document.getElementById("name_clue");
+  let cluesCountdownElement = document.getElementById("clue-countdown");
+  let nameClue = document.getElementById("name-clue");
   if (tries < 5) {
     if (5 - tries == 1) {
       cluesCountdownElement.innerText = `Clues in 1 try`;

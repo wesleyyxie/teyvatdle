@@ -31,7 +31,7 @@ function createBlankRow() {
     "shadow-[0_4px_6px_rgba(0,0,0,0.5)]"
   );
 
-  categoryDiv.id = "guess_result"; // Single box for the result
+  categoryDiv.id = "guess-result"; // Single box for the result
   rowContainer.appendChild(categoryDiv);
 
   return rowContainer;
@@ -39,17 +39,17 @@ function createBlankRow() {
 
 // Checks whether or not the guess was correct or not and changes boxes accordingly
 function checkGuess(guessData, row) {
-  const result_element = row.querySelector("#guess_result");
+  const resultElement = row.querySelector("#guess-result");
 
   // Display the character icon in the result box
-  placeIcon(result_element, guessData);
+  placeIcon(resultElement, guessData);
 
   // Check if the guessed character is correct
   if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {
-    result_element.classList.add("bg-green"); // Turn green if correct
+    resultElement.classList.add("bg-green"); // Turn green if correct
     return true;
   } else {
-    result_element.classList.add("bg-red"); // Turn red if incorrect
+    resultElement.classList.add("bg-red"); // Turn red if incorrect
     return false;
   }
 }
@@ -119,7 +119,7 @@ function submitGuess(e) {
   let inputElement = document.getElementById("guess");
   let guess = inputElement.value;
   let resultsContainer = document.getElementById("results");
-  let audioCountdown = document.getElementById("audio_countdown");
+  let audioCountdown = document.getElementById("audio-countdown");
   let guessData = null;
   let gameOver = false;
 
@@ -189,14 +189,14 @@ function submitGuess(e) {
   }
 
   if (tries == 3) {
-    let audioContainer = document.getElementById("audio_container");
+    let audioContainer = document.getElementById("audio-container");
     audioContainer.classList.remove("hidden");
     audioCountdown.classList.add("hidden");
   }
 }
 
 function displayCongratulatoryMessage(tries) {
-  const congratsMessageElement = document.getElementById("congrats_message");
+  const congratsMessageElement = document.getElementById("congrats-message");
   const triesTextElement = document.getElementById("tried-text");
   triesTextElement.innerText =
     tries < 2
@@ -259,7 +259,7 @@ window.addEventListener("load", async function () {
 
   
   // Display today's answer quote from todays_answer.json
-  const randomQuoteElement = document.getElementById("random_quote");
+  const randomQuoteElement = document.getElementById("random-quote");
   randomQuoteElement.innerText = `"${answerData.quote}"`;
 
   // Check if the current answer is different from the saved one
@@ -273,12 +273,12 @@ window.addEventListener("load", async function () {
   // Display each previous guess
   previousGuesses.forEach((guessData) => {
     const row = createBlankRow();
-    placeIcon(row.querySelector("#guess_result"), guessData);
+    placeIcon(row.querySelector("#guess-result"), guessData);
 
     if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {
-      row.querySelector("#guess_result").classList.add("bg-green");
+      row.querySelector("#guess-result").classList.add("bg-green");
     } else {
-      row.querySelector("#guess_result").classList.add("bg-red");
+      row.querySelector("#guess-result").classList.add("bg-red");
     }
     resultsContainer.prepend(row);
   });
@@ -291,8 +291,8 @@ window.addEventListener("load", async function () {
     document.getElementById("guess").disabled = true;
   }
 
-  const cluesCountdownElement = document.getElementById("audio_countdown");
-  const audioContainer = document.getElementById("audio_container");
+  const cluesCountdownElement = document.getElementById("audio-countdown");
+  const audioContainer = document.getElementById("audio-container");
   const audioButton = document.getElementById('play-audio')
   audioPlayer.src = `./static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.wav`
 

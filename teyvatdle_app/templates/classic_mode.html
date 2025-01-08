@@ -9,7 +9,7 @@
             Guess Today's Genshin Impact Character!
         </span>
     </div>
-    <span id="show_character_data"></span>
+    <span id="show-character-data"></span>
     
     <form autocomplete="off" class="flex w-[300px] items-center relative inline-block"id="guess-form">
         <div class="autocomplete w-[300px]">
@@ -18,23 +18,23 @@
         <input id="submit" value='' style="background-image: url(&quot;/static/images/buttons/submit_button.png&quot;); background-size: 40px 40px;" class="absolute hover:brightness-110 top-[11px] right-[8px] bg-no-repeat bg-center bg-transparent aspect-[1] h-[40px] ml-[10px] cursor-pointer" type="submit">
     </form>
     <div class="overflow-x-scroll w-10/12 flex flex-col gap-y-[10px] max-w-[510px] md:overflow-x-hidden">
-        <div id="hints_container" class="flex w-[510px] text-white font-bold m-0 flex-row gap-x-[12px]">
-            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_name">
+        <div id="hints-container" class="flex w-[510px] text-white font-bold m-0 flex-row gap-x-[12px]">
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess-name">
                 Character
             </div>
-            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_gender">
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess-gender">
                 Gender
             </div>
-            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_vision">
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess-vision">
                 Vision
             </div>
-            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_weapon">
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess-weapon">
                 Weapon
             </div>
-            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_nation">
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess-nation">
                 Region
             </div>
-            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess_release">
+            <div class="flex w-[75px] h-[75px] items-center justify-center border-b-4" id="guess-release">
                 Release
             </div>
         </div>
@@ -42,7 +42,7 @@
     </div>
         
     </div>
-    <div id="congrats_message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 mb-8 rounded-lg">
+    <div id="congrats-message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 mb-8 rounded-lg">
         <div class="font-bold text-3xl text-center">Congrats!</div>
         <div id="tried-text" class="mb-[10px] text-lg text-center">You guessed it in 1 try!</div>
         <div class="streak cursor-pointer hover:scale-button flex pt-[25px] justify-center h-[60px] w-[60px] bg-center bg-cover bg-no-repeat" style="background-image: url(&quot;/static/images/streakIcon-WHITE.webp&quot;); background-size: 60px 60px;">

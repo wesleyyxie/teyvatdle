@@ -6,10 +6,10 @@
     <div class="flex flex-col items-center mt-[20px] h-auto w-[300px] rounded-lg" style="background-color: rgba(39, 52, 63, 0.8); border: 3px solid rgb(120, 120, 120); box-sizing: border-box;">
     <div class="text-white p-[15px] text-center font-bold mt-[15px]">
        Which character says:
-       <div id="random_quote" class="italic text-center mt-[10px] text-xl"></div>
+       <div id="random-quote" class="italic text-center mt-[10px] text-xl"></div>
     </div>
-    <span id="audio_countdown" class="text-white text-xs font-bold pb-[25px]">Audio clue in 5 tries</span>
-    <div id="audio_container" class="hidden flex flex-col items-center gap-y-[10px] pb-[20px]">
+    <span id="audio-countdown" class="text-white text-xs font-bold pb-[25px]">Audio clue in 5 tries</span>
+    <div id="audio-container" class="hidden flex flex-col items-center gap-y-[10px] pb-[20px]">
         <audio id="audio-player" preload="auto" class="hidden" controls="controls"></audio>
         <button id="play-audio" type="button" style="background-image: url(&quot;/static/images/buttons/audio_button.png&quot;); background-size: 55px 55px;" class="h-[55px] w-[55px] hover:scale-button bg-no-repeat bg-center cursor-pointer"></button>
         <div class="slidecontainer">
@@ -17,7 +17,7 @@
         </div>
     </div>
     </div>
-    <span id="show_character_data"></span>
+    <span id="show-character-data"></span>
     
     <form autocomplete="off" class="flex w-[300px] items-center relative inline-block"id="guess-form">
         <div class="autocomplete w-[300px]">
@@ -28,7 +28,7 @@
     <div id="results">
         
     </div>
-    <div id="congrats_message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 mb-8 rounded-lg">
+    <div id="congrats-message" class="hidden flex flex-col items-center text-white bg-green-800 border-4 border-green-600 p-6 mt-4 mb-8 rounded-lg">
         <div class="font-bold text-3xl text-center">Congrats!</div>
         <div id="tried-text" class="mb-[10px] text-lg text-center">"You guessed it in 1 try!"</div>
         <div class="streak cursor-pointer hover:scale-button flex pt-[25px] justify-center h-[60px] w-[60px] bg-center bg-cover bg-no-repeat" style="background-image: url(&quot;/static/images/streakIcon-WHITE.webp&quot;); background-size: 60px 60px;">
