@@ -20,5 +20,16 @@
         "affiliation": "Gandharva Ville",
         "release": "2022",
         "id": "tighnari"
+    },
+    {
+        "name": "Chongyun",
+        "title": "Frozen Ardor",
+        "vision": "Cryo",
+        "weapon": "Claymore",
+        "gender": "Male",
+        "nation": "Liyue",
+        "affiliation": "Liyue Harbor",
+        "release": "2020",
+        "id": "chongyun"
     }
 ]

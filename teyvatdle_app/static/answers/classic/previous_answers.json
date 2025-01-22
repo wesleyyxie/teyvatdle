@@ -20,5 +20,16 @@
         "affiliation": "Hotel Bouffes d'ete",
         "release": "2023",
         "id": "freminet"
+    },
+    {
+        "name": "Kaedehara Kazuha",
+        "title": "Scarlet Leaves Pursue Wild Waves",
+        "vision": "Anemo",
+        "weapon": "Sword",
+        "gender": "Male",
+        "nation": "Inazuma",
+        "affiliation": "The Crux",
+        "release": "2021",
+        "id": "kazuha"
     }
 ]

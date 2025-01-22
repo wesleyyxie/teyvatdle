@@ -12,5 +12,12 @@
         "quote": "A blade embraces its duty as a jeweler cherishes their gems.",
         "id": "ayaka",
         "voiceline_id": 0
+    },
+    {
+        "name": "Sayu",
+        "audio": "https://static.wikia.nocookie.net/gensin-impact/images/6/62/VO_Sayu_Opening_Treasure_Chest_01.ogg/revision/latest?cb=20221112212204",
+        "quote": "Looks kinda cozy in here... Nap time!",
+        "id": "sayu",
+        "voiceline_id": 2
     }
 ]

@@ -1,11 +1,11 @@
 {
-    "name": "Tighnari",
-    "title": "Verdant Strider",
-    "vision": "Dendro",
-    "weapon": "Bow",
+    "name": "Chongyun",
+    "title": "Frozen Ardor",
+    "vision": "Cryo",
+    "weapon": "Claymore",
     "gender": "Male",
-    "nation": "Sumeru",
-    "affiliation": "Gandharva Ville",
-    "release": "2022",
-    "id": "tighnari"
+    "nation": "Liyue",
+    "affiliation": "Liyue Harbor",
+    "release": "2020",
+    "id": "chongyun"
 }
