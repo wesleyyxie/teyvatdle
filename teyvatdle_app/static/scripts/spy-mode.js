@@ -148,7 +148,6 @@ function submitGuess(e) {
     updateSplashImage(1);
   }
   if (gameOver) {
-    console.log("hi");
     updateSplashImage(0);
   }
 }
@@ -253,7 +252,6 @@ async function preloadImages() {
 function updateSplashImage(level) {
   let splashElement = document.getElementById("splash-icon");
   if (imageCache[level] && imageCache[level].complete) {
-    console.log("jii");
     splashElement.style.backgroundImage = `url('${imageCache[level].src}')`;
   } else {
     // Fallback if image isn't loaded yet (should rarely happen)

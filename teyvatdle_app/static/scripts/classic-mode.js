@@ -130,7 +130,6 @@ function submitGuess(e) {
     previousGuesses.push(guessData);
 
     let arrClassic = JSON.parse(localStorage.getItem("arrClassic"));
-    console.log(arrClassic);
     delete arrClassic[guess];
 
     localStorage.setItem(

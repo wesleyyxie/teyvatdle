@@ -125,7 +125,6 @@ function submitGuess(e) {
 
   // Loop through the characters to find the guessed character
   guessData = charactersInfoData[guess];
-  console.log(guessData);
   if (guessData) {
     const previousGuesses =
       JSON.parse(localStorage.getItem("voicelinePreviousGuesses")) || [];
@@ -302,7 +301,6 @@ window.addEventListener("load", async function () {
   document.getElementById("guess").focus();
   document.addEventListener("keyup", checkSubmit);
   document.getElementById("guess-form").addEventListener("submit", submitGuess);
-  //document.getElementById("play_audio").addEventListener("click", playAudio);
 
   var arrVoiceline = localStorage.getItem("arrVoiceline");
   if (arrVoiceline == null) {
