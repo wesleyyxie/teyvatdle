@@ -3,10 +3,12 @@ import { autocomplete } from "./auto-complete.js";
 var charactersInfoData = null;
 var answerData = null;
 let tries = localStorage.getItem("classicTries") || 0;
+const answerAPIUrl = "https://api.teyvatdle.net/answers/classic";
+const charactersInfoUrl = "https://api.teyvatdle.net/characters";
+const categories = ["image", "gender", "vision", "weapon", "region", "release"];
 
 // Creates a blank row for the hints
 function createBlankRow() {
-  let categories = ["image", "gender", "vision", "weapon", "nation", "release"];
   let rowContainer = document.createElement("div");
   rowContainer.classList.add(
     "flex",
@@ -56,9 +58,9 @@ function checkGuess(category, guessData, row, i) {
 
 // Places the character icon
 function placeIcon(iconElement, guessData) {
-  iconElement.style.backgroundImage = `url('/static/images/character_icons/${guessData[
-    "id"
-  ].toLowerCase()}.png')`;
+  iconElement.style.backgroundImage = `url('/static/images/character_icons/${guessData.name
+    .toLowerCase()
+    .replace(" ", "_")}.png')`;
   iconElement.style.backgroundSize = "75px 75px";
   iconElement.style.backgroundPosition = "center";
   iconElement.style.backgroundRepeat = "no-repeat";
@@ -106,39 +108,31 @@ function updateStreak() {
 function submitGuess(e) {
   e.preventDefault();
   let inputElement = document.getElementById("guess");
-  let guess = inputElement.value;
+  let guess = inputElement.value.toLowerCase();
   let resultsContainer = document.getElementById("results");
   let guessData = null;
-  let categories = ["gender", "vision", "weapon", "nation", "release"];
   let gameOver = true;
 
   let row = createBlankRow();
 
-  for (let i = 0; i < charactersInfoData.length; i++) {
-    let currentCharacter = charactersInfoData[i];
-    if (currentCharacter["name"].toLowerCase() == guess.toLowerCase()) {
-      guessData = currentCharacter;
-      break;
-    }
-  }
+  guessData = charactersInfoData[guess];
   if (guessData) {
     // Save the guess data to localStorage
     const previousGuesses =
       JSON.parse(localStorage.getItem("previousGuessesClassic")) || [];
-    
+
     // If current guess is in previous guess, return
     for (let j = 0; j < previousGuesses.length; j++) {
       if (guessData.name == previousGuesses[j].name) {
-        return
+        return;
       }
     }
     previousGuesses.push(guessData);
 
     let arrClassic = JSON.parse(localStorage.getItem("arrClassic"));
-    let index = arrClassic.findIndex(
-      (obj) => obj["name"].toLowerCase() === inputElement.value.toLowerCase()
-    );
-    arrClassic.splice(index, 1)[0];
+    console.log(arrClassic);
+    delete arrClassic[guess];
+
     localStorage.setItem(
       "previousGuessesClassic",
       JSON.stringify(previousGuesses)
@@ -146,7 +140,7 @@ function submitGuess(e) {
 
     placeIcon(row.querySelector("#guess-image"), guessData);
 
-    for (let i = 0; i < categories.length; i++) {
+    for (let i = 1; i < categories.length; i++) {
       if (!checkGuess(categories[i], guessData, row, i)) {
         gameOver = false;
       }
@@ -237,8 +231,7 @@ function displayPreviousGuesses() {
     placeIcon(row.querySelector("#guess-image"), guessData);
 
     let gameOver = true;
-    let categories = ["gender", "vision", "weapon", "nation", "release"];
-    for (let i = 0; i < categories.length; i++) {
+    for (let i = 1; i < categories.length; i++) {
       if (!checkGuess(categories[i], guessData, row, i)) {
         gameOver = false;
       }
@@ -248,9 +241,10 @@ function displayPreviousGuesses() {
 }
 
 window.addEventListener("load", async function () {
-  const answerRes = await fetch("/static/answers/classic/todays_answer.json");
+  // Initialize answer and characters data
+  const answerRes = await fetch(answerAPIUrl);
   answerData = await answerRes.json();
-  const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
+  const characterInfoRes = await fetch(charactersInfoUrl);
   charactersInfoData = await characterInfoRes.json();
 
   // Check if the current answer is different from the saved one

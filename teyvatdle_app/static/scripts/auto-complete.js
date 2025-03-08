@@ -1,6 +1,7 @@
 export function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
     the text field element and an array of possible autocompleted values:*/
+  console.log(arr);
   var currentFocus;
   /*execute a function when someone writes in the text field:*/
   inp.addEventListener("input", function (e) {
@@ -24,9 +25,9 @@ export function autocomplete(inp, arr) {
     /*append the DIV element as a child of the autocomplete container:*/
     this.parentNode.appendChild(a);
     /*for each item in the array...*/
-    for (i = 0; i < arr.length; i++) {
+    for (const [name, info] of Object.entries(arr)) {
       /*check if the item starts with the same letters as the text field value:*/
-      let characterName = arr[i]["name"];
+      let characterName = info.name;
       let characterNameParts = characterName.split(" ");
       if (
         characterName.substr(0, val.length).toUpperCase() == val.toUpperCase()
@@ -38,9 +39,9 @@ export function autocomplete(inp, arr) {
           "flex cursor-pointer items-center p-[10px] hover:bg-[#c9c9c9]"
         );
         let icon = document.createElement("DIV");
-        icon.style.backgroundImage = `url('/static/images/character_icons/${arr[
-          i
-        ]["id"].toLowerCase()}.png')`;
+        icon.style.backgroundImage = `url('/static/images/character_icons/${characterName
+          .toLowerCase()
+          .replace(" ", "_")}.png')`;
         icon.setAttribute(
           "class",
           "mr-[5px] h-[50px] w-[50px] bg-contain bg-no-repeat bg-center mr-[2px]"
@@ -79,9 +80,9 @@ export function autocomplete(inp, arr) {
           "flex cursor-pointer items-center p-[10px] hover:bg-[#c9c9c9]"
         );
         let icon = document.createElement("DIV");
-        icon.style.backgroundImage = `url('/static/images/character_icons/${arr[
-          i
-        ]["id"].toLowerCase()}.png')`;
+        icon.style.backgroundImage = `url('/static/images/character_icons/${characterName
+          .toLowerCase()
+          .replace(" ", "_")}.png')`;
         icon.setAttribute(
           "class",
           "h-[50px] w-[50px] bg-contain bg-no-repeat bg-center mr-[2px]"

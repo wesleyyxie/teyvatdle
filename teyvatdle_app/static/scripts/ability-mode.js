@@ -4,6 +4,10 @@ var charactersInfoData = null;
 var answerData = null;
 let tries = localStorage.getItem("abilityTries") || 0;
 
+const abilitiesInfoAPIUrl = "https://api.teyvatdle.net/abilities";
+const answerAPIUrl = "https://api.teyvatdle.net/answers/abilities";
+const charactersInfoUrl = "https://api.teyvatdle.net/characters";
+
 function createBlankRow() {
   // Creates an empty row for previous answer
   let rowContainer = document.createElement("div");
@@ -43,7 +47,7 @@ function checkGuess(guessData, row) {
   // Display the character icon in the result box
   placeIcon(resultElement, guessData);
   // Check if the guessed character is correct
-  if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {
+  if (guessData.name.toLowerCase() === answerData.name.toLowerCase()) {
     resultElement.classList.add("bg-green"); // Turn green if correct
     return true;
   } else {
@@ -57,7 +61,7 @@ function placeIcon(iconElement, guessData) {
   let imageName;
 
   // If your images are named using character names
-  imageName = guessData["id"].toLowerCase().replace(/\s+/g, "-");
+  imageName = guessData.name.toLowerCase().replace(" ", "_");
 
   const imageUrl = `/static/images/character_icons/${imageName}.png`;
 
@@ -116,19 +120,13 @@ function updateStreak() {
 function submitGuess(e) {
   e.preventDefault(); // Prevent form submission
   let inputElement = document.getElementById("guess");
-  let guess = inputElement.value;
+  let guess = inputElement.value.toLowerCase();
   let resultsContainer = document.getElementById("results");
   let clueCountdown = document.getElementById("clue-countdown");
   let guessData = null;
   let gameOver = false;
   // Loop through the characters to find the guessed character
-  for (let i = 0; i < charactersInfoData.length; i++) {
-    let currentCharacter = charactersInfoData[i];
-    if (currentCharacter["name"].toLowerCase() === guess.toLowerCase()) {
-      guessData = currentCharacter;
-      break;
-    }
-  }
+  guessData = charactersInfoData[guess];
 
   if (guessData) {
     const previousGuesses =
@@ -136,7 +134,7 @@ function submitGuess(e) {
 
     for (let j = 0; j < previousGuesses.length; j++) {
       if (guessData.name == previousGuesses[j].name) {
-        return
+        return;
       }
     }
 
@@ -161,10 +159,7 @@ function submitGuess(e) {
 
     // Update for auto complete
     let arrAbility = JSON.parse(localStorage.getItem("arrAbility"));
-    let index = arrAbility.findIndex(
-      (obj) => obj["name"].toLowerCase() === inputElement.value.toLowerCase()
-    );
-    arrAbility.splice(index, 1)[0];
+    delete arrAbility[guess];
     localStorage.setItem("abilityTries", tries);
     localStorage.setItem("arrAbility", JSON.stringify(arrAbility));
 
@@ -182,15 +177,14 @@ function submitGuess(e) {
     if (tries < 5) {
       if (5 - tries == 1) {
         clueCountdown.innerText = `Clues in 1 try`;
-      }
-      else {
+      } else {
         clueCountdown.innerText = `Clues in ${5 - tries} tries`;
       }
     }
   }
 
   // Show clue
-  if (tries == 5) {
+  if (tries == 3) {
     let nameClue = document.getElementById("name-clue");
     clueCountdown.classList.add("hidden");
     nameClue.classList.remove("hidden");
@@ -233,27 +227,30 @@ function checkSubmit(e) {
 
 function resetGame() {
   const savedAnswer = localStorage.getItem("abilityCurrentAnswer");
-  if (savedAnswer !== answerData.name) {
+  if (savedAnswer !== `${answerData.name}_${answerData.type}`) {
     // Clear saved data if the answer has changed
     localStorage.removeItem("abilityPreviousGuesses");
     localStorage.removeItem("abilityGameOver");
     localStorage.removeItem("abilityTries");
     tries = 0;
-    localStorage.setItem("abilityCurrentAnswer", answerData.name); // Update to the new answer
+    localStorage.setItem(
+      "abilityCurrentAnswer",
+      `${answerData.name}_${answerData.type}`
+    ); // Update to the new answer
     localStorage.setItem("arrAbility", JSON.stringify(charactersInfoData));
   }
 }
 
 window.addEventListener("load", async function () {
-  const answerRes = await fetch("/static/answers/ability/todays_answer.json");
+  const answerRes = await fetch(answerAPIUrl);
   answerData = await answerRes.json(); // Load today's answer
 
-  const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
+  const characterInfoRes = await fetch(charactersInfoUrl);
   charactersInfoData = await characterInfoRes.json(); // Load all character info
 
   // Display today's answer quote from todays_answer.json
   const randomAbilityElement = document.getElementById("ability-icon");
-  randomAbilityElement.style.backgroundImage = `url('/static/images/ability_icons/${answerData["id"]}_${answerData["type"]}.png')`;
+  randomAbilityElement.style.backgroundImage = `url(${abilitiesInfoAPIUrl}/${answerData.name}/${answerData.type}/icon)`;
   randomAbilityElement.style.backgroundSize = "90px 90px";
 
   // Check if the current answer is different from the saved one
@@ -269,7 +266,7 @@ window.addEventListener("load", async function () {
     const row = createBlankRow();
     placeIcon(row.querySelector("#guess-result"), guessData);
 
-    if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {
+    if (guessData.name.toLowerCase() === answerData.name.toLowerCase()) {
       row.querySelector("#guess-result").classList.add("bg-green");
     } else {
       row.querySelector("#guess-result").classList.add("bg-red");
@@ -288,18 +285,17 @@ window.addEventListener("load", async function () {
   // Clues countdown
   let cluesCountdownElement = document.getElementById("clue-countdown");
   let nameClue = document.getElementById("name-clue");
-  if (tries < 5) {
+  if (tries < 3) {
     if (5 - tries == 1) {
       cluesCountdownElement.innerText = `Clues in 1 try`;
-    }
-    else {
+    } else {
       cluesCountdownElement.innerText = `Clues in ${5 - tries} tries`;
     }
   } else {
     cluesCountdownElement.classList.add("hidden");
     document.getElementById("ability-icon").classList.remove("grayscale");
     nameClue.classList.remove("hidden");
-    nameClue.innerText = answerData["abilityName"];
+    nameClue.innerText = answerData.abilityName;
   }
 
   document.getElementById("guess").focus();

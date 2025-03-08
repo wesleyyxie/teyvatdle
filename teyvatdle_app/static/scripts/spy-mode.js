@@ -2,10 +2,14 @@ import { autocomplete } from "./auto-complete.js";
 
 var charactersInfoData = null;
 var answerData = null;
-var splashImageName = null;
 var tries = localStorage.getItem("spyTries") || 0;
-var pathToPixelatedFolder = "/static/images/character_splashes/pixelated/";
-var pathToSplashFolder = "/static/images/character_splashes/";
+
+const answerAPIUrl = "https://api.teyvatdle.net/answers/spy";
+const splashAPIURL = "https://api.teyvatdle.net/splash";
+const charactersInfoUrl = "https://api.teyvatdle.net/characters";
+
+const imageCache = {};
+const imageLevels = [0, 1, 2, 3, 4];
 
 function createBlankRow() {
   let rowContainer = document.createElement("div");
@@ -46,7 +50,7 @@ function checkGuess(guessData, row) {
   placeIcon(resultElement, guessData);
 
   // Check if the guessed character is correct
-  if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {
+  if (guessData.name.toLowerCase() === answerData.name.toLowerCase()) {
     resultElement.classList.add("bg-green"); // Turn green if correct
     return true;
   } else {
@@ -57,7 +61,7 @@ function checkGuess(guessData, row) {
 
 // Places the character icon
 function placeIcon(iconElement, guessData) {
-  let imageName = guessData["id"].toLowerCase().replace(/\s+/g, "-");
+  let imageName = guessData.name.toLowerCase().replace(" ", "_");
   const imageUrl = `/static/images/character_icons/${imageName}.png`;
 
   iconElement.style.backgroundImage = `url('${imageUrl}')`;
@@ -67,7 +71,7 @@ function placeIcon(iconElement, guessData) {
 
   let spanElement = document.createElement("span");
   spanElement.classList.add("mt-[90px]", "bottom-[8px]", "text-lg");
-  spanElement.innerText = guessData["name"];
+  spanElement.innerText = guessData.name;
   iconElement.appendChild(spanElement);
 }
 
@@ -75,7 +79,7 @@ function placeIcon(iconElement, guessData) {
 function submitGuess(e) {
   e.preventDefault(); // Prevent form submission
   let inputElement = document.getElementById("guess");
-  let guess = inputElement.value;
+  let guess = inputElement.value.toLowerCase();
   let resultsContainer = document.getElementById("results");
   let clueCountdown = document.getElementById("clue-countdown");
   let splashElement = document.getElementById("splash-icon");
@@ -83,13 +87,7 @@ function submitGuess(e) {
   let gameOver = false;
 
   // Loop through the characters to find the guessed character
-  for (let i = 0; i < charactersInfoData.length; i++) {
-    let currentCharacter = charactersInfoData[i];
-    if (currentCharacter["name"].toLowerCase() === guess.toLowerCase()) {
-      guessData = currentCharacter;
-      break;
-    }
-  }
+  guessData = charactersInfoData[guess];
 
   if (guessData) {
     const previousGuesses =
@@ -98,7 +96,7 @@ function submitGuess(e) {
     // If current guess is in previous guess, return
     for (let j = 0; j < previousGuesses.length; j++) {
       if (guessData.name == previousGuesses[j].name) {
-        return
+        return;
       }
     }
     previousGuesses.push(guessData);
@@ -115,14 +113,12 @@ function submitGuess(e) {
     localStorage.setItem("spyPreviousGuesses", JSON.stringify(previousGuesses));
 
     let arrSpy = JSON.parse(localStorage.getItem("arrSpy"));
-    let index = arrSpy.findIndex(
-      (obj) => obj["name"].toLowerCase() === inputElement.value.toLowerCase()
-    );
-    arrSpy.splice(index, 1)[0];
+    delete arrSpy[guess];
     localStorage.setItem("spyTries", tries);
     localStorage.setItem("arrSpy", JSON.stringify(arrSpy));
 
     if (gameOver) {
+      updateSplashImage(0);
       document.getElementById("submit").disabled = true;
       inputElement.disabled = true;
       localStorage.setItem("spyGameOver", "true");
@@ -132,11 +128,10 @@ function submitGuess(e) {
     inputElement.value = "";
     inputElement.focus();
     if (tries <= 6) {
-      let i = 2 - (tries % 2)
+      let i = 2 - (tries % 2);
       if (i == 1) {
         clueCountdown.innerText = `Clue in 1 try`;
-      }
-      else {
+      } else {
         clueCountdown.innerText = `Clue in ${i} tries`;
       }
     }
@@ -144,14 +139,17 @@ function submitGuess(e) {
 
   if (tries >= 6) {
     clueCountdown.classList.add("hidden");
-    splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${4}.png')`;
+    updateSplashImage(4);
   } else if (tries >= 4) {
-    splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${3}.png')`;
+    updateSplashImage(3);
   } else if (tries >= 2) {
-    splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${2}.png')`;
+    updateSplashImage(2);
+  } else if (tries < 2) {
+    updateSplashImage(1);
   }
   if (gameOver) {
-    splashElement.style.backgroundImage = `url('${pathToSplashFolder}${splashImageName}_splash.png')`;
+    console.log("hi");
+    updateSplashImage(0);
   }
 }
 
@@ -240,18 +238,46 @@ function resetGame() {
   }
 }
 
+// Preload images for faster loading
+async function preloadImages() {
+  imageLevels.forEach((level) => {
+    const img = new Image();
+    if (level > 0) {
+      img.src = `${splashAPIURL}/${answerData.name}/${level}`;
+    } else {
+      img.src = `${splashAPIURL}/${answerData.name}`;
+    }
+    imageCache[level] = img;
+  });
+}
+function updateSplashImage(level) {
+  let splashElement = document.getElementById("splash-icon");
+  if (imageCache[level] && imageCache[level].complete) {
+    console.log("jii");
+    splashElement.style.backgroundImage = `url('${imageCache[level].src}')`;
+  } else {
+    // Fallback if image isn't loaded yet (should rarely happen)
+    if (level > 0) {
+      splashElement.style.backgroundImage = `url('${splashAPIURL}/${answerData.name}/${level}')`;
+    } else {
+      splashElement.style.backgroundImage = `url('${splashAPIURL}/${answerData.name}')`;
+    }
+  }
+}
+
 window.addEventListener("load", async function () {
   // Fetch today's answer
-  const answerRes = await fetch("/static/answers/spy/todays_answer.json");
+  const answerRes = await fetch(answerAPIUrl);
   answerData = await answerRes.json();
 
   // Fetch character info data
-  const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
+  const characterInfoRes = await fetch(charactersInfoUrl);
   charactersInfoData = await characterInfoRes.json();
+
+  await preloadImages();
 
   // Display today's answer splash image
   const splashElement = document.getElementById("splash-icon");
-  splashImageName = answerData["id"].toLowerCase().replace(/\s+/g, "-");
 
   // Check if the current answer is different from the saved one
   resetGame();
@@ -259,24 +285,23 @@ window.addEventListener("load", async function () {
   let clueCountdown = document.getElementById("clue-countdown");
 
   if (tries < 6) {
-    let i = 2 - (tries % 2)
+    let i = 2 - (tries % 2);
     if (i == 1) {
       clueCountdown.innerText = `Clue in 1 try`;
-    }
-    else {
+    } else {
       clueCountdown.innerText = `Clue in ${i} tries`;
     }
   }
 
   if (tries >= 6) {
     clueCountdown.classList.add("hidden");
-    splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${4}.png')`;
+    updateSplashImage(4);
   } else if (tries >= 4) {
-    splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${3}.png')`;
+    updateSplashImage(3);
   } else if (tries >= 2) {
-    splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${2}.png')`;
+    updateSplashImage(2);
   } else if (tries < 2) {
-    splashElement.style.backgroundImage = `url('${pathToPixelatedFolder}${splashImageName}_splash_pixelated_${1}.png')`;
+    updateSplashImage(1);
   }
 
   // Load previous guesses from localStorage
@@ -289,7 +314,7 @@ window.addEventListener("load", async function () {
     const row = createBlankRow();
     placeIcon(row.querySelector("#guess-result"), guessData);
 
-    if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {
+    if (guessData.name.toLowerCase() === answerData.name.toLowerCase()) {
       row.querySelector("#guess-result").classList.add("bg-green");
     } else {
       row.querySelector("#guess-result").classList.add("bg-red");
@@ -303,7 +328,7 @@ window.addEventListener("load", async function () {
     displayCongratulatoryMessage(tries);
     document.getElementById("submit").disabled = true;
     document.getElementById("guess").disabled = true;
-    splashElement.style.backgroundImage = `url('${pathToSplashFolder}${splashImageName}_splash.png')`;
+    updateSplashImage(0);
   }
 
   // Focus the guess input and add event listeners

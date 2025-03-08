@@ -1,10 +1,12 @@
 import { autocomplete } from "./auto-complete.js";
 
-var voicelineInfoData = null;
 var charactersInfoData = null;
 var answerData = null;
 let tries = localStorage.getItem("voicelineTries") || 0;
-var audioPlayer = document.getElementById("audio-player")
+var audioPlayer = document.getElementById("audio-player");
+const answerAPIUrl = "https://api.teyvatdle.net/answers/voicelines";
+const voicelinesInfoAPIURL = "https://api.teyvatdle.net/voicelines";
+const charactersInfoUrl = "https://api.teyvatdle.net/characters";
 
 function createBlankRow() {
   let rowContainer = document.createElement("div");
@@ -56,10 +58,8 @@ function checkGuess(guessData, row) {
 
 // Places the character icon
 function placeIcon(iconElement, guessData) {
-  let imageName;
-
   // If your images are named using character names
-  imageName = guessData["id"].toLowerCase().replace(/\s+/g, "-");
+  let imageName = guessData.name.toLowerCase().replace(" ", "_");
   //imageName = guessData["id"];
 
   const imageUrl = `/static/images/character_icons/${imageName}.png`;
@@ -117,31 +117,25 @@ function updateStreak() {
 function submitGuess(e) {
   e.preventDefault(); // Prevent form submission
   let inputElement = document.getElementById("guess");
-  let guess = inputElement.value;
+  let guess = inputElement.value.toLowerCase();
   let resultsContainer = document.getElementById("results");
   let audioCountdown = document.getElementById("audio-countdown");
   let guessData = null;
   let gameOver = false;
 
   // Loop through the characters to find the guessed character
-  for (let i = 0; i < voicelineInfoData.length; i++) {
-    let currentCharacter = voicelineInfoData[i];
-    if (currentCharacter["name"].toLowerCase() === guess.toLowerCase()) {
-      guessData = currentCharacter;
-      break;
-    }
-  }
-
+  guessData = charactersInfoData[guess];
+  console.log(guessData);
   if (guessData) {
     const previousGuesses =
       JSON.parse(localStorage.getItem("voicelinePreviousGuesses")) || [];
 
     for (let j = 0; j < previousGuesses.length; j++) {
       if (guessData.name == previousGuesses[j].name) {
-        return
+        return;
       }
     }
-    
+
     previousGuesses.push(guessData);
 
     const row = createBlankRow();
@@ -157,10 +151,7 @@ function submitGuess(e) {
     // Save the guess data to localStorage
 
     let arrVoiceline = JSON.parse(localStorage.getItem("arrVoiceline"));
-    let index = arrVoiceline.findIndex(
-      (obj) => obj["name"].toLowerCase() === inputElement.value.toLowerCase()
-    );
-    arrVoiceline.splice(index, 1)[0];
+    delete arrVoiceline[guess];
     localStorage.setItem(
       "voicelinePreviousGuesses",
       JSON.stringify(previousGuesses)
@@ -181,8 +172,7 @@ function submitGuess(e) {
     if (tries < 3) {
       if (3 - tries == 1) {
         audioCountdown.innerText = `Audio clue in 1 try`;
-      }
-      else {
+      } else {
         audioCountdown.innerText = `Audio clue in ${3 - tries} tries`;
       }
     }
@@ -229,35 +219,33 @@ function checkSubmit(e) {
 
 function resetGame() {
   const savedAnswer = localStorage.getItem("voicelineCurrentAnswer");
-  if (savedAnswer !== answerData.name) {
+  if (savedAnswer !== `${answerData.name}_${answerData.voicelinesId}`) {
     // Clear saved data if the answer has changed
     localStorage.removeItem("voicelinePreviousGuesses");
     localStorage.removeItem("voicelineGameOver");
     localStorage.removeItem("voicelineTries");
     tries = 0;
-    localStorage.setItem("voicelineCurrentAnswer", answerData.name); // Update to the new answer
+    localStorage.setItem(
+      "voicelineCurrentAnswer",
+      `${answerData.name}_${answerData.voicelinesId}`
+    ); // Update to the new answer
     localStorage.setItem("arrVoiceline", JSON.stringify(charactersInfoData));
   }
 }
 
-function playAudio(){
-  audioPlayer.volume = document.getElementById('audio-level').value
-  audioPlayer.play().catch(error => console.error('Playback failed:', error))
+function playAudio() {
+  audioPlayer.volume = document.getElementById("audio-level").value;
+  audioPlayer.play().catch((error) => console.error("Playback failed:", error));
 }
 
 window.playAudio = playAudio;
 window.addEventListener("load", async function () {
-  
-  const answerRes = await fetch("/static/answers/voiceline/todays_answer.json");
+  const answerRes = await fetch(answerAPIUrl);
   answerData = await answerRes.json(); // Load today's answer
-  
-  const characterInfoRes = await fetch("/static/data/classicModeInfo.json");
+
+  const characterInfoRes = await fetch(charactersInfoUrl);
   charactersInfoData = await characterInfoRes.json(); // Load all character info
 
-  const voicelineInfoRes = await fetch("/static/data/voicelines.json");
-  voicelineInfoData = await voicelineInfoRes.json();
-
-  
   // Display today's answer quote from todays_answer.json
   const randomQuoteElement = document.getElementById("random-quote");
   randomQuoteElement.innerText = `"${answerData.quote}"`;
@@ -275,7 +263,7 @@ window.addEventListener("load", async function () {
     const row = createBlankRow();
     placeIcon(row.querySelector("#guess-result"), guessData);
 
-    if (guessData["name"].toLowerCase() === answerData["name"].toLowerCase()) {
+    if (guessData.name.toLowerCase() === answerData.name.toLowerCase()) {
       row.querySelector("#guess-result").classList.add("bg-green");
     } else {
       row.querySelector("#guess-result").classList.add("bg-red");
@@ -293,20 +281,18 @@ window.addEventListener("load", async function () {
 
   const cluesCountdownElement = document.getElementById("audio-countdown");
   const audioContainer = document.getElementById("audio-container");
-  const audioButton = document.getElementById('play-audio')
-  audioPlayer.src = `./static/data/voiceline_audios/${answerData.id}${answerData.voiceline_id}.wav`
+  const audioButton = document.getElementById("play-audio");
+  audioPlayer.src = `${voicelinesInfoAPIURL}/${answerData.name}/${answerData.voicelineId}/audio`;
 
-  audioButton.addEventListener('click', () => {
-    audioPlayer.volume = document.getElementById('audio-level').value
-    audioPlayer.play()
-  })
-  
+  audioButton.addEventListener("click", () => {
+    audioPlayer.volume = document.getElementById("audio-level").value;
+    audioPlayer.play();
+  });
 
   if (tries < 3) {
     if (3 - tries == 1) {
       cluesCountdownElement.innerText = `Audio clue in 1 try`;
-    }
-    else {
+    } else {
       cluesCountdownElement.innerText = `Audio clue in ${3 - tries} tries`;
     }
   } else {
